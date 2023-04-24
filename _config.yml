@@ -30,10 +30,8 @@ recommended_consensus_client: lodestar
 enable_getdate: true # gets the publish/update date of resource links
 
 # Blog
-blog_url: https://paragraph.xyz/@dylsteck.eth
-post_feed: https://paragraph.xyz/api/blogs/rss/@dylsteck.eth
-# blog_url: https://paragraph.xyz/@ethstaker
-# post_feed: https://paragraph.xyz/api/blogs/rss/@ethstaker.eth
+blog_url: https://paragraph.xyz/@ethstaker
+post_feed: https://paragraph.xyz/api/blogs/rss/@ethstaker.eth
 post_img_fallback: /assets/img/posts/default.png
 post_desc_length: 140
 
