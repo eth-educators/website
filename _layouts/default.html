@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+  {%- include partials/components/head.html -%}
+  <body class="d-flex flex-column min-vh-100">
+
+    {%- include partials/components/notification.html -%}
+    {%- include partials/components/toast.html -%}
+    {%- include partials/components/nav.html -%}
+
+
+    {{content}}
+
+
+    {%- include partials/components/footer.html -%}
+  </body>
+</html>

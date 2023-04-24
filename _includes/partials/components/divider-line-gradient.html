@@ -1,0 +1,27 @@
+<style type="text/css">
+  .gradient-underline {
+    padding-bottom: 5px;
+    position: relative;
+    text-decoration: none;
+  }
+  .gradient-underline::after {
+    background: linear-gradient(to right, transparent 0%, var(--brand-color-2) 20%, var(--brand-color-3) 80%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+  }
+</style>
+
+
+<!-- Gradient Line Divider -->
+<section class="">
+  <div class="container my-5">
+    <div class="row justify-content-center xgradient-underline">
+      <div class="col-12 col-md-9 col-lg-8 col-xl-7 gradient-underline">
+      </div>
+    </div>
+  </div>
+</section>

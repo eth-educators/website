@@ -1,0 +1,206 @@
+<style type="text/css">
+  #solo-staking .recommend {
+    color: var(--gold-4);
+  }
+  #solo-staking .golden-glow {
+    /*filter: drop-shadow(rgba(var(--gold-1-rgb),100%) 0px 20px 100px);*/
+  }
+</style>
+
+
+<!-- Solo Staking -->
+<section id="solo-staking" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <!-- Description & Details -->
+    <div class="row justify-content-center aos-up">
+      <div class="col-12 col-xl-7 p-md-3 p-lg-5 py-lg-3">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Solo Staking</h2>
+        <p class="recommend lead fw-bold">🥇 Most Recommended</p>
+        <p class="lead">Staking is the act of depositing 32 ETH to activate validator software. As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain. This will keep Ethereum secure for everyone and you earn new ETH in the process.</p>
+        <p><a href="https://ethereum.org/en/staking/solo/" class="btn btn-outline-dark shadow new-tab" target="_blank">Learn more</a></p>
+      </div>
+      <div class="col align-self-center golden-glow">
+        <div class="row row-cols-1 row-cols-sm-2 aos-up">
+          <div class="col d-flex align-items-stretch mb-3">
+            <div class="card shadow border-light w-100">
+              <div class="card-body d-flex align-items-start flex-column">
+                <h5 class="card-title">Requirements</h5>
+                <div class="card-text mb-auto">
+                  <ul class="m-0">
+                    <li>32 ETH</li>
+                    <li>Dedicated computer</li>
+                    <li>Internet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch mb-3">
+            <div class="card shadow border-light w-100">
+              <div class="card-body d-flex align-items-start flex-column">
+                <h5 class="card-title">Risks</h5>
+                <div class="card-text mb-auto">
+                  <ul class="m-0">
+                    <li>Bug in Ethereum</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch mb-3">
+            <div class="card shadow border-light w-100">
+              <div class="card-body d-flex align-items-start flex-column">
+                <h5 class="card-title">Rewards</h5>
+                <div class="card-text mb-auto">
+                  <ul class="m-0">
+                    <li>+ Staking APR</li>
+                    <li>+ MEV / tips</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch mb-3">
+            <div class="card shadow border-light w-100">
+              <div class="card-body d-flex align-items-start flex-column">
+                <h5 class="card-title">Considerations</h5>
+                <div class="card-text mb-auto">
+                  <ul class="m-0">
+                    <li>Most recommended</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Getting Started -->
+    <div class="row justify-content-center aos-up">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 pt-3 p-md-3 p-lg-3 text-start text-sm-center">
+        <h3 class="lh-1 mb-3">Getting Started</h3>
+        <p class="lead">When setting up your validator you have two options: plug & play and manual setup. For plug & play, you can buy a pre-built machine that contains the validator software and a friendly UI (no command line). For the manual setup, you will need to use a spare computer or assemble your own and then setup the validator software using the command line (following step-by-step guides where you copy/paste commands).</p>
+      </div>
+    </div>
+    <!-- Options -->
+    <div class="row justify-content-evenly aos-up">
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow rounded-3 border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Plug & Play</h5>
+            <span class="badge rounded-pill text-bg-primary mb-2">Beginner Friendly!</span>
+            <div class="card-text mb-auto mt-2">
+              <p>Buy a staking device that comes with the validator software pre-installed!</p>
+              <ol>
+                <li>Select a provider to purchase a unit from
+                  <ul>
+                    <li><a href="https://dappnode.com/">DappNode</a></li>
+                    <li><a href="https://ava.do/">Avado</a> <span class="fw-light">(closed source)</span></li>
+                  </ul>
+                </li>
+                <li>Plug in the device and folow their setup prompts</li>
+                <li>That's it, it's that simple! 🎉</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow rounded-3 border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Manual Setup (GUI)</h5>
+            <!-- <span class="badge rounded-pill text-bg-light mb-2">App Interface</span> -->
+            <div class="card-text mb-auto mt-2">
+              <p>Setup your validator manually using an app interface.</p>
+              <ol>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/hardware/hardware-requirements">Hardware requirements and selection</a>
+                </li>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/validator-clients/execution-clients">Select an execution client</a>
+                  <ul>
+                    <li>{{site.recommended_execution_client | capitalize}} recommended</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/validator-clients/consensus-clients">Select a consensus client</a>
+                  <ul>
+                    <li>{{site.recommended_consensus_client | capitalize}} recommended</li>
+                  </ul>
+                </li>
+                <li>
+                  Setup your validator
+                  <ul>
+                    <li>
+                      <a href="https://docs.dappnode.io/user/quick-start/core/installation/">DappNode GUI</a>
+                    </li>
+                    <li>NiceNode GUI (<em>coming soon™</em>)</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow rounded-3 border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Manual Setup (CLI)</h5>
+            <!-- <span class="badge rounded-pill text-bg-light mb-2">Copy/Paste Commands</span> -->
+            <div class="card-text mb-auto mt-2">
+              <p>Setup your validator manually using the command line with copy/paste commands.</p>
+              <ol>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/hardware/hardware-requirements">Hardware requirements and selection</a>
+                </li>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/validator-clients/execution-clients">Select an execution client</a>
+                  <ul>
+                    <li>{{site.recommended_execution_client | capitalize}} recommended</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/validator-clients/consensus-clients">Select a consensus client</a>
+                  <ul>
+                    <li>{{site.recommended_consensus_client | capitalize}} recommended</li>
+                  </ul>
+                </li>
+                <li>
+                  Setup your validator
+                  <ul>
+                    <li>
+                      <a href="https://github.com/SomerEsat/ethereum-staking-guides">Someresat Guides</a>
+                    </li>
+                    <li>
+                      <a href="https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet/part-i-installation">Coincashew Guides</a>
+                    </li>
+                    <li>
+                      <a href="https://eth-docker.net/Usage/QuickStart">Using Docker</a>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Resources -->
+    <div class="row justify-content-center aos-up">
+      <div class="col col-12 col-md-6 col-xl-4 p-md-3 p-lg-3 text-center">
+        <div class="card shadow border-light w-100 text-start">
+          <div class="card-body">
+            <h5 class="card-title">Resources</h5>
+            <div class="card-text">
+              <ul class="text-start">
+                <li><a href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/">EthStaker Knowledgebase</a></li>
+                <li><a href="https://launchpad.ethereum.org/en/checklist">Validator checklist</a></li>
+              </ul>
+              <a href="/resources" class="btn btn-outline-dark btn-sm">View all resources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

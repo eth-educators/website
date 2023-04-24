@@ -1,0 +1,93 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/stewards.yml
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  .steward {
+    width: 10.5rem;
+    border: none;
+  }
+  @media only screen and (max-width: 1399px) {
+    .steward {
+      width: 12rem;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .steward {
+      width: 14rem;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .steward {
+      width: 13rem;
+    }
+  }
+  .steward a {
+    width: 1.1rem;
+    margin: 0 0.35rem;
+    filter: grayscale(100%) brightness(0%);
+  }
+  .steward a:first-child {
+    margin-left: 0;
+  }
+  .steward a:last-child {
+    margin-right: 0;
+  }
+  .steward svg {
+    height: 1.1rem;
+    width: 1.1rem;
+    opacity: 0.8;
+  }
+
+  .dark-mode .steward a {
+    filter: contrast(0%) brightness(100%) sepia(50%) hue-rotate(175deg) !important;
+  }
+</style>
+
+
+<div class="row row-cols-auto justify-content-center pt-2">
+  {%- for steward in site.data.stewards -%}
+    {%- if steward.name -%}
+      <div class="col d-flex align-items-stretch mb-4">
+        <div class="card steward shadow">
+          <div class="px-3 pt-3">
+            <img src="{{steward.img}}" class="card-img-top m-0 rounded-circle shadow" alt="...">
+          </div>
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title text-center mx-auto mb-0">{{steward.name}}</h5>
+            <p class="card-text text-center mx-auto fs-6 fst-italic mb-auto pb-2">{{steward.role}}</p>
+            <div class="row text-center mx-auto">
+              {%- if steward.discord -%}
+                {%- assign discord_id = steward.discord | replace: "@", "" -%}
+                  <a href="https://discordapp.com/users/{{discord_id}}" target="_blank" class="col col-1 px-0">
+                  {{site.data.icons.discord}}</a>
+              {%- endif -%}
+              {%- if steward.twitter -%}
+                {%- assign twitter_handle = steward.twitter | replace: "@", "" | split: "/" | last -%}
+                  <a href="https://twitter.com/{{twitter_handle}}" target="_blank" class="col col-1 px-0">
+                  {{site.data.icons.twitter}}</a>
+              {%- endif -%}
+              {%- if steward.reddit -%}
+                {%- assign reddit_handle = steward.reddit | replace: "@", "" | split: "/" | last -%}
+                  <a href="https://reddit.com/u/{{reddit_handle}}" target="_blank" class="col col-1 px-0">
+                  {{site.data.icons.reddit}}</a>
+              {%- endif -%}
+              {%- if steward.github -%}
+                {%- assign github_handle = steward.github | replace: "@", "" | split: "/" | last -%}
+                  <a href="https://github.com/{{github_handle}}" target="_blank" class="col col-1 px-0">
+                  {{site.data.icons.github}}</a>
+              {%- endif -%}
+              {%- if steward.ens -%}
+                {%- assign ens = steward.ens | replace: "@", "" | split: "/" | last -%}
+                  <a href="https://etherscan.io/address/{{ens}}" target="_blank" class="col col-1 px-0 img-black">
+                  {{site.data.icons.etherscan}}</a>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

@@ -1,0 +1,42 @@
+{%- comment -%}
+<!-- 
+Widget created on https://substackapi.com/feed
+to embed posts from https://rhinoreview.substack.com/
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  #substack-feed-embed {
+    min-height:300px;
+  }
+  
+  .dark-mode #substack-feed-embed {
+    opacity: 0.75;
+  }
+</style>
+
+<div id="substack-feed-embed"></div>
+
+
+<script>
+  // Initialize widget
+  window.SubstackFeedWidget = {
+    substackUrl: "rhinoreview.substack.com",
+    posts: 10,
+    layout: "right"
+  };
+  
+  // Remove the coming soon link when there's less posts than it's asking to show
+  async function removeComingSoonLink() {
+    await new Promise(r => setTimeout(r, 800));
+    const target = "https://rhinoreview.substack.com/p/coming-soon";
+    document.querySelectorAll(".substack-feed-widget a")
+    .forEach( link => {
+      if (link.href == target) {
+        link.remove();
+      }
+    });
+  }
+  removeComingSoonLink();
+</script>
+<script src="https://substackapi.com/embeds/feed.js" async></script>

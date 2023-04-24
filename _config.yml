@@ -1,35 +1,64 @@
 # Read about configuration here: https://jekyllrb.com/docs/configuration/options/
-title: 
-description: 
-keywords: 
-url: 
+title: EthStaker Community
+description: The EthStaker community was formed to welcome all knowledge levels to support staking on Ethereum and maximize decentralization of the Ethereum network.
+keywords: ethstaker, ethereum, staking, eth, decentralization, support
+# url: https://ethstaker.cc
+url: https://test-ethstaker.netlify.app
 permalink: pretty # Do not change this, it will break all links
 timezone: America/New_York
 markdown: kramdown
 livereload: true
 port: 4400
+environment: production
+
+# Plugins
+plugins:
+  - jekyll_include_plugin # https://github.com/flant/jekyll_include_plugin
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+redirect_from: # jekyll-redirect-from
+  json: false
 
 # Global variables
 analytics_tag: 
+youtube_id: UCeHmYPRYZddrM1tfJLfLVDA
+calendar_id: 77f777766b648a71ad61e7e37bdf9f67d028b5a1b09ef61f2772cc1809f3a25a
+calendar_link: https://calendar.google.com/calendar/embed?src=77f777766b648a71ad61e7e37bdf9f67d028b5a1b09ef61f2772cc1809f3a25a%40group.calendar.google.com&ctz=America%2FNew_York
+recommended_execution_client: nethermind
+recommended_consensus_client: lodestar
+
+# Resources
+enable_getdate: true # gets the publish/update date of resource links
+
+# Blog
+blog_url: https://paragraph.xyz/@dylsteck.eth
+post_feed: https://paragraph.xyz/api/blogs/rss/@dylsteck.eth
+# blog_url: https://paragraph.xyz/@ethstaker
+# post_feed: https://paragraph.xyz/api/blogs/rss/@ethstaker.eth
+post_img_fallback: /assets/img/posts/default.png
+post_desc_length: 140
 
 # Navigation
-enableNav: true
-enableNavCollapse: true
+enable_nav: true
+enable_nav_collapse: true # doesn't work at the moment
 
-# Notification
-enableNotification: false
-notificationMsgId: 1 # must increment when creating a new message
-notificationMsg: Join the community!<br><a href=""></a>.
-notificationExpiration: 3000000000 # epoch time in seconds
+# Notification Bar
+enable_notification: false
+notification_msg_id: 1 # must increment when creating a new message
+notification_msg: Join the community! <br><a href=""></a>.
+notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
-enableToast: false
-toastMsgId: 1 # must increment when creating a new message
-toastTitle: Notice
-toastMsg: # Best when under 100 characters
-toastLink: # Optional, leave blank to omit
-toastExpiration: 3000000000 # epoch time in seconds
+enable_toast: false
+toast_msg_id: 1 # must increment when creating a new message
+toast_title: Notice
+toast_msg: # Best when under 100 characters
+toast_link: # Optional, leave blank to omit
+toast_expiration: 3000000000 # epoch time in seconds
 
 # Assets
-bootstrap_js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-bootstrap_css: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+bootstrap_js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+bootstrap_css: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+# bootstrap_js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+# bootstrap_css: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+aos_js: <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+aos_css: <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

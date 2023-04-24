@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" alt="ETH logo" width="100%" height="100%" viewBox="0 0 142 215" version="1.1" xml:space="preserve" xmlnsSerif="http://www.serif.com/" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 7;">
+  <g transform="matrix(1,0,0,1,-1259.52,-529.088)">
+    <g>
+      <g>
+        <g transform="matrix(1.08181,0,0,-1.03277,-108.829,1366.48)">
+          <path d="M1394.74,693.463L1330.36,604.024L1330.36,654.238L1394.74,693.463Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+        <g transform="matrix(-1.08181,0,0,-1.03277,2769.57,1366.48)">
+          <path d="M1394.74,693.463L1330.36,604.024L1330.36,654.238L1394.74,693.463Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+      </g>
+      <g>
+        <g transform="matrix(-1,0,0,1,2659.32,-0.0263692)">
+          <path d="M1398.61,639.614L1328.95,608.641L1328.95,679.249L1398.61,639.614Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+        <g transform="matrix(1,0,0,1,1.41643,-0.0263692)">
+          <path d="M1398.61,639.614L1328.95,608.641L1328.95,679.249L1398.61,639.614Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+        <g transform="matrix(-1.08181,0,0,1.03277,2769.57,-93.5314)">
+          <path d="M1394.74,709.855L1330.36,604.024L1330.36,679.865L1394.74,709.855Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+        <g transform="matrix(1.08181,0,0,1.03277,-108.829,-93.5314)">
+          <path d="M1394.74,709.855L1330.36,604.024L1330.36,679.865L1394.74,709.855Z" style="fill: none; stroke: #000; stroke-width: 1.75px;"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

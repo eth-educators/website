@@ -1,0 +1,108 @@
+{%- assign feed = site.post_feed | getres | xmltoyaml -%}
+{%- assign posts = feed.rss.channel.item | date_sort: "pubDate", "%a, %d %b %Y %T %Z" | reverse -%}
+
+
+<style>
+  .blog-post img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .dark-mode .blog-post img {
+    opacity: 0.75;
+  }
+</style>
+
+
+<section id="blog">
+  {%- for post in posts -%}
+    <div class="card blog-post overflow-hidden aos-up mb-3">
+      <div class="row g-0">
+        <div class="col-xl-5">
+          {%- assign img = site.post_img_fallback -%}
+          {%- if post.enclosure.url -%}
+            {%- assign img = post.enclosure.url -%}
+          {%- endif -%}
+          <img src="{{img}}" class="" alt="post image" loading="lazy">
+        </div>
+        <div class="col-xl-7">
+          <div class="card-body">
+            <h5 class="card-title mb-0">{{post.title}}</h5>
+            <div class="mb-2">
+              <small class="text-muted">{{post.pubDate | date: "%b %d, %Y"}}</small>
+            </div>
+            <p class="card-text fs-6">{{post.description | truncate: site.post_desc_length}}</p>
+            <a href="{{post.link}}" class="btn btn-outline-dark btn-sm">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endfor -%}
+</section>
+
+
+<script type="text/javascript">
+  window.onload = getPosts().then(loadPosts);
+
+  // Fetch the list of posts from paragraph
+  async function getPosts() {
+    const url = "{{site.post_feed}}";
+    return await fetch(url)
+      .then(response => response.text())
+      .then(data => {
+        return xmlToJSON.parseString(data).rss[0].channel[0].item;
+      })
+      .then(data => {
+        data.sort(function(a, b) {
+          var dateA = new Date(a.pubDate[0]._text);
+          var dateB = new Date(b.pubDate[0]._text);
+
+          if (dateA > dateB ) {
+            return -1;
+          }
+          if (dateA < dateB ) {
+            return 1;
+          }
+          return 0;
+        });
+        return data;
+      });
+  }
+
+  // Build the post html and replace the current feed
+  function loadPosts(posts) {
+    let postsHTML = "";
+    posts.forEach(post => {
+      let title = post.title[0]._text;
+      let desc = post.description[0]._text.substring(0,{{site.post_desc_length}}).trim() + "...";
+      let link = post.link[0]._text;
+      let d = post.pubDate[0]._text.split(" ");
+      let date = `${d[2]} ${d[1]}, ${d[3]}`;
+      let img = "{{site.post_img_fallback}}";
+      if (post.enclosure[0]._attr.url._value) {
+        img = post.enclosure[0]._attr.url._value;
+      }
+      let postHTML = `<div class="card blog-post overflow-hidden mb-3">
+                <div class="row g-0">
+                  <div class="col-xl-5">
+                    <img src="${img}" class="" alt="..." loading="lazy">
+                  </div>
+                  <div class="col-xl-7">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">${title}</h5>
+                      <div class="mb-2">
+                        <small class="text-muted">${date}</small>
+                      </div>
+                      <p class="card-text fs-6">${desc}</p>
+                      <a href="${link}" class="btn btn-outline-dark btn-sm">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+      postsHTML += postHTML;
+    });
+    document.getElementById("blog").innerHTML = postsHTML;
+  }
+</script>

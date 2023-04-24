@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+  {%- include partials/components/head.html -%}
+  <body class="d-flex flex-column min-vh-100">
+
+    {%- include partials/components/notification.html -%}
+    {%- include partials/components/toast.html -%}
+    {%- include partials/components/nav.html -%}
+
+
+    <!-- Header -->
+    <header class="">
+      <div class="container pt-3 pb-5 my-2 text-center">
+        {%- assign header = page.title -%}
+        {%- if page.header -%}
+          {%- assign header = page.header -%}
+        {%- endif -%}
+        {%- if header != "" -%}
+          <h1 class="display-5 fw-bold text-capitalize mt-5">{{header}}</h1>
+        {%- endif -%}
+
+        {%- if page.subheader -%}
+          <div class="col-md-10 col-lg-6 mx-auto lead mb-3">
+            {{page.subheader | flatify | markdownify}}
+          </div>
+        {%- endif -%}
+
+        {%- if page.note -%}
+          <div class="mb-3">
+            <small><em>{{page.note}}</em></small>
+          </div>
+        {%- endif -%}
+
+        {%- if page.buttons -%}
+          {%- for button in page.buttons -%}
+            <a href="{{button.link | liquify}}" class="btn btn-outline-dark px-4 mx-2 my-1 shadow">{{button.text}}</a>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </header>
+
+
+    <!-- Content -->
+     {%- if page.content != "" -%}
+      <section class="markdown">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col col-md-8 col-lg-7 markdown-aos">
+              {{content | markdownify}}
+            </div>
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+
+    {%- include partials/components/footer.html -%}
+  </body>
+</html>

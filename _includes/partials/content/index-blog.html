@@ -1,0 +1,152 @@
+{%- assign feed = site.post_feed | getres | xmltoyaml -%}
+{%- assign posts = feed.rss.channel.item | date_sort: "pubDate", "%a, %d %b %Y %T %Z" | reverse -%}
+
+
+<style type="text/css">
+  #blog .post-preview {
+    min-height: 12rem;
+    max-height: 18rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .dark-mode #blog .post-preview {
+    opacity: 0.75;
+  }
+</style>
+
+
+<!-- Blog -->
+<section id="blog" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 p-md-3 pt-lg-3 text-center aos-up">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Latest Posts</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div id="post1" class="col-12 col-lg-12 col-xl-5 mb-3 aos-up">
+        {%- for post in posts limit:1 -%}
+          {%- assign img = site.post_img_fallback -%}
+          {%- if post.enclosure.url -%}
+            {%- assign img = post.enclosure.url -%}
+          {%- endif -%}
+          <div class="card shadow border-light">
+            <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+            <div class="card-body">
+              <h5 class="card-title mb-0">{{post.title}}</h5>
+              <small><small class="card-date">{{post.pubDate | date: "%b %d, %Y"}}</small></small>
+              <p class="card-text mt-2">{{post.description | truncate: site.post_desc_length}}</p>
+              <a href="{{post.link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div id="post2" class="col-12 col-md-6 col-xl-3 mb-3 aos-up">
+        {%- for post in posts limit:1 offset:1 -%}
+          {%- assign img = site.post_img_fallback -%}
+          {%- if post.enclosure.url -%}
+            {%- assign img = post.enclosure.url -%}
+          {%- endif -%}
+          <div class="card shadow border-light">
+            <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+            <div class="card-body d-none d-md-block">
+              <h5 class="card-title fs-6 mb-0">{{post.title}}</h5>
+              <small><small class="card-date">{{post.pubDate | date: "%b %d, %Y"}}</small></small>
+              <p class="card-text mt-2"><small>{{post.description | truncate: site.post_desc_length}}</small></p>
+              <a href="{{post.link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            </div>
+            <div class="card-body d-block d-md-none">
+              <h5 class="card-title mb-0">{{post.title}}</h5>
+              <small><small class="card-date">{{post.pubDate | date: "%b %d, %Y"}}</small></small>
+              <p class="card-text mt-2">{{post.description | truncate: site.post_desc_length}}</p>
+              <a href="{{post.link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div id="post3" class="col-12 col-md-6 col-xl-3 mb-3 aos-up">
+        {%- for post in posts limit:1 offset:2 -%}
+          {%- assign img = site.post_img_fallback -%}
+          {%- if post.enclosure.url -%}
+            {%- assign img = post.enclosure.url -%}
+          {%- endif -%}
+          <div class="card shadow border-light">
+            <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+            <div class="card-body d-none d-md-block">
+              <h5 class="card-title fs-6 mb-0">{{post.title}}</h5>
+              <small><small class="card-date">{{post.pubDate | date: "%b %d, %Y"}}</small></small>
+              <p class="card-text mt-2"><small>{{post.description | truncate: site.post_desc_length}}</small></p>
+              <a href="{{post.link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            </div>
+            <div class="card-body d-block d-md-none">
+              <h5 class="card-title mb-0">{{post.title}}</h5>
+              <small><small class="card-date">{{post.pubDate | date: "%b %d, %Y"}}</small></small>
+              <p class="card-text mt-2">{{post.description | truncate: site.post_desc_length}}</p>
+              <a href="{{post.link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="col-12 text-center aos-up">
+        <a href="/blog" class="btn btn-dark btn-lg shadow mt-2">View all posts</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  window.onload = getPosts().then(loadPosts);
+
+  // Fetch the list of posts from paragraph
+  async function getPosts() {
+    const url = "https://paragraph.xyz/api/blogs/rss/@dylsteck.eth";
+    return await fetch(url)
+      .then(response => response.text())
+      .then(data => {
+        return xmlToJSON.parseString(data).rss[0].channel[0].item;
+      })
+      .then(data => {
+        data.sort(function(a, b) {
+          var dateA = new Date(a.pubDate[0]._text);
+          var dateB = new Date(b.pubDate[0]._text);
+
+          if (dateA < dateB ) {
+            return -1;
+          }
+          if (dateA > dateB ) {
+            return 1;
+          }
+          return 0;
+        });
+        return data;
+      });
+  }
+
+  // Update the featured recent posts
+  function loadPosts(posts) {
+    for (let i = 0; i < 3; i++) {
+      document.querySelectorAll(`#post${i+1} .card-title`).forEach(el => {
+        el.innerHTML = posts[i].title[0]._text;
+      });
+      document.querySelectorAll(`#post${i+1} img`).forEach(el => {
+        if (posts[i].enclosure[0]._attr.url._value) {
+          el.src = posts[i].enclosure[0]._attr.url._value;
+        } else {
+          el.src = "{{site.post_img_fallback}}";
+        }
+      });
+      document.querySelectorAll(`#post${i+1} .card-date`).forEach(el => {
+        const d = posts[i].pubDate[0]._text.split(" ");
+        el.innerHTML = `${d[2]} ${d[1]}, ${d[3]}`;
+      });
+      document.querySelectorAll(`#post${i+1} .card-text`).forEach(el => {
+        el.innerHTML = posts[i].description[0]._text.substring(0,{{site.post_desc_length}}).trim() + "...";
+      });
+      document.querySelectorAll(`#post${i+1} .btn`).forEach(el => {
+        el.href = posts[i].link[0]._text;
+      });
+    }
+  }
+</script>

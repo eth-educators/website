@@ -1,0 +1,170 @@
+## name    = team name
+## link    = url
+## img     = team logo
+## chat    = chat invite, channel-specific if discord
+## github  = github url, repo-specific if possible
+## docs    = documentation link
+## support = "Linux", "Win", "macOS", and "ARM" (list all supported, i.e. "Linux, Win, macOS, ARM")
+## lang    = programming language it's written in
+## type    = "concensus", "execution", or "both"
+## status  = "stable", "beta", "alpha & beta", "pre-alpha", "deprecated"
+## donate  = link to donate (gitcoin, etherscan link, protocol guild, etc), or "funded" in fully funded
+
+# Template to copy for new entries
+# - name: 
+#   link: 
+#   img: 
+#   chat: 
+#   github: 
+#   docs: 
+#   support: 
+#   lang: 
+#   type: 
+#   status: 
+#   donate: 
+
+
+# Entries are shown in the order listed
+- name: Besu
+  link: https://hyperledger.org/use/besu
+  img: /assets/img/clients/besu.png
+  chat: https://discord.com/invite/hyperledger
+  github: https://github.com/hyperledger/besu/
+  docs: https://besu.hyperledger.org/en/stable/
+  support: Linux, Win, macOS
+  lang: Java
+  type: execution
+  status: stable
+  donate: https://protocol-guild.readthedocs.io/en/latest/index.html
+- name: Erigon
+  link: https://github.com/ledgerwatch/erigon#erigon
+  img: /assets/img/clients/erigon.png
+  chat: https://github.com/ledgerwatch/erigon#erigon-discord-server
+  github: https://github.com/ledgerwatch/erigon
+  docs: https://github.com/ledgerwatch/erigon#usage
+  support: Linux, Win, macOS, ARM
+  lang: Golang
+  type: execution
+  status: alpha & beta
+  donate: https://etherscan.io/address/0x8BFBB529A9E85fDC4b70A4FCdC0D68Bb298B8816 # funded by EF, Gnosis DAO
+- name: EthereumJS
+  link: https://ethereumjs.github.io/
+  img: 
+  chat: https://discord.gg/TNwARpR
+  github: https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client
+  docs: https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client/docs
+  support: Linux, Win, macOS
+  lang: TypeScript
+  type: execution
+  status: alpha
+  donate: funded # funded by EF
+- name: Geth
+  link: https://geth.ethereum.org/
+  img: /assets/img/clients/geth.png
+  chat: https://discord.com/invite/nthXNEv
+  github: https://github.com/ethereum/go-ethereum
+  docs: https://geth.ethereum.org/docs/
+  support:  Linux, Win, macOS, ARM
+  lang: Golang
+  type: execution
+  status: stable
+  donate: https://gitcoin.co/grants/6128/go-ethereum-geth
+- name: Lighthouse
+  link: https://lighthouse.sigmaprime.io/
+  img: /assets/img/clients/lighthouse.png
+  chat: https://discord.gg/cyAszAh
+  github: https://github.com/sigp/lighthouse/
+  docs: https://lighthouse-book.sigmaprime.io/
+  support: Linux, Win, macOS, ARM
+  lang: Rust
+  type: consensus
+  status: stable
+  donate: https://gitcoin.co/grants/25/lighthouse-ethereum-20-client
+- name: Lodestar
+  link: https://lodestar.chainsafe.io/
+  img: /assets/img/clients/lodestar.png
+  chat: https://discord.gg/yjyvFRP
+  github: https://github.com/ChainSafe/lodestar
+  docs: https://hackmd.io/@philknows/rk5cDvKmK
+  support: Linux, Win, macOS # windows theoretically works but not tested yet https://github.com/ChainSafe/lodestar/issues/3519
+  lang: TypeScript
+  type: consensus
+  status: stable
+  donate: https://gitcoin.co/grants/6034/lodestar-typescript-ethereum-consensus-client
+- name: Nethermind
+  link: http://nethermind.io/
+  img: /assets/img/clients/nethermind.png
+  chat: https://discord.com/invite/PaCMRFdvWT
+  github: https://github.com/NethermindEth/nethermind
+  docs: https://docs.nethermind.io/nethermind/first-steps-with-nethermind/getting-started
+  support: Linux, Win, macOS, ARM
+  lang: .NET
+  type: execution
+  status: stable
+  donate: https://gitcoin.co/grants/142/nethermind
+- name: Nimbus (Consensus)
+  link: https://nimbus.team/
+  img: /assets/img/clients/nimbus.svg
+  chat: https://discord.gg/qnjVyhatUa
+  github: https://github.com/status-im/nimbus-eth1
+  docs: https://nimbus.team/docs/
+  support: Linux, Win, macOS, ARM
+  lang: Nim
+  type: consensus
+  status: stable
+  donate: https://gitcoin.co/grants/137/nimbus-2
+- name: Nimbus (Execution)
+  link: https://nimbus.team/
+  img: /assets/img/clients/nimbus.svg
+  chat: https://discord.gg/qnjVyhatUa
+  github: https://github.com/status-im/nimbus-eth1
+  docs: https://github.com/status-im/nimbus-eth1/tree/master/doc
+  support: # none, pre-alpha
+  lang: Nim
+  type: execution
+  status: pre-alpha
+  donate: https://gitcoin.co/grants/137/nimbus-2
+- name: Prysm
+  link: https://prysmaticlabs.com/
+  img: /assets/img/clients/prysm.svg
+  chat: https://discord.gg/YMVYzv6
+  github: https://github.com/prysmaticlabs/prysm
+  docs: https://docs.prylabs.network/docs/getting-started/
+  support: Linux, Win, macOS
+  lang: Golang
+  type: consensus
+  status: stable
+  donate: https://gitcoin.co/grants/24/prysm-by-prysmatic-labs
+# - name: Reth
+#   link: https://github.com/paradigmxyz/reth
+#   img: 
+#   chat: https://t.me/paradigm_reth
+#   github: https://github.com/paradigmxyz/reth
+#   docs: https://github.com/paradigmxyz/reth/tree/main/docs
+#   support: Linux, macOS
+#   lang: Rust
+#   type: execution
+#   status: pre-alpha
+#   donate: 
+# - name: Silkworm
+#   link: https://github.com/torquem-ch/silkworm#about-silkworm
+#   img: 
+#   chat: 
+#   github: https://github.com/torquem-ch/silkworm
+#   docs: https://github.com/torquem-ch/silkworm#source
+#   support: Linux, Win, macOS
+#   lang: C++
+#   type: execution
+#   status: pre-alpha
+#   donate: https://etherscan.io/address/0x8BFBB529A9E85fDC4b70A4FCdC0D68Bb298B8816
+- name: Teku
+  link: https://consensys.net/knowledge-base/ethereum-2/teku/
+  img: /assets/img/clients/teku.png
+  chat: https://discord.gg/9mCVSY6
+  github: https://github.com/ConsenSys/teku
+  docs: https://docs.teku.consensys.net/en/latest/
+  support: Linux, Win, macOS
+  lang: Java
+  type: consensus
+  status: stable
+  donate: funded # funded by ConsenSys

@@ -1,0 +1,87 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/branding.yml
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  #branding .branding-card {
+    width: 14rem;
+  }
+  #branding .branding-card .branding-header {
+    height: 6rem;
+  }
+  #branding .branding-card .branding-header img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .dark-mode #branding .branding-card {
+    opacity: 0.9 !important;
+  }
+</style>
+
+
+<section id="branding" class="">
+  {% assign categories = site.data.branding | map: "type" | uniq %}
+  {%- for category in categories -%}
+    {%- assign title = category | append: "s" | capitalize -%}
+    <div class="row justify-content-start">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 p-md-3 pt-lg-3 aos-up">
+        <h2 class="mb-3">{{title}}</h2>
+      </div>
+    </div>
+    <div class="row row-cols-auto justify-content-start pt-2 ps-4">
+      {%- for item in site.data.branding -%}
+        {%- if item.type == category -%}
+          <div class="col d-flex mb-4">
+            <div class="card branding-card shadow border-light aos-up">
+              <div class="card-body d-flex align-items-start flex-column">
+                {%- if item.bg -%}
+                  <div class="d-flex align-items-center branding-header rounded w-100 bg-{{item.bg}}" style="background: {{item.bg}};">
+                    {%- if item.svg -%}
+                      <img class="my-0 mx-auto" src="{{item.svg}}" alt="">
+                    {%- elsif item.png -%}
+                      <img class="my-0 mx-auto" src="{{item.png}}" alt="">
+                    {%- elsif item.jpg -%}
+                      <img class="my-0 mx-auto" src="{{item.jpg}}" alt="">
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                <h5 class="card-title py-2 mb-auto">{{item.text}}</h5>
+                <div class="d-flex grid gap-1">
+                  {% if item.file %}
+                    {%- assign filename = item.file | split: "/" | last -%}
+                    {%- assign extension = item.file | split: "." | last -%}
+                    <a href="{{item.file}}" class="btn btn-outline-dark" download="{{filename}}">.{{extension}} <span class="ms-1">{{site.data.icons.download}}</span></a>
+                    {%- if item.link -%}
+                      <a href="{{item.link}}" class="btn btn-outline-dark" target="_blank">link <span class="ms-1">{{site.data.icons.new_tab}}</span></a>
+                    {%- endif -%}
+                  {%- endif -%}
+                  {% if item.svg %}
+                    {%- assign filename = item.svg | split: "/" | last -%}
+                    {%- assign extension = item.svg | split: "." | last -%}
+                    <a href="{{item.svg}}" class="btn btn-outline-dark" download="{{filename}}">.svg <span class="ms-1">{{site.data.icons.download}}</span></a>
+                  {% endif %}
+                  {%- if item.png -%}
+                    {%- assign filename = item.png | split: "/" | last -%}
+                    {%- assign extension = item.png | split: "." | last -%}
+                    <a href="{{item.png}}" class="btn btn-outline-dark" download="{{filename}}">.png <span class="ms-1">{{site.data.icons.download}}</span></a>
+                  {%- endif -%}
+                  {%- if item.jpg -%}
+                    {%- assign filename = item.jpg | split: "/" | last -%}
+                    {%- assign extension = item.jpg | split: "." | last -%}
+                    <a href="{{item.jpg}}" class="btn btn-outline-dark" download="{{filename}}">.jpg <span class="ms-1">{{site.data.icons.download}}</span></a>
+                  {%- endif -%}
+                  {%- if item.type == "color" -%}
+                    <a id="item{{forloop.index}}" class="btn btn-outline-dark" onclick="copyText('{{item.text}}', this.id)" data-bs-toggle="tooltip" data-bs-placement="top" title="Copied!" data-bs-trigger="click">copy <span class="ms-1">{{site.data.icons.copy}}</span></a>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endfor -%}
+</section>

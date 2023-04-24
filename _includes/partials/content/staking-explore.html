@@ -1,0 +1,135 @@
+<style type="text/css">
+  #explore .card-gold {
+    background: linear-gradient(315deg, rgba(var(--gold-1-rgb),1) 0%, rgba(var(--gold-2-rgb),1) 100%);
+    filter: drop-shadow(rgba(var(--gold-1-rgb), 60%) 0px 4px 20px);
+  }
+
+  .dark-mode #explore .card-gold {
+    background: linear-gradient(315deg, rgba(var(--gold-1-rgb),1) 0%, rgba(var(--gold-3-rgb),1) 100%);
+  }
+</style>
+
+
+<!-- Explore -->
+<section id="explore" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <div class="row justify-content-center aos-up">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 pb-3 p-md-3 p-lg-3 text-start text-sm-center">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Explore Staking Methods</h2>
+        <p class="lead">While solo staking is the gold standard, there's a variety of other options that each have their own requirements, risks, and considerations. Explore the different methods of staking below and follow the steps to get started!</p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center aos-up">
+      <div class="col col-md-8 col-lg-6 col-xxl-5 border-bottom pb-5 mb-5">
+        <div class="card card-gold shadow border-0">
+          <div class="card-body text-dark">
+            <h5 class="card-title d-flex">
+              <span class="flex-grow-1">Solo Staking </span>
+              <span class="apr text-success fw-semibold">
+                <span id="stakingAPR"></span>
+                <small>{{"" | tooltip: site.data.tooltips.beaconchain_data}}</small>
+              </span>
+            </h5>
+            <p class="card-text fw-bold">🥇 Most Recommended</p>
+            <p class="card-text">Run your own node 😎</p>
+            <a href="#solo-staking" class="btn btn-dark ignore shadow-sm w-100">View details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center aos-up">
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Hosted Solo Staking</h5>
+            <div class="card-text mb-auto">
+              <small class="">Examples</small>
+              <ul>
+                <li>Ethpool</li>
+                <li>Allnodes</li>
+              </ul>
+            </div>
+            <a href="#hosted-staking" class="btn btn-outline-dark btn-sm shadow-sm w-100">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Pool Node Operator</h5>
+            <div class="card-text mb-auto">
+              <small class="">Examples</small>
+              <ul>
+                <li>Rocket Pool</li>
+                <li class="text-muted">Stakewise (<em>coming</em>)</li>
+              </ul>
+            </div>
+            <a href="#pool-node-operator" class="btn btn-outline-dark btn-sm shadow-sm w-100">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-xl-4 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Decentralized Staking Pool</h5>
+            <div class="card-text mb-auto">
+              <small class="">Examples</small>
+              <ul>
+                <li>Rocket Pool (rETH holder)</li>
+                <li>Stakewise</li>
+                <li>Lido</li>
+              </ul>
+            </div>
+            <a href="#decentralized-staking-pool" class="btn btn-outline-dark btn-sm shadow-sm w-100">View details</a>
+          </div>
+        </div>
+      </div>
+      <div id="sm-cex" class="d-none col col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+        <div class="card shadow border-light w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Centralized Exchange Staking</h5>
+            <p class="card-text fw-bold">❌ Not Recommended</p>
+            <div class="card-text mb-auto">
+              <small class="">Examples</small>
+              <ul>
+                <li>Coinbase</li>
+                <li>Binance</li>
+                <li>Kraken</li>
+              </ul>
+            </div>
+            <a href="#centralized-exchange-staking" class="btn btn-outline-dark btn-sm shadow-sm w-100">View details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-3 aos-up">
+      <div class="col">
+        <a class="btn btn-outline-dark shadow" 
+          onclick="document.getElementById('sm-cex').classList.remove('d-none');
+                  this.classList.add('d-none')">
+          View all staking methods</a>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5 aos-up">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 pt-5 border-top">
+        {% include partials/components/staking-method-prompts.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  window.onload = loadStakingAPR();
+
+  // Get current staking APR
+  async function loadStakingAPR() {
+    const url = "https://beaconcha.in/api/v1/ethstore/latest";
+    await fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        let apr = Math.round(data.data.apr * 10000)/100;
+        document.getElementById("stakingAPR").innerHTML = `${apr}% <span class="fs-6">APR</span>`;
+      });
+  }
+</script>

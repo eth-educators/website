@@ -1,0 +1,29 @@
+{%- comment -%}
+<!-- 
+link: link url, or the heading title if it's an anchor link (link="Meet the Team")
+text: link text
+size: "sm" for small, omit (default) for normal, "lg" for large
+type: "solid" (default) or "outline"
+
+Usage:
+{% include partials/components/button.html
+  link="https://example.com"
+  text="View test link"
+  size="sm"
+  type="outline"
+%}
+-->
+{%- endcomment -%}
+
+{%- assign size = "" -%}
+{%- if include.size -%}
+  {%- assign size = include.size -%}
+{%- endif -%}
+
+{%- assign type = "" -%}
+{%- if include.type == "outline" -%}
+  {%- assign type = "-outline" -%}
+{%- endif -%}
+
+
+<a href="{{include.link | anchor}}" class="btn btn{{type}}-dark btn-{{size}} shadow">{{include.text}}</a>
