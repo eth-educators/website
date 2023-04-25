@@ -10,4 +10,3 @@ buttons:
 
 
 {% include partials/content/blog.html %}
- 

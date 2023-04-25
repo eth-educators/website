@@ -12,8 +12,13 @@ require 'date'
 module Jekyll
   module DateSorter
     def date_sort(collection, key, date_format)
-      collection.sort_by do |el|
-        Date.parse(el[key], date_format)
+      if collection[0]
+        collection.sort_by do |el|
+          Date.parse(el[key], date_format)
+        end
+      else
+        # only one item in collection
+        collection
       end
     end
   end

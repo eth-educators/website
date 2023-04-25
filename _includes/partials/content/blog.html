@@ -1,7 +1,5 @@
-{% comment %}
 {%- assign feed = site.post_feed | getres | xmltoyaml -%}
 {%- assign posts = feed.rss.channel.item | date_sort: "pubDate", "%a, %d %b %Y %T %Z" | reverse -%}
-{% endcomment %}
 
 <style>
   .blog-post img {

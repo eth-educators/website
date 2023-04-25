@@ -1,7 +1,5 @@
-{% comment %}
 {%- assign feed = site.post_feed | getres | xmltoyaml -%}
 {%- assign posts = feed.rss.channel.item | date_sort: "pubDate", "%a, %d %b %Y %T %Z" | reverse -%}
-{% endcomment %}
 
 <style type="text/css">
   #blog .post-preview {
@@ -27,6 +25,38 @@
     </div>
     <div class="row justify-content-center my-5">
       <div id="post1" class="col-12 col-lg-12 col-xl-5 mb-3 aos-up">
+        {%- assign img = site.post_img_fallback -%}
+        {%- if posts[0].enclosure.url -%}
+          {%- assign img = posts[0].enclosure.url -%}
+        {%- endif -%}
+        {%- assign title = "coming soon..." -%}
+        {%- if posts[0].title -%}
+          {%- assign title = posts[0].title -%}
+        {%- endif -%}
+        {%- assign description = "..." -%}
+        {%- if posts[0].description -%}
+          {%- assign description = posts[0].description | truncate: site.post_desc_length -%}
+        {%- endif -%}
+        {%- assign date = "soon™" -%}
+        {%- if posts[0].pubDate -%}
+          {%- assign date = posts[0].pubDate | date: "%b %d, %Y" -%}
+        {%- endif -%}
+        {%- assign link = nil -%}
+        {%- if posts[0].link -%}
+          {%- assign link = posts[0].link -%}
+        {%- endif -%}
+        <div class="card shadow border-light">
+          <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+          <div class="card-body">
+            <h5 class="card-title mb-0">{{title}}</h5>
+            <small><small class="card-date">{{date}}</small></small>
+            <p class="card-text mt-2">{{description}}</p>
+            {%- if link -%}
+              <a href="{{link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            {%- endif -%}
+          </div>
+        </div>
+        {% comment %}
         {%- for post in posts limit:1 -%}
           {%- assign img = site.post_img_fallback -%}
           {%- if post.enclosure.url -%}
@@ -42,8 +72,49 @@
             </div>
           </div>
         {%- endfor -%}
+        {% endcomment %}
       </div>
       <div id="post2" class="col-12 col-md-6 col-xl-3 mb-3 aos-up">
+        {%- assign img = site.post_img_fallback -%}
+        {%- if posts[1].enclosure.url -%}
+          {%- assign img = posts[1].enclosure.url -%}
+        {%- endif -%}
+        {%- assign title = "coming soon..." -%}
+        {%- if posts[1].title -%}
+          {%- assign title = posts[1].title -%}
+        {%- endif -%}
+        {%- assign description = "..." -%}
+        {%- if posts[1].description -%}
+          {%- assign description = posts[1].description | truncate: site.post_desc_length -%}
+        {%- endif -%}
+        {%- assign date = "soon™" -%}
+        {%- if posts[1].pubDate -%}
+          {%- assign date = posts[1].pubDate | date: "%b %d, %Y" -%}
+        {%- endif -%}
+        {%- assign link = nil -%}
+        {%- if posts[1].link -%}
+          {%- assign link = posts[1].link -%}
+        {%- endif -%}
+        <div class="card shadow border-light">
+          <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+          <div class="card-body d-none d-md-block">
+            <h5 class="card-title fs-6 mb-0">{{title}}</h5>
+            <small><small class="card-date">{{date}}</small></small>
+            <p class="card-text mt-2"><small>{{description}}</small></p>
+            {%- if link -%}
+              <a href="{{link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            {%- endif -%}
+          </div>
+          <div class="card-body d-block d-md-none">
+            <h5 class="card-title mb-0">{{title}}</h5>
+            <small><small class="card-date">{{date}}</small></small>
+            <p class="card-text mt-2">{{description}}</p>
+            {%- if link -%}
+              <a href="{{link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            {%- endif -%}
+          </div>
+        </div>
+        {% comment %}
         {%- for post in posts limit:1 offset:1 -%}
           {%- assign img = site.post_img_fallback -%}
           {%- if post.enclosure.url -%}
@@ -65,8 +136,49 @@
             </div>
           </div>
         {%- endfor -%}
+        {% endcomment %}
       </div>
       <div id="post3" class="col-12 col-md-6 col-xl-3 mb-3 aos-up">
+        {%- assign img = site.post_img_fallback -%}
+        {%- if posts[2].enclosure.url -%}
+          {%- assign img = posts[2].enclosure.url -%}
+        {%- endif -%}
+        {%- assign title = "coming soon..." -%}
+        {%- if posts[2].title -%}
+          {%- assign title = posts[2].title -%}
+        {%- endif -%}
+        {%- assign description = "..." -%}
+        {%- if posts[2].description -%}
+          {%- assign description = posts[2].description | truncate: site.post_desc_length -%}
+        {%- endif -%}
+        {%- assign date = "soon™" -%}
+        {%- if posts[2].pubDate -%}
+          {%- assign date = posts[2].pubDate | date: "%b %d, %Y" -%}
+        {%- endif -%}
+        {%- assign link = nil -%}
+        {%- if posts[2].link -%}
+          {%- assign link = posts[2].link -%}
+        {%- endif -%}
+        <div class="card shadow border-light">
+          <img src="{{img}}" class="post-preview card-img-top img-fluid border-0" alt="post image">
+          <div class="card-body d-none d-md-block">
+            <h5 class="card-title fs-6 mb-0">{{title}}</h5>
+            <small><small class="card-date">{{date}}</small></small>
+            <p class="card-text mt-2"><small>{{description}}</small></p>
+            {%- if link -%}
+              <a href="{{link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            {%- endif -%}
+          </div>
+          <div class="card-body d-block d-md-none">
+            <h5 class="card-title mb-0">{{title}}</h5>
+            <small><small class="card-date">{{date}}</small></small>
+            <p class="card-text mt-2">{{description}}</p>
+            {%- if link -%}
+              <a href="{{link}}" class="btn btn-outline-dark btn-sm shadow-sm">Read more</a>
+            {%- endif -%}
+          </div>
+        </div>
+        {% comment %}
         {%- for post in posts limit:1 offset:2 -%}
           {%- assign img = site.post_img_fallback -%}
           {%- if post.enclosure.url -%}
@@ -88,6 +200,7 @@
             </div>
           </div>
         {%- endfor -%}
+        {% endcomment %}
       </div>
       <div class="col-12 text-center aos-up">
         <a href="/blog" class="btn btn-dark btn-lg shadow mt-2">View all posts</a>
@@ -102,7 +215,7 @@
 
   // Fetch the list of posts from paragraph
   async function getPosts() {
-    const url = "https://paragraph.xyz/api/blogs/rss/@dylsteck.eth";
+    const url = "{{site.post_feed}}";
     return await fetch(url)
       .then(response => response.text())
       .then(data => {

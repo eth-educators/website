@@ -13,6 +13,4 @@ layout: default
 
 {% include partials/components/divider-icons-electronics.html %}
 
-{% comment %}
 {% include partials/content/index-blog.html %}
-{% endcomment %}
