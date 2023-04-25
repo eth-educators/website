@@ -1,0 +1,109 @@
+{%- assign padding = "mt-5 pt-5" -%}
+{%- assign pages_without_padding = "index.md,staking.md" | split: "," -%}
+{%- if pages_without_padding contains page.name -%}
+  {%- assign padding = "" -%}
+{%- endif -%}
+
+
+<style type="text/css">
+  footer .disclaimer {
+    font-size: 0.85rem;
+  }
+
+  .dark-mode .link-dark {
+    color: var(--bs-gray-500) !important;
+  }
+</style>
+
+
+<footer class="{{padding}} aos-up" data-aos-anchor-placement="top-bottom" data-aos-offset="50">
+  <div class="container">
+    <div class="py-5 border-top">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>EthStaker</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="/events" class="nav-link p-0 text-muted">Events</a></li>
+            <li class="nav-item mb-2"><a href="/disclosures" class="nav-link p-0 text-muted">Disclosures</a></li>
+            <li class="nav-item mb-2"><a href="/branding" class="nav-link p-0 text-muted">Brand Assets</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Learn</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/staking" class="nav-link p-0 text-muted">Staking</a></li>
+            <li class="nav-item mb-2"><a href="https://docs.ethstaker.cc/ethstaker-knowledge-base/" class="nav-link p-0 text-muted">Knowledge Base</a></li>
+            <li class="nav-item mb-2"><a href="/resources" class="nav-link p-0 text-muted">Resources</a></li>
+            <li class="nav-item mb-2"><a href="/blog" class="nav-link p-0 text-muted">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Support</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/support" class="nav-link p-0 text-muted">Get Help</a></li>
+            <li class="nav-item mb-2"><a href="https://docs.ethstaker.cc/ethstaker-knowledge-base/faq" class="nav-link p-0 text-muted" target="_blank">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="disclaimer col-md-5 offset-md-1 mb-3 mt-3 mt-md-0">
+          <p><strong>Not financial or tax advice.</strong> EthStaker content is strictly educational and is not investment advice or a solicitation to buy or sell any assets or to make any financial decisions. This content is not tax advice. Talk to your accountant. Do your own research.</p>
+
+          <p><strong>Disclosure.</strong> We may link to projects or services we support and use. We do not receive commission if you use services through one of these links. Additionally, EthStaker stewards participate in projects and hold crypto assets. See our investments disclosures <a href="/disclosures">here</a>.</p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-md-between py-3 my-4 border-top">
+        <a href="/" class="text-center">
+          <img src="/assets/img/ethstaker/logo-text-black.svg" alt="Logo" height="35" class="d-inline-block d-light align-text-top my-2">
+          <img src="/assets/img/ethstaker/logo-text-white.svg" alt="Logo" height="35" class="d-inline-block d-dark align-text-top my-2">
+        </a>
+        <ul class="footer-socials list-unstyled d-flex justify-content-center">
+          <li class="me-3">
+            <a class="link-dark fs-3" href="http://discord.io/ethstaker" target="_blank">
+            {{site.data.icons.discord}}
+            </a>
+          </li>
+          <li class="me-3">
+            <a class="link-dark fs-3" href="https://www.youtube.com/@ETHStaker" target="_blank">
+            {{site.data.icons.youtube}}
+            </a>
+          </li>
+          <li class="me-3">
+            <a class="link-dark fs-3" href="https://reddit.com/r/ethstaker" target="_blank">
+            {{site.data.icons.reddit}}
+            </a>
+          </li>
+          <li class="me-3">
+            <a class="link-dark fs-3" href="https://twitter.com/ethStaker" target="_blank">
+            {{site.data.icons.twitter}}
+            </a>
+          </li>
+          <li class="me-3">
+            <a class="link-dark fs-3" href="https://github.com/eth-educators/" target="_blank">
+            {{site.data.icons.github}}
+            </a>
+          </li>
+          <li class="me-3">
+            <a class="link-dark fs-3" href="{{site.calendar_link}}" target="_blank">
+            {{site.data.icons.calendar}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- AOS JS -->
+{{site.aos_js}}
+<!-- Custom JS -->
+<script src="/assets/js/main.js" type="application/javascript"></script>
+{%- case page.name -%}
+  {%- when "index.md" -%}
+    <!-- <script src="" type="application/javascript"></script> -->
+  {%- else -%}
+{%- endcase -%}

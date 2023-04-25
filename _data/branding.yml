@@ -1,0 +1,82 @@
+## text    = the label shown for this asset
+## file    = if type=file, the link to the asset for download
+## link    = if type=logo or type=file, the link to the asset to view
+## bg      = for type=logo, use "light" for dark assets or "dark" for light assets to add contrast
+##           for type=color, the rgb or hex code to display the color
+## svg     = for type=logo, the link to the svg file
+## png     = for type=logo, the link to the png file
+## jpg     = for type=logo, the link to the jpg file
+## type    = "file", "logo", or "color"; used to determine how to display the asset
+
+# Template to copy for new entries
+# - text: 
+#   file: 
+#   link: 
+#   bg: 
+#   svg: 
+#   png: 
+#   jpg: 
+#   type: 
+
+
+# Entries are shown in the order listed
+- text: brand guidelines
+  file: '/assets/files/ethstaker-branding-guidelines.pdf'
+  link: '/assets/files/ethstaker-branding-guidelines.pdf'
+  type: file
+- text: monteserrat font
+  file: '/assets/files/Montserrat.zip'
+  link: 'https://fonts.google.com/specimen/Montserrat?query=montserrat'
+  type: file
+- text: all logos
+  file: '/assets/files/ethstaker-logos-all.zip'
+  type: file
+- text: black long logo
+  bg: light
+  svg: '/assets/img/ethstaker/branding/ES-long-b.svg'
+  png: '/assets/img/ethstaker/branding/ES-long-b.png'
+  type: logo
+- text: white long logo
+  bg: dark
+  svg: '/assets/img/ethstaker/branding/ES-long-w.svg'
+  png: '/assets/img/ethstaker/branding/ES-long-w.png'
+  type: logo
+- text: blue long logo
+  bg: light
+  svg: '/assets/img/ethstaker/branding/ES-long.svg'
+  png: '/assets/img/ethstaker/branding/ES-long.png'
+  type: logo
+- text: black square Logo
+  bg: light
+  svg: '/assets/img/ethstaker/branding/ES-square-b.svg'
+  png: '/assets/img/ethstaker/branding/ES-square-b.png'
+  type: logo
+- text: white square logo
+  bg: dark
+  svg: '/assets/img/ethstaker/branding/ES-square-w.svg'
+  png: '/assets/img/ethstaker/branding/ES-square-w.png'
+  type: logo
+- text: blue square logo
+  bg: light
+  svg: '/assets/img/ethstaker/branding/ES-square.svg'
+  png: '/assets/img/ethstaker/branding/ES-square.svg'
+  type: logo
+- text: '#FFFFFF'
+  bg: '#FFFFFF'
+  type: color
+- text: '#00FFFF'
+  bg: '#00FFFF'
+  type: color
+- text: '#0071BC'
+  bg: '#0071BC'
+  type: color
+- text: '#333333'
+  bg: '#333333'
+  type: color
+- text: '#E3FFFD'
+  bg: '#E3FFFD'
+  type: color
+- text: '#00FFFF - #0071BC'
+  bg: 'linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,113,188,1) 100%)'
+  type: color
+  

@@ -1,0 +1,151 @@
+## - id:             = permanent (no spaces), unique identifier that will be used to reference this entry
+##   title:          = the question or the answer header
+##   body:           = (optional) question details or an answer's solution
+##   options:        = (opmit for answers) a list of options for the user to get directed to the next entry
+##     - option:     = option text
+##       go_to_id:   = id to jump to for this entry
+##     - option:     = option text
+##       go_to_id:   = id to jump to for this entry
+##     ...           = repeat option entries as necessary
+
+# Template to copy for new entries
+# - id: 
+#   title: 
+#   body: 
+#   options: 
+#     - option: 
+#       go_to_id: 
+#     - option: 
+#       go_to_id: 
+
+
+# Entry order does not matter, starting prompt must have id=start
+- id: start
+  title: Take our self-assessment quiz!
+  # title: Staking method self-assessment!
+  body: It can be overwhelming figuring out which staking method is best for you. This self-assessment will help you arrive at a solution through a series of questions.
+  # body: Take this self-assessment quiz to find out! We'll walk you through a series of questions  
+  style: cta
+  options: 
+    - option: Start quiz!
+      go_to_id: wallet-1 
+- id: wallet-1
+  title: Do you have your own self-custody wallet?
+  body: Some examples of a [self-custody wallet](https://www.ledger.com/academy/tips-to-trust-yourself-in-becoming-your-own-bank) (also referred to as a non-custodial wallet) are Metamask, Ledger, Argent, Trezor, Tally, Rainbow, Lattice, and Coinbase Wallet (different than the exchange).
+  options: 
+    - option: "Yes"
+      go_to_id: eth-amount-1
+    - option: "No"
+      go_to_id: wallet-2
+- id: wallet-2
+  title: Are you willing to create and learn to use a non-custodial wallet? (highly recommended)
+  body: 
+  options: 
+    - option: "Yes"
+      go_to_id: wallet-3
+    - option: "No"
+      go_to_id: end-cex
+- id: end-cex
+  title: Staking on a centralized exchange 😔
+  body: Looks like staking on a CEX is the only option for you at the moment. Check out the linked options and make sure you understand the risks (potential loss of funds). <br><br>If you change your mind about creating a wallet we recommend leveling up with a [decentralized staking pool](#decentralized-staking-pool).
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#centralized-exchange-staking"
+- id: wallet-3
+  title: Awesome!
+  body: "You can learn about wallets, how to use them, and different options here: <https://ethereum.org/en/wallets/>"
+  style: cta
+  options: 
+    - option: Continue {{site.data.icons.right_arrow}}
+      go_to_id: eth-amount-1
+- id: eth-amount-1
+  title: Do you have 10.4 ETH or more?
+  body: 
+  options: 
+    - option: "Yes"
+      go_to_id: internet
+    - option: "No"
+      go_to_id: end-staking-pool
+- id: end-staking-pool
+  title: Staking with a decentralized protocol 🙂
+  body: Looks like using a decentralized staking pool is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. <br><br>If you acquire 17.6 ETH or more we recommend leveling up to a [pool node operator](#pool-node-operator).
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#decentralized-staking-pool"
+- id: internet
+  title: Do you have internet with at least 1 TB bandwidth per month?
+  body: It's okay if the service is spotty, 100% uptime is not needed.
+  options: 
+    - option: "Yes"
+      go_to_id: eth-amount-3
+    - option: "No"
+      go_to_id: eth-amount-2
+- id: eth-amount-2
+  title: Do you have 32 ETH or more?
+  body: 
+  options: 
+    - option: "Yes"
+      go_to_id: end-hosted-staking
+    - option: "No"
+      go_to_id: end-hosted-rp
+- id: end-hosted-rp
+  title: Staking as a pool node operator, hosted on Allnodes 🙂
+  body: Looks like staking as a Rocket Pool node operator using Allnodes hosting is best for you. <br><br>If you gain internet, we recommend leveling up to operating your own node as a [staking pool node operator](#pool-node-operator).
+  style: cta
+  options: 
+    - option: Go to Allnodes {{site.data.icons.new_tab}}
+      go_to_id: "https://www.allnodes.com/rpl/staking"
+- id: end-hosted-staking
+  title: Hosted solo staking 🙂
+  body: Looks like hosted solo staking is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. <br><br>If you gain internet, we recommend leveling up to operating your own node as a [solo staker](#solo-staking).
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#hosted-staking"
+- id: eth-amount-3
+  title: Do you have 32 ETH or more?
+  body: 
+  options: 
+    - option: "Yes"
+      go_to_id: command-line-2
+    - option: "No"
+      go_to_id: command-line-1
+- id: command-line-1
+  title: Are you comfortable following a guide that may require some simple copy-paste in command line?
+  body: Don't be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.
+  options: 
+    - option: "Yes"
+      go_to_id: end-pool-node-ops-rp
+    - option: "No"
+      go_to_id: end-hosted-rp
+- id: command-line-2
+  title: Are you comfortable following a guide that may require some simple copy-paste in command line?
+  body: Don't be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.
+  options: 
+    - option: "Yes"
+      go_to_id: end-solo-manual
+    - option: "No"
+      go_to_id: end-solo-gui
+- id: end-pool-node-ops-rp
+  title: Staking as a pool node operator 😃
+  body: Looks like being a staking pool node operator is best for you. <br><br>If you acquire 32 ETH or more we recommend leveling up to [solo staking](#solo-staking).
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#pool-node-operator"
+- id: end-solo-manual
+  title: Solo staking 😎
+  body: Looks like solo staking via manual setup is best for you. Thank you for helping secure the network in the best way possible!
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#solo-staking"
+- id: end-solo-gui
+  title: Solo staking 😎
+  body: Looks like solo staking via the plug & play setup or manually using a GUI is best for you. Thank you for helping secure the network in the best way possible!
+  style: cta
+  options: 
+    - option: View options {{site.data.icons.right_arrow}}
+      go_to_id: "#solo-staking"

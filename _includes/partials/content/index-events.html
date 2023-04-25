@@ -1,0 +1,54 @@
+<style type="text/css">
+  #events .videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  #events .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+
+<!-- Events -->
+<section id="events" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 p-md-3 pt-lg-3 text-center aos-up">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Educational Events</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-6 col-xl-5 ps-xxl-5 my-5 aos-right">
+        <h3 class="mb-3">
+          Join our livestreams
+        </h3>
+        <p class="lead">We host educational streams for discussing protocol and client upgrades, validator workshops, and special ecosystem events to keep you informed!</p>
+        <div class="row">
+          <div class="grid gap-2 d-md-flex justify-content-md-start">
+            <a href="/events" target="_blank" class="btn btn-dark btn-lg shadow mb-2">View calendar</a>
+            <a href="https://www.youtube.com/@ETHStaker" target="_blank" class="btn btn-outline-dark btn-lg shadow mb-2">View past streams</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7 p-md-3 p-lg-5 aos-left">
+        <div class="videowrapper">
+          {%- comment -%}
+          <!-- currently scheduled livestream, error if nothing scheduled -->
+          <!-- <iframe src="https://www.youtube.com/embed/live_stream?channel=UCeHmYPRYZddrM1tfJLfLVDA" frameborder="0" allowfullscreen></iframe> -->
+          {%- endcomment -%}
+          <!-- latest video from community call playlist -->
+          <iframe src="https://www.youtube.com/embed/?listType=playlist&list=PLOB9GGXGcc30KNBulpgVxBoAgAQ6GSXjJ" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,607 @@
+## link         = url
+## title        = link text
+## description  = less than ~120 characters
+## categories   = comma-delimited; first listed is used for grouping; categories should not contain spaces
+##                options: analytics, article, conference, dvt, ethstaker, explainer, guide, institutional
+##                         lst, mev, news, research, social, testnet, tool, video, other
+
+# Template to copy for new entries
+# - link: 
+#   title: 
+#   description: 
+#   categories: 
+
+
+# Entries are shown in the order listed
+- link: "https://hackmd.io/qSzUlW7qQ-WD95H7bbmMcw?view#Solo-Staking"
+  title: "Awesome Resources: Solo Staking"
+  description: "A collection of resources from the Awesome Ethereum Staking Resources related to solo staking. Community info, guides, software, explorers, analytics, educational content, FAQs, tools, & statistics"
+  categories: guide, analytics, video, article
+- link: "https://hackmd.io/qSzUlW7qQ-WD95H7bbmMcw?view#LSD---Liquid-Staking-Derivatives"
+  title: "Awesome Resources: LSD"
+  description: "A collection of resources from the Awesome Ethereum Staking Resources related to liquid staking tokens (LSTs). Info on Rocket Pool, StakeWise, Lido, etc. Also includes info on liquidity pools, markets, analytics, statistics, research, and educational content for those LSTs"
+  categories: lst, analytics, video
+- link: "https://hackmd.io/qSzUlW7qQ-WD95H7bbmMcw?view#DVT---Distributor-Validator-Technology-DVT"
+  title: "Awesome Resources: DVT"
+  description: "A collection of resources from the Awesome Ethereum Staking Resources related to distributed validator technology (DVT). Info, guides, & educational content on SSV, Diva, & Obol"
+  categories: dvt, video
+- link: "https://hackmd.io/qSzUlW7qQ-WD95H7bbmMcw?view#What-is-Beacon-Chain"
+  title: "Awesome Resources: What is Beacon Chain?"
+  description: "A concise explainer on what the Beaconchain is from Awesome Ethereum Staking Resources"
+  categories: explainer
+- link: "https://ethereum.org/en/staking/solo/"
+  title: "Ethereum.org solo staking resources"
+  description: "A comprehensive overview on solo staking: what is it, what factors go into staking choices, how it works, info on the launchpad, client setup tools, a list of guides, and a FAQ"
+  categories: guide, tool
+- link: "https://ethstaker.cc/"
+  title: "EthStaker Website"
+  description: "The staking community's official website. You're here!"
+  categories: ethstaker
+- link: "https://www.youtube.com/@ETHStaker"
+  title: "EthStaker YouTube"
+  description: "EthStaker's community calls, livestreams, video walkthroughs, and educational content"
+  categories: video, guide, ethstaker
+- link: "https://www.reddit.com/r/ethstaker/"
+  title: "EthStaker Reddit"
+  description: "The official subreddit of the staking community - ask questions, get answers, find discussions, troubleshoot, help others"
+  categories: social, ethstaker
+- link: "https://twitter.com/ethStaker"
+  title: "EthStaker Twitter"
+  description: "EthStaker's official twitter"
+  categories: social, ethstaker
+- link: "https://ethereum-on-arm-documentation.readthedocs.io/"
+  title: "Ethereum On Arm"
+  description: "Ethereum on ARM is a set of custom Linux images for ARM boards that run Ethereum clients as a Systemd service and automatically turns such devices into full/staking Ethereum nodes. Stake on tiny hardware like a Radxa Rock, a Raspberry Pi, or an Odroid"
+  categories: tool
+- link: "https://www.nicenode.xyz/"
+  title: "Nice Node"
+  description: "Set up an Ethereum node in no-time on any modern computer without any technical knowledge"
+  categories: tool
+- link: "https://stereum.net/"
+  title: "Stereum"
+  description: "Stereum is a tool to manage the process of setting up & maintaining an Ethereum node for you with a heavy focus on self-sovereignty & privacy, and flexibility"
+  categories: tool
+- link: "https://dappnode.com/"
+  title: "DappNode"
+  description: "Software with a user interface to help you stake without needing to use command line interface. Also sells hardware with the software built in. Open source"
+  categories: tool
+- link: "https://ava.do/"
+  title: "Avado"
+  description: "Software with a user interface to help you stake without needing to use command line interface. Also sells hardware with the software built in. Closed source"
+  categories: tool
+- link: "https://etherscan.io/"
+  title: "Etherscan"
+  description: "Ethereum block explorer - check account balances, transactions, block data, & history of the blockchain"
+  categories: tool
+- link: "https://ethernodes.org/"
+  title: "EtherNodes"
+  description: "Ethereum mainnet statistics - network & node explorer. Client, geography, OS, & network diversity data"
+  categories: tool, analytics
+- link: "https://nodewatch.io/"
+  title: "Nodewatch"
+  description: "Info on the geography of Ethereum nodes and the ratio of hosted & non-hosted nodes"
+  categories: tool, analytics
+- link: "https://beacon.gnosischain.com/"
+  title: "Beaconcha.in Gnosis"
+  description: "Beaconcha.in's Gnosis blockchain explorer"
+  categories: tool
+- link: "https://beaconcha.in/"
+  title: "Beaconcha.in Ethereum"
+  description: "Open source golang-based explorer for the Ethereum Beaconchain"
+  categories: tool
+- link: "https://dune.com/LidoAnalytical/eth-deposits-stats"
+  title: "ETH Deposits to Beacon Chain Stats"
+  description: "Dune Analytics board for Beaconchain deposits"
+  categories: analytics, tool
+- link: "https://migalabs.es/crawler/dashboard"
+  title: "Migalabs"
+  description: "Miga Labs is a group located at the Barcelona Supercomputing Center and specialized in next-generation Blockchain technology"
+  categories: analytics, tool
+- link: "https://ethstaker.tax/"
+  title: "ethstaker.tax"
+  description: "Formerly eth2.tax - a tool to export your validator information to ready it for tax time"
+  categories: tool
+- link: "https://dune.com/obol_labs/eth-staking-ecosystem"
+  title: "ETH Staking Ecosystem"
+  description: "Aggregates data from the Ethereum Proof-of-Stake mainnet, providing valuable insights into the market dynamics of the Ethereum validator and staking industry. Lots of stasitics about deposits"
+  categories: analytics
+- link: "https://ethsunshine.com/"
+  title: "Project Sunshine"
+  description: "A dashboard to measure the health of Ethereum's decentralization. Identifies centralization vectors, determines the metrics to monitor, sets danger/goal/target values for each, and works with the community to meet those targets"
+  categories: analytics, tool
+- link: "https://eth-docker.net/"
+  title: "EthDocker"
+  description: "Software to make running an Ethereum staking full node simpler than setting everything up manually, while allowing the user choice when it comes to the exact client mix they wish to run"
+  categories: tool
+- link: "https://github.com/stake-house/eth-wizard"
+  title: "Ethwizard"
+  description: "An Ethereum validator installation wizard"
+  categories: tool
+- link: "https://launchpad.ethereum.org/en/"
+  title: "Ethereum Launchpad"
+  description: "The official Ethereum launchpad. Will help you become a validator, so you can play an active part in Ethereum's future. Validators are key to the more secure, scalable, and sustainable Ethereum we're building together"
+  categories: tool
+- link: "https://launchpad.ethereum.org/en/checklist"
+  title: "Launchpad Checklist"
+  description: "This checklist will help you understand the role of a validator and prepare you for the role"
+  categories: guide
+- link: "https://ethereum-on-arm-documentation.readthedocs.io/en/latest/quick-guide/about-quick-start.html"
+  title: "Ethereum On Arm Quick Start Guide"
+  description: "Ethereum on ARM is a set of custom Linux images for ARM boards that run Ethereum clients as a Systemd service and automatically turns such devices into full/staking Ethereum nodes. Stake on tiny hardware like a Radxa Rock, a Raspberry Pi, or an Odroid: quick-start guide."
+  categories: guide
+- link: "https://www.reddit.com/r/ethstaker/comments/tvlnck/how_to_stake_on_ethereum_april_2022_edition/"
+  title: "EthStaker How To Stake"
+  description: "superphiz's 'How to Stake on Ethereum' reddit post: a look at what staking is, what to consider, defines terms of interest, recommends the best ways to stake"
+  categories: ethstaker, guide
+- link: "https://docs.rocketpool.net/guides/staking/overview.html"
+  title: "Rocket Pool"
+  description: "An overview of Rocket Pool staking and how to get started."
+  categories: explainer, guide
+- link: "https://docs.dappnode.io/user/quick-start/first-steps"
+  title: "DappNode"
+  description: "Quickstart guide for DAppNode, software with a user interface to help you stake without needing to use command line interface" 
+  categories: guide, tool
+- link: "https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/n0AOGKh6Ck068icgY78i9DA3xPYWlWLGlE8HXnJeSl0"
+  title: "Nethermind Sedge"
+  description: "Set up an Ethereum / Gnosischain validator in under 30mins. A one-click setup tool for PoS network/chain validators for Ethereum and Gnosischain, Sedge takes care of the entire on-premise full node setup based on the chosen client, using generated docker-compose scripts based on the desired configuration."
+  categories: tool
+- link: "https://github.com/eth-educators/ethstaker-guides"
+  title: "EthStaker's guides"
+  description: "Guides related to staking. Monitoring, alerting, joining testnets"
+  categories: ethstaker, guide
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/MEV-relay-list.md"
+  title: "EthStaker's MEV relay list"
+  description: "An EthStaker-maintained list of available MEV relays"
+  categories: ethstaker, mev
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/monitoring.md"
+  title: "How to: Monitor your validator"
+  description: "Remy Roy's guide on how to monitor your Ethereum validator. Uses Prometheus / Node Exporter / Grafana"
+  categories: ethstaker, guide, tool
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/alerting.md"
+  title: "How to: Validator alerting"
+  description: "Remy Roy's guide on how to do alerting for an Ethereum validator. Uses Prometheus / Node Exporter / Alertmanager"
+  categories: ethstaker, guide, tool
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/prepare-for-the-merge.md"
+  title: "How to: Prepare a validator for the Merge"
+  description: "This guide is meant for people who are managing and maintaining staking machines. It will explain which steps or actions you should take in order to be ready for the Merge."
+  categories: guide, ethstaker
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/merge-goerli-prater.md"
+  title: "How to: Join the Goerli/Prater merge testnet (Geth/Lighthouse)"
+  description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)"
+  categories: guide, ethstaker
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/merge-goerli-prater-alt.md"
+  title: "Guide on how to join the Goerli/Prater merge testnet (Besu/Teku)"
+  description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)"
+  categories: guide, ethstaker
+- link: "https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet"
+  title: "Coincashew - How to setup a validator for Ethereum staking on mainnet"
+  description: "The How to Setup a Validator for Ethereum Staking guide aims to give you complete, step-by-step instructions to implement and maintain a secure Ethereum Staking Node using the currently recommended software versions. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lodestar-193a2553a161"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Lodestar)"
+  description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Lodestar Consensus Client. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lodestar)"
+  description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Lodestar Consensus Client."
+  categories: guide, testnet
+- link: "https://someresat.medium.com/supplementary-guide-to-staking-on-ethereum-for-existing-stakers-57493678a460"
+  title: "Someresat: Supplementary Guide to Staking on Ethereum For Existing Stakers"
+  description: "Archived: Supplementary guide for stakers when they were getting ready for the Merge in September of 2022"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-nimbus-31f56657ea8f"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Nimbus)"
+  description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Nimbus Consensus Client. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-prysm-581fb1969460"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Prysm)"
+  description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Prysm Consensus Client. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lighthouse-773f5d982e03"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Lighthouse)"
+  description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Lighthouse Consensus Client. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Teku)"
+  description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Teku Consensus Client. Gold standard guide"
+  categories: guide
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Prysm)"
+  description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Prysm Consensus Client"
+  categories: guide, testnet
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Nimbus)"
+  description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Nimbus Consensus Client"
+  categories: guide, testnet
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lighthouse)"
+  description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Lighthouse Consensus Client"
+  categories: guide, testnet
+- link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372"
+  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Teku)"
+  description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Teku Consensus Client"
+  categories: guide, testnet
+- link: "https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e"
+  title: "Someresat: Ethereum Staker Migration Guide — Migrating from Prysm to Nimbus"
+  description: "Client diversity: This is a step-by-step guide to migrate from the majority client, Prysm, to the minority client, Nimbus. This guide is part of a series of migration guides"
+  categories: guide
+- link: "https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0"
+  title: "Someresat: Ethereum Staker Migration Guides — Introduction"
+  description: "Client diversity: An overview of Someresat's client migration series"
+  categories: guide
+- link: "https://medium.com/@gethwethreth/guide-to-rocketpool-staking-on-ethereum-2-0-for-existing-solo-stakers-87aeb1dfbb76"
+  title: "How to: Run a Rocket Pool validator on a solo staking machine"
+  description: "How to run a Rocket Pool validator alongside a solo staking validator - step-by-step guide to use the same machine, execution and consensus client to setup a Rocket Pool minipool"
+  categories: guide
+- link: "https://www.youtube.com/watch?v=F-mlHOAtq2c"
+  title: "Everything a Solo Staker Should Know for the Next Phase of Ethereum"
+  description: "Devcon Bogotá (Oct 2022): Everything that stakers should be doing, everything that's coming, what tools and projects are coming to the rescue and what they are expected to do."
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=Exh-hQOV8kE"
+  title: "Promoting Small and Independent Stakers: Q&A with the Ethereum Staking Protocols | Devcon Bogo"
+  description: "Devcon Bogotá (Oct 2022): The Node Operator Association presents a roundtable discussion on promoting small and independent professional stakers. Topics include operator qualifications, application processes, costs, risks, each platform's unique advantages, and their vision for the future of Ethereum staking"
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=hIArOBKtV3U"
+  title: "Like a Kindergeburtstag - Ethereum Node in under 3 minutes with Stereum by Stefan Kobrc"
+  description: "Devcon Bogotá (Oct 2022): Stereum is a tool to manage the process of setting up & maintaining an Ethereum node for the user with a heavy focus on self sovereignty, privacy and flexibility. With Stereum you are capable of setting a node up in under 3 minutes."
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=kX-Q2fiLecY"
+  title: "Validating Made Light and Simple"
+  description: "Devcon Bogotá (Oct 2022): Nimbus presents its vision for the future of Ethereum client experience"
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=6yWmF4hiAsA"
+  title: "Why and How to Run a Node! (No ETH Required) by Johns Gresham "
+  description: "Devcon Bogotá (Oct 2022): How nodes defend the network, the easiest ways to run a node, about the upcoming upgrades to Ethereum which make it easier to run a node, and more."
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=lPjsXJX6skI"
+  title: "How to Run a Validator From Zero on Resource-Constrained and Low Powered Devices by Diego Losada"
+  description: "Devcon Bogotá (Oct 2022): Shows from scratch how to install and set up an Ethereum validator node, from running the Execution Layer + Consensus Layer combo to creating the keys and setup for the validator in order to get it up and running."
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=diQvWsWHARE"
+  title: "Run Your Own Beaconcha.in"
+  description: "Devcon Bogotá (Oct 2022): Shows participants how to setup and run the beaconcha.in explorer for existing networks (mainnet, prater, sepolia) as well as for custom networks. Also explains how to analyze the network using the explorer and how to monitor validators."
+  categories: video, conference
+- link: "https://www.youtube.com/watch?v=OTqzkQVKuA0)"
+  title: "Client Diversity Matters: Thinking Independently Together"
+  description: "Devcon Bogotá (Oct 2022): Dives into the state of the network post-merge and share specific actions related to how we can collaborate for a better outcome for the Network."
+  categories: video, conference
+- link: "https://hackmd.io/@benjaminion/eth2_news/"
+  title: "What’s New in Eth2"
+  description: "No longer being updated. 100 issues of updates about the Ethereum Beaconchain's progress"
+  categories: news
+- link: "https://weekinethereumnews.com/"
+  title: "Weekinethereum"
+  description: "Weekly newsletter for updates in Ethereum. Highly recommended"
+  categories: news
+- link: "https://github.com/eth-educators/ethstaker-knowledgebase"
+  title: "EthStaker knowledge base"
+  description: "EthStaker's knowledge base on all things staking. How to set up a validator, how to maintain it, how to monitor it. Glossary, FAQ, hardware guide."
+  categories: guide, tool, ethstaker
+- link: "https://www.youtube.com/watch?v=dGGMNYbWnP4"
+  title: "Ethereum Withdrawal Call Series"
+  description: "EthStaker's withdrawal call series, starting with the first call. Ethereum researchers, experts, and protocol builders give thoughts on the merge and let stakers know how to prepare."
+  categories: video
+- link: "https://www.youtube.com/watch?v=J0u13RokzFg"
+  title: "Withdrawal Call Series #2"
+  description: "EthStaker's withdrawal call series, second call. Ethereum researchers, experts, and protocol builders give thoughts on the merge and let stakers know how to prepare."
+  categories: video
+- link: "https://notes.ethereum.org/@launchpad/withdrawals-faq"
+  title: "ETH Withdrawals FAQ"
+  description: "ethereum.org's withdrawals FAQ"
+  categories: 
+- link: "https://medium.com/nethermind-eth/bls-signatures-withdrawals-bbf38658c242"
+  title: "BLS Signatures & Withdrawals"
+  description: "The Nethermind team examines the BLS signatures and their role in Ethereum, specifically in withdrawals which will be allowed after the Shanghai/Capella hard fork"
+  categories: research
+- link: "https://stonecoldpat.substack.com/p/how-proof-of-stake-ethereum-works"
+  title: "How Proof of Stake on Ethereum works"
+  description: "Patrick McCorry explains how the PoS consensus mechanism works"
+  categories: explainer
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/zhejiang.md"
+  title: "How to: Join the Zhejiang testnet (Geth/Lighthouse)"
+  description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)."
+  categories: guide
+- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/MEV-relay-list.md"
+  title: "MEV relay list for Mainnet"
+  description: "A list of MEV relays for the Ethereum Mainnet network"
+  categories: ethstaker, guide
+- link: "https://www.mevboost.org/"
+  title: "Mevboost"
+  description: "Tracking MEV-Boost relays and block builders"
+  categories: mev, analytics, tool
+- link: "https://www.mevwatch.info/"
+  title: "MEVwatch"
+  description: "Some MEV-Boost relays are regulated under OFAC and will censor certain transactions. Use this tool to observe the effect it's having on Ethereum blocks"
+  categories: mev, analytics
+- link: "https://www.mevpanda.com/"
+  title: "MEVPanda"
+  description: "Open Source statistics for mev-boost ecosystem"
+  categories: mev
+- link: "https://www.mevboost.pics/"
+  title: "mevboost.pics"
+  description: "Analysis of MEV-Boost, PBS and Block building on Ethereum "
+  categories: mev, analytics
+- link: "https://www.relayscan.io/"
+  title: "Relay Scan"
+  description: "relayscan.io collects data about Ethereum MEV-Boost relays and builders. This data includes delivered payloads, and the relayscan codebase also checks that payments match the claimed values."
+  categories: mev, analytics
+- link: "https://beaconcha.in/relays"
+  title: "Relays from beaconcha.in"
+  description: "beaconcha.in's relay info"
+  categories: mev
+- link: "https://mevday.org/"
+  title: "MEVDay"
+  description: "mev.day is the 2022 IRL sequel to last year’s unconference mev.wtf, where the researchers and key stakeholders of the ecosystem came together to understand the state of the affairs and explore the MEV research space."
+  categories: mev, conference
+- link: "https://hackmd.io/ivUzk3piQEG8ALzCGbxlag"
+  title: "MEV.wtf Virtual Summit"
+  description: "A 2021 summit on all things MEV: The MEV problem, protocol-level response, democratization, the state and future of, application level-response, MEV redistribution, hybrid model of MEV minimization & democratization, etc"
+  categories: mev, video, conference
+- link: "https://www.youtube.com/watch?v=XbMtIg5OgCc"
+  title: "What is MEV (Miner Extractable Value)?"
+  description: "Kerman Kohli covers MEV"
+  categories: video, explainer
+- link: "https://www.youtube.com/watch?v=zliSbdLwy5U"
+  title: "What is Miner Extractable Vaule?"
+  description: "The Blockchain Acceleration Foundation covers MEV"
+  categories: mev, explainer, video
+- link: "https://www.youtube.com/watch?v=Wd0at2Pu6xY"
+  title: "Enter the Dark Forest: the terrifying world of MEV and Flash bots (the Defiant, Apr 2021)"
+  description: "It’s no secret that the Ethereum blockchain is a highly adversarial environment. If a smart contract can be exploited for profit, it eventually will be. Some very smart people spend a lot of time examining contracts for vulnerabilities. But this unforgiving environment pales in comparison to the mempool. If the chain itself is a battleground, the mempool is something worse: a dark forest."
+  categories: video, mev, explainer
+- link: "https://zeroknowledge.fm/243-2/"
+  title: "Zero Knowledge Podcast: Dive Back into MEV with Alex Stokes and Chris Hager"
+  description: "Anna Rose interviews experts on MEV and they delve into a very thorough explainer on what MEV is, what the problem is that MEV creates, and how the current and proposes systems work."
+  categories: explainer, mev, video
+- link: "https://www.youtube.com/watch?v=8qPpiMDz_hw"
+  title: "This is MEV by Sxysun"
+  description: "Devcon Bogotá (Oct 2022): MEV has largely been a field where engineering drives science, it’s now time for science to drive engineering: we present an axiomatic formalization of MEV, the theory based on it, and the new applications that it enables"
+  categories: mev, conference, video
+- link: "https://www.youtube.com/watch?v=KP5ppCRH0iM"
+  title: "Block Building after the merge by Alex Stokes"
+  description: "Devcon Bogotá (Oct 2022): Investigates block building after the Merge and what considerations the move to proof-of-stake brings to the process along with what norms we should strive for to avoid dangerous centralization pressures while maximizing validator profits"
+  categories: mev, conference, video
+- link: "https://www.youtube.com/watch?v=6JA4_5QWG0s"
+  title: "Cost of Feudalism by Tarun Chitra and Guillermo Angeris"
+  description: "Devcon Bogotá (Oct 2022): Is MEV always bad? Can it sometimes lead to good equilibria for users? We modify tools from algorithmic game theory and probability to prove some surprising paradoxes — some MEV improves trading efficiency in networks of automated market makers"
+  categories: mev, conference, video
+- link: "https://www.galaxy.com/research/whitepapers/mev-the-rise-of-the-builders/"
+  title: "MEV: Maximal Extractable Value Part 2: The Rise of the Builders"
+  description: "Part 2 of a 2-part series focused on Maximal Extractable Value by Christine Kim"
+  categories: mev, article
+- link: "https://collective.flashbots.net/t/flashbots-transparency-report-december-22-january-2023-a-million-blocks-post-merge/1237"
+  title: "Flashbots Transparency Report for December + January"
+  description: "Covers both December & January 2023 providing an overview of metrics, new developments and research. Also loaded with interesting resources gathered from the broader ecosystem"
+  categories: analytics, news
+- link: "https://ethereum.org/en/community/research/#liquid-staking-and-derivatives"
+  title: "Liquid staking research"
+  description: "Overview of liquid staking & tokens with resources"
+  categories: lst
+- link: "https://notes.ethereum.org/@djrtwo/risks-of-lsd"
+  title: "The Risks of LSD"
+  description: "Danny Ryan, a researcher at the Ethereum Foundation, philosophizes about the centralization risk and inherent risk to Ethereum that liquid staking protocols pose, and advocates for protocols self-limiting their share of Ethereum stake"
+  categories: lst, research
+- link: "https://lido.fi/"
+  title: "Lido"
+  description: "A permissioned liquid staking protocol"
+  categories: lst
+- link: "https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth"
+  title: "Coinbase Wrapped Staked ETH"
+  description: "An intro to the liquid staking token on Coinbase's staking product"
+  categories: explainer
+- link: "https://rocketpool.net/"
+  title: "Rocket Pool"
+  description: "A permissionless and decentralized liquid staking protocol. Highly recommended"
+  categories: lst, institutional
+- link: "https://stakewise.io/"
+  title: "Stakewise"
+  description: "A decentralized liquid staking protocol. Recommended"
+  categories: lst
+- link: "https://docs.frax.finance/frax-ether/frxeth-and-sfrxeth"
+  title: "FraxEth"
+  description: "An explanation of frxETH and sfrxETH"
+  categories: explainer
+- link: "https://www.ankr.com/"
+  title: "Ankr"
+  description: "Staking infrastructure to enterprise customers through our network of Enterprise Staking Partners"
+  categories: institutional, lst
+- link: "https://www.stafi.io/"
+  title: "Stafi"
+  description: "Cross-chain staking derivatives protocol"
+  categories: lst
+- link: "https://www.sharedstake.org/"
+  title: "Shared Stake"
+  description: "Staking protocol"
+  categories: lst
+- link: "https://guarda.com/staking/ethereum-staking/"
+  title: "Guarda Wallet staking"
+  description: "Staking with the Guarda Wallet and their liquid staking token gETH"
+  categories: lst
+- link: "https://defillama.com/lsd"
+  title: "DefiLlama LSD"
+  description: "Deposits dashboard that show metrics around liquid stoken tokens"
+  categories: lst
+- link: "https://ethresear.ch/search?q=liquid%20staking"
+  title: "Ethresear.ch liquid staking"
+  description: "Some of the most first-hand knowledge you can find. Ethereum researchers discuss liquid staking"
+  categories: research
+- link: "https://research.paradigm.xyz/staking"
+  title: "On Staking Pools and Staking Derivatives"
+  description: "Georgios Konstantopoulos & Hasu discuss staking pools and staking derivatives"
+  categories: research
+- link: "https://www.youtube.com/watch?v=f39WG1N3lUg"
+  title: "Validator Receipts: an Alternative to Liquid Staking Derivatives by Steve Berryman"
+  description: "Devcon Bogotá (Oct 2022): Liquid staking derivatives are exciting and powerful, however come with centralization risk and the dangers of holding a derivative rather than its underlying asset.  Validator receipts present an alternative mechanism by which Ether locked in staking can be used as collateral without exposure to derivatives or loss of control of the validating funds"
+  categories: video, conference, lst
+- link: "https://medium.com/rocket-pool/rocket-pool-staking-protocol-part-1-8be4859e5fbd"
+  title: "Rocket Pool — Staking Protocol Part 1"
+  description: "Part of a four-part guide that covers all aspects of Rocket Pool, a decentralised, trustless and community owned staking protocol designed for Ethereum"
+  categories: explainer, article
+- link: "https://www.youtube.com/watch?v=9gGuSEkizT0"
+  title: 'High on LSD 💊😵 ETH "Liquid Staking Derivatives" War Grows'
+  description: "crv.mktcap.eth recaps trends in DeFi with a focus on Curve"
+  categories: lst, video
+- link: "https://www.youtube.com/watch?v=AZzEX_tl4QU"
+  title: "The Future of Liquid Staking by Vasiliy Shapovalov"
+  description: "Devcon Bogotá (Oct 2022): How liquid staking protocols will have to change with the blockchain world, and how to make them to shape themselves better"
+  categories: lst, video, conference
+- link: "https://curve.substack.com/p/january-17-2023-treatise-of-the-great"
+  title: "Treatise of the Great $sETH 🙏"
+  description: "Why is Synthetix Ethereum outyielding LSDs?"
+  categories: lst, article
+- link: "https://rocketpool.community/resources/"
+  title: "RocketPool.community"
+  description: "An aggregation of Rocket Pool resources, dashboards, community hubs, and guides - by the community"
+  categories: social, tool, analytics, news, guide
+- link: "https://twitter.com/ArkhamIntel/status/1612880801502461952"
+  title: "Arkham's Liquid Staking Derivatives analysis"
+  description: "Arkham's primer on Liquid Staking Derivatives, and what we can see happening on-chain"
+  categories: lst, article
+- link: "https://www.youtube.com/watch?v=CY_KnhS5Fhc"
+  title: "How to Build a Decentralized Ethereum Liquid Staking Protocol? by Darren Langley"
+  description: "Devcon Bogotá (Oct 2022): How do you create a decentralized protocol for staking? What are some of the design trade offs in token design? What tools are available today? What challenges exist due to current L1 structures? What opportunities exist in future upgrades?"
+  categories: video, conference
+- link: "https://medium.com/@MarkoInEther/lsd-endgame-dfe5b80fb882"
+  title: "LSD endgame"
+  description: "MarkoInEther writes about the LSD endgame"
+  categories: lst, article
+- link: "https://twitter.com/RiddlerDeFi/status/1619727324324192257"
+  title: "Shanghai Upgrade implications for LSDs"
+  description: "Jan 2023 twitter thread: When is the Shanghai Upgrade, how the withdrawals queue works, LSD withdrawal times, how to unstake your ETH without waiting"
+  categories: lst, explainer
+- link: "https://twitter.com/swellnetworkio/status/1618728811083997184"
+  title: "swETH token- what is it?"
+  description: "Jan 2023 twitter thread: An explanation of Swell Network's liquid staking token"
+  categories: lst, explainer
+- link: "https://twitter.com/superphiz/status/1620423244720537603"
+  title: "How to decentralize LSD Staking"
+  description: "Jan 2023 twitter thread: how to decentralized liquid staking protocol staking"
+  categories: lst, explainer
+- link: "https://twitter.com/indexcoop/status/1621237773654192129"
+  title: "dsETH | Liquid Staking Panel"
+  description: "Index Coop's liquid staking panel"
+  categories: lst, video
+- link: "https://twitter.com/macflapd/status/1621488354037747712"
+  title: "Your weekly liquid staking updates 🧵 Feb 4, 2023"
+  description: "Feb 2023 twitter thread: weekly liquid staking updates"
+  categories: news, lst
+- link: "https://www.youtube.com/watch?v=8JGGpg8e5FE"
+  title: "Why Rocket Pool is Poised to Take Over in 2023"
+  description: "The Edge Podcast: Jasper meticulously walks us through Rocket Pool's edge as a permissionless, decentralized liquid staking for ETH"
+  categories: video, lst
+- link: "https://consensys.net/blog/codefi/codefi-staking/the-state-of-staking-in-january-2023/"
+  title: "The State of Staking in January 2023"
+  description: "Consensys Blog: All things withdrawals, the Shanghai/Capella upgrade and updates on Codefi Staking"
+  categories: institutional, explainer
+- link: "https://blog.obol.tech/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/"
+  title: "What is DVT and How Does It Improve Staking on Ethereum?"
+  description: "Obol blog: An explanation of DVT and its significance in staking"
+  categories: explainer, dvt
+- link: "https://ssv.network/"
+  title: "SSV"
+  description: "A distributed validator technology protocol"
+  categories: dvt
+- link: "https://divalabs.medium.com/here-comes-the-diva-liquid-staking-powered-by-distributed-validators-9e5c3bd38896"
+  title: "Diva"
+  description: "A distributed validator technology protocol"
+  categories: dvt
+- link: "https://obol.tech/"
+  title: "Obol Network"
+  description: "A distributed validator technology protocol"
+  categories: dvt
+- link: "https://twitter.com/staderlabs_eth"
+  title: "Stader Labs"
+  description: "Stader Labs (a liquid staking protocol) official twitter"
+  categories: social, lst
+- link: "https://www.youtube.com/watch?v=TV70EgAKkrI"
+  title: "The Evolution of ETH Staking - Distributed Validator Technology Explained"
+  description: "This video covers a development in the Ethereum roadmap: Distributed Validator Technology (DVT)"
+  categories: video, explainer
+- link: "https://www.youtube.com/watch?v=vGfD-aGAaiQ"
+  title: "Community Call #26: SSV"
+  description: "EthStaker's community call with SSV. EthStaker gets to know SSV, who they are in the context of other similar protocols, and learns about updates in their development"
+  categories: video
+- link: "https://www.youtube.com/watch?v=uInJN4novoQ"
+  title: "Alon (CEO) ssv.network @ETHStaker Gathering"
+  description: "Devconnect 2022: SSV's Alon Muroch speaks at EthStaker's Devconnect Staking Gathering"
+  categories: 
+- link: "https://www.youtube.com/watch?v=ZbTerJXs23E"
+  title: "How to Design DVT While Ensuring Non-Correlation | Devcon Bogotá"
+  description: "Devcon Bogotá (Oct 2022): discuss how to design Distributed Validator Technology in a way that minimizes correlation risk by using design choices across distributed key generation, middleware, networking topology, and versioning. We'll also describe why creating a trust-minimized, non-custodial, and non-correlated architecture is the most healthy way to enable multi-operator staking"
+  categories: dvt, conference, video
+- link: "https://www.youtube.com/watch?v=ZqIS0LUdhZ4"
+  title: "EthStaker Presents: Securing Your Rocket Pool Node w/ Mentor"
+  description: "A livestream on the basics of the security model of being a Rocket Pool node operator. We'll start with a short description of the attack surfaces, and progress to a walkthrough of setting up a VPS server as a staking machine with the most essential security precautions"
+  categories: video, guide
+- link: "https://www.youtube.com/watch?v=ruMMjpTSCXw"
+  title: "Distributed Validators on Eth2 with Obol Network"
+  description: "stakingrewards.com hosts the Obol Network to talk about their DVT solution"
+  categories: dvt, video
+- link: "https://www.youtube.com/watch?v=CLbVto-1Aos"
+  title: "Gnosis Meetup with DIVA"
+  description: "Raul Calvo, COO of DIVA talks at the Gnosis Meetup"
+  categories: video, dvt
+- link: "https://www.youtube.com/watch?v=qINfnVPSQ1U"
+  title: "Hudson Sets Up A Rocket Pool Node!"
+  description: "Hudson Jameson of Polygon (formerly Flashbots and the Ethereum Foundation) sets up a Rocket Pool node on a livestream. More fun than informational."
+  categories: social
+- link: "https://blog.ssv.network/get-ready-for-shifu-v2-multi-duty-feb-2023-5166753a2c94"
+  title: "SSV node: Shifu V2. 🎉"
+  description: "Pre-release announcement for the latest version of the SSV node! Launching Shifu V2 is a significant milestone that builds on the completion and alignment of the official node specification" 
+  categories: dvt, news
+- link: "https://medium.com/@MarkoInEther/dvt-landscape-part-1-a6ea7bae458b"
+  title: "DVT landscape part 1"
+  description: "MarkoInEther writes a primer on the distribute validator tech landscape"
+  categories: dvt, explainer, article
+- link: "https://medium.com/@MarkoInEther/the-future-of-dvt-dcc4abc9dec1"
+  title: "The future of DVT…🚀"
+  description: "MarkoInEther writes a piece on the future of distributed validator tech"
+  categories: dvt, explainer, article
+- link: "https://medium.com/@MarkoInEther/what-is-dvt-and-why-do-we-need-it-1d7b58d1130c"
+  title: "What is DVT and why do we need it?"
+  description: "MarkoInEther writes an overview of distributed validator tech"
+  categories: dvt, explainer, article
+- link: "https://blog.lido.fi/ssv-network-pilot/"
+  title: "Lido on Ethereum: DVT Pilot with SSV Network"
+  description: "As a part of the execution strategy for Lido’s Next Chapter, Lido conducted an initial pilot integration of Distributed Validator Technology (DVT) with SSV Network on the Goerli testnet"
+  categories: dvt, article
+- link: "https://medium.com/nethermind-eth/sorting-out-distributed-validator-technology-a6f8ca1bbce3"
+  title: "Sorting out Distributed Validator Technology"
+  description: "Nethermind blog: The first of a series of posts where we will discuss Distributed Validator Technology (DVT) and the cryptography that makes it possible"
+  categories: dvt, explainer
+- link: "https://medium.com/nethermind-eth/a-tour-of-verifiable-secret-sharing-schemes-and-distributed-key-generation-protocols-3c814e0d47e1"
+  title: "A tour of Verifiable Secret Sharing schemes and Distributed Key Generation protocols."
+  description: "Nethermind blog: Introduces Distributed Key Generation (DKG) protocols and one of its fundamental building blocks: Verifiable Secret Sharing (VSS) schemes. We begin our exploration with the cryptographic primitives that make Distributed Validator Technology (DVT) possible"
+  categories: dvt
+- link: "https://medium.com/nethermind-eth/how-to-reach-consensus-with-strangers-9b57264afd65"
+  title: "How to reach consensus with strangers"
+  description: "Nethermind blog: Discusses the notion of Byzantine Fault Tolerant (BFT) consensus protocols. To start with, we offer an overview of the main concepts and their properties. Following that, we describe a large family of such protocols, and we discuss the world of synchronous BFT consensus, getting into the details of OptSync, a state-of-the-art synchronous protocol"
+  categories: article, research, explainer
+- link: "https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca"
+  title: "Threshold Signature Schemes"
+  description: "Nethermind blog: Reviews two popular digital signature schemes, along with their Threshold Signature Scheme (TSS) versions."
+  categories: article
+- link: "https://forum.ssv.network/t/ssv-developer-ecosystem-update-2023-02/929"
+  title: "SSV Developer ecosystem update 2023/02"
+  description: "Developer ecosystem update for the community"
+  categories: dvt, news
+- link: "https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/XJ8RU00PsYXaU4A1sRYvu6OSw8aumuAiY9nCEzzTCAg"
+  title: "OBOL Network - Easy Guide"
+  description: "This is intended to be a user-friendly guide for anyone with little experience"
+  categories: guide, dvt
+- link: "https://www.youtube.com/watch?v=OK6WE8te33Q"
+  title: "DV Launchpad Walkthrough - Leader Cluster Configuration"
+  description: "Learn how to use Obol's Distributed Validator Launchpad (on Goerli testnet) to define a new cluster configuration. Set the number of nodes, specify operator, withdrawal, and fee addresses, learn how to find your ENR"
+  categories: video, guide
+- link: "https://www.youtube.com/watch?v=X85Sxe9yS5U"
+  title: "Community Guide | @cryptomanufaktur8842 - How To Setup a Node On SSV Testnet V2"
+  description: "How to setup an operator node on SSV V2 testnet by yorickdowne of EthStaker and Cryptomanufaktur"
+  categories: video, dvt, guide
+- link: "https://ssv.network/get-funded/"
+  title: "SSV Ecosystem Fund & Grant Program"
+  description: "Access multiple funding options to support DVT - based applications by providing capital to the most promising teams building on the ssv.network protocol"
+  categories: dvt
+- link: "https://dao.rocketpool.net/c/grant-bounties/13"
+  title: "Rocket Pool Grants/Bounties"
+  description: "Apply for grants from Rocket Pool to build something"
+  categories: lst

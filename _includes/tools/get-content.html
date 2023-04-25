@@ -1,0 +1,60 @@
+{%- comment -%}
+<!-- 
+content_url = the link for where to pull the html from
+from = a string for where to split the html to get the start of the desired content
+to = a string for where to split the html to get the rest of the desired content
+exclude_from = (optional, default true) whether to exclude the "from" string in the output content
+exclude_to = (optional, default true) whether to exclude the "to" string in the output content
+
+Usage:
+{%- include tools/get-content.html
+  content_url="https://raw.githubusercontent.com/gouravkhunger/awesome-jekyll-plugins/master/README.md" 
+  from="## Settings" 
+  to="## Multi Language" 
+  exclude_from="false"
+-%}
+-->
+{%- endcomment -%}
+
+
+{%- assign content_url = include.content_url -%}
+{%- assign from = include.from -%}
+{%- assign to = include.to -%}
+
+{%- assign exclude_from = true -%}
+{%- if include.exclude_from -%}
+  {%- assign exclude_from = include.exclude_from -%}
+{%- endif -%}
+
+{%- assign exclude_to = true -%}
+{%- if include.exclude_to -%}
+  {%- assign exclude_to = include.exclude_to -%}
+{%- endif -%}
+
+{%- capture contents -%}
+  {% include_file {{include.content_url}} %}
+{%- endcapture -%}
+
+
+{%- if exclude_from == true and exclude_to == true -%}
+  {%- assign contents = contents | split: from | last | split: to | first -%}
+  {%- assign contents_debug = "exclude_from = true, exclude_to = true" -%}
+{%- endif -%}
+
+{%- if exclude_from != true and exclude_to != true -%}
+  {%- assign contents = contents | split: from | last | prepend: from | split: to | first | append: to -%}
+  {%- assign contents_debug = "exclude_from = false, exclude_to = false" -%}
+{%- endif -%}
+
+{%- if exclude_from == true and exclude_to != true -%}
+  {%- assign contents = contents | split: from | last | split: to | first | append: to -%}
+  {%- assign contents_debug = "exclude_from = true, exclude_to = false" -%}
+{%- endif -%}
+
+{%- if exclude_from != true and exclude_to == true -%}
+  {%- assign contents = contents | split: from | last | prepend: from | split: to | first -%}
+  {%- assign contents_debug = "exclude_from = false, exclude_to = true" -%}
+{%- endif -%}
+
+
+{{contents}}

@@ -1,0 +1,262 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _site.data.staking-method-tree.yml
+
+# - id: 
+#   title: 
+#   body: 
+#   options: 
+#     - option: 
+#       go_to_id: 
+#     - option: 
+#       go_to_id: 
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  .prompt .prompt-link {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    color: var(--bs-secondary);
+    opacity: 0.6;
+  }
+  .prompt .prompt-link svg {
+    width: 2rem;
+    height: auto;
+  }
+  .prompt .prompt-link:hover {
+    opacity: 0.9;
+    color: var(--bs-secondary);
+  }
+  .prompt .card-title {
+    max-width: calc(100% - 2rem);
+  }
+
+  .prompt-option.btn {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-emphasis-color);
+    border-color: var(--bs-emphasis-color);
+  }
+  .prompt-option.btn:hover,
+  .prompt-option.btn:active,
+  .prompt-option.btn:focus {
+    background-color: var(--bs-emphasis-color) !important;
+    color: var(--bs-body-bg);
+    border-color: var(--bs-body-bg);
+  }
+  .prompt-option p {
+    margin-bottom: 0;
+    display: inline;
+  }
+  .prompt-option svg {
+    margin-top: -0.3rem;
+  }
+
+  #pageLink {
+    color: var(--bs-light);
+    opacity: 0.5;
+  }
+  #pageLink svg {
+    width: 2.25rem;
+    height: auto;
+  }
+  #pageLink:hover {
+    opacity: 0.9;
+  }
+</style>
+
+
+<div class="card shadow rounded-3 border-light mx-auto mx-3" style="max-width: 40rem;">
+  <div class="card-body m-1">
+    {%- comment -%}
+      <!-- Assign prompts to an array of troubleshooting prompts and create a card for each. -->
+    {%- endcomment -%}
+    {%- assign prompts = site.data.staking-method-prompts -%}
+    {%- assign prompts_path = "/staking-methods" -%}
+    {%- for prompt in prompts -%}
+      {%- comment -%}
+        <!-- Only show prompts that have an id specified. -->
+      {%- endcomment -%}
+      {%- if prompt.id -%}
+        {%- comment -%}
+          <!-- Only show the starting prompt (id = 1). Visibility of prompts after this are 
+          controlled by the goToPrompt(), which is triggered by selecting an option. -->
+        {%- endcomment -%}
+        {%- assign visibility = "d-none" -%}
+        {%- if prompt.id == 1 or prompt.id == "start" -%}
+          {%- assign visibility = "" -%}
+        {%- endif -%}
+        {%- comment -%}
+          <!-- If a filename is specified then load that page content, else if there's body 
+          data specified and it's a question then use that, otherwise load content from a 
+          file named after the id. -->
+        {%- endcomment -%}
+        <div id="prompt-{{prompt.id}}" class="prompt {{visibility}}">
+          {%- comment -%}
+            <!-- Copy link icon button to link to current prompt. -->
+          {%- endcomment -%}
+          <a id="link-{{prompt.id}}" class="prompt-link" 
+          onclick="copyPromptLink('{{site.url}}{{page.url}}/?id={{prompt.id}}', this.id)"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Copied!" data-bs-trigger="click">
+          {{site.data.icons.link}}
+          </a>
+          {%- if prompt.style == "cta" -%}
+            <h4 class="card-title mt-0">{{prompt.title}}</h4>
+          {%- else -%}
+            <h4 class="card-title mt-0">{{prompt.title | markdownify}}</h4>
+          {%- endif -%}
+          {% assign filename_test = prompt.body | split: " " | first %}
+          {%- if prompt.body and filename_test contains ".md" -%}
+            {% assign page_path = prompts_path | append: prompt.body %}
+            {% assign prompt_page = site.pages | where: "path", page_path | first %}
+            {%- comment -%}
+              <!-- Check if the content file exists. 
+              If it doesn't and it's an answer then throw an error. -->
+            {%- endcomment -%}
+            {%- if prompt_page.content -%}
+              <div class="card-text mb-4">{{prompt_page.content | markdownify}}</div>
+            {% endif %}
+          {%- else -%}
+            <div class="card-text mb-4">{{prompt.body | markdownify}}</div>
+          {%- endif -%}
+          {%- comment -%}
+            <!-- If the prompt is a question then show the list of options. 
+            Makes sure each option contains text and a prompt to go to. -->
+          {%- endcomment -%}
+          {%- if prompt.options -%}
+            {%- for each_option in prompt.options -%}
+              {%- if each_option.option and each_option.go_to_id -%}
+                {%- if prompt.style == "cta" -%}
+                  {% assign first_char = each_option.go_to_id | split: "" | first %}
+                  {%- if first_char == "#" -%}
+                    <a href="{{each_option.go_to_id}}" class="btn btn-dark d-block mt-3">
+                      {{each_option.option | liquify}}
+                    </a>
+                  {%- else -%}
+                    <a class="btn btn-dark d-block mt-3"
+                    onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}')">
+                      {{each_option.option | liquify}}
+                    </a>
+                  {%- endif -%}
+                {%- else -%}
+                  <a class="prompt-option btn text-start d-block mt-3"
+                  onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}');">
+                    <span class="btn-radio me-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/></svg>
+                    </span>
+                    {{each_option.option | liquify | markdownify}}
+                  </a>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- comment -%}
+      <!-- A back arrow to go to the previous prompt. This functionality is controlled by the 
+      goToLastPrompt(), which is triggered by selecting the Back button. -->
+    {%- endcomment -%}
+    <div id="promptBack" class="mt-4 d-none">
+      <a class="btn btn-dark" onclick="goToLastPrompt()">
+        <span class="me-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" /></svg>
+        </span>
+        Back
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  let startId = "start";
+  let promptHistory = [startId];
+  let promptAnswers = {};
+  window.onload = load();
+
+  function load() {
+    // If params detected, go to prompt
+    let params = getQueryParameters();
+    // log({"URL parameters": params});
+    if ("id" in params) {
+      const currentId = promptHistory[promptHistory.length - 1];
+      const nextId = params.id;
+      // showprompt(params.id)
+      goToPrompt(currentId, nextId);
+    } else {
+      updateUrl();
+    }
+  }
+
+  function goToPrompt(currentId, nextId) {
+    const currentPrompt = document.getElementById("prompt-" + currentId);
+    const nextPrompt = document.getElementById("prompt-" + nextId);
+    const backButton = document.getElementById("promptBack");
+    // Show the back button unless it's the starting prompt
+    if (nextId == startId) {
+      backButton.classList.add("d-none");
+    } else {
+      backButton.classList.remove("d-none");
+    }
+    // Hide the current prompt and show the next one
+    currentPrompt.classList.add("d-none");
+    nextPrompt.classList.remove("d-none");
+    // Update promptHistory unless going back
+    if (promptHistory[promptHistory.length - 1] !== nextId) {
+      promptHistory.push(nextId);
+    }
+    let params = "?id=" + nextId;
+    updateUrl(params);
+  }
+
+  function goToLastPrompt() {
+    const currentId = promptHistory[promptHistory.length - 1];
+    let nextId;
+    // Failsafe - if on first prompt then stay on first prompt
+    if (currentId === startId) {
+      nextId = startId;
+    } else {
+      nextId = promptHistory[promptHistory.length - 2];
+    }
+    // Remove the current prompt from promptHistory
+    promptHistory.pop();
+    // Go to the last prompt
+    goToPrompt(currentId, nextId);
+  }
+
+  function updatePromptAnswers(id,answer) {
+    promptAnswers[id] = answer;
+  }
+
+  function copyPromptLink(text, id) {
+    navigator.clipboard.writeText(text).then(function() {
+      let tooltipElement = document.getElementById(id);
+      let tooltip = bootstrap.Tooltip.getInstance(tooltipElement);
+      setTimeout(() => { tooltip.hide(); }, 1000);
+    }, function(err) {
+      console.error('Async: Could not copy link: ', err);
+    });
+  }
+
+  // Update the url parameters (does not trigger page refresh)
+  function updateUrl(params = false) {
+    params = params ? params : "";
+    let url = window.location.href.split("?")[0] + params;
+    window.history.replaceState(null, "", url);
+  }
+
+  // Gets the url parameters
+  function getQueryParameters() {
+    try {
+      let queryString = location.search.slice(1), params = {};
+      queryString.replace(/([^=]*)=([^&]*)&*/g, (_, key, value) => {
+        params[key] = value;
+      });
+      return params;
+    } catch {
+      return null;
+    }
+  }
+</script>

@@ -1,0 +1,22 @@
+environment: development
+
+# Resources
+enable_getdate: false # gets the publish/update date of resource links
+
+# Blog
+# blog_url: https://paragraph.xyz/@dylsteck.eth
+# post_feed: https://paragraph.xyz/api/blogs/rss/@dylsteck.eth
+
+# Notification Bar
+enable_notification: true
+notification_msg_id: 1 # must increment when creating a new message
+notification_msg: <a href="http://discord.io/ethstaker">Join the community!</a>
+notification_expiration: 3000000000 # epoch time in seconds
+
+# Toast
+enable_toast: true
+toast_msg_id: 1 # must increment when creating a new message
+toast_title: We need your help!
+toast_msg: This is just a placeholder test message for use when testing. # Best when under 100 characters
+toast_link: https://ethstaker.cc # Optional, leave blank to omit
+toast_expiration: 3000000000 # epoch time in seconds

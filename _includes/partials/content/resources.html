@@ -1,0 +1,350 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/resources.yml
+-->
+{%- endcomment -%}
+
+{%- assign all_categories = "placeholder,other" -%}
+{%- assign primary_categories = "placeholder" -%}
+{%- for resource in site.data.resources -%}
+  {%- assign resource_categories = resource.categories | downcase -%}
+  {%- if resource_categories == "" -%}
+    {%- assign resource_categories = "other" -%}
+  {%- endif -%}
+  {%- assign all_categories = all_categories | append: ", " | append: resource_categories -%}
+  {%- assign primary_category = resource_categories | remove: " " | split: "," | first -%}
+  {%- assign primary_categories = primary_categories | append: ", " | append: primary_category -%}
+{%- endfor -%}
+{%- assign all_categories = all_categories | remove: " " | remove: "placeholder," | split: "," | uniq | sort_natural -%}
+{%- assign all_categories = all_categories | join: "," | remove: "other," | append: ",other" | split: "," -%}
+{%- assign all_categories = all_categories | compact -%}
+{%- assign primary_categories = primary_categories | remove: " " | remove: "placeholder," | split: "," | uniq -%}
+{%- assign primary_categories = primary_categories | compact -%}
+{%- assign all_cap_categories = "dvt,lst,mev"-%}
+
+
+<style type="text/css">
+  #filters details summary:after {
+    font-size: 0.9rem;
+  }
+  #resources .star {
+    margin-left: -2rem;
+  }
+  #resources .star svg {
+    fill: transparent;
+    stroke: gold;
+  }
+  #resources .star.favorite svg {
+    fill: gold;
+    stroke: gold;
+  }
+  #resources details > summary {
+    list-style: none;
+  }
+  #resources .resource-date {
+    font-size: 0.8rem;
+  }
+
+  .dark-mode #resources .start {
+    opacity: 0.9;
+  }
+</style>
+
+
+<!-- Header -->
+<header class="container py-4 mt-5" data-aos-offset="-1000">
+  <div class="text-center">
+    <h1 class="display-5 fw-bold mb-3">Staking Resources</h1>
+    <p class="col-md-10 col-lg-8 mx-auto lead">
+      A collection of {{site.data.resources | size}} resources and tools to search or browse.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col col-sm-10 col-md-8 col-lg-6 align-self-center mb-3">
+        <input id="searchInput" type="text" class="form-control" placeholder="Search term" onkeyup="search()">
+      </div>
+    </div>
+    <div id="filters" class="row justify-content-center">
+      <div class="col col-xl-10 col-xxl-9">
+        <details id="filtersDetail" class="border rounded-2 px-3 py-2 text-start" open>
+          <summary>
+            Filters
+          </summary>
+          <div class="mt-2">
+            {%- for category in all_categories -%}
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="filter" type="checkbox" id="inlineCheckbox{{forloop.index}}" value="{{category}}" onchange="search()">
+                {%- if all_cap_categories contains category -%}
+                  <label class="form-check-label" for="inlineCheckbox{{forloop.index}}">{{category | upcase}}</label>
+                {%- else -%}
+                  <label class="form-check-label" for="inlineCheckbox{{forloop.index}}">{{category | capitalize}}</label>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Content -->
+<section id="resources" class="" data-aos-offset="-1000">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-10 col-xl-9 col-xl-7">
+        <div id="favorited" class="p-3 pb-2 mb-3 border border-warning rounded shadow-sm">
+          <details id="favoritesDetail" open>
+            <summary class="mb-2">
+              <h3 class="d-inline">Favorites</h3>
+            </summary>
+            <div id="favoritesList" class="mb-2"></div>
+            <div id="favoritesEmpty" class="d-none mb-2">You currently have no favorites</div>
+            <div id="favoritesClear" class="d-none mb-2">
+              <button id="clearFavs1" class="btn btn-sm btn-outline-secondary" onclick="clearFavs()">Delete all favorites</button>
+              <div id="clearFavs2" class="d-none d-inline">
+                <button id="clearFavsCancel" class="btn btn-sm btn-outline-secondary px-5" onclick="clearFavsCancel()">Cancel</button>
+                <button id="clearFavsConfirm" class="btn btn-sm btn-danger" onclick="clearFavsConfirm()">Confirm delete</button>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div id="results" class="">
+          {%- for category in all_categories -%}
+            {%- if primary_categories contains category -%}
+              <div id="{{category}}">
+                {%- if all_cap_categories contains category -%}
+                  <h3>{{category | upcase}}</h3>
+                {%- else -%}
+                  <h3>{{category | capitalize}}</h3>
+                {%- endif -%}
+                {%- for resource in site.data.resources -%}
+                  {%- assign resource_categories = resource.categories  | remove: " " -%}
+                  {%- if resource_categories == "" -%}
+                    {%- assign resource_categories = "other" -%}
+                  {%- endif -%}
+                  {%- assign resource_categories = resource_categories | split: "," -%}
+                  {%- assign primary_category = resource_categories | first -%}
+                  {%- if primary_category == category -%}
+                    {%- assign resource_date = "" -%}
+                    {%- if site.environment == "production" -%}
+                      {%- assign resource_date = resource.link | getdate | date: "%b %d, %Y" -%}
+                    {%- endif -%}
+                    <div id="r{{resource.link | md5}}" data-cat="{{primary_category}}" class="resource {{resource_categories | join: ' '}} ms-4 ps-2 mb-3">
+                      <span class="star me-2">{{site.data.icons.star_fill}}</span>
+                      <h5 class="mb-0 d-inline">
+                        <a href="{{resource.link}}" class="new-tab" target="_blank">{{resource.title}}</a>
+                      </h5>
+                      {%- if resource_date != "" -%}
+                        <span class="resource-date d-block text-muted">{{resource_date}}</span>
+                      {%- endif -%}
+                      <p class="mb-0">{{resource.description}}</p>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <div id="noResults" class="d-none mb-5">No results found, try simplifying your search</div>
+        <div id="loading" class="d-none text-center">
+          {% include partials/components/loading-floatingCircles.html %} 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  window.onload = getFavorites();
+
+  // Load favorited resources
+  function getFavorites(star) {
+    // Get saved favorites
+    let favorites = [];
+    if (localStorage.getItem("favorites") === null) {
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    } else {
+      favorites = JSON.parse(localStorage.getItem("favorites"));
+    }
+    // log(favorites);
+
+    // Remove all favorite star highlights
+    document.querySelectorAll(`.favorite`).forEach(item => {
+      item.classList.remove("favorite");
+    });
+
+    // Update saved favorites
+    if (star) {
+      let resource = star.parentNode;
+      let isFavorite = favorites.includes(resource.id);
+      if (isFavorite) {
+        favorites = favorites.filter(item => item !== resource.id);
+      } else {
+        favorites.push(resource.id);
+      }
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    }
+
+    // Update favorites list section
+    if (favorites.length > 0) {
+      // Hide favorites empty msg
+      document.getElementById("favoritesEmpty").classList.add("d-none");
+      // Show clear favorites button
+      document.getElementById("favoritesClear").classList.remove("d-none");
+      // Copy favorites to favorites list
+      document.getElementById("favoritesList").innerHTML = "";
+      let favoritesList = "";
+      favorites.forEach(id => {
+        let favoritedResource = document.querySelector(`#${id}`).cloneNode(true);
+        document.getElementById("favoritesList").appendChild(favoritedResource);
+      });
+    } else {
+      // Clear favorites list
+      document.getElementById("favoritesList").innerHTML = "";
+      // Show favorites empty msg
+      document.getElementById("favoritesEmpty").classList.remove("d-none");
+      // Hide clear favorites button
+      document.getElementById("favoritesClear").classList.add("d-none");
+    }
+
+    // Add favorite star highlights
+    favorites.forEach(id => {
+      document.querySelectorAll(`#${id} .star`).forEach(item => {
+        item.classList.add("favorite");
+      });
+    });
+
+    // Add event listeners
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(el => el.addEventListener('click', event => {
+      getFavorites(el);
+      event.stopImmediatePropagation()
+    }));
+  }
+
+
+  // Trigger confirmation to clear all favorites
+  function clearFavs() {
+    document.getElementById("clearFavs1").classList.add("d-none");
+    document.getElementById("clearFavs2").classList.remove("d-none");
+  }
+  // Clear all favorites
+  function clearFavsConfirm() {
+    localStorage.removeItem("favorites");
+    document.getElementById("clearFavs1").classList.remove("d-none");
+    document.getElementById("clearFavs2").classList.add("d-none");
+    getFavorites();
+  }
+  // Cancel clearing all favorites
+  function clearFavsCancel() {
+    document.getElementById("clearFavs1").classList.remove("d-none");
+    document.getElementById("clearFavs2").classList.add("d-none");
+  }
+
+
+  // Filter resources to ones that match search term
+  function search() {
+    delay(function(){
+      let startTime = Date.now();
+      filterResources();
+      let endTime = Date.now();
+      log(endTime - startTime);
+    }, 200 );
+  }
+  // General delay function
+  var delay = (function(){
+    var timer = 0;
+    return function(callback, ms){
+      clearTimeout (timer);
+      timer = setTimeout(callback, ms);
+    };
+  })();
+
+
+  // Filter resources to only ones with all checked categories
+  function filterResources() {
+    // Hide resources, hide no results msg, show loading overlay
+    let results = document.getElementById("results");
+    let noResults = document.getElementById("noResults");
+    let loading = document.getElementById("loading");
+    results.classList.add("d-none");
+    noResults.classList.add("d-none");
+    loading.classList.remove("d-none");
+
+    // Hide all resources to reset
+    let resources = document.querySelectorAll(".resource");
+    resources.forEach(resource => {
+      resource.style.display = "none";
+    });
+ 
+    // Get a list of checked filters
+    let allCategories = [];
+    let allFilters = [];
+    let selectedFilters = [];
+    document.querySelectorAll('input[name=filter]').forEach(filter => {
+      allCategories.push(filter.value);
+      allFilters.push(filter.value);
+      if (filter.checked) {
+        selectedFilters.push(filter.value);
+      }
+    });
+
+    // Track the visible resources for each category
+    let visibleResources = {};
+    allCategories.forEach(category => {
+      visibleResources[category] = 0;
+    });
+
+    // Show resources that have all filter categories
+    let searchText = document.getElementById('searchInput').value.toLowerCase();
+    resources.forEach(resource => {
+      let show = true;
+      // Check if the resource has each of the filter categories
+      if (selectedFilters.length > 0) {
+        selectedFilters.forEach(filter => {
+          if (!resource.classList.contains(filter)) {
+            show = false;
+          }
+        });
+      }
+      // Check for search text match
+      if (show) { 
+        let resourceText = resource.innerText.toLowerCase();
+        let resourceUrl = resource.querySelector("a").href.toLowerCase();
+        let resourceContent = resourceText + resourceUrl;
+        if (resourceContent.match(searchText) == null) {
+          show = false;
+        }
+      }
+      if (show) {
+        resource.style.display = "block";
+        // Increment visibleResources to know if a filtered category is empty & should be hidden
+        let primaryCategory = resource.getAttribute('data-cat');
+        visibleResources[primaryCategory]++;
+      }
+    });
+
+    // Hide categories that are empty due to filtering
+    let hasResults = false;
+    allCategories.forEach(category => {
+      try {
+        document.getElementById(category).style.display = "none";
+        if (visibleResources[category] > 0) {
+          document.getElementById(category).style.display = "block";
+          hasResults = true;
+        }
+      } catch(error) {
+        // Nothing to do here
+      }
+    });
+
+    // Show no results msg and hide loading overlay
+    if (!hasResults) {
+      noResults.classList.remove("d-none");
+    }
+    results.classList.remove("d-none");
+    loading.classList.add("d-none");
+  }
+</script>

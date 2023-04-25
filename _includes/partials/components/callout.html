@@ -1,0 +1,63 @@
+{%- comment -%}
+<!-- 
+type:    "info" (default, blue), "warning" (yellow), "danger" (red), "success" (green)
+title:   callout title
+content: callout body content
+
+Usage:
+{% include partials/components/callout.html
+  type="warning"
+  title="Warning Callout"
+  content="This is a callout element."
+%}
+-->
+{%- endcomment -%}
+
+{%- assign type = "info" -%}
+{%- if include.type -%}
+  {%- assign type = include.type -%}
+{%- endif -%}
+
+
+<style type="text/css">
+  .bd-callout-warning {
+    --bd-callout-color: var(--bs-warning-text-emphasis);
+    --bd-callout-bg: var(--bs-warning-bg-subtle);
+    --bd-callout-border: var(--bs-warning-border-subtle);
+  }
+  .bd-callout-info {
+    --bd-callout-color: var(--bs-info-text-emphasis);
+    --bd-callout-bg: var(--bs-info-bg-subtle);
+    --bd-callout-border: var(--bs-info-border-subtle);
+  }
+  .bd-callout-danger {
+    --bd-callout-color: var(--bs-danger-text-emphasis);
+    --bd-callout-bg: var(--bs-danger-bg-subtle);
+    --bd-callout-border: var(--bs-danger-border-subtle);
+  }
+  .bd-callout-success {
+    --bd-callout-color: var(--bs-success-text-emphasis);
+    --bd-callout-bg: var(--bs-success-bg-subtle);
+    --bd-callout-border: var(--bs-success-border-subtle);
+  }
+  .bd-callout {
+    /*--bs-link-color-rgb: var(--bd-callout-link);*/
+    /*--bs-code-color: var(--bd-callout-code-color);*/
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    /*color: var(--bd-callout-color, inherit);*/
+    background-color: var(--bd-callout-bg, var(--bs-gray-100));
+    border: none;
+    border-left: 0.25rem solid var(--bd-callout-border, var(--bs-gray-300))
+  }
+  .bd-callout>:last-child {
+    margin-bottom: 0;
+  }
+</style>
+
+
+<div class="card bd-callout bd-callout-{{type}} shadow">
+  <h5 class="mb-1 fw-semibold">{{include.title | markdownify}}</h5>
+  {{include.content | markdownify}}
+</div>

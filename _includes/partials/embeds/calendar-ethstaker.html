@@ -1,0 +1,51 @@
+{%- comment -%}
+<!-- 
+Widget created on https://app.styledcalendar.com/calendars
+to embed https://calendar.google.com/calendar/u/0?cid=NzdmNzc3NzY2YjY0OGE3MWFkNjFlN2UzN2JkZjlmNjdkMDI4YjVhMWIwOWVmNjFmMjc3MmNjMTgwOWYzYTI1YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  #calendar {
+    width: 100%;
+    border: none;
+  }
+
+  .dark-mode #calendar {
+    opacity: 0.75;
+  }
+</style>
+
+
+<div class="form-check form-switch d-none d-xl-block my-2">
+  <input class="form-check-input" type="checkbox" role="switch" id="calendarToggle" onchange="toggleListView(this)">
+  <label class="form-check-label" for="calendarToggle">Enable list view</label>
+</div>
+
+
+<script type="text/javascript">
+  // Toggle between list and calendar view
+  function toggleListView() {
+  	let showListView = document.getElementById('calendarToggle').checked
+  	let calendar = document.getElementById('calendar');
+  	if (showListView) {
+      calendar.style.maxWidth = "550px";
+    } else {
+      calendar.style.maxWidth = "100%";
+    }
+  }
+</script>
+
+
+<iframe id="calendar" src="https://embed.styledcalendar.com/#aSfYxsjcv1f3evwQcBwh" title="EthStaker Calendar" class="styled-calendar-container" data-cy="calendar-embed-iframe"></iframe>
+<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+
+
+{%- comment -%}
+<!-- Google's widget, they're not responsive to screen size -->
+<!-- Mobile -->
+<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showDate=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src={{site.calendar_id}}&color=%23B39DDB" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+<!-- Desktop -->
+<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showNav=1&showDate=1&showTabs=1&showPrint=0&showCalendars=0&src={{site.calendar_id}}&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+{%- endcomment -%}

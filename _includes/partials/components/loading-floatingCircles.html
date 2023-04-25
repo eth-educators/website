@@ -1,0 +1,90 @@
+{%- comment -%}
+<!-- 
+Sourced from https://cssload.net/
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  #floatingCircles {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    transform: scale(0.3);
+  }
+
+  .fcircle {
+    position:absolute;
+    background-color: rgb(255,255,255);
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
+    animation-name: ffade;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  #frotate1 {
+    left: 0;
+    top: 51px;
+    animation-delay: 0.45s;
+  }
+  #frotate2 {
+    left: 15px;
+    top: 15px;
+    animation-delay: 0.6s;
+  }
+  #frotate3 {
+    left: 51px;
+    top: 0;
+    animation-delay: 0.75s;
+  }
+  #frotate4 {
+    right: 15px;
+    top: 15px;
+    animation-delay: 0.9s;
+  }
+  #frotate5 {
+    right: 0;
+    top: 51px;
+    animation-delay: 1.05s;
+  }
+  #frotate6 {
+    right: 15px;
+    bottom: 15px;
+    animation-delay: 1.2s;
+  }
+  #frotate7 {
+    left: 51px;
+    bottom: 0;
+    animation-delay: 1.35s;
+  }
+  #frotate8 {
+    left: 15px;
+    bottom: 15px;
+    animation-delay: 1.5s;
+  }
+
+
+  @keyframes ffade{
+    0% {
+      background-color: rgb(0,0,0);
+    }
+    100% {
+      background-color: rgb(255,255,255);
+    }
+  }
+</style>
+
+
+<div id="floatingCircles">
+  <div class="fcircle" id="frotate1"></div>
+  <div class="fcircle" id="frotate2"></div>
+  <div class="fcircle" id="frotate3"></div>
+  <div class="fcircle" id="frotate4"></div>
+  <div class="fcircle" id="frotate5"></div>
+  <div class="fcircle" id="frotate6"></div>
+  <div class="fcircle" id="frotate7"></div>
+  <div class="fcircle" id="frotate8"></div>
+</div>

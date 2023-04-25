@@ -1,0 +1,47 @@
+{%- comment -%}
+<!-- 
+Widget created on https://www.sociablekit.com/app/users/widgets/index
+to embed https://www.youtube.com/@ETHStaker/playlists
+
+Created under hanniabu's account
+
+Loads the widget only when it comes in to view to
+save on loads since there's a limited monthly quota
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  .dark-mode .sk-ww-youtube-playlists {
+    opacity: 0.75;
+  }
+</style>
+
+
+<div class='sk-ww-youtube-playlists' data-embed-id='122601'></div>
+
+
+<script type="text/javascript">
+  // Load the widget script when the recent events header comes into view
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        var payload = document.createElement("script");
+        payload.type = "text/javascript";
+        payload.src = "https://widgets.sociablekit.com/youtube-playlists/widget.js";
+        document.body.appendChild(payload);
+        observer.unobserve(entry.target)
+      }
+    })
+  })
+  observer.observe(document.getElementById("{{include.trigger_id}}"));
+</script>
+
+
+{%- comment -%}
+<!-- 
+This is an alternative widget with no quota but it's not responsive to screen size
+Can edit under hanniabu's account: https://woxo.tech/dashboard/widgets
+<div id="videos" loading="lazy" data-mc-src="9c61de8c-0cc2-4a9d-a953-7f4c0e877d87#youtube"></div>
+<script src="https://cdn2.woxo.tech/a.js#6408cfc3e40ab26c0699646e" async data-usrc></script>
+-->
+{%- endcomment -%}
