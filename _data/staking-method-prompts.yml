@@ -149,27 +149,3 @@
   options: 
     - option: View options {{site.data.icons.right_arrow}}
       go_to_id: "#solo-staking"
-- id: 
-  title: 
-  body: 
-  options: 
-    - option: "Yes"
-      go_to_id: 
-    - option: "No"
-      go_to_id: 
-- id: 
-  title: 
-  body: 
-  options: 
-    - option: "Yes"
-      go_to_id: 
-    - option: "No"
-      go_to_id: 
-- id: 
-  title: 
-  body: 
-  options: 
-    - option: "Yes"
-      go_to_id: 
-    - option: "No"
-      go_to_id: 
