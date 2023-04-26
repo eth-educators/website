@@ -4,6 +4,19 @@
 
 This is the source code for EthStaker's website, <https://ethstaker.cc>.
 
+**Table of Contents**
+
+- [Local Development](#local-development)
+- [Directory Structure](#directory-structure)
+- [Editing Existing Content](#editing-existing-content)
+- [Creating A New Page](#creating-a-new-page)
+- [Markdown Examples](#markdown-examples)
+- [Rhino Review Redirect](#rhino-review-redirect)
+
+
+
+---
+
 
 
 ## Local Development
