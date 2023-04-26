@@ -1,5 +1,7 @@
 # EthStaker Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eff4589c-f0ec-46d3-8f5e-14d5e6e0fee1/deploy-status)](https://app.netlify.com/sites/ethstaker/deploys)
+
 This is the source code for EthStaker's website, <https://ethstaker.cc>.
 
 
