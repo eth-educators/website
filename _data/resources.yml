@@ -1,9 +1,11 @@
 ## link         = url
 ## title        = link text
 ## description  = less than ~120 characters
-## categories   = comma-delimited; first listed is used for grouping; categories should not contain spaces
+## categories   = comma-delimited; the first category listed is used for grouping; 
+##                categories should not contain spaces
 ##                options: analytics, article, conference, dvt, ethstaker, explainer, guide, institutional
 ##                         lst, mev, news, research, social, testnet, tool, video, other
+## featured     = (optional) "true" to add to featured section
 
 # Template to copy for new entries
 # - link: 
@@ -177,56 +179,62 @@
   title: "Coincashew - How to setup a validator for Ethereum staking on mainnet"
   description: "The How to Setup a Validator for Ethereum Staking guide aims to give you complete, step-by-step instructions to implement and maintain a secure Ethereum Staking Node using the currently recommended software versions. Gold standard guide"
   categories: guide
+  featured: true
+- link: "https://github.com/SomerEsat/ethereum-staking-guides"
+  title: "SomerEsat: Staking Guide Directory"
+  description: "A directory with all of Somer Esat's step-by-step guides to staking on the Ethereum mainnet and testnet with various execution and consensus client combinations."
+  categories: guide
+  featured: true
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lodestar-193a2553a161"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Lodestar)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Lodestar)"
   description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Lodestar Consensus Client. Gold standard guide"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lodestar)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lodestar)"
   description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Lodestar Consensus Client."
   categories: guide, testnet
 - link: "https://someresat.medium.com/supplementary-guide-to-staking-on-ethereum-for-existing-stakers-57493678a460"
-  title: "Someresat: Supplementary Guide to Staking on Ethereum For Existing Stakers"
+  title: "SomerEsat: Supplementary Guide to Staking on Ethereum For Existing Stakers"
   description: "Archived: Supplementary guide for stakers when they were getting ready for the Merge in September of 2022"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-nimbus-31f56657ea8f"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Nimbus)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Nimbus)"
   description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Nimbus Consensus Client. Gold standard guide"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-prysm-581fb1969460"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Prysm)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Prysm)"
   description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Prysm Consensus Client. Gold standard guide"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lighthouse-773f5d982e03"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Lighthouse)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Lighthouse)"
   description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Lighthouse Consensus Client. Gold standard guide"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Teku)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Teku)"
   description: "Mainnet: This is a step-by-step guide to staking on the Ethereum mainnet via an Execution Client and the Teku Consensus Client. Gold standard guide"
   categories: guide
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Prysm)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Goerli/Prysm)"
   description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Prysm Consensus Client"
   categories: guide, testnet
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Nimbus)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Goerli/Nimbus)"
   description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Nimbus Consensus Client"
   categories: guide, testnet
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lighthouse)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Goerli/Lighthouse)"
   description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Lighthouse Consensus Client"
   categories: guide, testnet
 - link: "https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372"
-  title: "Someresat: Guide to Staking on Ethereum (Ubuntu/Goerli/Teku)"
+  title: "SomerEsat: Guide to Staking on Ethereum (Ubuntu/Goerli/Teku)"
   description: "Testnet: This is a step-by-step guide to staking on the Ethereum Goerli test network via an Execution Client and the Teku Consensus Client"
   categories: guide, testnet
 - link: "https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e"
-  title: "Someresat: Ethereum Staker Migration Guide — Migrating from Prysm to Nimbus"
+  title: "SomerEsat: Ethereum Staker Migration Guide — Migrating from Prysm to Nimbus"
   description: "Client diversity: This is a step-by-step guide to migrate from the majority client, Prysm, to the minority client, Nimbus. This guide is part of a series of migration guides"
   categories: guide
 - link: "https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0"
-  title: "Someresat: Ethereum Staker Migration Guides — Introduction"
+  title: "SomerEsat: Ethereum Staker Migration Guides — Introduction"
   description: "Client diversity: An overview of Someresat's client migration series"
   categories: guide
 - link: "https://medium.com/@gethwethreth/guide-to-rocketpool-staking-on-ethereum-2-0-for-existing-solo-stakers-87aeb1dfbb76"
