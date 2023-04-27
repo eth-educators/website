@@ -9,6 +9,7 @@ This is the source code for EthStaker's website, <https://ethstaker.cc>.
 - [Local Development](#local-development)
 - [Directory Structure](#directory-structure)
 - [Editing Existing Content](#editing-existing-content)
+    - [Adding Resources](#adding-resources)
 - [Creating A New Page](#creating-a-new-page)
 - [Markdown Examples](#markdown-examples)
 - [Rhino Review Redirect](#rhino-review-redirect)
@@ -68,6 +69,17 @@ The `steward.html` file contains the html for the stewards section, but as noted
 Some pages that use data files include stewards, branding, resources, support, and the staking method quiz.
 
 Page images can be found in a folder named after the page under `assets/img/`. For example, the image used in `about.md` can be found in `assets/img/about/`.
+
+
+### Adding Resources
+
+Adding new resources is easy! 
+
+1. Go to `_data/resources.yml`
+1. Copy the template for new entries from the top of the page
+1. Remove the `#` to activate (uncomment) the lines, making sure to maintain the indentation
+1. Fill out the entry using the field descriptions specified at the top of the page
+    - You can also use the other entries for additional guidance
 
 
 
