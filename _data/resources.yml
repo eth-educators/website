@@ -615,7 +615,7 @@
   categories: lst
 - link: "https://github.com/htimsk/LEBminipools"
   title: "A Risk Analysis of Rocket Pool Low Ether Bonded (LEB) Minipools: May 2022"
-  description: "An analysis of low ether bonded (LEB) minipools which are Rocket Pool (RP) Ethereum validators formed with less than 16 ether (ETH) as the node operator (NO) deposit.
+  description: "An analysis of low ether bonded (LEB) minipools which are Rocket Pool (RP) Ethereum validators formed with less than 16 ether (ETH) as the node operator (NO) deposit."
   categories: research, article, mev
 - link: "https://github.com/Valdorff/rp-thoughts/tree/main/leb_safety#negative-commission-aka-assign-execution-layer-rewards-to-nos"
   title: "Valdorff's Risk analyis for LEBs: March 2023"
