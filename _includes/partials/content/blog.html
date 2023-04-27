@@ -80,7 +80,7 @@
       let d = post.pubDate[0]._text.split(" ");
       let date = `${d[2]} ${d[1]}, ${d[3]}`;
       let img = "{{site.post_img_fallback}}";
-      if (post.enclosure[0]._attr.url._value) {
+      if ("enclosure" in post) {
         img = post.enclosure[0]._attr.url._value;
       }
       let postHTML = `<div class="card blog-post overflow-hidden mb-3">
