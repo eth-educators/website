@@ -91,6 +91,9 @@ section li:not(:last-child) {
 
 
 /* buttons */
+.btn svg {
+  margin-top: -0.25rem;
+}
 .dark-mode .btn-dark:not(.ignore) {
   --bs-btn-color: var(--bs-body-bg);
   --bs-btn-bg: var(--bs-gray-100);
@@ -198,6 +201,7 @@ section li:not(:last-child) {
 
 /* hides the link new-tab icon */
 .nav-item.dropdown .new-tab span.icon,
+.markdown-header .btn.new-tab span.icon,
 .footer-socials .new-tab span.icon,
 .branding-card .new-tab span.icon,
 .steward .new-tab span.icon,

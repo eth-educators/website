@@ -9,7 +9,7 @@
 
 
     <!-- Header -->
-    <header class="">
+    <header class="markdown-header">
       <div class="container pt-3 pb-5 my-2 text-center">
         {%- assign header = page.title -%}
         {%- if page.header -%}
@@ -33,7 +33,7 @@
 
         {%- if page.buttons -%}
           {%- for button in page.buttons -%}
-            <a href="{{button.link | liquify}}" class="btn btn-outline-dark px-4 mx-2 my-1 shadow">{{button.text}}</a>
+            <a href="{{button.link | liquify}}" class="btn btn-outline-dark px-4 mx-2 my-1 shadow">{{button.text | liquify}}</a>
           {%- endfor -%}
         {%- endif -%}
       </div>

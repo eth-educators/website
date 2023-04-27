@@ -48,7 +48,7 @@ toast_expiration: 3000000000 # epoch time in seconds
       </div>
       {%- if site.toast_link -%}
         <div class="toast-buttons d-flex gap-2 mt-2 pt-2">
-          <a href="{{site.toast_link}}" target="_blank" class="btn btn-dark btn-sm">Learn more</a>
+          <a href="{{site.toast_link}}" target="_blank" class="btn btn-dark btn-sm">{{site.toast_link_text}}</a>
           <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="toast" onclick="hidetoast()">Close</button>
         </div>
       {%- endif -%}
