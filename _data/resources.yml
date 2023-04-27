@@ -619,7 +619,7 @@
   categories: research, article, mev
 - link: "https://github.com/Valdorff/rp-thoughts/tree/main/leb_safety#negative-commission-aka-assign-execution-layer-rewards-to-nos"
   title: "Valdorff's Risk analyis for LEBs: March 2023"
-  description: "Previous work has looked into the amount of bond that's necessary for safety assuming various malicious behaviors and assuming various available mitigations. Both of these analyses dramatically underestimate the potential for loss because they assume that the market they've been able to sample is truly representative of the future market. I will show that we already have strong evidence that the EL reward market varies significantly over time. I will use that understanding to estimate some "clearly" unsafe bond levels."
+  description: "Previous work has looked into the amount of bond that's necessary for safety assuming various malicious behaviors and assuming various available mitigations. Both of these analyses dramatically underestimate the potential for loss because they assume that the market they've been able to sample is truly representative of the future market. I will show that we already have strong evidence that the EL reward market varies significantly over time. I will use that understanding to estimate some 'clearly' unsafe bond levels."
   categories: research, article
 - link: "https://github.com/ethereum/staking-deposit-cli"
   title: "Staking deposit CLI tool"
