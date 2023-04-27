@@ -45,11 +45,12 @@ notification_msg: Join the community! <br><a href=""></a>.
 notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
-enable_toast: false
+enable_toast: true
 toast_msg_id: 1 # must increment when creating a new message
-toast_title: Notice
-toast_msg: # Best when under 100 characters
-toast_link: # Optional, leave blank to omit
+toast_title: EthStaker’s Gitcoin grant is live!
+toast_msg: This round runs from April 25th - May 9th. Please consider donating - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
+toast_link: https://explorer.gitcoin.co/#/round/1/0xdf22a2c8f6ba9376ff17ee13e6154b784ee92094/0xdf22a2c8f6ba9376ff17ee13e6154b784ee92094-8 # Optional, leave blank to omit
+toast_link_text: Donate
 toast_expiration: 3000000000 # epoch time in seconds
 
 # Assets
