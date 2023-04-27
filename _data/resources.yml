@@ -151,7 +151,7 @@
   title: "EthStaker's guides"
   description: "Guides related to staking. Monitoring, alerting, joining testnets"
   categories: ethstaker, guide
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/MEV-relay-list.md"
+- link: "https://ethstaker.cc/mev-relay-list"
   title: "EthStaker's MEV relay list"
   description: "An EthStaker-maintained list of available MEV relays"
   categories: ethstaker, mev
@@ -613,3 +613,11 @@
   title: "Rocket Pool Grants/Bounties"
   description: "Apply for grants from Rocket Pool to build something"
   categories: lst
+- link: "https://github.com/ethereum/staking-deposit-cli"
+  title: "Staking deposit CLI tool"
+  description: "Secure key generation tool for deposits; deposit-cli is a tool for creating EIP-2335 format BLS12-381 keystores and a corresponding deposit_data*.json file for Ethereum Staking Launchpad."
+  categories: tool
+- link: "https://clientdiversity.org/#switch"
+  title: "Client migration tool"
+  description: "Use this tool to find the client migration guide appropriate for your consensus and execution client pair."
+  categories: tool, guide
