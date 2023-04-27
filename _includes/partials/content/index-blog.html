@@ -226,10 +226,10 @@
           var dateA = new Date(a.pubDate[0]._text);
           var dateB = new Date(b.pubDate[0]._text);
 
-          if (dateA < dateB ) {
+          if (dateA > dateB ) {
             return -1;
           }
-          if (dateA > dateB ) {
+          if (dateA < dateB ) {
             return 1;
           }
           return 0;
@@ -242,24 +242,32 @@
   function loadPosts(posts) {
     for (let i = 0; i < 3; i++) {
       document.querySelectorAll(`#post${i+1} .card-title`).forEach(el => {
-        el.innerHTML = posts[i].title[0]._text;
+        if (posts[i] && "title" in posts[i]) {
+          el.innerHTML = posts[i].title[0]._text;
+        }
       });
       document.querySelectorAll(`#post${i+1} img`).forEach(el => {
-        if (posts[i].enclosure[0]._attr.url._value) {
+        if (posts[i] && "enclosure" in posts[i]) {
           el.src = posts[i].enclosure[0]._attr.url._value;
         } else {
           el.src = "{{site.post_img_fallback}}";
         }
       });
       document.querySelectorAll(`#post${i+1} .card-date`).forEach(el => {
-        const d = posts[i].pubDate[0]._text.split(" ");
-        el.innerHTML = `${d[2]} ${d[1]}, ${d[3]}`;
+        if (posts[i] && "pubDate" in posts[i]) {
+          const d = posts[i].pubDate[0]._text.split(" ");
+          el.innerHTML = `${d[2]} ${d[1]}, ${d[3]}`;
+        }
       });
       document.querySelectorAll(`#post${i+1} .card-text`).forEach(el => {
-        el.innerHTML = posts[i].description[0]._text.substring(0,{{site.post_desc_length}}).trim() + "...";
+        if (posts[i] && "description" in posts[i]) {
+          el.innerHTML = posts[i].description[0]._text.substring(0,{{site.post_desc_length}}).trim() + "...";
+        }
       });
       document.querySelectorAll(`#post${i+1} .btn`).forEach(el => {
-        el.href = posts[i].link[0]._text;
+        if (posts[i] && "link" in posts[i]) {
+          el.href = posts[i].link[0]._text;
+        }
       });
     }
   }
