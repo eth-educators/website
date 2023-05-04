@@ -4,7 +4,7 @@ title: Steward Disclosures
 permalink: /disclosures
 
 buttons:
-- link: '#stewards'
+- link: '/about#stewards'
   text: View Stewards
 ---
 
