@@ -202,11 +202,19 @@ This data is pulled from _data/resources.yml
     }
     // log(favorites);
 
+    // Record existing favorites
+    if (localStorage.getItem("favoritesRecorded") === null) {
+      favorites.forEach(id => {
+        let resource = document.querySelector(`#${id}`);
+        let resourceLink = resource.querySelector("h5 a").href;
+        recordFavorite(resourceLink, 1);
+      });
+      localStorage.setItem("favoritesRecorded", "true");
+    }
+
     // Remove all favorite star highlights
     document.querySelectorAll(`.favorite`).forEach(item => {
       item.classList.remove("favorite");
-      // let resourceLink = item.parentNode.querySelector("h5 a").href;
-      // recordFavorite(resourceLink, "-1");
     });
 
     // Update saved favorites
