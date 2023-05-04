@@ -205,16 +205,21 @@ This data is pulled from _data/resources.yml
     // Remove all favorite star highlights
     document.querySelectorAll(`.favorite`).forEach(item => {
       item.classList.remove("favorite");
+      // let resourceLink = item.parentNode.querySelector("h5 a").href;
+      // recordFavorite(resourceLink, "-1");
     });
 
     // Update saved favorites
     if (star) {
       let resource = star.parentNode;
       let isFavorite = favorites.includes(resource.id);
+      let resourceLink = resource.querySelector("h5 a").href;
       if (isFavorite) {
         favorites = favorites.filter(item => item !== resource.id);
+        recordFavorite(resourceLink, -1);
       } else {
         favorites.push(resource.id);
+        recordFavorite(resourceLink, 1);
       }
       localStorage.setItem("favorites", JSON.stringify(favorites));
     }
@@ -264,6 +269,15 @@ This data is pulled from _data/resources.yml
   }
   // Clear all favorites
   function clearFavsConfirm() {
+    let favorites = [];
+    if (localStorage.getItem("favorites") !== null) {
+      favorites = JSON.parse(localStorage.getItem("favorites"));
+    }
+    favorites.forEach(id => {
+      let resource = document.querySelector(`#${id}`);
+      let resourceLink = resource.querySelector("h5 a").href;
+      recordFavorite(resourceLink, -1);
+    });
     localStorage.removeItem("favorites");
     document.getElementById("clearFavs1").classList.remove("d-none");
     document.getElementById("clearFavs2").classList.add("d-none");
@@ -378,5 +392,29 @@ This data is pulled from _data/resources.yml
     }
     results.classList.remove("d-none");
     loading.classList.add("d-none");
+  }
+
+  // Track favorited resources
+  function recordFavorite(resourceLink, change) {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSd-bIfv8XgXo9HkXKk16fEsAUTHJAC8HMgYmV-tRKDAYIhNZg/formResponse";
+    let dataToPost = new FormData();
+    log(`${change}: ${resourceLink}`);
+
+    dataToPost.append("entry.175043906", resourceLink);
+    dataToPost.append("entry.1572485715", change);
+
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
   }
 </script>
