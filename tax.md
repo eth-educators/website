@@ -12,6 +12,8 @@ permalink: /tax
 
 ## Tax Guidance
 
+*<u>Disclaimer</u>: This information is not guaranteed to be correct or complete and cannot replace a detailed and individual consultation.*
+
 {% include partials/content/tax-guidance.html %}
 
 
