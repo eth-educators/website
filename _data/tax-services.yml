@@ -1,0 +1,29 @@
+## name        = tax service name
+## link        = url
+## support     = list of supported countries, comma delimited, order doesn't matter
+## support_url = reference link for supported countries
+
+# Template to copy for new entries
+# - name: 
+#   link: 
+#   support: 
+#   support_url: 
+
+
+# Entries are shown in order listed
+- name: Koinly
+  link: https://koinly.io/
+  support: USA, UK, Sweden, Norway, Switzerland, Finland, Canada, Australia, France
+  support_url: https://help.koinly.io/en/articles/3663366-which-tax-reports-can-koinly-generate
+- name: CoinTracker
+  link: https://www.cointracker.io/
+  support: USA, Canada, UK, India, Australia
+  support_url: https://support.cointracker.io/hc/en-us/articles/5293978329873-What-countries-does-CoinTracker-calculate-taxes-for-
+- name: CryptoTaxCalculator
+  link: https://cryptotaxcalculator.io/
+  support: Canada, USA, Australia, Japan, New Zealand, Singapore, Austria, Belgium, Germany, Finland, France, Greece, Ireland, Italy, Netherlands, Norway, Portugal, Spain, Sweden, Switzerland, UK, South Africa
+  support_url: https://cryptotaxcalculator.io/
+- name: CoinLedger
+  link: https://coinledger.io/
+  support: Australia, France, Japan, Sweden, Austria, Germany, New Zealand, Switzerland, Canada, India, South Africa, UK, Denmark, Ireland, Spain, USA
+  support_url: https://coinledger.io/sitemap

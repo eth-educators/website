@@ -1,0 +1,17 @@
+## country     = team name
+## link_solo   = url to guidance for solo staking
+## link_lst    = url to guidance for LSTs
+## link_saas   = url to guidance for saas staking
+
+# Template to copy for new entries
+# - country: 
+#   link_solo: 
+#   link_lst: 
+#   link_saas: 
+
+
+# Entries are shown in alphabetical order
+- country: Austria
+  link_solo: https://www.crypto-tax.at/de/tipps-infos/tipps-articles/57-ethereum-2-0-staking-eine-steuerliche-einschaetzung
+  link_lst: https://www.crypto-tax.at/de/tipps-infos/tipps-articles/57-ethereum-2-0-staking-eine-steuerliche-einschaetzung
+  link_saas: https://www.crypto-tax.at/de/tipps-infos/tipps-articles/57-ethereum-2-0-staking-eine-steuerliche-einschaetzung

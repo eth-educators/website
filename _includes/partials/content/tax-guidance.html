@@ -1,0 +1,40 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/tax-guidance.yml
+-->
+{%- endcomment -%}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3">
+  {%- for item in site.data.tax-guidance -%}
+    {%- assign has_guidance = false -%}
+    {%- if item.link_solo or item.link_lst or item.link_saas -%}
+      {%- assign has_guidance = true -%}
+    {%- endif -%}
+    {%- if item.country and has_guidance -%}
+      {%- assign show_all = "" -%}
+      {%- if forloop.index > 6 -%}
+        {%- assign show_all = "show_all" -%}
+      {%- endif -%}
+      <div class="col mb-3 {{show_all}}">
+        <h5>{{item.country}}</h5>
+        <ul class="">
+          {%- if item.link_solo -%}
+            <li><a href="{{item.link_solo}}" target="_blank">Solo Staking</a></li>
+          {%- else -%}
+            <li><a class="link-disabled">Solo Staking</a></li>
+          {%- endif -%}
+          {%- if item.link_lst -%}
+            <li><a href="{{item.link_lst}}" target="_blank">Pool Staking</a></li>
+          {%- else -%}
+            <li><a class="link-disabled">Pool Staking</a></li>
+          {%- endif -%}
+          {%- if item.link_saas -%}
+            <li><a href="{{item.link_saas}}" target="_blank">Hosted Staking</a></li>
+          {%- else -%}
+            <li><a class="link-disabled">Hosted Staking</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
