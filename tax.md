@@ -5,9 +5,10 @@ permalink: /tax
 ---
 
 
-## Export Validator Revenue
+## Export Validator Rewards
 
-- [ethstaker.tax](https://ethstaker.tax)
+- [ethstaker.tax](https://ethstaker.tax) - Offers greater granularity than beaconcha.in
+- [beaconcha.in](https://beaconcha.in/rewards) - Doesn't include execution layer rewards
 
 
 ## Tax Guidance
