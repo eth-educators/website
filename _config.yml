@@ -46,12 +46,13 @@ notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
 enable_toast: true
-toast_msg_id: 1 # must increment when creating a new message
-toast_title: EthStaker’s Gitcoin grant is live!
-toast_msg: This round runs from April 25th - May 9th. Please consider donating - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
-toast_link: https://explorer.gitcoin.co/#/round/1/0xdf22a2c8f6ba9376ff17ee13e6154b784ee92094/0xdf22a2c8f6ba9376ff17ee13e6154b784ee92094-8 # Optional, leave blank to omit
-toast_link_text: Donate
-toast_expiration: 1683676799 # epoch time in seconds
+toast_msg_id: 2 # must increment when creating a new message
+toast_title: Incident Update
+toast_msg: On May 11th, the beaconchain began experiencing issues reaching finality. This does not affect end users, does not halt transactions, and is an issue that is primarily a concern for stakers and developers.
+toast_link: https://ethstaker.notion.site/Finality-issue-updates-May-2023-3cb4d74e67c04d1f9ed31659e48c314b # Optional, leave blank to omit
+toast_link_text: Learn more
+# May 14th, 23:59:59 GMT+0
+toast_expiration: 1684108799 # epoch time in seconds
 
 # Assets
 bootstrap_js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

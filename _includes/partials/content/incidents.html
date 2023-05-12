@@ -1,0 +1,13 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/incidents.yml
+-->
+{%- endcomment -%}
+
+<div class="row row-cols-1">
+  {%- for incident in site.data.incidents -%}
+    <div class="col mb-3">
+      <h5><a href="{{incident.link}}">{{incident.date}} - {{incident.title | titlecase}}</a></h5>
+    </div>
+  {%- endfor -%}
+</div>
