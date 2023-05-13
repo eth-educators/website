@@ -1,0 +1,42 @@
+## title       = job position/title
+## link        = url to apply
+## date        = posting date: yyyy-mm-dd, Year (i.e. 2023-05-13)
+## active      = true/false; is the listing active
+## company     = the hiring company/project
+## technical   = true/false; is it a technical position
+## remote      = true/false; is this position remote
+## location    = location of position if not remote
+## fulltime    = true/false; is this position full time
+
+# Example entry
+# - title: Web3 Community Lead
+#   link: https://example.com/apply
+#   date: 2023-05-13
+#   active: true
+#   company: Ethereum Foundation
+#   technical: false
+#   remote: true
+#   location: 
+#   fulltime: true
+
+# Template to copy for new entries
+# - title: 
+#   link: 
+#   date: 
+#   company: 
+#   technical: 
+#   remote: 
+#   location: 
+#   fulltime: 
+
+
+# Entries are shown in date order, most recent first
+- title: Web3 Community Lead
+  link: https://example.com/apply
+  date: 2023-05-13
+  active: true
+  company: Ethereum Foundation
+  technical: false
+  remote: true
+  location: 
+  fulltime: true

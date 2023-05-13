@@ -1,0 +1,147 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/jobs.yml
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+@media screen and (min-width: 992px) {
+  .job-link {
+    opacity: 0;
+    max-width: 1px;
+    overflow: hidden;
+  }
+}
+</style>
+
+<div id="jobs" class="row row-cols-1">
+  {%- assign all_jobs =  site.data.jobs | where: "active", true -%}
+  {%- assign job_count =  all_jobs | size -%}
+  {%- if job_count > 0 -%}
+    {%- for job in site.data.jobs -%}
+      {%- if job.title and job.link -%}
+        {%- assign company = "" -%}
+        {%- if job.company -%}
+          {%- assign company = "@" | append: job.company -%}
+        {%- endif -%}
+        {%- assign technical = "Technical" -%}
+        {%- if job.technical == false -%}
+          {%- assign technical = "Non Technical" -%}
+        {%- endif -%}
+        {%- assign location = "Remote" -%}
+        {%- if job.remote == false -%}
+          {%- assign location = job.location -%}
+        {%- endif -%}
+        {%- assign fulltime = "Full Time" -%}
+        {%- if job.fulltime == false -%}
+          {%- assign fulltime = "Part Time" -%}
+        {%- endif -%}
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body d-lg-flex">
+              <div class="w-100">
+                <small class="text-muted">{{job.date | date: "%b %d, %Y"}}</small>
+                <h5 class="card-title">{{job.title}} {{company}}</h5>
+                <small class="text-muted">
+                  {{location}}
+                  <span class="mx-2">|</span>
+                  {{fulltime}}
+                  <span class="mx-2">|</span>
+                  {{technical}}
+                </small>
+              </div>
+              <div class="flex-shrink-1 d-grid pt-3 pt-lg-0 job-link">
+                <a href="{{job.link}}" class="btn btn-outline-dark btn-sm stretched-link" target="_blank">Apply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    <p class="text-center">There are currently no job listings</p>
+  {%- endif -%}
+</div>
+
+
+{%- comment -%}
+  {%- assign all_jobs = "" -%}
+  {%- for file in site.pages -%}
+    {%- if file.dir contains "/jobs/" and file.job_active -%}
+      {%- assign job =  file.path | filedate -%}
+      {%- assign job =  job | append: "||||" | append: file.title -%}
+      {%- assign job =  job | append: "||||" | append: file.url -%}
+      {%- assign job =  job | append: "||||" | append: file.job_company -%}
+      {%- assign job =  job | append: "||||" | append: file.job_technical -%}
+      {%- assign job =  job | append: "||||" | append: file.job_remote -%}
+      {%- assign job =  job | append: "||||" | append: file.job_location -%}
+      {%- assign job =  job | append: "||||" | append: file.job_fulltime -%}
+      {%- assign all_jobs =  all_jobs | append: "%%%%" | append: job -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign all_jobs =  all_jobs | remove_first: "%%%%" -%}
+  {%- assign all_jobs =  all_jobs | split: "%%%%" | sort_natural | reverse -%}
+
+  <div class="row row-cols-1">
+    {%- assign job_count =  all_jobs | size -%}
+    {%- if job_count > 0 -%}
+      {%- for each_job in all_jobs -%}
+        {%- assign job =  each_job | split: "||||" -%}
+        {%- assign job_date = job[0] -%}
+        {%- assign job_title = job[1] -%}
+        {%- assign job_link = job[2] -%}
+        {%- assign job_company = job[3] -%}
+        {%- assign job_technical = job[4] -%}
+        {%- assign job_remote = job[5] -%}
+        {%- assign job_location = job[6] -%}
+        {%- assign job_fulltime = job[7] -%}
+        {%- assign company = "" -%}
+        {%- if job_company != "" -%}
+          {%- assign company = "@" | append: job_company -%}
+        {%- endif -%}
+        {%- assign technical = "Technical" -%}
+        {%- if job_technical == false -%}
+          {%- assign technical = "Non Technical" -%}
+        {%- endif -%}
+        {%- assign location = "Remote" -%}
+        {%- if job_remote == false -%}
+          {%- assign location = job_location -%}
+        {%- endif -%}
+        {%- assign fulltime = "Full Time" -%}
+        {%- if job_fulltime == false -%}
+          {%- assign fulltime = "Part Time" -%}
+        {%- endif -%}
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body d-sm-flex">
+              <div class="w-100">
+                <small class="text-muted">{{job_date | date: "%b %d, %Y"}}</small>
+                <h5 class="card-title">{{job_title}} {{company}}</h5>
+                <small class="text-muted">
+                  {{location}}
+                  <span class="mx-2">|</span>
+                  {{fulltime}}
+                  <span class="mx-2">|</span>
+                  {{technical}}
+                </small>
+              </div>
+              <div class="flex-shrink-1 d-grid d-sm-inline pt-3 pt-sm-0 align-self-center">
+                <a href="{{job_link}}" class="btn btn-outline-dark btn-sm stretched-link">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    {%- else -%}
+      <p class="text-center">There are currently no job listings {{"2023-05-20" | date: "%b %d, %Y"}}</p>
+    {%- endif -%}
+  </div>
+
+
+  <script type="text/javascript">
+    log({{all_jobs | split: "%%%%" | jsonify}});
+  </script>
+{%- endcomment -%}
+
+
+

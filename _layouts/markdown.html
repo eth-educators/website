@@ -16,7 +16,9 @@
           {%- assign header = page.header -%}
         {%- endif -%}
         {%- if header != "" -%}
-          <h1 class="display-5 fw-bold text-capitalize mt-5">{{header}}</h1>
+          <div class="col-md-10 col-lg-8 mx-auto">
+            <h1 class="display-5 fw-bold text-capitalize mt-5">{{header}}</h1>
+          </div>
         {%- endif -%}
 
         {%- if page.subheader -%}
