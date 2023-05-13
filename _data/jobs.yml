@@ -31,12 +31,4 @@
 
 
 # Entries are shown in date order, most recent first
-- title: Web3 Community Lead
-  link: https://example.com/apply
-  date: 2023-05-13
-  active: true
-  company: Ethereum Foundation
-  technical: false
-  remote: true
-  location: 
-  fulltime: true
+
