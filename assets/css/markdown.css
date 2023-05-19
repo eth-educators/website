@@ -92,8 +92,18 @@
   margin-right: auto!important;
   margin-left: auto!important;
 }
+.markdown .table>tbody>tr:nth-of-type(even)>* {
+  /*fallback from .table-striped*/
+  /*--bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--bs-table-striped-color);*/
+}
 .markdown table>thead {
-  
+  background-color: var(--bs-body-bg);
+
+  /*fallback from .sticky-top*/
+  position: sticky;
+  top: -1px;
+  z-index: 1020;
 }
 .markdown table>:not(:last-child)>:last-child>* {
   
