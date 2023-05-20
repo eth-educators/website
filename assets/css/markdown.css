@@ -123,9 +123,9 @@
 .markdown pre {
   background-color: rgba(0, 0, 0, 1);
   padding: 10px 15px;
-  border-radius: var(--radius);
+  border-radius: 0.5rem;
 }
-.markdown  pre code {
+.markdown pre code {
   color: rgba(255, 255, 255, 0.9);
 }
 
