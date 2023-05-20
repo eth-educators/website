@@ -8,4 +8,5 @@ buttons:
   text: Contribute {{site.data.icons.github}}
 ---
 
-{{"https://raw.githubusercontent.com/eth-educators/ethstaker-guides/main/MEV-relay-list.md" | getres | forceencode}}
+
+{% include partials/content/mev-relay-list.html %}
