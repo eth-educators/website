@@ -3,8 +3,9 @@
 ## description  = less than ~120 characters
 ## categories   = comma-delimited; the first category listed is used for grouping; 
 ##                categories should not contain spaces
-##                options: analytics, article, conference, dvt, ethstaker, explainer, guide, institutional
-##                         lst, mev, news, research, social, testnet, tool, video, other
+##                options: analytics, article, conference, dvt, ethstaker, explainer, guide, 
+##                         institutional, lst, mev, news, research, social, software, testnet, 
+##                         tool, video, other
 ## featured     = (optional) "true" to add to featured section
 
 # Template to copy for new entries
@@ -114,11 +115,11 @@
 - link: "https://eth-docker.net/"
   title: "EthDocker"
   description: "Software to make running an Ethereum staking full node simpler than setting everything up manually, while allowing the user choice when it comes to the exact client mix they wish to run"
-  categories: tool
+  categories: tool, software
 - link: "https://github.com/stake-house/eth-wizard"
   title: "Ethwizard"
   description: "An Ethereum validator installation wizard"
-  categories: tool
+  categories: tool, software
 - link: "https://launchpad.ethereum.org/en/"
   title: "Ethereum Launchpad"
   description: "The official Ethereum launchpad. Will help you become a validator, so you can play an active part in Ethereum's future. Validators are key to the more secure, scalable, and sustainable Ethereum we're building together"
@@ -142,11 +143,11 @@
 - link: "https://docs.dappnode.io/user/quick-start/first-steps"
   title: "DappNode"
   description: "Quickstart guide for DAppNode, software with a user interface to help you stake without needing to use command line interface" 
-  categories: guide, tool
+  categories: guide, tool, software
 - link: "https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/n0AOGKh6Ck068icgY78i9DA3xPYWlWLGlE8HXnJeSl0"
   title: "Nethermind Sedge"
   description: "Set up an Ethereum / Gnosischain validator in under 30mins. A one-click setup tool for PoS network/chain validators for Ethereum and Gnosischain, Sedge takes care of the entire on-premise full node setup based on the chosen client, using generated docker-compose scripts based on the desired configuration."
-  categories: tool
+  categories: tool, software
 - link: "https://github.com/eth-educators/ethstaker-guides"
   title: "EthStaker's guides"
   description: "Guides related to staking. Monitoring, alerting, joining testnets"
@@ -624,8 +625,36 @@
 - link: "https://github.com/ethereum/staking-deposit-cli"
   title: "Staking deposit CLI tool"
   description: "Secure key generation tool for deposits; deposit-cli is a tool for creating EIP-2335 format BLS12-381 keystores and a corresponding deposit_data*.json file for Ethereum Staking Launchpad."
-  categories: tool
+  categories: tool, software
 - link: "https://clientdiversity.org/#switch"
   title: "Client migration tool"
   description: "Use this tool to find the client migration guide appropriate for your consensus and execution client pair."
   categories: tool, guide
+- link: "https://ethresear.ch/t/bid-cancellations-considered-harmful/15500"
+  title: "MEV Boost bid cancellations considered harmful"
+  description: "Under the current implementation of mev-boost block auctions, builders can cancel bids by submitting a later bid with a lower value."
+  categories: research, mev
+- link: "https://dune.com/rp_community/lst-comparison"
+  title: "Dune LST comparisons dashboard"
+  description: "A Dune dashboard camparing liquid staking tokens (LSTs) across different metrics."
+  categories: analytics, lst
+- link: "https://dune.com/hildobby/eth2-staking"
+  title: "Dune staking dashboard"
+  description: "This dashboard tracks ETH sent to the Consensus Layer deposit address & beacon chain outflow."
+  categories: analytics
+- link: "https://dune.com/drworm/rocketpool"
+  title: "Dune Rocket Pool dashbaord"
+  description: "A Dune dashboard to monitor different Rocket Pool metrics."
+  categories: analytics, lst
+- link: "https://www.crypto51.app/"
+  title: "PoW 51% Attack Cost"
+  description: "This is a collection of coins and the theoretical cost of a 51% attack on each network."
+  categories: analytics
+- link: "https://ethstaker.cc/wagyu"
+  title: "Wagyu Key Gen"
+  description: "An open source tool developed by EthStaker to securely generate keys for staking deposits."
+  categories: tool, software, ethstaker
+- link: "https://simplestakers.info/"
+  title: "SimpleStakers.info"
+  description: "A dashboard showing the APY for liquid staking tokens (LSTs)."
+  categories: analytics, lst
