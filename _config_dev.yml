@@ -3,10 +3,6 @@ environment: development
 # Resources
 enable_getdate: false # gets the publish/update date of resource links
 
-# Blog
-# blog_url: https://paragraph.xyz/@dylsteck.eth
-# post_feed: https://paragraph.xyz/api/blogs/rss/@dylsteck.eth
-
 # Notification Bar
 enable_notification: true
 notification_msg_id: 1 # must increment when creating a new message
