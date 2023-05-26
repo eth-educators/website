@@ -1,0 +1,52 @@
+<style type="text/css">
+  #feedback {
+    max-width: 500px;
+  }
+</style>
+
+
+<!-- Feedback -->
+<section id="feedback" class="mx-auto">
+  <div id="feedbackForm">
+    <h5 class="my-3">Have feedback relating to this site or EthStaker in general? Let us know!</h5>
+    <!-- Feedback radio options -->
+    <form id="feedbackRadios" name="feedbackRadios" class="d-none">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="feedbackRadio" value="yes" id="feedbackRadio1" checked="">
+        <label class="form-check-label" for="feedbackRadio1">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="feedbackRadio" value="no" id="feedbackRadio2">
+        <label class="form-check-label" for="feedbackRadio2">
+          No
+        </label>
+      </div>
+    </form>
+    <!-- Feedback comments -->
+    <textarea class="form-control mt-3" placeholder="Leave a comment here" id="feedbackComment"></textarea>
+    <!-- Feedback submit button -->
+    <div class="d-grid gap-2 mt-3">
+      <button id="feedbackButton" class="btn btn-dark" type="button" onclick="submitGeneralFeedback()">Submit</button>
+    </div>
+  </div>
+  <p id="feedbackSubmitted" class="d-none mt-4">Your feedback has been submitted, thank you!</p>
+</section>
+
+<script type="text/javascript">
+  // Submit general feedback
+  function submitGeneralFeedback() {
+    let topic = "general";
+    let solved = "-";
+    let comment = document.getElementById("feedbackComment").value;
+    if (comment == "") {
+      document.getElementById("feedbackComment").classList.add("border-danger");
+    } else {
+      submitFeedback(topic, solved, comment);
+      document.getElementById("feedbackForm").classList.add("d-none");
+      document.getElementById("feedbackSubmitted").classList.remove("d-none");
+      document.getElementById("feedbackComment").classList.remove("border-danger");
+    }
+  }
+</script>

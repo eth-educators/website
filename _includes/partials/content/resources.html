@@ -49,6 +49,15 @@ This data is pulled from _data/resources.yml
   #resources .resource-date {
     font-size: 0.8rem;
   }
+  #resources #resourceFeedbackComment {
+    max-width: 425px;
+  }
+  @media only screen and (max-width: 767px) {
+    #resources #resourceFeedbackComment {
+      max-width: 550px;
+      width: 100%;
+    }
+  }
 
   .dark-mode #resources .start {
     opacity: 0.9;
@@ -178,7 +187,21 @@ This data is pulled from _data/resources.yml
             {%- endif -%}
           {%- endfor -%}
         </div>
-        <div id="noResults" class="d-none mb-5">No results found, try simplifying your search</div>
+        <div id="noResults" class="d-none mb-5">
+          <p>No results found, try simplifying your search.</p>
+          <div id="resourceFeedback" class="mt-4">
+            <div id="resourceFeedbackForm">
+              <p>Still not finding what you're looking for? Let us know!</p>
+              <!-- Feedback comments -->
+              <textarea class="form-control mt-3" placeholder="Leave a comment here" id="resourceFeedbackComment"></textarea>
+              <!-- Feedback submit button -->
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+                <button id="resourceFeedbackButton" class="btn btn-outline-dark" type="button" onclick="submitResourceFeedback()">Submit</button>
+              </div>
+            </div>
+          </div>
+          <p id="resourceFeedbackSubmitted" class="d-none mt-4">Your feedback has been submitted, thank you!</p>
+        </div>
         <div id="loading" class="d-none text-center">
           {% include partials/components/loading-floatingCircles.html %} 
         </div>
@@ -424,5 +447,20 @@ This data is pulled from _data/resources.yml
       log("data submitted");
     })
     .catch(err=>console.error(err));
+  }
+
+  // Submit resource feedback
+  function submitResourceFeedback() {
+    let topic = "resources";
+    let solved = "-";
+    let comment = document.getElementById("resourceFeedbackComment").value;
+    if (comment == "") {
+      document.getElementById("resourceFeedbackComment").classList.add("border-danger");
+    } else {
+      submitFeedback(topic, solved, comment);
+      document.getElementById("resourceFeedback").classList.add("d-none");
+      document.getElementById("resourceFeedbackSubmitted").classList.remove("d-none");
+      document.getElementById("resourceFeedbackComment").classList.remove("border-danger");
+    }
   }
 </script>
