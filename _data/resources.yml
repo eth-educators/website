@@ -1,17 +1,17 @@
 ## link         = url
 ## title        = link text
 ## description  = less than ~120 characters
-## categories   = comma-delimited; the first category listed is used for grouping; 
+## categories   = comma-delimited; the first category listed is used for grouping;
 ##                categories should not contain spaces
 ##                options: analytics, article, conference, dvt, ethstaker, explainer, guide, institutional
 ##                         lst, mev, news, research, social, testnet, tool, video, other
 ## featured     = (optional) "true" to add to featured section
 
 # Template to copy for new entries
-# - link: 
-#   title: 
-#   description: 
-#   categories: 
+# - link:
+#   title:
+#   description:
+#   categories:
 
 
 # Entries are shown in the order listed
@@ -141,7 +141,7 @@
   categories: explainer, guide
 - link: "https://docs.dappnode.io/user/quick-start/first-steps"
   title: "DappNode"
-  description: "Quickstart guide for DAppNode, software with a user interface to help you stake without needing to use command line interface" 
+  description: "Quickstart guide for DAppNode, software with a user interface to help you stake without needing to use command line interface"
   categories: guide, tool
 - link: "https://mirror.xyz/0xf3bF9DDbA413825E5DdF92D15b09C2AbD8d190dd/n0AOGKh6Ck068icgY78i9DA3xPYWlWLGlE8HXnJeSl0"
   title: "Nethermind Sedge"
@@ -296,7 +296,7 @@
 - link: "https://notes.ethereum.org/@launchpad/withdrawals-faq"
   title: "ETH Withdrawals FAQ"
   description: "ethereum.org's withdrawals FAQ"
-  categories: 
+  categories:
 - link: "https://medium.com/nethermind-eth/bls-signatures-withdrawals-bbf38658c242"
   title: "BLS Signatures & Withdrawals"
   description: "The Nethermind team examines the BLS signatures and their role in Ethereum, specifically in withdrawals which will be allowed after the Shanghai/Capella hard fork"
@@ -532,7 +532,7 @@
 - link: "https://www.youtube.com/watch?v=uInJN4novoQ"
   title: "Alon (CEO) ssv.network @ETHStaker Gathering"
   description: "Devconnect 2022: SSV's Alon Muroch speaks at EthStaker's Devconnect Staking Gathering"
-  categories: 
+  categories:
 - link: "https://www.youtube.com/watch?v=ZbTerJXs23E"
   title: "How to Design DVT While Ensuring Non-Correlation | Devcon Bogotá"
   description: "Devcon Bogotá (Oct 2022): discuss how to design Distributed Validator Technology in a way that minimizes correlation risk by using design choices across distributed key generation, middleware, networking topology, and versioning. We'll also describe why creating a trust-minimized, non-custodial, and non-correlated architecture is the most healthy way to enable multi-operator staking"
@@ -555,7 +555,7 @@
   categories: social
 - link: "https://blog.ssv.network/get-ready-for-shifu-v2-multi-duty-feb-2023-5166753a2c94"
   title: "SSV node: Shifu V2. 🎉"
-  description: "Pre-release announcement for the latest version of the SSV node! Launching Shifu V2 is a significant milestone that builds on the completion and alignment of the official node specification" 
+  description: "Pre-release announcement for the latest version of the SSV node! Launching Shifu V2 is a significant milestone that builds on the completion and alignment of the official node specification"
   categories: dvt, news
 - link: "https://medium.com/@MarkoInEther/dvt-landscape-part-1-a6ea7bae458b"
   title: "DVT landscape part 1"
@@ -629,3 +629,19 @@
   title: "Client migration tool"
   description: "Use this tool to find the client migration guide appropriate for your consensus and execution client pair."
   categories: tool, guide
+- link: "https://dankradfeist.de/ethereum/2022/03/24/run-the-majority-client-at-your-own-peril.html"
+  title: "Ethereum Merge: Run the majority client at your own peril! (Mar 2022)"
+  description: "For reasons of both safety and liveness, Ethereum has chosen a multi-client architecture. In order to encourage stakers to diversify their setups, penalties are higher for correlated failures. A staker running a minority client will thus typically only lose moderate amounts should their client have a bug, but running a majority client can incur a total loss. Responsible stakers should therefore look at the client landscape and choose a less popular client."
+  categories: article, research
+- link: "https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA"
+  title: "Client diversity on Ethereum's consensus layer (Feb 2022)"
+  description: "Ethereum has multiple interoperable clients developed and maintained in different languages by independent teams. This is a major achievement and can provide resilience to the network by limiting the effects of a bug or attack to only the portion of the network running the affected client. However, this strength is only realized if users distribute roughly evenly across the available clients. At present, the vast majority of Ethereum nodes run a single client, inviting unnecessary risk to the network."
+  categories: article, research
+- link: "https://validatorqueue.com/"
+  title: "Ethereum Validator Queue"
+  description: "A visual overview of the Ethereum validator entry and exit queues: wait times, number in queue, historical data graphs. Made by Ether Alpha"
+  categories: analytics, ethstaker
+- link: "https://rescuenode.com/"
+  title: "Rocket Rescue Node"
+  description: "At its core, Rocket Rescue Node is a community-operated Ethereum node which can be used by Rocket Pool node operators as an emergency fallback node during maintenance. Under the hood, Rocket Rescue Node is actually 4 nodes to maximize Beacon Client compatibility, a custom reverse-proxy to combat potential malfeasance by its users, and an API and UI to make it easy to access."
+  categories: tool
