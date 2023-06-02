@@ -15,7 +15,8 @@ toast_expiration: 3000000000 # epoch time in seconds
 -->
 {%- endcomment -%}
 
-{%- if site.enable_toast == true -%}
+
+{%- if site.enable_toast == true or site.enable_feedback_toast == true -%}
 <style type="text/css">
   .toast-container {
     z-index: 1090;
@@ -30,6 +31,10 @@ toast_expiration: 3000000000 # epoch time in seconds
   .toast-badge {
     height: 17px;
     width: 17px;
+  }
+
+  #toastFeedbackForm textarea {
+    font-size: 0.875rem
   }
 </style>
 
@@ -64,17 +69,72 @@ toast_expiration: 3000000000 # epoch time in seconds
 
   // Loads/shows notification bar if users hasn't closed it yet
   function showtoast() {
-    const toastName = "toast-{{site.toast_msg_id}}";
-    const hideToast = localStorage.getItem(toastName);
+    if ({{site.enable_toast}} == true) {
+      const toastName = "toast-{{site.toast_msg_id}}";
+      const hideToast = localStorage.getItem(toastName);
+      const timestamp = Math.round(Date.now()/10000)*10;
+      if (hideToast != "true" && timestamp < {{site.toast_expiration}}) {
+        toast.show();
+      } else if ({{site.enable_feedback_toast}} == true) {
+        feedbackToast();
+      }
+    } else if ({{site.enable_feedback_toast}} == true) {
+      feedbackToast();
+    }
+  }
+  function feedbackToast() {
+    const toastName = "toast-feedback";
+    const lastClose = localStorage.getItem(toastName);
     const timestamp = Math.round(Date.now()/10000)*10;
-    if (hideToast != "true" && timestamp < {{site.toast_expiration}}) {
+    // show again if longer than {toastRenewal} since close (in seconds)
+    const renewalPeriod = {{site.feedback_toast_renewal_period}};
+    const renew = (lastClose + renewalPeriod) < timestamp;
+    if (lastClose == null || renew) {
+      document.querySelector(".toast-title").innerHTML = "{{site.feedback_toast_title}}";
+      document.querySelector(".toast-body").innerHTML = `
+        <div id="toastFeedback">
+          <div id="toastFeedbackForm">
+            <p class="mb-0">{{site.feedback_toast_msg}}</p>
+            <textarea class="form-control mt-2" placeholder="Leave a comment here" id="toastFeedbackComment"></textarea>
+            <div class="toast-buttons d-flex gap-2 mt-2 pt-2">
+              <button id="toastFeedbackButton" class="btn btn-dark btn-sm" type="button" onclick="submitToastFeedback()">Submit</button>
+              <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="toast" onclick="hidetoast('feedback')">Close</button>
+            </div>
+          </div>
+        </div>
+        <div id="toastFeedbackSubmitted" class="d-none">
+          <p class="mb-0">Your feedback has been submitted, thank you!</p>
+          <div class="toast-buttons d-flex gap-2 mt-2 pt-2">
+            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="toast" onclick="hidetoast('feedback')">Close</button>
+          </div>
+        </div>`;
       toast.show();
     }
   }
   // Hides toast bar when user closes it
-  function hidetoast() {
-    const toastName = "toast-{{site.toast_msg_id}}";
-    localStorage.setItem(toastName, "true");
+  function hidetoast(id=null) {
+    if (id) {
+      const toastName = `toast-${id}`;
+      const timestamp = Math.round(Date.now()/10000)*10;
+      localStorage.setItem(toastName, timestamp);
+    } else {
+      const toastName = "toast-{{site.toast_msg_id}}";
+      localStorage.setItem(toastName, "true");
+    }
+  }
+  // Submit feedback
+  function submitToastFeedback() {
+    let topic = "general (toast)";
+    let solved = "-";
+    let comment = document.getElementById("toastFeedbackComment").value;
+    if (comment == "") {
+      document.getElementById("toastFeedbackComment").classList.add("border-danger");
+    } else {
+      submitFeedback(topic, solved, comment);
+      document.getElementById("toastFeedback").classList.add("d-none");
+      document.getElementById("toastFeedbackComment").classList.remove("border-danger");
+      document.getElementById("toastFeedbackSubmitted").classList.remove("d-none");
+    }
   }
 </script>
 {%- endif -%}

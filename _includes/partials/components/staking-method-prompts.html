@@ -127,21 +127,30 @@ This data is pulled from _site.data.staking-method-tree.yml
           {%- if prompt.options -%}
             {%- for each_option in prompt.options -%}
               {%- if each_option.option and each_option.go_to_id -%}
+                {%- assign show_feedback = false -%}
+                {%- assign option_details = prompts | where: "id", each_option.go_to_id -%}
+                {%- assign option_details = option_details | first -%}
+                <script type="text/javascript">console.log({{option_details | jsonify}})</script>
+                {%- if option_details.style == "cta" -%}
+                  {%- assign show_feedback = true -%}
+                {%- endif -%}
+
                 {%- if prompt.style == "cta" -%}
-                  {% assign first_char = each_option.go_to_id | split: "" | first %}
+                  {%- assign first_char = each_option.go_to_id | split: "" | first -%}
                   {%- if first_char == "#" -%}
-                    <a href="{{each_option.go_to_id}}" class="btn btn-dark d-block mt-3">
+                    <a href="{{each_option.go_to_id}}" class="btn btn-dark d-block mt-3" 
+                    onclick="showFeedback({{show_feedback}});">
                       {{each_option.option | liquify}}
                     </a>
                   {%- else -%}
                     <a class="btn btn-dark d-block mt-3"
-                    onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}')">
+                    onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}'); showFeedback({{show_feedback}});">
                       {{each_option.option | liquify}}
                     </a>
                   {%- endif -%}
                 {%- else -%}
                   <a class="prompt-option btn text-start d-block mt-3"
-                  onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}');">
+                  onclick="updatePromptAnswers('{{prompt.id}}','{{each_option.option}}'); goToPrompt('{{prompt.id}}','{{each_option.go_to_id}}'); showFeedback({{show_feedback}});">
                     <span class="btn-radio me-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/></svg>
                     </span>
@@ -154,6 +163,34 @@ This data is pulled from _site.data.staking-method-tree.yml
         </div>
       {%- endif -%}
     {%- endfor -%}
+    <!-- Feedback -->
+    <div id="promptFeedback" class="d-none border-top py-2 mt-4 mb-0">
+      <div id="promptFeedbackForm">
+        <h5 class="my-3">Was this helpful?</h5>
+        <!-- Feedback radio options -->
+        <form id="promptFeedbackRadios" name="promptFeedbackRadios" class="">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="promptFeedbackRadio" value="yes" id="promptFeedbackRadio1" checked="">
+            <label class="form-check-label" for="promptFeedbackRadio1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="promptFeedbackRadio" value="no" id="promptFeedbackRadio2">
+            <label class="form-check-label" for="promptFeedbackRadio2">
+              No
+            </label>
+          </div>
+        </form>
+        <!-- Feedback comments -->
+        <textarea class="form-control mt-3" placeholder="Leave a comment here" id="promptFeedbackComment"></textarea>
+        <!-- Feedback submit button -->
+        <div class="d-grid gap-2 mt-3">
+          <button id="promptFeedbackButton" class="btn btn-outline-dark" type="button" onclick="submitPromptFeedback()">Submit</button>
+        </div>
+      </div>
+      <p id="promptFeedbackSubmitted" class="d-none mt-4">Your feedback has been submitted, thank you!</p>
+    </div>
     {%- comment -%}
       <!-- A back arrow to go to the previous prompt. This functionality is controlled by the 
       goToLastPrompt(), which is triggered by selecting the Back button. -->
@@ -222,6 +259,8 @@ This data is pulled from _site.data.staking-method-tree.yml
     }
     // Remove the current prompt from promptHistory
     promptHistory.pop();
+    // Hide feedback
+    showFeedback(false);
     // Go to the last prompt
     goToPrompt(currentId, nextId);
   }
@@ -257,6 +296,25 @@ This data is pulled from _site.data.staking-method-tree.yml
       return params;
     } catch {
       return null;
+    }
+  }
+
+  // Submit prompt feedback
+  function submitPromptFeedback() {
+    let topic = "staking method prompt";
+    let solved = document.querySelector('input[name="promptFeedbackRadio"]:checked').value;
+    let history = promptHistory.join(", ");
+    let comment = document.getElementById("promptFeedbackComment").value;
+    comment = `comment: ${comment} | history: ${history} `;
+    submitFeedback(topic, solved, comment);
+    document.getElementById("promptFeedbackForm").classList.add("d-none");
+    document.getElementById("promptFeedbackSubmitted").classList.remove("d-none");
+  }
+  function showFeedback(show) {
+    if (show) {
+      document.getElementById("promptFeedback").classList.remove("d-none");
+    } else {
+      document.getElementById("promptFeedback").classList.add("d-none");
     }
   }
 </script>

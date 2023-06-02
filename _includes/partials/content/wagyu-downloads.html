@@ -1,0 +1,80 @@
+{%- capture version -%}
+  {%- include tools/get-content.html
+    content_url="https://github.com/stake-house/wagyu-key-gen" 
+    from="/stake-house/wagyu-key-gen/releases/tag/v" 
+    to='"'
+  -%}
+{%- endcapture -%}
+
+<style type="text/css">
+  #download .card {
+    max-width: 15rem;
+  }
+  #download .card img {
+    max-height: 6rem;
+  }
+  @media only screen and (max-width: 450px) {
+    #download .card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+
+<!-- Download -->
+<section id="download" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <div class="row justify-content-center aos-up">
+      <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 pb-3 p-md-3 p-lg-3 text-start text-sm-center">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Download</h2>
+        <div class="gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+          <span><a class="me-2" href="https://github.com/stake-house/wagyu-key-gen/" target="_blank">Github</a>|</span>
+          <span><a class="mx-2" href="https://github.com/stake-house/wagyu-key-gen/releases/latest" target="_blank">Checksums</a>|</span>
+          <span><a class="ms-2" href="https://github.com/stake-house/wagyu-key-gen/blob/main/README.md#wagyu-audit-by-hashcloak-wagyu-key-gen-audit-report" target="_blank">Audit</a></span>
+        </div>
+        <p class="fst-italic">Note: This app may not function properly in a VM.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center aos-up">
+      <div class="col col-12 col-md-4 col-lg-3 col-xxl-2 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100 mx-auto">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title mx-auto">Linux</h5>
+            <img class="mx-auto mt-2 mb-4" src="/assets/img/wagyu/linux-logo.svg">
+            <div class="card-text mb-auto">
+            </div>
+            <a href="https://github.com/stake-house/wagyu-key-gen/releases/download/v{{version}}/Wagyu.Key.Gen-{{version}}.AppImage" class="btn btn-outline-dark btn-sm shadow-sm w-100">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-4 col-lg-3 col-xxl-2 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100 mx-auto">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title mx-auto">Windows</h5>
+            <img class="mx-auto mt-2 mb-4" src="/assets/img/wagyu/windows-logo.svg">
+            <div class="card-text mb-auto">
+            </div>
+            <a href="https://github.com/stake-house/wagyu-key-gen/releases/download/v{{version}}/Wagyu.Key.Gen.{{version}}.exe" class="btn btn-outline-dark btn-sm shadow-sm w-100">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-4 col-lg-3 col-xxl-2 d-flex align-items-stretch mb-3">
+        <div class="card shadow border-light w-100 mx-auto">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title mx-auto">macOS</h5>
+            <img class="mx-auto mt-2 mb-4" src="/assets/img/wagyu/apple-logo.svg">
+            <div class="card-text mb-auto">
+            </div>
+            <a href="https://github.com/stake-house/wagyu-key-gen/releases/download/v{{version}}/Wagyu.Key.Gen-{{version}}.dmg" class="btn btn-outline-dark btn-sm shadow-sm w-100">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-3 aos-up">
+      <div class="col">
+        <a href="#installation" class="btn btn-outline-dark shadow">View installation instructions</a>
+      </div>
+    </div>
+  </div>
+</section>
