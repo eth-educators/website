@@ -46,13 +46,13 @@ notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
 enable_toast: true
-toast_msg_id: 2 # must increment when creating a new message
-toast_title: Incident Update
-toast_msg: On May 11th, the beaconchain began experiencing issues reaching finality. This does not affect end users, does not halt transactions, and is an issue that is primarily a concern for stakers and developers.
-toast_link: https://ethstaker.notion.site/Finality-issue-updates-May-2023-3cb4d74e67c04d1f9ed31659e48c314b # Optional, leave blank to omit
-toast_link_text: Learn more
-# May 14th, 23:59:59 GMT+0
-toast_expiration: 1684108799 # epoch time in seconds
+toast_msg_id: 3 # must increment when creating a new message
+toast_title: EthStaker’s CLR Fund grant is live!
+toast_msg: This round runs until July 3rd. Please consider donating - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
+toast_link: https://clr.fund/#/projects/0x968ae0b1824bcae833efdc68a7cfa726a310a778743c159845593d853dbb6305 # Optional, leave blank to omit
+toast_link_text: Donate
+# July 3rd, 14:00:00 GMT+0
+toast_expiration: 1688392800 # epoch time in seconds
 
 # Feedback Toast
 enable_feedback_toast: true
