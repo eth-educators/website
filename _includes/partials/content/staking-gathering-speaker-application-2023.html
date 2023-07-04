@@ -1,0 +1,257 @@
+<section>
+  <div class="container">
+    <div class="row mt-4 aos-up">
+      <div id="speakerForm" class="border-top mt-2 pt-4">
+        <div class="w-100 mb-4">
+          <div class="text-danger">* Required fields</div>
+        </div>
+
+        <!-- Name -->
+        <div class="w-100 mb-3">
+          <label for="speakerName" class="form-label">
+            <span class="text-danger">*</span>
+            What is your name (or pseudonym)?
+          </label>
+          <input type="text" class="form-control form-field" id="speakerName" required onchange="validate(this)">
+        </div>
+
+        <!-- Email -->
+        <div class="w-100 mb-3">
+          <label for="speakerEmail" class="form-label">
+            <span class="text-danger">*</span>
+            What's a good email to contact you?
+          </label>
+          <input type="email" class="form-control form-field" id="speakerEmail" placeholder="name@example.com" required onchange="validate(this)">
+        </div>
+
+        <!-- Handle -->
+        <div class="w-100 mb-3">
+          <label for="speakerHandle" class="form-label">
+            <span class="text-danger">*</span>
+            What's your TG or Discord handle?
+          </label>
+          <input type="text" class="form-control form-field" id="speakerHandle" required onchange="validate(this)">
+        </div>
+
+        <!-- Proposal Guidelines -->
+        <div class="col my-3">
+          <div class="card w-100 bg-tertiary shadow-0">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Proposal Guidelines</h5>
+              <div class="card-text w-100 mb-auto">
+
+                <p class="fs-6">For the following field, please include:</p>
+                <ul>
+                  <li class="fs-6">Name of event</li>
+                  <li class="fs-6">Length of talk or workshop</li>
+                  <li class="fs-6">Accommodations needed (audio / visual / etc) </li>
+                  <li class="fs-6">Speaker(s) & their titles / affiliations</li>
+                </ul>
+
+                <p class="fs-6">Guidelines:</p>
+                <ul>
+                  <li class="fs-6">The topic should not shill any one specific project. Please keep the focus to the technology, how it's developing, and broadly how it contributes to the ecosystem</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proposal -->
+        <div class="w-100 mb-3">
+          <label for="speakerProposal" class="form-label">
+            <span class="text-danger">*</span>
+            Talk / Workshop proposal
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="speakerProposal" rows="5" required onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Schedule -->
+        <div class="col my-3">
+          <div class="card w-100 bg-tertiary shadow-0">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Schedule</h5>
+              <div class="card-text w-100 mb-auto">
+
+                <p class="fs-6">The days will be organized as follows:</p>
+
+                <p class="fw-bold fs-6">Day 1 - Protocol Day</p>
+                <ul>
+                  <li class="fs-6">DVT</li>
+                  <li class="fs-6">LST protocols</li>
+                  <li class="fs-6">Restaking</li>
+                </ul>
+
+                <p class="fw-bold fs-6">Day 2 - Operator Day</p>
+                <ul>
+                  <li class="fs-6">Infrastructure / client teams</li>
+                  <li class="fs-6">Tooling</li>
+                  <li class="fs-6">MEV</li>
+                  <li class="fs-6">Solo staking demos</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot Selection -->
+        <div class="w-100 mb-3">
+          <label for="speakerSlot" class="form-label">
+            <span class="text-danger">*</span>
+            Which day and section would you like your talk to be included in?
+          </label>
+          <select type="select" id="speakerSlot" class="form-select form-field" aria-label="Default select example" required onchange="validate(this)">
+            <option value="" selected disabled>Select schedule...</option>
+            <option value="Day 1: DVT">Day 1: DVT</option>
+            <option value="Day 1: LST protocols">Day 1: LST protocols</option>
+            <option value="Day 1: Restaking">Day 1: Restaking</option>
+            <option value="Day 2: Infra / client teams">Day 2: Infra / client teams</option>
+            <option value="Day 2: Tooling">Day 2: Tooling</option>
+            <option value="Day 2: MEV">Day 2: MEV</option>
+            <option value="Day 2: Solo staking">Day 2: Solo staking</option>
+            <option value="Other suggestion (explain in next question)">Other suggestion (explain in next question)</option>
+          </select>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="w-100 mb-3">
+          <label for="speakerSuggestions" class="form-label">
+            Optional:
+            Do you have a suggestion for an additional topic / section?
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="speakerSuggestions" rows="5"></textarea>
+        </div>
+
+        <!-- Links -->
+        <div class="w-100 mb-3">
+          <label for="speakerLinks" class="form-label">
+            Optional:
+            Links to past talks or other supporting material
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="speakerLinks" rows="5"></textarea>
+        </div>
+
+        <!-- Socials -->
+        <div class="w-100 mb-3">
+          <label for="speakerSocial" class="form-label">
+            Optional:
+            Share your social media (e.g. Twitter, Reddit)
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="speakerSocial" rows="5"></textarea>
+        </div>
+
+        <!-- Error Message -->
+        <div class="w-100 mb-3">
+          <p id="errorMessage" class="text-danger invisible fs-6">* Please fill out all required fields</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+          <button id="submitApplicationButton" class="btn btn-dark" type="button" onclick="submitApplication()">Submit</button>
+        </div>
+      </div>
+
+      <div id="speakerFormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
+        <div>Thank you for your submission and interest in becoming a speaker! You will receive a response by September 30th, 2023 on your acceptance status.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  function submitApplication() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("errorMessage").classList.add("invisible");
+
+      // Submit data to google forms
+      sendData();
+
+      // Display submission success message
+      document.getElementById("speakerForm").classList.add("d-none");
+      document.getElementById("speakerFormSubmitted").classList.remove("d-none");
+
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("errorMessage").classList.remove("invisible");
+    }
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('.form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Inputs/Textareas
+        if (type == "text" || type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSceqnOQaYpCo5hA8EC5zjY8zwMdq3gZoXe1zu5C4Qj8CqtfKQ/formResponse";
+    let dataToPost = new FormData();
+
+    dataToPost.append("entry.1691801738", document.getElementById("speakerName").value);
+    dataToPost.append("entry.277831327", document.getElementById("speakerEmail").value);
+    dataToPost.append("entry.992935244", document.getElementById("speakerHandle").value);
+    dataToPost.append("entry.134518402", document.getElementById("speakerProposal").value);
+    dataToPost.append("entry.1886058441", document.getElementById("speakerSlot").value);
+    dataToPost.append("entry.1418802351", document.getElementById("speakerSuggestions").value);
+    dataToPost.append("entry.1695333927", document.getElementById("speakerLinks").value);
+    dataToPost.append("entry.2075285498", document.getElementById("speakerSocial").value);
+    
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+</script>
