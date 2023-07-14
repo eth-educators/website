@@ -86,7 +86,7 @@ Adding new resources is easy!
 ## Creating A New Page
 
 1. In the root folder, create a new markdown file. For example, `staking-research.md`.
-2. At the top of the page add the following "frontmatter". This is page metadata used when building the site. Only the layout is required but you should also specify the title and permalink (for explicity). Use `default` as the layout for html content and `markdown` for markdown content. If using the `markdown` layout then a `subheader` and a button link can also be specified.
+2. At the top of the page add the following "frontmatter". This is page metadata used when building the site. Only the layout is required but you should also specify the title and permalink (for explicitly). Use `default` as the layout for html content and `markdown` for markdown content. If using the `markdown` layout then a `subheader` and a button link can also be specified.
     ```
     ---
     layout: markdown
