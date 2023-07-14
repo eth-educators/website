@@ -351,7 +351,7 @@
   description: "Kerman Kohli covers MEV"
   categories: video, explainer
 - link: "https://www.youtube.com/watch?v=zliSbdLwy5U"
-  title: "What is Miner Extractable Vaule?"
+  title: "What is Miner Extractable Value?"
   description: "The Blockchain Acceleration Foundation covers MEV"
   categories: mev, explainer, video
 - link: "https://www.youtube.com/watch?v=Wd0at2Pu6xY"
@@ -652,7 +652,7 @@
   categories: research, mev
 - link: "https://dune.com/rp_community/lst-comparison"
   title: "Dune LST comparisons dashboard"
-  description: "A Dune dashboard camparing liquid staking tokens (LSTs) across different metrics."
+  description: "A Dune dashboard comparing liquid staking tokens (LSTs) across different metrics."
   categories: analytics, lst
 - link: "https://dune.com/hildobby/eth2-staking"
   title: "Dune staking dashboard"
