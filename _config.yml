@@ -46,13 +46,13 @@ notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
 enable_toast: true
-toast_msg_id: 4 # must increment when creating a new message
-toast_title: EthStaker’s CLR Fund grant is live!
-toast_msg: This round runs until July 17th. Please consider donating - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
-toast_link: https://clr.fund/#/projects/0x968ae0b1824bcae833efdc68a7cfa726a310a778743c159845593d853dbb6305 # Optional, leave blank to omit
-toast_link_text: Donate
-# July 17th, 22:00:00 GMT+0
-toast_expiration: 1689631252 # epoch time in seconds
+toast_msg_id: 5 # must increment when creating a new message
+toast_title: Octant $1M allocation voting is live!
+toast_msg: This round runs until July 28th. Please consider voting - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
+toast_link: https://snapshot.org/#/octantapp.eth/proposal/0x5bc938e62134d4b5532d525aa2bdf06c7677d74d2fc9d7ba3ebb0539238068a5 # Optional, leave blank to omit
+toast_link_text: Vote
+# July 28, 1:00:00 GMT+0
+toast_expiration: 1690506000 # epoch time in seconds
 
 # Feedback Toast
 enable_feedback_toast: true
