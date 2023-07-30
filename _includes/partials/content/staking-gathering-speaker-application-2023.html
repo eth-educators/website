@@ -28,7 +28,7 @@
         <div class="w-100 mb-3">
           <label for="speakerHandle" class="form-label">
             <span class="text-danger">*</span>
-            What's your TG or Discord handle?
+            What's your Telegram or Discord handle?
           </label>
           <input type="text" class="form-control form-field" id="speakerHandle" required onchange="validate(this)">
         </div>
@@ -47,10 +47,9 @@
                   <li class="fs-6">Accommodations needed (audio / visual / etc) </li>
                   <li class="fs-6">Speaker(s) & their titles / affiliations</li>
                 </ul>
-
                 <p class="fs-6">Guidelines:</p>
                 <ul>
-                  <li class="fs-6">The topic should not shill any one specific project. Please keep the focus to the technology, how it's developing, and broadly how it contributes to the ecosystem</li>
+                  <li class="fs-6">Please keep the focus on the technology, how it's developing, and broadly how it contributes to the ecosystem.</li>
                 </ul>
 
               </div>
@@ -67,24 +66,18 @@
           <textarea type="textarea" class="form-control form-field" id="speakerProposal" rows="5" required onchange="validate(this)"></textarea>
         </div>
 
-        <!-- Schedule -->
+        <!-- Topics -->
         <div class="col my-3">
           <div class="card w-100 bg-tertiary shadow-0">
             <div class="card-body">
-              <h5 class="card-title mb-2">Schedule</h5>
+              <h5 class="card-title mb-2">Topics</h5>
               <div class="card-text w-100 mb-auto">
 
-                <p class="fs-6">The days will be organized as follows:</p>
-
-                <p class="fw-bold fs-6">Day 1 - Protocol Day</p>
+                <p class="fs-6">Our target categories for talks are:</p>
                 <ul>
                   <li class="fs-6">DVT</li>
                   <li class="fs-6">LST protocols</li>
                   <li class="fs-6">Restaking</li>
-                </ul>
-
-                <p class="fw-bold fs-6">Day 2 - Operator Day</p>
-                <ul>
                   <li class="fs-6">Infrastructure / client teams</li>
                   <li class="fs-6">Tooling</li>
                   <li class="fs-6">MEV</li>
@@ -96,30 +89,102 @@
           </div>
         </div>
 
-        <!-- Slot Selection -->
+        <!-- Topic Selection -->
         <div class="w-100 mb-3">
-          <label for="speakerSlot" class="form-label">
+          <label for="speakerTopics" class="form-label mb-1">
             <span class="text-danger">*</span>
-            Which day and section would you like your talk to be included in?
+            Which category does your talk best fit in?
           </label>
-          <select type="select" id="speakerSlot" class="form-select form-field" aria-label="Default select example" required onchange="validate(this)">
-            <option value="" selected disabled>Select schedule...</option>
-            <option value="Day 1: DVT">Day 1: DVT</option>
-            <option value="Day 1: LST protocols">Day 1: LST protocols</option>
-            <option value="Day 1: Restaking">Day 1: Restaking</option>
-            <option value="Day 2: Infra / client teams">Day 2: Infra / client teams</option>
-            <option value="Day 2: Tooling">Day 2: Tooling</option>
-            <option value="Day 2: MEV">Day 2: MEV</option>
-            <option value="Day 2: Solo staking">Day 2: Solo staking</option>
-            <option value="Other suggestion (explain in next question)">Other suggestion (explain in next question)</option>
-          </select>
+          <div id="speakerTopics" class="form-field p-2" type="checkboxes" required onclick="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="DVT" id="speakerTopic1">
+              <label class="form-check-label" for="speakerTopic1">
+                DVT
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="LST protocols" id="speakerTopic2">
+              <label class="form-check-label" for="speakerTopic2">
+                LST protocols
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="Restaking" id="speakerTopic3">
+              <label class="form-check-label" for="speakerTopic3">
+                Restaking
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="Infra / client teams" id="speakerTopic4">
+              <label class="form-check-label" for="speakerTopic4">
+                Infra / client teams
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="Tooling" id="speakerTopic5">
+              <label class="form-check-label" for="speakerTopic5">
+                Tooling
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="MEV" id="speakerTopic6">
+              <label class="form-check-label" for="speakerTopic6">
+                MEV
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="Solo staking" id="speakerTopic7">
+              <label class="form-check-label" for="speakerTopic7">
+                Solo staking
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTopic" type="checkbox" value="Other suggestion (explain in next question)" id="speakerTopic8">
+              <label class="form-check-label" for="speakerTopic8">
+                Other suggestion (explain in next question)
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Time Selection -->
+        <div class="w-100 mb-3">
+          <label for="speakerTimes" class="form-label mb-1">
+            Do you have a preference on day / time?
+          </label>
+          <div id="speakerTimes" class="form-field p-2" type="checkboxes">
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTime" type="checkbox" value="13th AM" id="speakerTime1">
+              <label class="form-check-label" for="speakerTime1">
+                13th AM
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTime" type="checkbox" value="13th PM" id="speakerTime2">
+              <label class="form-check-label" for="speakerTime2">
+                13th PM
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTime" type="checkbox" value="14th AM" id="speakerTime3">
+              <label class="form-check-label" for="speakerTime3">
+                14th AM
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input speakerTime" type="checkbox" value="14th PM" id="speakerTime4">
+              <label class="form-check-label" for="speakerTime4">
+                14th PM
+              </label>
+            </div>
+          </div>
         </div>
 
         <!-- Suggestions -->
         <div class="w-100 mb-3">
           <label for="speakerSuggestions" class="form-label">
             Optional:
-            Do you have a suggestion for an additional topic / section?
+            Do you have a suggestion for an additional topic, section, or speaker?
           </label>
           <textarea type="textarea" class="form-control form-field" id="speakerSuggestions" rows="5"></textarea>
         </div>
@@ -213,6 +278,17 @@
           } else {
             inputValid = true;
           }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          console.log(checked)
+          if (checked.length == 0) {
+            formValid = false;
+            el.classList.add("form-control");
+          } else {
+            inputValid = true;
+            el.classList.remove("form-control");
+          }
         }
         if (inputValid) {
           el.classList.remove("is-invalid");
@@ -235,10 +311,17 @@
     dataToPost.append("entry.277831327", document.getElementById("speakerEmail").value);
     dataToPost.append("entry.992935244", document.getElementById("speakerHandle").value);
     dataToPost.append("entry.134518402", document.getElementById("speakerProposal").value);
-    dataToPost.append("entry.1886058441", document.getElementById("speakerSlot").value);
     dataToPost.append("entry.1418802351", document.getElementById("speakerSuggestions").value);
     dataToPost.append("entry.1695333927", document.getElementById("speakerLinks").value);
     dataToPost.append("entry.2075285498", document.getElementById("speakerSocial").value);
+    let speakerTopics = document.querySelectorAll('#speakerTopics input[type=checkbox]:checked');
+    speakerTopics.forEach((el) => {
+      dataToPost.append("entry.1886058441", el.value);
+    });
+    let speakerTimes = document.querySelectorAll('#speakerTimes input[type=checkbox]:checked');
+    speakerTimes.forEach((el) => {
+      dataToPost.append("entry.317606726", el.value);
+    });
     
     fetch(url,{
       method: "POST",
