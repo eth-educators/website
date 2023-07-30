@@ -21,6 +21,10 @@
 }
 
 
+.bg-tertiary {
+  background-color: var(--bs-tertiary-bg);
+}
+
 
 .brand-color-1 {
   color: var(--brand-color-1);
@@ -178,11 +182,11 @@ section li:not(:last-child) {
   border-radius: 0.5rem;
   transition: box-shadow 0.15s;
 }
-.card:hover,
+.card:hover:not(.shadow-0),
 .shadow-xl {
   box-shadow: 0 1rem 3rem rgba(0,0,0,.25)!important;
 }
-.dark-mode .card:hover {
+.dark-mode .card:hover:not(.shadow-0) {
   box-shadow: 0 1rem 3rem rgba(0,0,0,.75)!important;
 }
 
