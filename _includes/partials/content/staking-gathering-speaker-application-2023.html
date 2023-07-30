@@ -219,7 +219,7 @@
       </div>
 
       <div id="speakerFormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
-        <div>Thank you for your submission and interest in becoming a speaker! You will receive a response by September 30th, 2023 on your acceptance status.</div>
+        <div>✅ Thank you for your submission and interest in becoming a speaker! You will receive a response by September 30th, 2023 on your acceptance status.</div>
       </div>
 
     </div>
@@ -233,14 +233,14 @@
     if (formValid) {
       // Hide error message for empty required fields
       document.getElementById("errorMessage").classList.add("invisible");
-
       // Submit data to google forms
       sendData();
-
       // Display submission success message
       document.getElementById("speakerForm").classList.add("d-none");
       document.getElementById("speakerFormSubmitted").classList.remove("d-none");
-
+      // Scroll up to submission success message
+      // document.getElementById("speakerFormSubmitted").scrollIntoView();
+      scrollToElement("speakerFormSubmitted", -200);
     } else {
       // Show error message for empty required fields
       document.getElementById("errorMessage").classList.remove("invisible");
@@ -281,7 +281,6 @@
         // Checkbox Group
         } else if (type == "checkboxes") {
           let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
-          console.log(checked)
           if (checked.length == 0) {
             formValid = false;
             el.classList.add("form-control");
