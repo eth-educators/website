@@ -1,7 +1,7 @@
 ## name     = steward's name
 ## role     = steward's role
 ## img      = steward's "you met me poap" image path (and compressed)
-## img_url  = steward's "you met me poap" image url
+## img_url  = (optional) steward's "you met me poap" image url
 ## discord  = discord id, see https://www.alphr.com/discord-find-user-id/
 ## twitter  = twitter username w/o the @ or /, stewardsusername
 ## reddit   = reddit username w/o the @ or /, stewardsusername
@@ -22,17 +22,17 @@
 # Entries are shown in the order listed
 - name: superphiz
   role: Talking Head
-  img: '/assets/img/stewards/superphiz.png'
+  img: '/assets/img/about/stewards/superphiz.png'
   img_url: https://assets.poap.xyz/you-met-superphiz-in-person-2021-logo-1640200472814.png
   # discord: superphiz#1038
   discord: 584920944762552346
-  twitter: https://twitter.com/superphiz
+  twitter: superphiz
   reddit: superphiz
   github: superphiz
   ens: superphiz.eth
 - name: Lamboshi aka Nolan
   role: Treasurer
-  img: '/assets/img/stewards/lamboshi.png'
+  img: '/assets/img/about/stewards/lamboshi.png'
   img_url: https://assets.poap.xyz/you-met-lamboshi-at-devcon-bogota-2022-logo-1664219301610.png
   # discord: Lamboshi aka Nolan#0383
   discord: 323241195147100160
@@ -42,7 +42,7 @@
   ens: lamboshi.eth
 - name: Butta
   role: Chief Pepe Officer
-  img: '/assets/img/stewards/butta.png'
+  img: '/assets/img/about/stewards/butta.png'
   img_url: https://assets.poap.xyz/61a4a3ad-8016-48a7-939a-39d0e1b58f15.png
   # discord: Butta#8883
   discord: 97774605351010304
@@ -52,7 +52,7 @@
   ens: butta.eth
 - name: Sam
   role: The Whip
-  img: '/assets/img/stewards/sam.png'
+  img: '/assets/img/about/stewards/sam.png'
   img_url: https://assets.poap.xyz/you-met-sam-in-december-2022!-2022-logo-1670421309658.png
   # discord: Sam | POAP#5828
   discord: 610176314011287562
@@ -62,7 +62,7 @@
   ens: greywizard.eth
 - name: Rémy Roy
   role: Big Brain Tech Guy
-  img: '/assets/img/stewards/remy.png'
+  img: '/assets/img/about/stewards/remy.png'
   img_url: https://assets.poap.xyz/youve-met-remyroyeth-at-ethdenver-2023-2023-logo-1675720641606.png
   # discord: Remy Roy#1837
   discord: 102952036382830592
@@ -72,7 +72,7 @@
   ens: remyroy.eth
 - name: Thorsten Behrens
   role: Big Brain Tech Guy
-  img: '/assets/img/stewards/thorsten.png'
+  img: '/assets/img/about/stewards/thorsten.png'
   img_url: https://assets.poap.xyz/youve-met-yorickthorsten-at-devconnect-2022-2022-logo-1650354865271.png
   # discord: Yorick | cryptomanufaktur.io#0990
   discord: 219015859182632960
@@ -82,7 +82,7 @@
   ens: yorickdowne.eth
 - name: nixo
   role: Nixecutive Director
-  img: '/assets/img/stewards/nixo.png'
+  img: '/assets/img/about/stewards/nixo.png'
   img_url: https://assets.poap.xyz/you-met-nixorokish!-2023-2023-logo-1674752026979.png
   # discord: nixorokish#3333
   discord: 731289513942450317
@@ -90,3 +90,13 @@
   reddit: nixorokish
   github: nixorokish
   ens: nixorokish.eth
+- name: hanniabu
+  role: 
+  img: '/assets/img/about/stewards/hanniabu.png'
+  img_url: 
+  # discord: @hanniabu
+  discord: 373406915696394242
+  twitter: hanni_abu
+  reddit: hanniabu
+  github: hanniabu
+  ens: hanniabu.eth

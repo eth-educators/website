@@ -1,0 +1,38 @@
+## name     = documenter's name
+## role     = documenter's role
+## img      = documenter's "you met me poap" image path (and compressed)
+## img_url  = (optional) documenter's "you met me poap" image url
+## discord  = discord id, see https://www.alphr.com/discord-find-user-id/
+## twitter  = twitter username w/o the @ or /, documentersusername
+## reddit   = reddit username w/o the @ or /, documentersusername
+## github   = github username w/o the @ or /, documentershandle
+## ens      = ens address; documentersens.eth
+
+# Template to copy for new entries
+# - name: 
+#   role: 
+#   img: 
+#   discord: 
+#   twitter: 
+#   reddit: 
+#   github: 
+#   ens: 
+
+
+# Entries are shown in the order listed
+- name: eridian
+  img: '/assets/img/about/documenters/eridian.png'
+  # discord: @eridianalpha
+  discord: 844144351315755009
+  twitter: eridianalpha
+  reddit: eridianalpha
+  github: eridianalpha
+  ens: eridian.eth
+- name: spacesider
+  img: '/assets/img/about/documenters/spacesider.png'
+  # discord: @spacesider
+  discord: 718780451954622484
+  twitter: spacesider
+  reddit: spacesider
+  github: spacesider
+  ens: spacesider.eth
