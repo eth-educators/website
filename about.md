@@ -22,7 +22,14 @@ EthStaker’s principle goal is to maximize the decentralization of the Ethereum
 
 While EthStaker is a community organization, it's stewarded by the active members listed below. [View disclosures](/disclosures).
 
-{% include partials/content/stewards.html %}
+{% include partials/content/about/stewards.html %}
+
+
+## Documentation
+
+EthStaker's documentation plays a crucial part in educating the staking community, made possible largely thanks to the contributors below.
+
+{% include partials/content/about/documentation.html %}
 
 
 {:class="etheralpha"}
