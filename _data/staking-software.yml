@@ -1,0 +1,63 @@
+## title       = software title
+## img         = software image
+## description = software description
+## link        = software url
+## creator     = name of entity that created/maintains the software
+
+# Template to copy for new entries
+# - title: 
+#   img: 
+#   description: 
+#   link: 
+#   creator: 
+
+
+# Entries are shown in the order listed
+- title: Eth Wizard
+  img: "/assets/img/staking-software/eth-wizard.png"
+  description: An installation wizard to setup, configure, and maintain your validator.
+  link: "/solo-staking-guides/eth-wizard"
+  creator: Rémy Roy
+- title: Eth Docker
+  img: "/assets/img/staking-software/eth-docker.png"
+  description: Eth Docker makes installing and maintaining your validator simpler with the use of Docker.
+  link: "/solo-staking-guides/eth-docker"
+  creator: Thorsten Behrens
+- title: Wagyu Key Gen
+  img: "/assets/img/staking-software/wagyu.png"
+  description: A GUI app to securely generate keys for staking deposits.
+  link: "/staking-software/wagyu"
+  creator: Colfax
+- title: Staking Deposit CLI
+  img: "/assets/img/staking-software/staking-deposit-cli.png"
+  description: A CLI program to securely generate keys for staking deposits.
+  link: "https://github.com/ethereum/staking-deposit-cli"
+  creator: Ethereum
+- title: Instant Validator
+  img: "/assets/img/staking-software/instant-validator.png"
+  description: A Python script that simplifies and automates validator installation and configuration.
+  # link: "/solo-staking-guides/instant-validator"
+  link: "https://github.com/accidental-green/validator-install"
+  creator: accidental-green
+- title: Client Switcher
+  img: "/assets/img/staking-software/client-switcher.png"
+  description: A Python script that helps you migrate between execution clients. 
+  # link: "/solo-staking-guides/client-switcher"
+  link: "https://github.com/accidental-green/client-switcher"
+  creator: accidental-green
+- title: Validator Updater
+  img: "/assets/img/staking-software/validator-updater.png"
+  description: A Python script to easily update Execution and Consensus clients to the latests version.
+  # link: "/solo-staking-guides/validator-updater"
+  link: "https://github.com/accidental-green/validator-update"
+  creator: accidental-green
+- title: Nethermind Sedge
+  img: "/assets/img/staking-software/sedge.png"
+  description: Sedge makes installing and maintaining your validator simpler with the use of Docker.
+  link: "https://docs.sedge.nethermind.io/"
+  creator: Nethermind
+- title: Stereum
+  img: "/assets/img/staking-software/stereum.png"
+  description: A GUI app for Ethereum node and validator installation, setup, and management.
+  link: "https://stereum.net/"
+  creator: Rocklogic
