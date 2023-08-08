@@ -27,7 +27,7 @@
   img: "/assets/img/staking-software/wagyu.png"
   description: A GUI app to securely generate keys for staking deposits.
   link: "/staking-software/wagyu"
-  creator: Colfax
+  creator: Colfax Selby
 - title: Staking Deposit CLI
   img: "/assets/img/staking-software/staking-deposit-cli.png"
   description: A CLI program to securely generate keys for staking deposits.
