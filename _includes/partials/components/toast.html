@@ -90,7 +90,10 @@ toast_expiration: 3000000000 # epoch time in seconds
     const renewalPeriod = {{site.feedback_toast_renewal_period}};
     const renew = (lastClose + renewalPeriod) < timestamp;
     if (lastClose == null || renew) {
-      document.querySelector(".toast-title").innerHTML = "{{site.feedback_toast_title}}";
+      document.querySelector(".toast-header").innerHTML = `
+        <span class="toast-badge bg-info rounded-1"></span>
+        <strong class="toast-title me-auto ms-2">{{site.feedback_toast_title}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" onclick="hidetoast('feedback')"></button>`;
       document.querySelector(".toast-body").innerHTML = `
         <div id="toastFeedback">
           <div id="toastFeedbackForm">
