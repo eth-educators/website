@@ -135,7 +135,7 @@ This is the most involved part - these methods will take you from start to finis
 | Someresat | Advanced | Someresat |  | CLI, but lots of copy-paste. Best option if you want a deep understanding of the inner workings of your validator |
 | CoinCashew | Advanced | CoinCashew | https://www.coincashew.com/ | CLI. Slightly more beginner-friendly than Someresat |
 | eth-wizard | Intermediate | EthStaker |  | CLI still required but it basically automates Someresat’s process in a way that’s much more beginner-friendly |
-| eth-docker | Intermediate | EthStaker | https://eth-docker.net/ | CLI but it’s containerized - meaning you don’t have to worry about installing dependencies or understanding commands deeply |
+| Eth Docker | Intermediate | EthStaker | https://eth-docker.net/ | CLI but it’s containerized - meaning you don’t have to worry about installing dependencies or understanding commands deeply |
 
 
 ---
