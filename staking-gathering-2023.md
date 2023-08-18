@@ -41,7 +41,7 @@ Throughout the event, you'll have the opportunity to engage with our sponsors at
 
 ### Spaces to Unwind
 
-Need a breather between sessions? Relax and recharge in our dedicated chill-out zones. Whether you're reflecting on a presentation or engaging in lively conversations, these cozy spaces are perfect for unwinding.
+Need a breather between sessions? Relax and recharge in our dedicated chill-out zone. Whether you're reflecting on a presentation or engaging in lively conversations, this cozy space is perfect for unwinding.
 
 ### Stay Connected
 
