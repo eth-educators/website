@@ -7,6 +7,8 @@ layout: default
 
 {% include partials/components/divider-icons-projects.html %}
 
+{% include partials/content/index-staking-gathering.html %}
+
 {% include partials/content/index-staking.html %}
 
 {% include partials/content/index-events.html %}
