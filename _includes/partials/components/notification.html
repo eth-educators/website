@@ -21,11 +21,14 @@ notification_expiration: 3000000000 # epoch time in seconds
     bottom: 0;
     left: 0;
     right: 0;
-    color: var(--bs-body-color);
+    color: var(--bs-dark);
     text-align: center;
     overflow: hidden;
     box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.15);
     background-color: var(--bs-body-bg);
+  }
+  #notification a {
+    color: var(--bs-dark);
   }
   #notificationClose {
     cursor: pointer;
@@ -34,7 +37,7 @@ notification_expiration: 3000000000 # epoch time in seconds
 
 
 <!-- Notification Bar -->
-<div id="notification" class="d-none d-flex">
+<div id="notification" class="d-none d-flex bg-warning">
   <span id="notification_msg" class="flex-grow-1 py-2 ps-3 pe-1">
     {{site.notification_msg}}
   </span>
