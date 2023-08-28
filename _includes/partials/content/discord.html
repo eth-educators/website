@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="d-flex justify-content-center">
+    <canvas id="captchaCanvas" class="mb-3" style="width:150px; height:70px; border:1px solid var(--bs-body-color)"></canvas>
+    <!-- <div class="mt-2">
+      <a id="captchaRefresh" class="btn btn-outline-dark mt-2" onclick="generateCaptcha();">{{site.data.icons.arrow-clockwise}}</a>
+    </div> -->
+  </div>
+</div>
+<div class="row">
+  <div class="d-flex justify-content-center">
+    <input id="captchaInput" class="form-control" type="text" placeholder="Enter captcha" aria-label="Enter captcha" oninput="captchaReset()" onkeydown="captchaSubmit(event)">
+    <button id="captchaSubmit" class="btn btn-dark ms-2" onclick="validateCaptcha();">Submit</button>
+  </div>
+</div>
+<div class="form-text text-danger d-none" id="catpchaError">Error: Input did not match captcha, please try again.</div>
+
+
+<script type="text/javascript">
+  let captchaCode = "";
+  window.onload = generateCaptcha();
+
+  function generateCaptcha() {
+    captchaCode = "";
+    let captchaLength = 6;
+    for (let i = 0; i < captchaLength; i++) {
+      captchaCode += Math.floor(Math.random() * 10);
+      captchaCode += " ";
+    }
+
+    const canvas = document.getElementById("captchaCanvas");
+    const context = canvas.getContext("2d");
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    // context.font = "20px Georgia";
+    context.font = "60px serif";
+    let html = document.querySelector("html");
+    if (html.hasAttribute("data-bs-theme") && html.getAttribute("data-bs-theme") == "dark") {
+      context.fillStyle = "white";
+    } else {
+      context.fillStyle = "black";
+    }
+    context.fillText(captchaCode, 22, 90);
+  }
+
+  function captchaSubmit(e) {
+    if (e.keyCode == 13) {
+      validateCaptcha();
+    }
+  }
+
+  function validateCaptcha() {
+    captchaCode = captchaCode.split(' ').join('');
+    let captchaInput = document.getElementById('captchaInput').value.split(' ').join('');
+     
+    if (captchaCode == captchaInput) {
+      captchaRedirect();
+    } else {
+      captchaError();
+    }
+  }
+
+  function captchaRedirect() {
+    let url = ["h","t","t","p","s",":","/","/","d","i","s","c","o","r","d",".","c","o","m","/","i","n","v","i","t","e","/","u","c","s","T","c","A","2","w","T","q"];
+    document.getElementById('captchaInput').classList.add("is-valid");
+    window.location.href = url.join("");
+  }
+
+  function captchaError() {
+    document.getElementById("catpchaError").classList.remove("d-none");
+    document.getElementById('captchaInput').value  = "";
+    document.getElementById('captchaInput').classList.add("is-invalid");
+    generateCaptcha();
+  }
+
+  function captchaReset() {
+    document.getElementById("catpchaError").classList.add("d-none");
+    document.getElementById('captchaInput').classList.remove("is-invalid");
+  }
+</script>
