@@ -49,7 +49,7 @@ Stay connected to the digital realm with complimentary Wi-Fi, ensuring you're al
 
 #### A Convenient Locale
 
-Our Staking Gathering unfolds in the heart of Istanbul at the prestigious [Hilton Istanbul Bosphorus hotel](https://goo.gl/maps/xEBgAm7FYwhXK8px5). Just a leisurely [3-minute stroll](https://goo.gl/maps/T7pox2Mh827Z9tZv5) from the Devconnect co-work space in the vibrant Şişli neighborhood, the venue is easily accessible and promises an unforgettable experience.
+Our Staking Gathering unfolds in the heart of Istanbul at the prestigious [Hilton Istanbul Bosphorus hotel](https://goo.gl/maps/xEBgAm7FYwhXK8px5). Just a leisurely [3-minute stroll](https://goo.gl/maps/Yik7fVfESpVhshKS8) from the Devconnect co-work space in the vibrant Şişli neighborhood, the venue is easily accessible and promises an unforgettable experience.
 
 Mark your calendars for a staking adventure like no other! Join us at the Staking Gathering during the Devconnect Conference on November 13th and 14th, 2023. Prepare to be enlightened, engaged, and empowered in the realm of Ethereum staking. We can't wait to welcome you to this exciting event!
 
