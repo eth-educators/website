@@ -1,0 +1,102 @@
+{%- comment -%}
+<!-- 
+This data is pulled from _data/speakers.yml
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  .speaker {
+    width: 10.5rem;
+    border: none;
+  }
+  @media only screen and (max-width: 1399px) {
+    .speaker {
+      width: 12rem;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .speaker {
+      width: 14rem;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .speaker {
+      width: 13rem;
+    }
+  }
+  .speaker a {
+    width: 1.1rem;
+    margin: 0 0.35rem;
+    filter: grayscale(100%) brightness(0%);
+  }
+  .speaker a:first-child {
+    margin-left: 0;
+  }
+  .speaker a:last-child {
+    margin-right: 0;
+  }
+  .speaker svg {
+    height: 1.1rem;
+    width: 1.1rem;
+    opacity: 0.8;
+  }
+
+  .dark-mode .speaker a {
+    filter: contrast(0%) brightness(100%) sepia(50%) hue-rotate(175deg) !important;
+  }
+</style>
+
+
+<!-- 8 on lg+
+4 on md+
+3 on xs+ -->
+<div id="speakers" class="row row-cols-auto justify-content-center pt-2">
+  {%- for speaker in site.data.speakers -%}
+    {%- if speaker.name -%}
+      {% assign visbility = "d-none" %}
+      {%- if forloop.index <= 8 -%}
+        {% assign visbility = "d-none d-xxl-flex" %}
+      {%- endif -%}
+      {%- if forloop.index <= 6 -%}
+        {% assign visbility = "d-none d-xl-flex" %}
+      {%- endif -%}
+      {%- if forloop.index <= 4 -%}
+        {% assign visbility = "d-none d-sm-flex" %}
+      {%- endif -%}
+      {%- if forloop.index <= 3 -%}
+        {% assign visbility = "d-flex d-xs-flex" %}
+      {%- endif -%}
+      <div class="col d-flex align-items-stretch mb-4 {{visbility}}">
+        <div class="card speaker shadow">
+          <div class="px-3 pt-3">
+            <img src="{{speaker.img}}" class="card-img-top m-0 rounded-circle shadow" alt="...">
+          </div>
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title text-center mx-auto">{{speaker.name}}</h5>
+            <div class="card-text text-center fs-6 w-100 mb-auto">
+              <p class="fw-semibold fs-6 mb-0">{{speaker.org}}</p>
+              <p class="fs-6 fst-italic">{{speaker.role}}</p>
+            </div>
+            <div class="mx-auto">
+              <a href="{{speaker.profile}}" class="">View profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+<div class="d-grid justify-content-center">
+  <a class="btn btn-outline-dark" onclick="showAllSpeakers(this)">View all speakers</a>
+</div>
+
+
+<script type="text/javascript">
+  function showAllSpeakers(el) {
+    let speakers = document.querySelectorAll("#speakers .col");
+    speakers.forEach(speaker => {
+      speaker.classList.remove("d-none");
+    });
+    el.classList.add("d-none");
+  }
+</script>
