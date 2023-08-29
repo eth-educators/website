@@ -19,6 +19,12 @@ buttons:
 
 Are you ready to dive into the fascinating world of Ethereum staking? Whether you're a newcomer seeking to understand the basics or an experienced staker looking to explore the latest advancements, we have something incredible in store for you. Join us on **November 13th and 14th, 2023**, for an electrifying two-day event where we unravel the intricacies of staking and its ever-evolving landscape.
 
+
+### Featured Speakers
+
+{% include partials/content/staking-gathering-speakers.html %}
+
+
 #### A Staker's Haven
 
 Our Staking Gathering is the ultimate destination for enthusiasts of all levels. From newcomers taking their first steps into staking to institutional experts orchestrating large-scale operations, everyone is welcome! Immerse yourself in a rich tapestry of discussions, workshops, and presentations covering a diverse spectrum of staking-related topics.
