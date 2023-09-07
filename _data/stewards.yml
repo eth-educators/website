@@ -20,16 +20,6 @@
 
 
 # Entries are shown in the order listed
-- name: superphiz
-  role: Talking Head
-  img: '/assets/img/about/stewards/superphiz.png'
-  img_url: https://assets.poap.xyz/you-met-superphiz-in-person-2021-logo-1640200472814.png
-  # discord: superphiz#1038
-  discord: 584920944762552346
-  twitter: superphiz
-  reddit: superphiz
-  github: superphiz
-  ens: superphiz.eth
 - name: Lamboshi aka Nolan
   role: Treasurer
   img: '/assets/img/about/stewards/lamboshi.png'
