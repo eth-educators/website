@@ -4,7 +4,7 @@ title: Staking Support
 permalink: /support
 
 buttons:
-- link: 'http://discord.io/ethstaker'
+- link: 'http://dsc.gg/ethstaker'
   text: Discord Support
 ---
 

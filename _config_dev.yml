@@ -6,7 +6,7 @@ enable_getdate: false # gets the publish/update date of resource links
 # Notification Bar
 enable_notification: true
 notification_msg_id: 1 # must increment when creating a new message
-notification_msg: <a href="http://discord.io/ethstaker">Join the community!</a>
+notification_msg: <a href="http://dsc.gg/ethstaker">Join the community!</a>
 notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
