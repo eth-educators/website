@@ -92,9 +92,9 @@ Prepare for captivating talks and hands-on workshops at our event – the schedu
 
 #### For speakers
 
-Eager to share your Ethereum staking insights? EthStaker welcomes you to become a speaker at our event! Whether you're a seasoned staker or a rising star, your unique perspective can ignite discussions and drive our community forward. 
+Eager to share your Ethereum staking insights? EthStaker welcomes you to become a speaker at our event! Whether you're a seasoned staker or a rising star, your unique perspective can ignite discussions and drive our community forward. Apply by _October 1st, 2023_, for a chance to take the stage. We'll reach out to every applicant to confirm talk details and schedule. Don't miss this opportunity to shape the conversation – [Apply here](/staking-gathering-speaker-application-2023)!
 
-{{"We are no longer accepting speaker applications." | warning}}
+{{"Speaker positions are currently full. You can still apply, but new applications will be placed on our waitlist unless we experience cancellations." | warning | italic}}
 
 
 #### For volunteers

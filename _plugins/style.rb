@@ -46,7 +46,7 @@ module Jekyll
     end
 
     def italic(input)
-      "<span class='fw-italic'>#{input}</span>"
+      "<span class='fst-italic'>#{input}</span>"
     end
 
     def small(input)

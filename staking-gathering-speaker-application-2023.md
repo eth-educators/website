@@ -11,6 +11,6 @@ permalink: /staking-gathering-speaker-application-2023
 
 **Location**: Hilton Bosphorus in Istanbul, Turkey
 
----
+{{"Speaker positions are currently full. You can still apply, but new applications will be placed on our waitlist unless we experience cancellations." | warning | italic}}
 
-We are no longer accepting speaker applications. Please see [the event page](/staking-gathering-2023) for event information and tickets.
+{% include partials/content/staking-gathering-speaker-application-2023.html %}
