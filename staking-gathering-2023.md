@@ -15,6 +15,13 @@ buttons:
   text: For sponsors
 ---
 
+
+{:class="text-center"}
+{% include partials/components/button.html
+  link="https://ticketh.xyz/ethstaker/devconnect/"
+  text="Buy Tickets"
+%}
+
 ## Welcome to the Staking Gathering at Devconnect Conference!
 
 Are you ready to dive into the fascinating world of Ethereum staking? Whether you're a newcomer seeking to understand the basics or an experienced staker looking to explore the latest advancements, we have something incredible in store for you. Join us on **November 13th and 14th, 2023**, for an electrifying two-day event where we unravel the intricacies of staking and its ever-evolving landscape.
@@ -55,7 +62,7 @@ Stay connected to the digital realm with complimentary Wi-Fi, ensuring you're al
 
 #### A Convenient Locale
 
-Our Staking Gathering unfolds in the heart of Istanbul at the prestigious [Hilton Istanbul Bosphorus hotel](https://goo.gl/maps/xEBgAm7FYwhXK8px5). Just a leisurely [3-minute stroll](https://goo.gl/maps/Yik7fVfESpVhshKS8) from the Devconnect co-work space in the vibrant Şişli neighborhood, the venue is easily accessible and promises an unforgettable experience.
+Our Staking Gathering unfolds in the heart of Istanbul at the prestigious [Hilton Istanbul Bosphorus Conference Center](https://maps.app.goo.gl/rfL6eEfqNbQhJ52j6). Just a leisurely [3-minute stroll](https://goo.gl/maps/Yik7fVfESpVhshKS8) from the Devconnect co-work space in the vibrant Şişli neighborhood, the venue is easily accessible and promises an unforgettable experience.
 
 Mark your calendars for a staking adventure like no other! Join us at the Staking Gathering during the Devconnect Conference on November 13th and 14th, 2023. Prepare to be enlightened, engaged, and empowered in the realm of Ethereum staking. We can't wait to welcome you to this exciting event!
 
@@ -71,11 +78,17 @@ Devconnect is the nexus where Ethereum's brightest minds, passionate builders, a
 
 **Date**: November 13th - 14th, 2023
 
-**Location**: [Hilton Bosphorus in Istanbul, Turkey](https://goo.gl/maps/xEBgAm7FYwhXK8px5)
+**Location**: [Hilton Bosphorus in Istanbul, Turkey](https://maps.app.goo.gl/rfL6eEfqNbQhJ52j6)
 
 #### For attendees
 
 Prepare for captivating talks and hands-on workshops at our event – the schedule is cooking up and will be served soon. Get ready to grab your tickets and bring your curious mind, a smile, and heaps of enthusiasm – we're all set to have an amazing time together!
+
+{% include partials/components/button.html
+  link="https://ticketh.xyz/ethstaker/devconnect/"
+  text="Buy tickets"
+  size="sm"
+%}
 
 #### For speakers
 
