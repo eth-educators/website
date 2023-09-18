@@ -15,7 +15,6 @@ buttons:
   text: For sponsors
 ---
 
-
 {:class="text-center"}
 {% include partials/components/button.html
   link="https://ticketh.xyz/ethstaker/devconnect/"
@@ -82,11 +81,23 @@ Devconnect is the nexus where Ethereum's brightest minds, passionate builders, a
 
 #### For attendees
 
-Prepare for captivating talks and hands-on workshops at our event – the schedule is cooking up and will be served soon. Get ready to grab your tickets and bring your curious mind, a smile, and heaps of enthusiasm – we're all set to have an amazing time together!
+The moment you've been waiting for is here – [tickets](https://ticketh.xyz/ethstaker/devconnect/) for our mind-expanding conference are available **right now**! But wait, there's a twist to keep things exciting – we're rolling out tickets in waves. Wave 1 crashed onto the scene on September 15th, offering a lucky 128 of you the chance to snag your spot at the hottest event in town. Our schedule, your roadmap to a day of inspiration, has also been unleashed and is waiting for you below. Keep in mind that the journey ahead might have a few unexpected detours, as we're fine-tuning the schedule to bring you the absolute best experience. So, fasten your seatbelts, grab your tickets, and get ready for a day that could change your life.
 
 {% include partials/components/button.html
   link="https://ticketh.xyz/ethstaker/devconnect/"
   text="Buy tickets"
+  size="sm"
+%}
+
+##### Schedule
+
+And here's the key to customizing your conference adventure: create your own schedule by simply setting up an account on our user-friendly scheduling app. Pick and choose the talks that resonate with your soul, and craft a journey that's uniquely yours.
+
+{% include partials/content/staking-gathering-schedule.html %}
+
+{% include partials/components/button.html
+  link="https://stakinggathering2023.sched.com/"
+  text="Full schedule"
   size="sm"
 %}
 
