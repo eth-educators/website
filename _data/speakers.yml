@@ -28,6 +28,11 @@
   role: DevOps
   img: "https://avatars.sched.co/7/f0/19160283/avatar.jpg"
   profile: "https://stakinggathering2023.sched.com/speaker/parithosh.25s5xdmm"
+- name: Alex Stokes
+  org: Ethereum Foundation
+  role: Researcher
+  img: "https://avatars.sched.co/9/7a/19170204/avatar.jpg"
+  profile: "https://stakinggathering2023.sched.com/speaker/alex_stokes.25sghpe0"
 - name: Sreeram Kannan
   org: Eigenlayer
   role: CEO
@@ -68,25 +73,85 @@
   role: Founder
   img: "https://avatars.sched.co/5/84/19160262/avatar.jpg"
   profile: "https://stakinggathering2023.sched.com/speaker/collin.25s5xdlw"
-- name: Alon Muroch
-  org: SSV
+- name: Stefan Kobrc
+  org: Stereum
   role: Founder
-  img: "https://avatars.sched.co/2/26/19160274/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/alon20"
-- name: Mikhail Kalinin
-  org: Consensys
-  role: Developer
-  img: "https://avatars.sched.co/b/3a/19170207/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/mikhail_kalinin.25sghrn5"
-- name: Alex Stokes
-  org: Ethereum Foundation
-  role: Researcher
-  img: "https://avatars.sched.co/9/7a/19170204/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/alex_stokes.25sghpe0"
+  img: "https://avatars.sched.co/1/e2/19282694/avatar.jpg?9a6"
+  profile: "https://stakinggathering2023.sched.com/speaker/stefan_kobrc.25ulxmgc"
 - name: Terence Tsao
   org: Offchain Labs
   role: Developer / Researcher
   img: "https://avatars.sched.co/a/fd/19170209/avatar.jpg"
   profile: "https://stakinggathering2023.sched.com/speaker/terence_tsao.25sght9q"
+- name: Darren Langley
+  org: Rocket Pool
+  role: General Manager
+  img: "https://avatars.sched.co/d/aa/19282640/avatar.jpg?cbb"
+  profile: "https://stakinggathering2023.sched.com/speaker/langers.25ulxm1t"
+- name: Stefan Bratanov
+  org: Teku / Consensys
+  role: Developer
+  img: "https://avatars.sched.co/0/5b/19282619/avatar.jpg?ac6"
+  profile: "https://stakinggathering2023.sched.com/speaker/stefan_bratanov.25ulxm04"
+- name: Lanski
+  org: DAppNode
+  role: COO
+  img: "https://avatars.sched.co/7/c3/14329499/avatar.jpg?8f7"
+  profile: "https://stakinggathering2023.sched.com/speaker/pol12"
+- name: James Smith
+  org: Ethereum Foundation
+  role: ""
+  img: "https://avatars.sched.co/7/4d/19282685/avatar.jpg?de8"
+  profile: "https://stakinggathering2023.sched.com/speaker/james.25ulxmgp"
+- name: Jason Carver
+  org: Ethereum Foundation
+  role: Rusty Coder
+  img: "https://avatars.sched.co/5/8e/19284408/avatar.jpg?420"
+  profile: "https://stakinggathering2023.sched.com/speaker/carver3"
+- name: Jordan Sutcliffe
+  org: StakeWise
+  role: Bizdev Lead
+  img: "https://avatars.sched.co/d/03/19282613/avatar.jpg?7e5"
+  profile: "https://stakinggathering2023.sched.com/speaker/jordan_sutcliffe.25ulxlxt"
+- name: Pablo Villalba
+  org: DivaStaking
+  role: Founder
+  img: "https://avatars.sched.co/7/8d/19282646/avatar.jpg?04d"
+  profile: "https://stakinggathering2023.sched.com/speaker/pablo_villalba.25ulxm5j"
+- name: Tomasz K. Stańczak
+  org: Nethermind
+  role: Founder
+  img: "https://avatars.sched.co/f/7a/19282643/avatar.jpg?de5"
+  profile: "https://stakinggathering2023.sched.com/speaker/tomasz_k_stanczak.25ulxm4z"
+- name: Mikhail Kalinin
+  org: Consensys
+  role: Developer
+  img: "https://avatars.sched.co/b/3a/19170207/avatar.jpg?a1a"
+  profile: "https://stakinggathering2023.sched.com/speaker/mikhail_kalinin.25sghrn5"
 
+# - name: Alon Muroch
+#   org: SSV
+#   role: Founder
+#   img: "https://avatars.sched.co/2/26/19160274/avatar.jpg"
+#   profile: "https://stakinggathering2023.sched.com/speaker/alon20"
+# - name: Mikhail Kalinin
+#   org: Consensys
+#   role: Developer
+#   img: "https://avatars.sched.co/b/3a/19170207/avatar.jpg"
+#   profile: "https://stakinggathering2023.sched.com/speaker/mikhail_kalinin.25sghrn5"
+# - name: Andy Guzman
+#   org: Privacy & Scaling Explorations
+#   role: Product Owner
+#   img: "https://avatars.sched.co/1/93/19282649/avatar.jpg?fc1"
+#   profile: "https://stakinggathering2023.sched.com/speaker/andy_guzman.25ulxm63"
+# - name: Kydo
+#   org: Eigenlayer
+#   role: Protocol Researcher
+#   img: "https://avatars.sched.co/5/bb/19282676/avatar.jpg?5ae"
+#   profile: "https://stakinggathering2023.sched.com/speaker/kydo.25ulxme6"
+# - name: Marek Moraczyński
+#   org: Nethermind
+#   role: Team lead
+#   img: "https://avatars.sched.co/3/f6/19282658/avatar.jpg?90a"
+#   profile: "https://stakinggathering2023.sched.com/speaker/marek_moraczynski.7s9e5to"
 
