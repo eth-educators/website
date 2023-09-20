@@ -25,7 +25,7 @@ Are you ready to dive into the fascinating world of Ethereum staking? Whether yo
 
 ## Sponsors
 
-
+{% include partials/content/staking-gathering-sponsors.html %}
 
 ## Event details
 
