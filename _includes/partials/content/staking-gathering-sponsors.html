@@ -1,60 +1,120 @@
 <style type="text/css">
-  #sponsors .platinum {
-    margin-bottom: 20px;
+  #sponsors a,
+  #sponsors img {
+    max-height: 100%;
   }
-  #sponsors .gold {
-    margin-bottom: 15px;
+  #sponsors .platinum {
+    
+  }
+  #sponsors .gold,
+  #sponsors .gold .col {
+    height: 200px;
+  }
+  #sponsors .gold a.d-block {
+    height: 100px;
+  }
+  #sponsors .silver,
+  #sponsors .silver a {
+    height: 100px;
+  }
+
+  @media only screen and (max-width: 1399px) {
+    #sponsors .gold,
+    #sponsors .gold .col {
+      height: 175px;
+    }
+    #sponsors .gold a.d-block {
+      height: 87px;
+    }
+    #sponsors .silver,
+    #sponsors .silver a {
+      height: 87px;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    #sponsors .gold,
+    #sponsors .gold .col {
+      height: 150px;
+    }
+    #sponsors .gold a.d-block {
+      height: 75px;
+    }
+    #sponsors .silver,
+    #sponsors .silver a {
+      height: 75px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    #sponsors .gold,
+    #sponsors .gold .col {
+      height: 125px;
+    }
+    #sponsors .gold a.d-block {
+      height: 62px;
+    }
+    #sponsors .silver,
+    #sponsors .silver a {
+      height: 62px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    #sponsors .gold,
+    #sponsors .gold .col {
+      height: 100px;
+    }
+    #sponsors .gold a.d-block {
+      height: 50px;
+    }
+    #sponsors .silver,
+    #sponsors .silver a {
+      height: 50px;
+    }
+  }
+
+  .markdown #sponsors img {
+    margin: 0px auto;
   }
 </style>
 
 
-<div id="sponsors" class="row row-cols-auto justify-content-center pt-2">
-  <div class="col d-flex flex-row platinum">
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://www.safestake.xyz/"><img src="/assets/img/devconnect/safestake.png" alt="SafeStake"></a>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex flex-row gold">
-    <div class="card shadow mr-4">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://lido.fi/"><img src="/assets/img/devconnect/lido.png" alt="Lido"></a>
-      </div>
-    </div>
-    <div class="card shadow mr-4">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://rocketpool.net/"><img src="/assets/img/devconnect/rocketpool.png" alt="Rocket Pool"></a>
-      </div>
-    </div>
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://sigmaprime.io/"><img src="/assets/img/devconnect/sigmaprime.png" alt="Sigma Prime"></a>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex flex-row silver">
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://linktr.ee/divastaking"><img src="/assets/img/devconnect/diva.png" alt="Diva Staking"></a>
-      </div>
-    </div>
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://www.eigenlayer.xyz/"><img src="/assets/img/devconnect/eigenlayer.png" alt="EigenLayer"></a>
-      </div>
-    </div>
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://nimbus.team/"><img src="/assets/img/devconnect/nimbus.png" alt="Nimbus"></a>
-      </div>
-    </div>
-    <div class="card shadow">
-      <div class="px-3 pt-3 pb-3">
-        <a href="https://stakewise.io/"><img src="/assets/img/devconnect/stakewise.png" alt="StakeWise"></a>
-      </div>
+<div id="sponsors" class="">
+  <div class="row justify-content-center w-100 mb-4 platinum">
+    <div class="col">
+      <a href="https://www.safestake.xyz/">
+        <img src="/assets/img/devconnect/safestake.svg" alt="SafeStake" class="w-100">
+      </a>
     </div>
   </div>
 
+  <div class="row justify-content-center d-flex align-items-center w-100 mb-4 gold">
+    <div class="col col-6">
+      <a class="d-block" href="https://lido.fi/">
+        <img src="/assets/img/devconnect/lido.png" alt="Lido">
+      </a>
+      <a class="d-block" href="https://sigmaprime.io/">
+        <img src="/assets/img/devconnect/sigmaprime.png" alt="Sigma Prime">
+      </a>
+    </div>
+    <div class="col col-5">
+      <a href="https://rocketpool.net/">
+        <img src="/assets/img/devconnect/rocketpool.png" alt="Rocket Pool">
+      </a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center w-100 silver">
+    <a class="w-25 d-flex align-items-center" href="https://nimbus.team/">
+      <img src="/assets/img/devconnect/nimbus.png" alt="Nimbus">
+    </a>
+    <a class="w-25 d-flex align-items-center" href="https://linktr.ee/divastaking">
+      <img src="/assets/img/devconnect/diva.png" alt="Diva Staking">
+    </a>
+    <a class="w-25 d-flex align-items-center" href="https://www.eigenlayer.xyz/">
+      <img src="/assets/img/devconnect/eigenlayer.png" alt="EigenLayer">
+    </a>
+    <a class="w-25 d-flex align-items-center" href="https://stakewise.io/">
+      <img src="/assets/img/devconnect/stakewise.png" alt="StakeWise">
+    </a>
+  </div>
 </div>
 
