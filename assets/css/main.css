@@ -209,6 +209,7 @@ section li:not(:last-child) {
 .footer-socials .new-tab span.icon,
 .branding-card .new-tab span.icon,
 .steward .new-tab span.icon,
+#sponsors .new-tab span.icon,
 .documenter .new-tab span.icon,
 img .new-tab span.icon {
   display: none;
