@@ -13,11 +13,7 @@ buttons:
   text: For volunteers
 ---
 
-{:class="text-center"}
-{% include partials/components/button.html
-  link="https://ticketh.xyz/ethstaker/devconnect/"
-  text="Buy Tickets"
-%}
+{% include partials/content/staking-gathering-top-buttons-2023.html %}
 
 ## Welcome to the Staking Gathering at Devconnect Conference!
 
