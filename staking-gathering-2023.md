@@ -80,7 +80,7 @@ Devconnect is the nexus where Ethereum's brightest minds, passionate builders, a
 
 ### For attendees
 
-The moment you've been waiting for is here – [tickets](https://ticketh.xyz/ethstaker/devconnect/) for our mind-expanding conference are available **right now**! But wait, there's a twist to keep things exciting – we're rolling out tickets in waves. Wave 1 crashed onto the scene on September 15th, offering a lucky 128 of you the chance to snag your spot at the hottest event in town. Our schedule, your roadmap to a day of inspiration, has also been unleashed and is waiting for you below. Keep in mind that the journey ahead might have a few unexpected detours, as we're fine-tuning the schedule to bring you the absolute best experience. So, fasten your seatbelts, grab your tickets, and get ready for a day that could change your life.
+The moment you've been waiting for is here – [tickets](https://ticketh.xyz/ethstaker/devconnect/) for our mind-expanding conference are available **right now**! But wait, there's a twist to keep things exciting – we're rolling out tickets in waves. Wave 2 crashed onto the scene on October 9th, offering an additional 128 of you the chance to snag your spot at the hottest event in town. Our schedule, your roadmap to a day of inspiration, has also been unleashed and is waiting for you below. Keep in mind that the journey ahead might have a few unexpected detours, as we're fine-tuning the schedule to bring you the absolute best experience. So, fasten your seatbelts, grab your tickets, and get ready for a day that could change your life.
 
 {% include partials/components/button.html
   link="https://ticketh.xyz/ethstaker/devconnect/"
