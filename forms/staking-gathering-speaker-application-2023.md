@@ -1,7 +1,8 @@
 ---
 layout: markdown
 title: Staking Gathering Speaker Application
-permalink: /staking-gathering-speaker-application-2023
+permalink: /forms/staking-gathering-speaker-application-2023
+redirect_from: /staking-gathering-speaker-application-2023
 ---
 
 
@@ -13,4 +14,4 @@ permalink: /staking-gathering-speaker-application-2023
 
 {{"Speaker positions are currently full. You can still apply, but new applications will be placed on our waitlist unless we experience cancellations." | warning | italic}}
 
-{% include partials/content/staking-gathering-speaker-application-2023.html %}
+{% include partials/content/forms/staking-gathering-speaker-application-2023.html %}

@@ -22,4 +22,4 @@ Also be sure to checkout the [FAQ](https://docs.ethstaker.cc/ethstaker-knowledge
 %}
 
 
-{% include partials/content/support-table.md %} 
+{% include partials/content/support/support-table.md %} 

@@ -666,7 +666,7 @@
   title: "PoW 51% Attack Cost"
   description: "This is a collection of coins and the theoretical cost of a 51% attack on each network."
   categories: analytics
-- link: "https://ethstaker.cc/wagyu"
+- link: "https://ethstaker.cc/staking-software/wagyu"
   title: "Wagyu Key Gen"
   description: "An open source tool developed by EthStaker to securely generate keys for staking deposits."
   categories: tool, software, ethstaker
