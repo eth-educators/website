@@ -1,0 +1,69 @@
+<style type="text/css">
+  #paths .card {
+    max-width: 30rem;
+  }
+  #paths .recommended .badge {
+    background-color: var(--gold-4);
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: -2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #paths .card.recommended {
+    border:  1px solid var(--gold-4) !important;
+  }
+</style>
+
+<!-- Paths -->
+<section id="paths" class="">
+  <div class="container my-3 my-md-0 my-lg-4 p-4 py-md-5">
+    <div class="row justify-content-center aos-up">
+      <div class="col-12 col-md-10 col-lg-8 col-xxl-7 pb-3 p-md-3 p-lg-3 text-start text-sm-center">
+        <h2 class="display-4 fw-bold lh-1 mb-3">Solo Staking Guide</h2>
+        <p class="lead">A comprehensive A-Z solo staking guide that matches your skill level in order to get you up and running!</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-1 row-cols-xl-3 aos-up">
+      <div class="col order-1 order-xl-0 d-flex justify-content-center align-items-stretch mb-3">
+        <div class="card shadow border-0 w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Beginner</h5>
+            <img src="/assets/img/solo-staking-guides/dappnode.png" loading="lazy" class="card-img-top mb-2" alt="...">
+            <div class="card-text mb-auto">
+              Order plug-and-play hardware that comes with staking software pre-installed.
+            </div>
+            <a href="/solo-staking-guides/beginner" class="btn btn-outline-dark btn-sm shadow-sm w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col order-0 order-xl-1 d-flex justify-content-center align-items-stretch mb-3">
+        <div class="card recommended shadow border-0 w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <span class="badge">Recommended</span>
+            <h5 class="card-title">Intermediate</h5>
+            <img src="/assets/img/solo-staking-guides/eth-wizard.png" loading="lazy" class="card-img-top mb-2" alt="...">
+            <div class="card-text mb-auto">
+              Use a combination of GUI applications and copy/pasting CLI commands.
+            </div>
+            <a href="/solo-staking-guides/intermediate" class="btn btn-dark btn-sm shadow-sm w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col order-2 ordr-xl-2 d-flex justify-content-center align-items-stretch mb-3">
+        <div class="card shadow border-0 w-100">
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title">Advanced</h5>
+            <img src="/assets/img/solo-staking-guides/terminal.png" loading="lazy" class="card-img-top mb-2" alt="...">
+            <div class="card-text mb-auto">
+              Setup using CLI commands with a variety of setup options.
+            </div>
+            <a href="/solo-staking-guides/advanced" class="btn btn-outline-dark btn-sm shadow-sm w-100 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+## title       = guide title
+## img         = guide image
+## description = guide description
+## link        = guide url
+## recommended = (optional) "true" to add recommended label
+
+# Template to copy for new entries
+# - title: 
+#   img: 
+#   description: 
+#   link: 
+#   recommended: 
+
+
+# Entries are shown in the order listed, put recommended at the top
+- title: Eth Wizard
+  img: "/assets/img/solo-staking-guides/eth-wizard.png"
+  description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+  link: "/solo-staking-guides/eth-wizard"
+  recommended: true
+- title: Eth Docker
+  img: "/assets/img/solo-staking-guides/eth-docker.png"
+  description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+  link: "/solo-staking-guides/eth-docker"
+- title: DappNode
+  img: "/assets/img/solo-staking-guides/dappnode.png"
+  description: Order plug-and-play hardware that comes with staking software pre-installed.
+  link: "/solo-staking-guides/dappnode"
+- title: Somer Esat Guides
+  img: "/assets/img/solo-staking-guides/somer-esat.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  link: "/solo-staking-guides/somer-esat"
+- title: CoinCashew Guides
+  img: "/assets/img/solo-staking-guides/coincashew.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  link: "/solo-staking-guides/coincashew"
+- title: Avado
+  img: "/assets/img/solo-staking-guides/avado.png"
+  description: Order plug-and-play hardware that comes with staking software pre-installed.
+  link: "/solo-staking-guides/avado"
+- title: Instant Validator
+  img: "/assets/img/solo-staking-guides/instant-validator.png"
+  description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+  link: "/solo-staking-guides/instant-validator"
