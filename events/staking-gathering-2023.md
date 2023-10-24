@@ -1,7 +1,8 @@
 ---
 layout: markdown
 title: Staking Gathering at Devconnect Istanbul
-permalink: /staking-gathering-2023
+permalink: events/staking-gathering-2023
+redirect_from: /staking-gathering-2023
 subheader: Elevate Your Ethereum Journey
 
 buttons:
@@ -13,7 +14,7 @@ buttons:
   text: For volunteers
 ---
 
-{% include partials/content/staking-gathering-top-buttons-2023.html %}
+{% include partials/content/events/staking-gathering-2023/top-buttons.html %}
 
 ### Welcome to the Staking Gathering at Devconnect Conference!
 
@@ -22,7 +23,7 @@ Are you ready to dive into the fascinating world of Ethereum staking? Whether yo
 
 #### Sponsors
 
-{% include partials/content/staking-gathering-sponsors.html %}
+{% include partials/content/events/staking-gathering-2023/sponsors.html %}
 
 ---
 
@@ -30,7 +31,7 @@ Are you ready to dive into the fascinating world of Ethereum staking? Whether yo
 
 #### Featured Speakers
 
-{% include partials/content/staking-gathering-speakers.html %}
+{% include partials/content/events/staking-gathering-2023/speakers.html %}
 
 
 #### A Staker's Haven
@@ -99,7 +100,7 @@ The moment you've been waiting for is here – [tickets](https://ticketh.xyz/eth
 
 And here's the key to customizing your conference adventure: create your own schedule by simply setting up an account on our user-friendly scheduling app. Pick and choose the talks that resonate with your soul, and craft a journey that's uniquely yours.
 
-{% include partials/content/staking-gathering-schedule.html %}
+{% include partials/content/events/staking-gathering-2023/schedule.html %}
 
 {% include partials/components/button.html
   link="https://stakinggathering2023.sched.com/"
@@ -109,7 +110,7 @@ And here's the key to customizing your conference adventure: create your own sch
 
 #### For speakers
 
-Eager to share your Ethereum staking insights? EthStaker welcomes you to become a speaker at our event! Whether you're a seasoned staker or a rising star, your unique perspective can ignite discussions and drive our community forward. Apply by _October 1st, 2023_, for a chance to take the stage. We'll reach out to every applicant to confirm talk details and schedule. Don't miss this opportunity to shape the conversation – [Apply here](/staking-gathering-speaker-application-2023)!
+Eager to share your Ethereum staking insights? EthStaker welcomes you to become a speaker at our event! Whether you're a seasoned staker or a rising star, your unique perspective can ignite discussions and drive our community forward. Apply by _October 1st, 2023_, for a chance to take the stage. We'll reach out to every applicant to confirm talk details and schedule. Don't miss this opportunity to shape the conversation – [Apply here](/forms/staking-gathering-speaker-application-2023)!
 
 {{"Speaker positions are currently full. You can still apply, but new applications will be placed on our waitlist unless we experience cancellations." | warning | italic}}
 
