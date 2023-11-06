@@ -38,21 +38,11 @@
   role: CEO
   img: "https://avatars.sched.co/1/bc/19160256/avatar.jpg"
   profile: "https://stakinggathering2023.sched.com/speaker/sreeram_kannan.25s5xdmb"
-- name: Jim McDonald
-  org: Attestant
-  role: CTO
-  img: "https://avatars.sched.co/f/5c/19160268/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/jim_mcdonald.25s5xdlb"
 - name: Michael Sproul
   org: Sigma Prime
   role: Developer
   img: "https://avatars.sched.co/5/f1/19160265/avatar.jpg"
   profile: "https://stakinggathering2023.sched.com/speaker/michael_sproul.25s5xdkm"
-- name: Paul Harris
-  org: Teku / Consensys
-  role: Developer
-  img: "https://avatars.sched.co/9/aa/19160286/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/paul_harris.25s5xdmj"
 - name: Mario Havel
   org: Ethereum Foundation
   role: Developer
@@ -78,11 +68,6 @@
   role: Founder
   img: "https://avatars.sched.co/1/e2/19282694/avatar.jpg?9a6"
   profile: "https://stakinggathering2023.sched.com/speaker/stefan_kobrc.25ulxmgc"
-- name: Terence Tsao
-  org: Offchain Labs
-  role: Developer / Researcher
-  img: "https://avatars.sched.co/a/fd/19170209/avatar.jpg"
-  profile: "https://stakinggathering2023.sched.com/speaker/terence_tsao.25sght9q"
 - name: Darren Langley
   org: Rocket Pool
   role: General Manager
