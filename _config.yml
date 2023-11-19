@@ -46,13 +46,19 @@ notification_expiration: 3000000000 # epoch time in seconds
 
 # Toast
 enable_toast: true
-toast_msg_id: 7 # must increment when creating a new message
-toast_title: EthStaker’s Octant voting is live!
-toast_msg: This round runs through November 2nd. Please consider allocating your votes - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
-toast_link: https://octant.app/ # Optional, leave blank to omit
-toast_link_text: Vote
-# November 2 14:59:59 GMT+0
-toast_expiration: 1698937199 # epoch time in seconds
+toast_msg_id: 8 # must increment when creating a new message
+# Gitcoin
+toast_title: EthStaker’s Gitcoin grant is live!
+toast_msg: This round runs until November 30th. Please consider donating - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
+toast_link: https://explorer.gitcoin.co/#/round/137/0xa1d52f9b5339792651861329a046dd912761e9a9/0xa1d52f9b5339792651861329a046dd912761e9a9-1 # Optional, leave blank to omit
+toast_link_text: Donate
+# Octant
+# toast_title: EthStaker’s Octant voting is live!
+# toast_msg: This round runs through November 2nd. Please consider allocating your votes - EthStaker is grant-funded and all funds go towards initiatives that help decentralize staking. # Best when under 200 characters
+# toast_link: https://octant.app/ # Optional, leave blank to omit
+# toast_link_text: Vote
+# November 29, 23:59:59 GMT+0
+toast_expiration: 1701302399 # epoch time in seconds
 
 # Feedback Toast
 enable_feedback_toast: true
