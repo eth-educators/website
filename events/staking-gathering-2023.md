@@ -3,6 +3,7 @@ layout: markdown
 title: Staking Gathering at Devconnect Istanbul
 permalink: events/staking-gathering-2023
 redirect_from: /staking-gathering-2023
+redirect_to: /#staking-gathering
 subheader: Elevate Your Ethereum Journey
 
 buttons:

@@ -3,6 +3,7 @@ layout: markdown
 title: Staking Gathering Speaker Application
 permalink: /forms/staking-gathering-speaker-application-2023
 redirect_from: /staking-gathering-speaker-application-2023
+redirect_to: /#staking-gathering
 ---
 
 
