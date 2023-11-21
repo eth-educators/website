@@ -35,24 +35,27 @@
   description: A CLI program to securely generate keys for staking deposits.
   link: "https://github.com/ethereum/staking-deposit-cli"
   creator: Ethereum
-- title: Instant Validator
-  img: "/assets/img/staking-software/instant-validator.png"
-  description: A Python script that simplifies and automates validator installation and configuration.
-  # link: "/solo-staking-guides/instant-validator"
-  link: "https://github.com/accidental-green/validator-install"
-  creator: accidental-green
-- title: Client Switcher
-  img: "/assets/img/staking-software/client-switcher.png"
-  description: A Python script that helps you migrate between execution clients. 
-  # link: "/solo-staking-guides/client-switcher"
-  link: "https://github.com/accidental-green/client-switcher"
-  creator: accidental-green
-- title: Validator Updater
-  img: "/assets/img/staking-software/validator-updater.png"
-  description: A Python script to easily update Execution and Consensus clients to the latests version.
-  # link: "/solo-staking-guides/validator-updater"
-  link: "https://github.com/accidental-green/validator-update"
-  creator: accidental-green
+# not mature enough
+# - title: Instant Validator
+#   img: "/assets/img/staking-software/instant-validator.png"
+#   description: A Python script that simplifies and automates validator installation and configuration.
+#   # link: "/solo-staking-guides/instant-validator"
+#   link: "https://github.com/accidental-green/validator-install"
+#   creator: accidental-green
+# not mature enough
+# - title: Client Switcher
+#   img: "/assets/img/staking-software/client-switcher.png"
+#   description: A Python script that helps you migrate between execution clients. 
+#   # link: "/solo-staking-guides/client-switcher"
+#   link: "https://github.com/accidental-green/client-switcher"
+#   creator: accidental-green
+# not mature enough
+# - title: Validator Updater
+#   img: "/assets/img/staking-software/validator-updater.png"
+#   description: A Python script to easily update Execution and Consensus clients to the latests version.
+#   # link: "/solo-staking-guides/validator-updater"
+#   link: "https://github.com/accidental-green/validator-update"
+#   creator: accidental-green
 - title: Nethermind Sedge
   img: "/assets/img/staking-software/sedge.png"
   description: Sedge makes installing and maintaining your validator simpler with the use of Docker.

@@ -24,11 +24,12 @@
   description: Build your own hardware and copy/paste CLI commands.
   # link: "/solo-staking-guides/eth-docker"
   link: "https://ethdocker.com/"
-- title: Instant Validator
-  img: "/assets/img/solo-staking-guides/instant-validator.png"
-  description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
-  # link: "/solo-staking-guides/instant-validator"
-  link: "https://github.com/accidental-green/validator-install"
+# not mature enough
+# - title: Instant Validator
+#   img: "/assets/img/solo-staking-guides/instant-validator.png"
+#   description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+#   # link: "/solo-staking-guides/instant-validator"
+#   link: "https://github.com/accidental-green/validator-install"
 - title: DappNode
   img: "/assets/img/solo-staking-guides/dappnode.png"
   description: Order plug-and-play hardware that comes with staking software pre-installed.
