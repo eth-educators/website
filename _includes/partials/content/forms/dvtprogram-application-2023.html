@@ -134,13 +134,6 @@
                 No
               </label>
             </div>
-            <div class="form-check ms-1">
-              <input class="form-check-input applicantCollateral" type="radio" name="applicantCollateral" value="__other_option__" id="applicantCollateral3">
-              <label class="form-check-label" for="applicantCollateral3">
-                Other
-              </label>
-              <input type="text" class="form-control form-field d-inline" id="applicantCollateralOther">
-            </div>
           </div>
         </div>
 
@@ -163,13 +156,6 @@
                 No
               </label>
             </div>
-            <div class="form-check ms-1">
-              <input class="form-check-input applicantHardware" type="radio" name="applicantHardware" value="__other_option__" id="applicantHardware3">
-              <label class="form-check-label" for="applicantHardware3">
-                Other
-              </label>
-              <input type="text" class="form-control form-field d-inline" id="applicantHardwareOther">
-            </div>
           </div>
         </div>
 
@@ -185,7 +171,7 @@
         <!-- Skill -->
         <div class="w-100 mb-3">
           <label for="applicantSkills" class="form-label">
-            We want participants to have the aptitude or skill to complete the program. You don't need to be a programmer, but you do need to feel confident in your ability to learn and problem-solve
+            We want participants to have the aptitude or skill to complete the program. You don't need to be a programmer, but you do need to feel confident in your ability to learn and problem-solve.
             <br><br>
             If you don't have links that showcase aptitude or ability, we prepared a smol mission for you to complete: [<a href="https://stakesaurus.notion.site/DVT-Home-Staker-Program-Aptitude-Test-9c8264a7dd0a4f088c00c5cdc09f2a56?pvs=4" target="_blank">LINK</a>]
             Please upload the deliverables to any image-hosting website and link here. This will boost your application!
@@ -198,7 +184,7 @@
         <!-- Address -->
         <div class="w-100 mb-3">
           <label for="applicantAddress" class="form-label">
-            Optional: POAP wallet address (doesn't affect your application)
+            Optional: Wallet address for a <a href="https://poap.xyz/" target="_blank">POAP</a> (this doesn't affect your application)
           </label>
           <input type="text" class="form-control form-field" id="applicantAddress" onchange="validate(this)">
         </div>
@@ -298,7 +284,10 @@
           let checked = document.querySelectorAll(`#${el.id} input[type=radio]:checked`);
           let optionSelected = checked.length > 0;
           let otherOptionSelected = checked[0].value == "__other_option__";
-          let otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
+          let otherOptionValue = false;
+          if (otherOptionSelected) {
+            let otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
+          }
           if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !otherOptionSelected)) {
             inputValid = true;
             el.classList.remove("form-control");
@@ -339,13 +328,13 @@
       dataToPost.append("entry.1730668916.other_option_response", document.getElementById("applicantBandwidthOther").value);
     }
     dataToPost.append("entry.382460311", document.querySelector('#applicantCollateral input[type=radio]:checked').value);
-    if (document.querySelector('#applicantCollateral input[type=radio]:checked').value == "__other_option__") {
-      dataToPost.append("entry.382460311.other_option_response", document.getElementById("applicantCollateralOther").value);
-    }
+    // if (document.querySelector('#applicantCollateral input[type=radio]:checked').value == "__other_option__") {
+    //   dataToPost.append("entry.382460311.other_option_response", document.getElementById("applicantCollateralOther").value);
+    // }
     dataToPost.append("entry.729834098", document.querySelector('#applicantHardware input[type=radio]:checked').value);
-    if (document.querySelector('#applicantHardware input[type=radio]:checked').value == "__other_option__") {
-      dataToPost.append("entry.729834098.other_option_response", document.getElementById("applicantHardwareOther").value);
-    }
+    // if (document.querySelector('#applicantHardware input[type=radio]:checked').value == "__other_option__") {
+    //   dataToPost.append("entry.729834098.other_option_response", document.getElementById("applicantHardwareOther").value);
+    // }
 
     dataToPost.append("entry.1384061347", document.getElementById("applicantInterest").value);
     dataToPost.append("entry.195251375", document.getElementById("applicantSkills").value);
