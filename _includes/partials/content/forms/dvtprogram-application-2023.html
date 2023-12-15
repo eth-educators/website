@@ -1,0 +1,358 @@
+<section>
+  <div class="container">
+    <div class="row mt-4 aos-up">
+      <div id="applicantForm" class="border-top mt-2 pt-4">
+        <div class="w-100 mb-4">
+          <div class="text-danger">* Required fields</div>
+        </div>
+
+        <!-- Name -->
+        <div class="w-100 mb-3">
+          <label for="applicantName" class="form-label">
+            <span class="text-danger">*</span>
+            What is your name (or pseudonym)?
+          </label>
+          <input type="text" class="form-control form-field" id="applicantName" required onchange="validate(this)">
+        </div>
+
+        <!-- Handle -->
+        <div class="w-100 mb-3">
+          <label for="applicantHandle" class="form-label">
+            <span class="text-danger">*</span>
+            What's your Discord handle?
+          </label>
+          <input type="text" class="form-control form-field" id="applicantHandle" required onchange="validate(this)">
+        </div>
+
+        <!-- Email -->
+        <div class="w-100 mb-3">
+          <label for="applicantEmail" class="form-label">
+            <span class="text-danger">*</span>
+            What's a good email to contact you?
+          </label>
+          <input type="email" class="form-control form-field" id="applicantEmail" placeholder="name@example.com" required onchange="validate(this)">
+        </div>
+
+        <!-- Country -->
+        <div class="w-100 mb-3">
+          <label for="applicantCountry" class="form-label">
+            <span class="text-danger">*</span>
+            What country do you live in?
+          </label>
+          <input type="text" class="form-control form-field" id="applicantCountry" required onchange="validate(this)">
+        </div>
+
+        <!-- Knowledge/Hurdles -->
+        <div class="w-100 mb-3">
+          <label for="applicantHurdles" class="form-label">
+            <span class="text-danger">*</span>
+            What do you know about running an Ethereum node? What has stopped you from running one until now?
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="applicantHurdles" rows="5" required onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Custody -->
+        <div class="w-100 mb-3">
+          <label for="applicantCustody" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Have you ever used a self-custodied Ethereum wallet?
+          </label>
+          <div id="applicantCustody" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCustody" type="radio" name="applicantCustody" value="Yes" id="applicantCustody1">
+              <label class="form-check-label" for="applicantCustody1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCustody" type="radio" name="applicantCustody" value="No" id="applicantCustody2">
+              <label class="form-check-label" for="applicantCustody2">
+                No
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCustody" type="radio" name="applicantCustody" value="Not sure" id="applicantCustody3">
+              <label class="form-check-label" for="applicantCustody3">
+                Not Sure
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCustody" type="radio" name="applicantCustody" value="__other_option__" id="applicantCustody4">
+              <label class="form-check-label" for="applicantCustody4">
+                Other
+              </label>
+              <input type="text" class="form-control form-field d-inline" id="applicantCustodyOther">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bandwidth -->
+        <div class="w-100 mb-3">
+          <label for="applicantBandwidth" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Have you confirmed that your internet data plan allows you to use at least 2 TB per month?
+          </label>
+          <div id="applicantBandwidth" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantBandwidth" type="radio" name="applicantBandwidth" value="Yes" id="applicantBandwidth1">
+              <label class="form-check-label" for="applicantBandwidth1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantBandwidth" type="radio" name="applicantBandwidth" value="No" id="applicantBandwidth2">
+              <label class="form-check-label" for="applicantBandwidth2">
+                No
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantBandwidth" type="radio" name="applicantBandwidth" value="__other_option__" id="applicantBandwidth3">
+              <label class="form-check-label" for="applicantBandwidth3">
+                Other
+              </label>
+              <input type="text" class="form-control form-field d-inline" id="applicantBandwidthOther">
+            </div>
+          </div>
+        </div>
+
+        <!-- Collateral -->
+        <div class="w-100 mb-3">
+          <label for="applicantCollateral" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Do you have the required 1 ETH to make the mainnet DVT validator deposit?
+          </label>
+          <div id="applicantCollateral" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCollateral" type="radio" name="applicantCollateral" value="Yes" id="applicantCollateral1">
+              <label class="form-check-label" for="applicantCollateral1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantCollateral" type="radio" name="applicantCollateral" value="No" id="applicantCollateral2">
+              <label class="form-check-label" for="applicantCollateral2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware -->
+        <div class="w-100 mb-3">
+          <label for="applicantHardware" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Do you understand that you will have to purchase the hardware at the beginning of the program and that reimbursement will require you to complete the program and make your mainnet deposit?
+          </label>
+          <div id="applicantHardware" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantHardware" type="radio" name="applicantHardware" value="Yes" id="applicantHardware1">
+              <label class="form-check-label" for="applicantHardware1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input applicantHardware" type="radio" name="applicantHardware" value="No" id="applicantHardware2">
+              <label class="form-check-label" for="applicantHardware2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interest -->
+        <div class="w-100 mb-3">
+          <label for="applicantInterest" class="form-label">
+            <span class="text-danger">*</span>
+            Please link anything that showcases your abilities or your enthusiasm for blockchain. This can be a Github profile, a project, your blog, Twitter, your Reddit profile, etc. The more the better!
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="applicantInterest" rows="5" required onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Skill -->
+        <div class="w-100 mb-3">
+          <label for="applicantSkills" class="form-label">
+            We want participants to have the aptitude or skill to complete the program. You don't need to be a programmer, but you do need to feel confident in your ability to learn and problem-solve.
+            <br><br>
+            If you don't have links that showcase aptitude or ability, we prepared a smol mission for you to complete: [<a href="https://stakesaurus.notion.site/DVT-Home-Staker-Program-Aptitude-Test-bd176b1b31b24f74928c8de6b18251c3?pvs=4" target="_blank">LINK</a>]
+            Please upload the deliverables to any image-hosting website and link here. This will boost your application!
+            <br><br>
+            If you linked a Github or anything that shows existing technical skills, feel free to skip this step
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="applicantSkills" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Address -->
+        <div class="w-100 mb-3">
+          <label for="applicantAddress" class="form-label">
+            Optional: Wallet address for a <a href="https://poap.xyz/" target="_blank">POAP</a> (this doesn't affect your application)
+          </label>
+          <input type="text" class="form-control form-field" id="applicantAddress" onchange="validate(this)">
+        </div>
+
+        <!-- Questions -->
+        <div class="w-100 mb-3">
+          <label for="applicantQuestions" class="form-label">
+            Optional: Do you have any questions about the program that weren't answered in our <a href="https://paragraph.xyz/@ethstaker/dvtprogram" target="_blank">blog post</a>?
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="applicantQuestions" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Error Message -->
+        <div class="w-100 mb-3">
+          <p id="errorMessage" class="text-danger invisible fs-6">* Please fill out all required fields</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+          <button id="submitApplicationButton" class="btn btn-dark" type="button" onclick="submitApplication()">Submit</button>
+        </div>
+
+      </div>
+
+      <div id="applicantFormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
+        <div>✅ Thank you for your submission and interest in participating! After the deadline the submissions will be reviewed and you will receive a response on your acceptance status.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  function submitApplication() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("errorMessage").classList.add("invisible");
+      // Submit data to google forms
+      sendData();
+      // Display submission success message
+      document.getElementById("applicantForm").classList.add("d-none");
+      document.getElementById("applicantFormSubmitted").classList.remove("d-none");
+      // Scroll up to submission success message
+      // document.getElementById("applicantFormSubmitted").scrollIntoView();
+      scrollToElement("applicantFormSubmitted", -200);
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("errorMessage").classList.remove("invisible");
+    }
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('.form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Inputs/Textareas
+        if (type == "text" || type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          if (checked.length == 0) {
+            formValid = false;
+            el.classList.add("form-control");
+          } else {
+            inputValid = true;
+            el.classList.remove("form-control");
+          }
+        // Radio Group
+        } else if (type == "radios") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=radio]:checked`);
+          let optionSelected = checked.length > 0;
+          let otherOptionSelected = checked[0].value == "__other_option__";
+          let otherOptionValue = false;
+          if (otherOptionSelected) {
+            let otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
+          }
+          if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !otherOptionSelected)) {
+            inputValid = true;
+            el.classList.remove("form-control");
+          } else {
+            formValid = false;
+            el.classList.add("form-control");
+          }
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSfK0mOMUtgTKBmdm8bViSIouV5GUEWmmlt7bUmJDKEpT7BtwA/formResponse";
+    let dataToPost = new FormData();
+
+    dataToPost.append("entry.83758902", document.getElementById("applicantName").value);
+    dataToPost.append("entry.611521343", document.getElementById("applicantHandle").value);
+    dataToPost.append("entry.1571875594", document.getElementById("applicantEmail").value);
+    dataToPost.append("entry.1464722127", document.getElementById("applicantCountry").value);
+    dataToPost.append("entry.109710445", document.getElementById("applicantHurdles").value);
+
+    dataToPost.append("entry.1203803769", document.querySelector('#applicantCustody input[type=radio]:checked').value);
+    if (document.querySelector('#applicantCustody input[type=radio]:checked').value == "__other_option__") {
+      dataToPost.append("entry.1203803769.other_option_response", document.getElementById("applicantCustodyOther").value);
+    }
+    dataToPost.append("entry.1730668916", document.querySelector('#applicantBandwidth input[type=radio]:checked').value);
+    if (document.querySelector('#applicantBandwidth input[type=radio]:checked').value == "__other_option__") {
+      dataToPost.append("entry.1730668916.other_option_response", document.getElementById("applicantBandwidthOther").value);
+    }
+    dataToPost.append("entry.382460311", document.querySelector('#applicantCollateral input[type=radio]:checked').value);
+    // if (document.querySelector('#applicantCollateral input[type=radio]:checked').value == "__other_option__") {
+    //   dataToPost.append("entry.382460311.other_option_response", document.getElementById("applicantCollateralOther").value);
+    // }
+    dataToPost.append("entry.729834098", document.querySelector('#applicantHardware input[type=radio]:checked').value);
+    // if (document.querySelector('#applicantHardware input[type=radio]:checked').value == "__other_option__") {
+    //   dataToPost.append("entry.729834098.other_option_response", document.getElementById("applicantHardwareOther").value);
+    // }
+
+    dataToPost.append("entry.1384061347", document.getElementById("applicantInterest").value);
+    dataToPost.append("entry.195251375", document.getElementById("applicantSkills").value);
+    dataToPost.append("entry.1579247283", document.getElementById("applicantAddress").value);
+    dataToPost.append("entry.1950564732", document.getElementById("applicantQuestions").value);
+    
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+</script>
