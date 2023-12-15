@@ -286,7 +286,7 @@
           let otherOptionSelected = checked[0].value == "__other_option__";
           let otherOptionValue = false;
           if (otherOptionSelected) {
-            let otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
+            otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
           }
           if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !otherOptionSelected)) {
             inputValid = true;
