@@ -1,0 +1,61 @@
+## title       = guide title
+## img         = guide image
+## description = guide description
+## link        = guide url
+## recommended = (optional) "true" to add recommended label
+
+# Template to copy for new entries
+# - title: 
+#   img: 
+#   description: 
+#   link: 
+#   recommended: 
+
+
+# Entries are shown in the order listed, put recommended at the top
+- title: Eth Wizard
+  img: "/assets/img/solo-staking-guides/eth-wizard.png"
+  description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+  # link: "/solo-staking-guides/eth-wizard"
+  link: "https://github.com/stake-house/eth-wizard"
+  recommended: true
+- title: Eth Docker
+  img: "/assets/img/solo-staking-guides/eth-docker.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  # link: "/solo-staking-guides/eth-docker"
+  link: "https://ethdocker.com/"
+# not mature enough
+# - title: Instant Validator
+#   img: "/assets/img/solo-staking-guides/instant-validator.png"
+#   description: Build your own hardware and use a combination of GUI applications and copy/paste CLI commands.
+#   # link: "/solo-staking-guides/instant-validator"
+#   link: "https://github.com/accidental-green/validator-install"
+- title: DappNode
+  img: "/assets/img/solo-staking-guides/dappnode.png"
+  description: Order plug-and-play hardware that comes with staking software pre-installed.
+  # link: "/solo-staking-guides/dappnode"
+  link: "https://docs.dappnode.io/docs/user/getting-started/choose-your-path"
+- title: Somer Esat Guides
+  img: "/assets/img/solo-staking-guides/somer-esat.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  link: "/solo-staking-guides/somer-esat"
+  link: "https://github.com/SomerEsat/ethereum-staking-guides"
+- title: CoinCashew Guides
+  img: "/assets/img/solo-staking-guides/coincashew.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  # link: "/solo-staking-guides/coincashew"
+  link: "https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet"
+- title: Stakesaurus Guides
+  img: "/assets/img/solo-staking-guides/stakesaurus.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  link: "https://stakesaurus.gitbook.io/eth-full-home-staking-setup-guide/"
+- title: Nethermind Sedge
+  img: "/assets/img/staking-software/sedge.png"
+  description: Build your own hardware and copy/paste CLI commands.
+  link: "https://docs.sedge.nethermind.io/docs/intro"
+  creator: Nethermind
+- title: Avado
+  img: "/assets/img/solo-staking-guides/avado.png"
+  description: Order plug-and-play hardware that comes with staking software pre-installed.
+  # link: "/solo-staking-guides/avado"
+  link: "https://docs.ava.do/getting-started/"
