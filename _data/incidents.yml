@@ -8,7 +8,10 @@
 #   date: 
 
 
-# Entries are shown in alphabetical order
-- title: Finality issue updates
+# Entries are shown in order listed
+- title: Besu validators offline
+  link: https://ethstaker.notion.site/Besu-validators-offline-6-Jan-2024-9caa19fa1a4b47b8aac9e6a2cdbbb5ec
+  date: Jan 6, 2024
+- title: Finality issue
   link: https://ethstaker.notion.site/Finality-issue-updates-May-2023-3cb4d74e67c04d1f9ed31659e48c314b
-  date: May 2023
+  date: May 11, 2023
