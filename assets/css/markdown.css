@@ -134,8 +134,52 @@
   color: var(--bs-secondary);
   opacity: 0.6;
   cursor: pointer;
+  position: absolute;
 }
 .markdown .copy-link-icon > svg {
   height: 2rem;
   width: auto;
+}
+
+
+/*adds sticky header*/
+.markdown .table-responsive {
+  max-height: 650px;
+  overflow: scroll;
+  position: relative!important;
+  /*widens table*/
+  margin-left: -250px !important;
+  margin-right: -250px !important;
+}
+@media only screen and (max-width: 1199px) {
+  .markdown .table-responsive {
+    margin-left: -145px !important;
+    margin-right: -145px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .markdown .table-responsive {
+    max-height: 525px;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .markdown .table-responsive {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .markdown .table-responsive {
+    max-height: 400px;
+  }
+}
+/*adds sticks first column*/
+.markdown .table thead tr {
+  background-color: var(--bs-tertiary-bg);
+}
+.markdown .table th:first-child,
+.markdown .table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: var(--bs-tertiary-bg);
 }

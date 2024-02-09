@@ -1,0 +1,65 @@
+## id               = permanent id, used to link validator data
+## name             = pool name
+## link             = website link
+## address          = pool address
+## fee              = total pool fees
+## oracles          = list about and members
+## validators       = number of validators in pool, this is a fallback for live data
+## incentives       = additional pool incentives
+## team             = developers/maintainers
+## theft_protection = how much bond
+## claim_period     = how long you have to claim rewards
+## audit            = link to audits
+## launch_date      = launch data in "mon yyyy" format (i.e. Dec 2023)
+## discord          = non-expiring unlimited invite link
+
+# Template to copy for new entries
+# - id: 
+#   name: 
+#   link: 
+#   address: 
+#   fee: 
+#   oracles: 
+#   validators: 
+#   incentives: 
+#   team: 
+#   theft_protection: 
+#   claim_period: 
+#   audit: 
+#   launch_date: 
+#   discord: 
+
+
+# Entries are shown in the order listed
+smooth:
+  id: "smooth"
+  name: "Smooth"
+  link: "https://smooth.dappnode.io/"
+  # address: "[0xAdFb8D27671F14f297eE94135e266aAFf8752e35](https://etherscan.io/address/0xAdFb8D27671F14f297eE94135e266aAFf8752e35)"
+  address: "`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`"
+  fee: "7%"
+  oracles: "3 oracle operators: DAppNode, Giveth & Migalabs"
+  validators: 550
+  incentives: "Accepts donations - [docs](https://docs.dappnode.io/docs/smooth/deep-dive-into-smooth/rewards)"
+  team: "[DappNode](https://dappnode.com/pages/about)"
+  bond: "0.01 ETH bond"
+  claim_period: "?"
+  audit: "?"
+  launch_date: "Dec 2023"
+  discord: "https://discord.gg/dappnode"
+smoothly:
+  id: "smoothly"
+  name: "Smoothly"
+  link: "https://app.smoothly.money/"
+  # address: "[0x43670D6f39Bca19EE26462f62339e90A39B01e34](https://etherscan.io/address/0x43670D6f39Bca19EE26462f62339e90A39B01e34)"
+  address: "`0x43670D6f39Bca19EE26462f62339e90A39B01e34`"
+  fee: "1.5%"
+  oracles: "[6 oracle operators](https://docs.smoothly.money/oracle-operators): EthStaker, Anthony Sassano, Aestus Relay, Cryptomanufaktur, Kody, Noah"
+  validators: 50
+  incentives: "[SLIDE](https://docs.smoothly.money/social-layer-incentives-for-decentralization-slide): Gitcoin Grants & other public goods funding"
+  team: "[Kody Sale](https://warpcast.com/kodys.eth) & [Noah Figueras](https://github.com/noahfigueras)"
+  bond: "[0.5 ETH bond](https://docs.smoothly.money/bond-and-mev-theft)"
+  claim_period: "Every 21 days"
+  audit: "[Pashov, Aug 2023](https://github.com/Smoothly-Protocol/contracts/blob/master/audits/Smoothly-security-review-Pashov-14-8-2023.md)"
+  launch_date: "Jan 2024"
+  discord: "https://discord.gg/7hrV76bKEa"
