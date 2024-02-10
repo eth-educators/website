@@ -2,6 +2,7 @@
 layout: markdown
 title: Donate to EthStaker
 permalink: /donate
+redirect_to: /
 ---
 
 
