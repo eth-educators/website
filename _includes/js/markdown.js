@@ -12,13 +12,15 @@ document.querySelectorAll("table")
 // Wrap tables in .table-responsive element
 document.querySelectorAll("table")
   .forEach( x=> {
-    // Create wrapping element
-    let wrapper = document.createElement('div');
-    wrapper.className = "table-responsive mx-auto";
-    // Insert wrapper before el in the DOM tree
-    x.parentNode.insertBefore(wrapper, x);
-    // Move el into wrapper
-    wrapper.appendChild(x);
+    if (!x.classList.contains("nonresponsive")) {
+      // Create wrapping element
+      let wrapper = document.createElement('div');
+      wrapper.className = "table-responsive mx-auto";
+      // Insert wrapper before el in the DOM tree
+      x.parentNode.insertBefore(wrapper, x);
+      // Move el into wrapper
+      wrapper.appendChild(x);
+    }
   });
 
 // Add copy links to headers

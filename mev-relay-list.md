@@ -9,4 +9,4 @@ buttons:
 ---
 
 
-{% include partials/content/mev-relay-list.html %}
+{{"https://raw.githubusercontent.com/eth-educators/ethstaker-guides/main/MEV-relay-list.md" | getres | forceencode}}

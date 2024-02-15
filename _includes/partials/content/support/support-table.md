@@ -12,6 +12,7 @@ everything else is pulled from _data/clients.yml
 </style>
 
 
+{:class="nonresponsive"}
 Community  | Docs | Support
 -----------|------|----------
 <img class='d-inline logo m-0 me-2' src='/assets/img/projects/ethstaker.svg'> EthStaker | [{{site.data.icons.docs}}](https://kb.ethstaker.cc) | [Discord](https://dsc.gg/ethstaker) , [Reddit](https://reddit.com/r/ethstaker)
