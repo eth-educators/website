@@ -15,7 +15,7 @@ const aosSelectors = [
   "body > header",
   "body > section",
   "body > footer",
-  "table",
+  // "table",
   // ".markdown-aos > h1",
   // ".markdown-aos > h2",
   // ".markdown-aos > h3",
