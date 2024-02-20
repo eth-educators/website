@@ -144,7 +144,7 @@
 
 /*adds sticky header*/
 .markdown .table-responsive {
-  max-height: 650px;
+  max-height: 700px;
   overflow: scroll;
   position: relative!important;
   /*widens table*/

@@ -3,7 +3,7 @@ import os
 import time
 import json
 import yaml
-# import xmltodict
+import xmltodict
 import pprint
 from datetime import datetime, timezone
 from dotenv import load_dotenv
@@ -123,8 +123,8 @@ def read_file(rel_path, file_type="json", context=""):
       print(error)
 
 
-# def xml2json(xml):
-#   return xmltodict.parse(xml)
+def xml2json(xml):
+  return xmltodict.parse(xml)
 
 
 def report_error(error, context=""):

@@ -191,6 +191,19 @@ section li:not(:last-child) {
 }
 
 
+.table-responsive {
+  border-radius: var(--bs-border-radius);
+}
+.table-responsive .table {
+  margin-bottom: 0;
+}
+table tr td {
+  max-width: 60vw !important;
+  text-wrap: unset;
+  word-wrap: break-word;
+}
+
+
 
 .link-disabled {
   cursor: not-allowed;

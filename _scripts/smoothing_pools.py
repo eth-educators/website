@@ -19,8 +19,10 @@ def get_smooth_data():
 def process_smooth_data(raw_data):
   active = raw_data["total_active_validators"]
   total = raw_data["total_subscribed_validators"]
-  print({"source":"smooth", "active":active, "total":total})
-  return active
+  pending = total - active;
+  results = {"source":"smooth", "active":active, "pending":pending, "total":total}
+  print(results)
+  return results
 
 
 
@@ -36,16 +38,21 @@ def get_smoothly_data():
 
 def process_smoothly_data(raw_data):
   active = raw_data["data"]["activated"]
-  waiting = raw_data["data"]["awaiting_activation"]
-  total = active + waiting
-  print({"source":"smoothly", "active":active, "waiting":waiting, "total":total})
-  return active
+  pending = raw_data["data"]["awaiting_activation"]
+  total = active + pending
+  results = {"source":"smoothly", "active":active, "pending":pending, "total":total}
+  print(results)
+  return results
 
 
 def save_smoothing_pool_data(smooth_subs, smoothly_subs):
   smoothing_pool_data = utilities.read_file(f"_data/smoothing-pools.yml", file_type="yaml")
-  smoothing_pool_data["smooth"]["validators"] = smooth_subs
-  smoothing_pool_data["smoothly"]["validators"] = smoothly_subs
+  smoothing_pool_data["smooth"]["validators_active"] = smooth_subs["active"]
+  smoothing_pool_data["smooth"]["validators_pending"] = smooth_subs["pending"]
+  smoothing_pool_data["smooth"]["validators_total"] = smooth_subs["total"]
+  smoothing_pool_data["smoothly"]["validators_active"] = smoothly_subs["active"]
+  smoothing_pool_data["smoothly"]["validators_pending"] = smoothly_subs["pending"]
+  smoothing_pool_data["smoothly"]["validators_total"] = smoothly_subs["total"]
   utilities.save_to_file(f"/_data/smoothing-pools-processed.json", smoothing_pool_data, context=f"{script_id}__save_smoothing_pool_data")
 
 
