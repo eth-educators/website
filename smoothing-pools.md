@@ -27,17 +27,17 @@ As of Feb 2024, there are two options: Smooth & Smoothly. EthStaker supports bot
 
 ## Comparison
 
-{% assign smoothing_pool_data = site.data.smoothing-pools-processed %}
+{% assign smoothing_pool_data = site.data.smoothing-pools %}
 {%- assign smooth = smoothing_pool_data.smooth -%}
 {%- capture smooth_validators -%}
-  {{smooth.validators_active}} active, {{smooth.validators_pending}} pending, {{smooth.validators_total}} total 
+  <span id="smooth">{{smooth.validators_active}} active, {{smooth.validators_pending}} pending, {{smooth.validators_total}} total</span>
 {%- endcapture -%}
 {%- assign smoothly = smoothing_pool_data.smoothly -%}
 {%- capture smoothly_validators -%}
-  {{smoothly.validators_active}} active, {{smoothly.validators_pending}} pending, {{smoothly.validators_total}} total 
+  <span id="smoothly">{{smoothly.validators_active}} active, {{smoothly.validators_pending}} pending, {{smoothly.validators_total}} total</span>
 {%- endcapture -%}
 
-{:class="table"}
+{:class="table" id="smoothingPoolsComparison"}
 |                      | Smooth                       | Smoothly 
 |----------------------|------------------------------|--------------------
 | Website              | <{{smooth.link}}>            | <{{smoothly.link}}>
@@ -63,3 +63,7 @@ EthStaker hosted a community call with Smooth & Smoothly in Dec 2023:
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dB5csfO8I0E?si=8sYpI5A2DHhN2QRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+
+<script type="text/javascript">
+{% include js/smoothingPools.js %}
+</script>
