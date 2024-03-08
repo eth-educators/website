@@ -9,15 +9,18 @@
 
 
 # Entries are shown in order listed
+- title: Portion of the network is offline
+  link: https://ethstaker.notion.site/Portion-of-the-network-is-offline-e08da6aab1124097888b3bdd2a3febf7?pvs=4
+  date: 2024-03-08
 - title: Nine missed slots due to a bug in an optimistic relay
   link: https://notes.ethereum.org/@mikeneuder/consider-the-epbs
-  date: February 6, 2024
+  date: 2024-02-06
 - title: Nethermind validators offline
   link: https://ethstaker.notion.site/Nethermind-validators-offline-21-Jan-0855d812a5d145728e4f9a2844dd463c?pvs=4
-  date: Jan 21, 2024
+  date: 2024-01-21
 - title: Besu validators offline
   link: https://ethstaker.notion.site/Besu-validators-offline-6-Jan-2024-9caa19fa1a4b47b8aac9e6a2cdbbb5ec
-  date: Jan 6, 2024
+  date: 2024-01-06
 - title: Finality issue
   link: https://ethstaker.notion.site/Finality-issue-updates-May-2023-3cb4d74e67c04d1f9ed31659e48c314b
-  date: May 11, 2023
+  date: 2023-05-11
