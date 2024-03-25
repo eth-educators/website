@@ -9,10 +9,10 @@
 ## featured     = (optional) "true" to add to featured section
 
 # Template to copy for new entries
-# - link:
-#   title:
-#   description:
-#   categories:
+# - link: 
+#   title: 
+#   description: 
+#   categories: 
 
 
 # Entries are shown in the order listed
@@ -674,3 +674,31 @@
   title: "SimpleStakers.info"
   description: "A dashboard showing the APY for liquid staking tokens (LSTs)."
   categories: analytics, lst
+- link: "https://smoothly.money/"
+  title: "Smoothly"
+  description: "A solo staker smoothing pool."
+  categories: software, tool
+- link: "https://clientdiversity.org/"
+  title: "ClientDiversity.org"
+  description: "Monitor validator consensus and execution client diversity."
+  categories: analytics
+- link: "https://supermajority.info/"
+  title: "Supermajority.info"
+  description: "Monitor validator execution client diversity."
+  categories: analytics
+- link: "https://stakesaurus.gitbook.io/eth-full-home-staking-setup-guide/quick-start"
+  title: "Stakesaurus Staking Guide"
+  description: "Complete step-by-step instructions to implement and maintain a secure validator for Ethereum staking."
+  categories: guide
+- link: "https://diva.community/"
+  title: "Diva Staking"
+  description: "A liquid staking protocol with distributed validators and permissionless node operators."
+  categories: lst
+- link: "https://www.youtube.com/playlist?list=PLOB9GGXGcc31LJrtFJ_gzlSPattofhlhI"
+  title: "DevConnect Staking Gathering 2023 Playlist"
+  description: "A Youtube playlist with all the talks from EthStaker's Staking Gathering 2023 at DevConnect in Istanbul, Turkey."
+  categories: conference, video
+- link: "https://www.youtube.com/watch?v=EMQoVtxNaxo"
+  title: "Adding a withdrawal address with Wagyu Key Gen"
+  description: "Remy Roy's guide on how to add a withdrawal address using Wagyu Key Gen."
+  categories: guide, tool
