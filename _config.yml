@@ -39,7 +39,7 @@ enable_nav: true
 enable_nav_collapse: true # doesn't work at the moment
 
 # Notification Bar
-enable_notification: true
+enable_notification: false
 notification_msg_id: 2 # must increment when creating a new message
 notification_msg: <a href="https://notes.ethereum.org/@djrtwo/risks-of-lsd" target="_blank">A PSA for liquid stakers by Danny Ryan</a>
 notification_expiration: 3000000000 # epoch time in seconds
@@ -61,10 +61,13 @@ toast_link_text: Donate
 toast_expiration: 1701302399 # epoch time in seconds
 
 # Feedback Toast
-enable_feedback_toast: true
-feedback_toast_renewal_period: 5184000 # 2 months in seconds
+enable_feedback_toast: false
+feedback_toast_renewal_period: 10368000 # 4 months in seconds
 feedback_toast_title: Feedback
 feedback_toast_msg: Have feedback relating to this site or EthStaker in general? Let us know!
+
+# Contribute/Edit CTA
+enable_contribute_cta: true
 
 # Assets
 bootstrap_js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
