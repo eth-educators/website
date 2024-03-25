@@ -39,7 +39,7 @@ enable_nav: true
 enable_nav_collapse: true # doesn't work at the moment
 
 # Notification Bar
-enable_notification: true
+enable_notification: false
 notification_msg_id: 2 # must increment when creating a new message
 notification_msg: <a href="https://notes.ethereum.org/@djrtwo/risks-of-lsd" target="_blank">A PSA for liquid stakers by Danny Ryan</a>
 notification_expiration: 3000000000 # epoch time in seconds
