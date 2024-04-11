@@ -1,0 +1,106 @@
+## name      = hardware component name
+## index     = number the component corresponds to in the diagram
+## products  = list of recommended products
+## id        = the distributor's product ID
+## name      = brand/model of the recommended product
+## details   = key specs of the recommended product
+## link      = link to order the recommended product
+## price     = price of the recommended product
+## usage     = options: required, recommended, optional
+## min_specs = minimum specs
+## guide     = link to installation/setup guide
+
+# Template to copy for new entries
+# - name: 
+#   index: 
+#   products:
+#     - name: 
+#       details: 
+#       link: 
+#       price: 
+#     - name: 
+#       details: 
+#       link: 
+#       price: 
+#   usage: 
+#   min_specs: 
+#   guide: 
+
+
+# Entries are shown in the order listed
+- name: Modem / Router
+  index: 1
+  products: 
+    - id: 
+      name: Your existing modem/router
+      price: 0
+  usage: required
+  min_specs: 
+  guide:
+- name: Smart Plug
+  index: 2
+  products: 
+    - id: B091699Z3W
+      name: Kasa Smart Plug Ultra Mini
+      details: 
+      link: https://www.amazon.com/dp/B091699Z3W
+      price: 10
+  usage: optional
+  min_specs: 
+  guide:
+- name: Computer
+  index: 3
+  products: 
+    - id: B09KNK27M2
+      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
+      details: Core i7-1165G7
+      link: https://www.amazon.com/dp/B09KNK27M2/
+      price: 395
+    - id: N82E16856110250
+      name: ASUS ExpertCenter PN64 Barebone Mini-PC
+      details: Intel Core i3-1220P
+      link: https://www.newegg.com/p/N82E16856110250
+      price: 358
+  usage: required
+  min_specs: 
+  guide:
+- name: UPS
+  index: 4
+  products: 
+    - id: B0030SL08A
+      name: CyberPower CP425SLG Standby UPS System
+      details: 
+      link: https://www.amazon.com/dp/B0030SL08A/
+      price: 60
+  usage: recommended
+  min_specs: 
+  guide: https://github.com/trevhub/guides/blob/main/CheapUPS.md
+- name: SSD
+  index: 5
+  products: 
+    - id: B08RK2SR23
+      name: Samsung 980 PRO
+      details: 2TB, PCIe 4.0, M2
+      link: https://www.amazon.com/dp/B08RK2SR23/
+      price: 167
+    - id: N82E16820147796
+      name: Samsung 980 PRO
+      details: 2TB, PCIe 4.0, M2
+      link: https://www.newegg.com/p/N82E16820147796
+      price: 167
+  usage: required
+  min_specs: ">=2TB"
+  guide: https://www.youtube.com/watch?v=04K8OUOMHGM
+- name: RAM
+  index: 6
+  products: 
+    - id: B07ZLC7VNH
+      name: Crucial RAM CT32G4SFD832A
+      details: 32GB DDR4 3200MHz CL22
+      link: https://www.amazon.com/dp/B07ZLC7VNH
+      price: 68
+  usage: required
+  min_specs: ">=32GB"
+  guide: https://www.youtube.com/watch?v=04K8OUOMHGM
+
+
