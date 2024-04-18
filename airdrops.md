@@ -7,7 +7,12 @@ subheader: 'Document historical airdrops and best practice for future airdrops'
 ---
 
 
-{% include partials/content/airdrops.html %}
+## Past Airdrops
+
+{% for airdrop in site.data.airdrops %}
+  - {{airdrop.date}} - [{{airdrop.title | titlecase}}]({{airdrop.link}})
+{% endfor %}
+
 
 ## Best Practice for Future Airdrops
 
