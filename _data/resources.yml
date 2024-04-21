@@ -106,7 +106,7 @@
   categories: tool
 - link: "https://dune.com/obol_labs/eth-staking-ecosystem"
   title: "ETH Staking Ecosystem"
-  description: "Aggregates data from the Ethereum Proof-of-Stake mainnet, providing valuable insights into the market dynamics of the Ethereum validator and staking industry. Lots of stasitics about deposits"
+  description: "Aggregates data from the Ethereum Proof-of-Stake mainnet, providing valuable insights into the market dynamics of the Ethereum validator and staking industry. Lots of statistics about deposits"
   categories: analytics
 - link: "https://ethsunshine.com/"
   title: "Project Sunshine"
@@ -659,7 +659,7 @@
   description: "This dashboard tracks ETH sent to the Consensus Layer deposit address & beacon chain outflow."
   categories: analytics
 - link: "https://dune.com/drworm/rocketpool"
-  title: "Dune Rocket Pool dashbaord"
+  title: "Dune Rocket Pool dashboard"
   description: "A Dune dashboard to monitor different Rocket Pool metrics."
   categories: analytics, lst
 - link: "https://www.crypto51.app/"
