@@ -1,0 +1,27 @@
+## title   = incident title
+## link    = link to airdrop announcement
+## date    = Month Day, Year or Month Year (May 12, 2023 or May 2023)
+
+# Template to copy for new entries
+# - title: 
+#   link: 
+#   date: 
+
+
+# Entries are shown in order listed
+- title: $OMNI Airdrop 
+  link: https://news.omni.network/untitled/
+  date: April 17, 2024
+  value: 60 $OMNI as an ERC-20 to solo stakers as reported by rated.network
+- title: $STRK Starknet Aridrop
+  link: https://www.starknet.io/en/content/starknet-provisions-program
+  date: February 14, 2024
+  value: 1800 STRK to solo stakers (or 3600 for multiple validators) on Starknet
+- title: $TIA Celestia Airdrop
+  link: https://blog.celestia.org/genesis-drop/
+  date: September 26, 2023
+  value: Approximately 1200 $TIA tokens on the Celestia network
+- title: $DIVA Airdrop
+  link: https://divastaking.medium.com/announcing-the-diva-dao-270bb0d188e8
+  date: June 28, 2023
+  value: 12,000 $DIVA as an ERC-20 to solo stakers as reported by rated.network
