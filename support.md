@@ -18,7 +18,7 @@ Also be sure to checkout the [FAQ](https://docs.ethstaker.cc/ethstaker-knowledge
 {% include partials/components/callout.html 
   type="warning"
   title="Do not answer support DMs!"
-  content="We will never DM you. There's many scammers and impersonators so you need to remain vigilant."
+  content="We will never DM you. There are many scammers and impersonators so you need to remain vigilant."
 %}
 
 
