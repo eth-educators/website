@@ -10,7 +10,7 @@ subheader: 'Document historical airdrops and best practice for future airdrops'
 ## Past Airdrops
 
 {% for airdrop in site.data.airdrops %}
-  - {{airdrop.date}} - [{{airdrop.title | titlecase}}]({{airdrop.link}})
+  - {{airdrop.dateStart}} - {{airdrop.dateEnd}} - [{{airdrop.title | titlecase}}]({{airdrop.link}})
 {% endfor %}
 
 
