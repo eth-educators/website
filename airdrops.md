@@ -37,3 +37,4 @@ Providing Airdrops to Solo and Home stakers is an excellent way to engage the di
 ### Don'ts
 
 - Never use a cap or first-come, first served model to distribute airdrops to a few stakers. This causes a mad frenzy and angry participants will be a headache for you! If you need to cap the number of recipients, use a validator index cutoff, like "all validator indices before 500,000"
+- Reward testnet participants. We know it's tempting because it's good activity by valuable users but rewarding testnet use makes things VERY DIFFICULT for devs who maintain faucets because farmers consequently collect and hoard testnet tokens. Please do not do this
