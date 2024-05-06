@@ -1,0 +1,27 @@
+<style type="text/css">
+  .write-icon svg {
+    margin-bottom: 2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--bs-body-color);
+  }
+</style>
+
+
+<ul class="nav nav-tabs" id="listingTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="job-listings-tab" data-bs-toggle="tab" data-bs-target="#job-listings-tab-pane" type="button" role="tab" aria-controls="job-listings-tab-pane" aria-selected="true">Jobs</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="for-hire-tab" data-bs-toggle="tab" data-bs-target="#for-hire-tab-pane" type="button" role="tab" aria-controls="for-hire-tab-pane" aria-selected="false">For-Hires</button>
+  </li>
+</ul>
+<div class="tab-content" id="listingTabContent">
+  <div class="tab-pane fade show active" id="job-listings-tab-pane" role="tabpanel" aria-labelledby="job-listings-tab" tabindex="0">
+    {% include partials/content/jobs/job-listings.html %}
+  </div>
+  <div class="tab-pane fade" id="for-hire-tab-pane" role="tabpanel" aria-labelledby="for-hire-tab" tabindex="0">
+    {% include partials/content/jobs/for-hire-listings.html %}
+  </div>
+</div>
+

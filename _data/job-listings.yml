@@ -1,0 +1,71 @@
+## FOR TESTING PURPOSES ONLY
+
+## title            = job position/title
+## company          = the hiring company/project
+## date             = posting date: yyyy-mm-dd, Year (i.e. 2023-05-13)
+## active           = true/false; is the listing active
+## description      = short role description
+## description_link = link to full role description
+## location         = location of position; options: Remote, Onsite, Hybrid
+## location_details = city, country
+## type             = options: FullTime, PartTime, Contract, Freelance, Internship
+## category         = options: engineering, writing, business, marketing, design, product, operations, management, hr
+## application      = link/email to apply
+## payment_link     = explorer link for proof of payment
+## contact          = contact info for listing creator (internal use only)
+
+
+# Template to copy for new entries
+# - title: 
+#   company: 
+#   date: 
+#   description:
+#   description_link:
+#   location: 
+#   location_details: 
+#   type: 
+#   category: 
+#   application: 
+#   payment_link: 
+#   contact: 
+
+
+# Entries are shown in date order, most recent first
+# - title: Solidity Developer
+#   company: Ethereum Foundation
+#   date: 2023-05-13
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget. Velit scelerisque in dictum non consectetur a. Tortor condimentum lacinia quis vel eros donec ac. Feugiat denim nunc faucibus.
+#   description_link: https://example.com
+#   location: Remote
+#   location_details: New York, NY, US / San Francisco, CA, US
+#   type: FullTime
+#   category: Engineering
+#   application: jess@ethereum.org
+#   payment_link: 
+#   contact: 
+# - title: Developer Relations
+#   company: Ethereum Foundation
+#   date: 2023-05-13
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget. Velit scelerisque in dictum non consectetur a. Tortor condimentum lacinia quis vel eros donec ac. Feugiat denim nunc faucibus.
+#   description_link: 
+#   location: Hybrid
+#   location_details: New York City, New York
+#   type: Contract
+#   category: Marketing
+#   application: https://example.com/apply
+#   payment_link: 
+#   contact: 
+# - title: Web3 Community Lead
+#   company: Ethereum Foundation
+#   date: 2023-05-13
+#   description: 
+#   description_link: 
+#   location: Remote
+#   location_details: 
+#   type: Internship
+#   category: Marketing
+#   application: https://example.com/apply
+#   payment_link: 
+#   contact: 
+
+
