@@ -39,9 +39,9 @@ smooth:
   address: "`0xAdFb8D27671F14f297eE94135e266aAFf8752e35`"
   fee: "7%"
   oracles: "3 oracle operators: DAppNode, Giveth & Migalabs"
-  validators_active: 549
-  validators_pending: 6
-  validators_total: 555
+  validators_active: 1866
+  validators_pending: 10
+  validators_total: 1876
   incentives: "Accepts donations - [docs](https://docs.dappnode.io/docs/smooth/deep-dive-into-smooth/rewards)"
   team: "[DappNode](https://dappnode.com/pages/about)"
   bond: "0.01 ETH bond"
@@ -57,9 +57,9 @@ smoothly:
   address: "`0x43670D6f39Bca19EE26462f62339e90A39B01e34`"
   fee: "1.5%"
   oracles: "[6 oracle operators](https://docs.smoothly.money/oracle-operators): EthStaker, Anthony Sassano, Aestus Relay, Cryptomanufaktur, Kody, Noah"
-  validators_active: 8
-  validators_pending: 43
-  validators_total: 51
+  validators_active: 47
+  validators_pending: 75
+  validators_total: 122
   incentives: "[SLIDE](https://docs.smoothly.money/social-layer-incentives-for-decentralization-slide): Gitcoin Grants & other public goods funding"
   team: "[Kody Sale](https://warpcast.com/kodys.eth) & [Noah Figueras](https://github.com/noahfigueras)"
   bond: "[0.5 ETH bond](https://docs.smoothly.money/bond-and-mev-theft)"
