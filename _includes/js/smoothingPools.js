@@ -2,7 +2,7 @@ window.onload = getSmoothingPoolData().then(updateTable);
 
 // Fetch the latest data
 async function getSmoothingPoolData() {
-  const url = "https://raw.githubusercontent.com/hanniabu/ethstaker-actions/main/_data/smoothing-pools-processed.json";
+  const url = "https://raw.githubusercontent.com/eth-educators/github-actions/main/_data/smoothing-pools-processed.json";
   return await fetch(url).then(response => response.json());
 }
 
