@@ -47,7 +47,7 @@
       price: 10
   usage: optional
   min_specs: 
-  guide:
+  guide: https://www.wintips.org/setup-computer-to-auto-power-on-after-power-outage/
 - name: Computer
   index: 3
   products: 
