@@ -7,7 +7,7 @@ layout: default
 
 {% include partials/components/divider-icons-projects.html %}
 
-{% include partials/content/index/dvt-program.html %}
+{% include partials/content/index/resources.html %}
 
 {% include partials/content/index/staking.html %}
 
