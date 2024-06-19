@@ -1,0 +1,41 @@
+## title       = resource title
+## link        = link to resource
+## icon        = icon name from _data/icons.yml
+
+# Template to copy for new entries
+# - title:
+#   link:
+#   icon:
+
+
+# Entries are shown in order listed
+- title: Knowledge Base
+  link: https://docs.ethstaker.cc/ethstaker-knowledge-base/
+  icon: docs
+- title: Guides
+  link: /solo-staking-guides
+  icon: list
+- title: Hardware
+  link: /staking-hardware
+  icon: desktop
+- title: Software
+  link: /staking-software
+  icon: code
+- title: MEV Relays
+  link: /mev-relay-list
+  icon: boxes
+- title: Smoothing Pools
+  link: /smoothing-pools
+  icon: people
+- title: Incidents
+  link: /incidents
+  icon: exclamation
+- title: Tax Tools
+  link: /tax
+  icon: calculator
+- title: Airdrops
+  link: /airdrops
+  icon: airdrop
+- title:
+  link:
+  icon:
