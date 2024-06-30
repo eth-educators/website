@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: Job Listing Form
-subheader: Create a new job listing to seek applicants
+subheader: Create a new job listing
 permalink: /forms/job-listing-form
 ---
 

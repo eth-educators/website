@@ -11,7 +11,7 @@
     <div class="row aos-up">
       <p class="mb-4">
         <strong class="text-warning">Listing Fee:</strong> 
-        The listing fee is $300 USDC for 4 weeks, paid to <a href="https://etherscan.io/address/" target="_blank">[payment address link]</a>. A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing.
+        The listing fee is $300 USDC for 30 days, paid to <a href="https://etherscan.io/address/0xa83a92297B3d80A70cC396bf74424971A9890704" target="_blank">0xa83a92297B3d80A70cC396bf74424971A9890704</a> (any L2 or mainnet). A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing. Listings will be published on <a href="https://ethstaker.cc/jobs/job-listings" target="_blank">the website</a> and on Discord, visible to more than 25,000 in the community.
       </p>
 
       <div id="{{context}}Form" class="border-top pt-4">
@@ -84,17 +84,7 @@
             </div>
           </div>
         </div>
-<!-- 
-let otherOptionSelected = checked[0].value == "__other_option__";
-let otherOptionValue = false;
-if (otherOptionSelected) {
-  otherOptionValue = document.querySelector(`#${el.id}Other`).value.trim();
-}
-if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !otherOptionSelected)) {
-  inputValid = true;
-  el.classList.remove("form-control");
-} else {
- -->
+
         <!-- Type -->
         <div class="w-100 mb-3">
           <label for="{{context}}Type" class="form-label mb-1">
@@ -135,6 +125,15 @@ if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !other
           </div>
         </div>
 
+        <!-- Compensation -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Compensation" class="form-label">
+            <span class="text-danger">*</span>
+            Job Compensation (please specify currency denomination)
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Compensation" placeholder="$100k-$140k CAD" required onchange="validate(this)">
+        </div>
+
         <!-- Application Link/Email -->
         <div class="w-100 mb-3">
           <label for="{{context}}ApplicationLink" class="form-label">
@@ -164,6 +163,10 @@ if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !other
 
 
         <div class="d-none">
+          <label for="{{context}}Captcha" class="form-label">
+            <span class="text-danger">*</span>
+            What is 3 + 3?
+          </label>
           <input type="text" class="form-control form-field" id="{{context}}Captcha" required onchange="validate(this)">
         </div>
 
@@ -334,7 +337,14 @@ if ((otherOptionSelected && otherOptionValue != "") || (optionSelected && !other
     }
 
     dataToPost.append("entry.1934196116", document.querySelector('#{{context}}Type input[type=radio]:checked').value);
-    dataToPost.append("entry.1311058856", document.getElementById("{{context}}ApplicationLink").value);
+    dataToPost.append("entry.475980362", document.querySelector('#{{context}}Compensation').value);
+
+    let application = document.getElementById("{{context}}ApplicationLink").value;
+    if (application.includes("@")) {
+      application = application.replaceAll("@", "[at]").replaceAll(".", "[dot]");
+    }
+    dataToPost.append("entry.1311058856", application);
+
     dataToPost.append("entry.1890204600", document.getElementById("{{context}}PaymentLink").value);
     dataToPost.append("entry.437560064", document.getElementById("{{context}}Contact").value);
     dataToPost.append("entry.1379727291", MD5Hash(dataToPost));

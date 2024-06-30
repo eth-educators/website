@@ -11,7 +11,7 @@
     <div class="row aos-up">
       <p class="mb-4">
         <strong class="text-warning">Listing Fee:</strong> 
-        The listing fee is $50 USDC for 4 weeks, paid to <a href="https://etherscan.io/address/" target="_blank">[payment address link]</a>. A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing.
+        The listing fee is $50 USDC for 30 days, paid to <a href="https://etherscan.io/address/0xa83a92297B3d80A70cC396bf74424971A9890704" target="_blank">0xa83a92297B3d80A70cC396bf74424971A9890704</a> (any L2 or mainnet). A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing. Listings will be published on <a href="https://ethstaker.cc/jobs/seeking-employment-listings" target="_blank">the website</a>.
       </p>
 
       <div id="{{context}}Form" class="border-top pt-4">
@@ -49,6 +49,7 @@
         <!-- Position Location -->
         <div class="w-100 mb-3">
           <label for="{{context}}PositionLocations" class="form-label mb-1">
+            <span class="text-danger">*</span>
             Desired Position Location
           </label>
           <div id="{{context}}PositionLocations" class="form-field p-2" type="checkboxes" required onchange="validate(this)">
@@ -76,6 +77,7 @@
         <!-- Position Type -->
         <div class="w-100 mb-3">
           <label for="{{context}}PositionTypes" class="form-label mb-1">
+            <span class="text-danger">*</span>
             Desired Position Type
           </label>
           <div id="{{context}}PositionTypes" class="form-field p-2" type="checkboxes" required onchange="validate(this)">
@@ -133,7 +135,6 @@
         <!-- Cover Link -->
         <div class="w-100 mb-3">
           <label for="{{context}}CoverLink" class="form-label">
-            <span class="text-danger">*</span>
             Link to Cover Letter
           </label>
           <input type="url" class="form-control form-field" id="{{context}}CoverLink" placeholder="https://docs.google.com/document/d/..." onchange="validate(this)">
@@ -148,6 +149,14 @@
           <input type="url" class="form-control form-field" id="{{context}}PaymentLink" placeholder="https://etherscan.io/tx/0x..." required onchange="validate(this)">
         </div>
 
+        <!-- Github Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Github" class="form-label">
+            Github Link
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}Github" placeholder="https://github.com/..." onchange="validate(this)">
+        </div>
+
         <!-- Email -->
         <div class="w-100 mb-3">
           <label for="{{context}}Email" class="form-label">
@@ -159,6 +168,10 @@
 
 
         <div class="d-none">
+          <label for="{{context}}Captcha" class="form-label">
+            <span class="text-danger">*</span>
+            What is 6 - 2?
+          </label>
           <input type="text" class="form-control form-field" id="{{context}}Captcha" required onchange="validate(this)">
         </div>
 
@@ -311,7 +324,7 @@
 
   // Submit data to google forms
   function sendData() {
-    let url = "https://docs.google.com/forms/d/e/1Kmk4b-4CmrCw6ocRHXgvdrb7fQKmoftnuzIzr9ABnTY/formResponse";
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSeEtIlUeAQFsCLZ_JaVdgT2rO1kAo830Z41dtquZD68362-PA/formResponse";
     let dataToPost = new FormData();
 
     dataToPost.append("entry.1726699751", document.getElementById("{{context}}Name").value);
@@ -331,8 +344,12 @@
     dataToPost.append("entry.1045753086", document.getElementById("{{context}}ResumeLink").value);
     dataToPost.append("entry.437597565", document.getElementById("{{context}}CoverLink").value);
     dataToPost.append("entry.264980217", document.getElementById("{{context}}PaymentLink").value);
-    dataToPost.append("entry.1798662318", document.getElementById("{{context}}Email").value);
-    dataToPost.append("entry.2139827320", MD5Hash(dataToPost));
+    dataToPost.append("entry.1316886382", document.getElementById("{{context}}Github").value);
+
+    let email = document.getElementById("{{context}}Email").value.replaceAll("@", "[at]").replaceAll(".", "[dot]");
+    dataToPost.append("entry.1798662318", email);
+    let entryId = MD5Hash(dataToPost);
+    dataToPost.append("entry.2139827320", entryId);
 
     
     fetch(url,{

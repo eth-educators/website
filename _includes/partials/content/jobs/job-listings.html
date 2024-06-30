@@ -1,6 +1,6 @@
 {%- comment -%}
 <!-- 
-This data is pulled from _data/job-listings.json, 
+This data is pulled from https://raw.githubusercontent.com/eth-educators/github-actions/main/_data/job-listings.json
 -->
 {%- endcomment -%}
 
@@ -47,11 +47,9 @@ This data is pulled from _data/job-listings.json,
       Create a job listing
     </a>
   </div>
-  <!-- <hr> -->
-  <!-- <p class="text-center fst-italic"><small>Listing are not endorsements</small></p> -->
   <div id="jobListings">
   </div>
-  <p id="noListings" class="text-center">There are currently no job listings</p>
+  <p id="noListings" class="text-center">There are currently no listings</p>
 
   {%- comment -%}
     {%- assign all_listings =  site.data.job-listings -%}
@@ -151,6 +149,7 @@ This data is pulled from _data/job-listings.json,
     //       "location":"location",
     //       "location_details":"new york city, new york",
     //       "type":"Full-Time",
+    //       "github":"https://github.com/xyz",
     //       "description_link":"https://description.link",
     //       "apply":"application link/email"
     //     },
@@ -189,6 +188,10 @@ This data is pulled from _data/job-listings.json,
                               ${listing.type.trim()}
                               <span class="mx-2">|</span>
                               ${listing.location.trim()}
+                              ${listing.comp ?
+                                `<span class="mx-2">|</span>${listing.comp.trim()}` :
+                                ``
+                              }
                             </small>
                           </div>
                         </summary>

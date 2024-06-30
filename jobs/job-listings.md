@@ -5,8 +5,8 @@ permalink: /jobs/job-listings
 note: Listing are not endorsements
 
 buttons:
-- link: /jobs/for-hire-listings
-  text: View For-Hire Listings
+- link: /jobs/seeking-employment-listings
+  text: View Seeking-Employment Listings
 ---
 
 
