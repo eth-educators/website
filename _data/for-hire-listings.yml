@@ -1,0 +1,62 @@
+## FOR TESTING PURPOSES ONLY
+
+## title            = job position/title
+## name             = name of person looking for work
+## date             = posting date: yyyy-mm-dd, Year (i.e. 2023-05-13)
+## location         = location of person looking for work
+## work_location    = location of position; options: Remote, Onsite, Hybrid
+## type             = options: FullTime, PartTime, Contract, Freelance, Internship
+## about            = description/intro
+## resume_link      = link to resume
+## cover_link       = link to cover
+## payment_link     = explorer link for proof of payment
+## email            = contact email
+
+
+# Template to copy for new entries
+# - title: 
+#   name: 
+#   location: 
+#   work_location: 
+#   type: 
+#   about: 
+#   resume_link: 
+#   cover_link: 
+#   payment_link: 
+#   email: 
+
+
+# Entries are shown in date order, most recent first
+# - title: Solidity Developer
+#   name: developer.eth
+#   date: 2023-05-13
+#   location: 
+#   work_location: Remote
+#   type: FullTime, Contract
+#   about: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget. Velit scelerisque in dictum non consectetur a. Tortor condimentum lacinia quis vel eros donec ac. Feugiat denim nunc faucibus.
+#   resume_link: https://resume.link
+#   cover_link: https://cover.link
+#   payment_link: https://etherscan.io
+#   email: developer@example.com
+# - title: Developer Relations
+#   name: John Doe
+#   date: 2023-05-13
+#   location: LA, California
+#   work_location: Remote, Hybrid
+#   type: PartTime, Contract
+#   about: 
+#   resume_link: https://resume.link
+#   cover_link: https://cover.link
+#   payment_link: https://etherscan.io
+#   email: johnny@example.com
+# - title: Web3 Community Lead
+#   name: anon
+#   date: 2023-05-13
+#   location: Poland
+#   work_location: Onsite, Hybrid
+#   type: Contract
+#   about: 
+#   resume_link: https://resume.link
+#   cover_link: https://cover.link
+#   payment_link: https://etherscan.io
+#   email: anon@example.com

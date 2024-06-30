@@ -1,0 +1,384 @@
+{%- assign context = "forHireListing" -%}
+
+<style type="text/css">
+  #listingForm {
+    margin-top: -2rem;
+  }
+</style>
+
+<section id="listingForm">
+  <div class="container">
+    <div class="row aos-up">
+      <p class="mb-4">
+        <strong class="text-warning">Listing Fee:</strong> 
+        The listing fee is $50 USDC for 30 days, paid to <a href="https://etherscan.io/address/0xa83a92297B3d80A70cC396bf74424971A9890704" target="_blank">0xa83a92297B3d80A70cC396bf74424971A9890704</a> (any L2 or mainnet). A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing. Listings will be published on <a href="https://ethstaker.cc/jobs/seeking-employment-listings" target="_blank">the website</a>.
+      </p>
+
+      <div id="{{context}}Form" class="border-top pt-4">
+        <div class="w-100 mb-4">
+          <div class="text-danger">* Required fields</div>
+        </div>
+
+        <!-- Name -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Name" class="form-label">
+            <span class="text-danger">*</span>
+            Full Name/Pseudonym
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Name" required onchange="validate(this)">
+        </div>
+
+        <!-- Position -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Position" class="form-label">
+            <span class="text-danger">*</span>
+            Position Sought
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Position" required onchange="validate(this)">
+        </div>
+
+        <!-- Your Location -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Location" class="form-label">
+            <span class="text-danger">*</span>
+            Your Location
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Location" onchange="validate(this)" placeholder="City/State, Country">
+        </div>
+
+        <!-- Position Location -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}PositionLocations" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Desired Position Location
+          </label>
+          <div id="{{context}}PositionLocations" class="form-field p-2" type="checkboxes" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionLocations" type="checkbox" value="Remote" id="{{context}}PositionLocations1">
+              <label class="form-check-label" for="{{context}}PositionLocations1">
+                Remote
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionLocations" type="checkbox" value="Hybrid" id="{{context}}PositionLocations2">
+              <label class="form-check-label" for="{{context}}PositionLocations2">
+                Hybrid
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionLocations" type="checkbox" value="Onsite" id="{{context}}PositionLocations3">
+              <label class="form-check-label" for="{{context}}PositionLocations3">
+                Onsite
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Position Type -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}PositionTypes" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Desired Position Type
+          </label>
+          <div id="{{context}}PositionTypes" class="form-field p-2" type="checkboxes" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionTypes" type="checkbox" value="FullTime" id="{{context}}PositionTypes1">
+              <label class="form-check-label" for="{{context}}PositionTypes1">
+                FullTime
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionTypes" type="checkbox" value="PartTime" id="{{context}}PositionTypes2">
+              <label class="form-check-label" for="{{context}}PositionTypes2">
+                PartTime
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionTypes" type="checkbox" value="Contract" id="{{context}}PositionTypes3">
+              <label class="form-check-label" for="{{context}}PositionTypes3">
+                Contract
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionTypes" type="checkbox" value="Freelance" id="{{context}}PositionTypes4">
+              <label class="form-check-label" for="{{context}}PositionTypes4">
+                Freelance
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}PositionTypes" type="checkbox" value="Internship" id="{{context}}PositionTypes5">
+              <label class="form-check-label" for="{{context}}PositionTypes5">
+                Internship
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="w-100 mb-4">
+          <label for="{{context}}About" class="form-label">
+            About You (300 characters max)
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}About" rows="5" limit="300" onkeyup="validate(this)"></textarea>
+          <small id="{{context}}AboutRemaining" class="float-end">300 remaining</small>
+        </div>
+
+        <!-- Resume Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}ResumeLink" class="form-label">
+            <span class="text-danger">*</span>
+            Link to Resume
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}ResumeLink" placeholder="https://docs.google.com/document/d/..." required onchange="validate(this)">
+        </div>
+
+        <!-- Cover Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}CoverLink" class="form-label">
+            Link to Cover Letter
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}CoverLink" placeholder="https://docs.google.com/document/d/..." onchange="validate(this)">
+        </div>
+
+        <!-- Payment Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}PaymentLink" class="form-label">
+            <span class="text-danger">*</span>
+            Proof of Payment Transaction Link
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}PaymentLink" placeholder="https://etherscan.io/tx/0x..." required onchange="validate(this)">
+        </div>
+
+        <!-- Github Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Github" class="form-label">
+            Github Link
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}Github" placeholder="https://github.com/..." onchange="validate(this)">
+        </div>
+
+        <!-- Email -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Email" class="form-label">
+            <span class="text-danger">*</span>
+            Email (this will be public)
+          </label>
+          <input type="email" class="form-control form-field" id="{{context}}Email" placeholder="name@example.com" required onchange="validate(this)">
+        </div>
+
+
+        <div class="d-none">
+          <label for="{{context}}Captcha" class="form-label">
+            <span class="text-danger">*</span>
+            What is 6 - 2?
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Captcha" required onchange="validate(this)">
+        </div>
+
+        <!-- Error Message -->
+        <div class="w-100 mb-3">
+          <p id="{{context}}ErrorMessage" class="text-danger invisible fs-6">* Please fill out all required fields</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+          <button id="{{context}}SubmitButton" class="btn btn-dark" type="button" onclick="{{context}}Submit()">Submit</button>
+        </div>
+
+      </div>
+
+      <div id="{{context}}FormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
+        <div>✅ Thank you for submitting your listing! Your listing will be reviewed before appearing on the site. The review process may take 1-2 business days.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  function {{context}}Submit() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.add("invisible");
+      // Submit data to google forms
+      sendData();
+      // Display submission success message
+      document.getElementById("{{context}}Form").classList.add("d-none");
+      document.getElementById("{{context}}FormSubmitted").classList.remove("d-none");
+      // Scroll up to submission success message
+      // document.getElementById("{{context}}FormSubmitted").scrollIntoView();
+      scrollToElement("{{context}}FormSubmitted", -200);
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.remove("invisible");
+    }
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('.form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      // Update textarea characters remaining
+      let textareaOverLimit = false;
+      if (type == "textarea" && el.getAttribute("limit")) {
+        textareaOverLimit = updateCharsRemaining(el);
+      }
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Captcha
+        if (el.id == "{{context}}Captcha") {
+          el.value = el.value.trim();
+          if (el.value != "") {
+            formValid = false;
+            inputValid = false;
+          } else {
+            inputValid = true;
+          }
+        }
+        // Inputs
+        else if (type == "text") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Textareas
+        } else if (type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "" || textareaOverLimit) {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // URL
+        } else if (type == "url") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          if (checked.length == 0) {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+          el.classList.add("form-control");
+        // Radio Group
+        } else if (type == "radios") {
+          let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
+          let otherOptionSelected = checked.value == "__other_option__";
+          let otherOptionValue = false;
+          document.querySelectorAll(`.${el.id}`).forEach(radio => {
+            if (radio.value == "__other_option__") {
+              document.querySelector(`#${radio.id}Other`).classList.add("d-none");
+            }
+          })
+          if (otherOptionSelected) {
+            let otherInput = document.querySelector(`#${checked.id}Other`);
+            otherInput.classList.remove("d-none");
+            otherOptionValue = otherInput.value.trim();
+          }
+          if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected)) {
+            inputValid = true;
+          } else {
+            formValid = false;
+          }
+          el.classList.add("form-control");
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSeEtIlUeAQFsCLZ_JaVdgT2rO1kAo830Z41dtquZD68362-PA/formResponse";
+    let dataToPost = new FormData();
+
+    dataToPost.append("entry.1726699751", document.getElementById("{{context}}Name").value);
+    dataToPost.append("entry.1001632491", document.getElementById("{{context}}Position").value);
+    dataToPost.append("entry.2276620", document.getElementById("{{context}}Location").value);
+
+    let positionLocations = document.querySelectorAll('#{{context}}PositionLocations input[type=checkbox]:checked');
+    positionLocations.forEach((el) => {
+      dataToPost.append("entry.376132084", el.value);
+    });
+    let positionTypes = document.querySelectorAll('#{{context}}PositionTypes input[type=checkbox]:checked');
+    positionTypes.forEach((el) => {
+      dataToPost.append("entry.404793744", el.value);
+    });
+
+    dataToPost.append("entry.253712067", document.getElementById("{{context}}About").value);
+    dataToPost.append("entry.1045753086", document.getElementById("{{context}}ResumeLink").value);
+    dataToPost.append("entry.437597565", document.getElementById("{{context}}CoverLink").value);
+    dataToPost.append("entry.264980217", document.getElementById("{{context}}PaymentLink").value);
+    dataToPost.append("entry.1316886382", document.getElementById("{{context}}Github").value);
+
+    let email = document.getElementById("{{context}}Email").value.replaceAll("@", "[at]").replaceAll(".", "[dot]");
+    dataToPost.append("entry.1798662318", email);
+    let entryId = MD5Hash(dataToPost);
+    dataToPost.append("entry.2139827320", entryId);
+
+    
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+
+  // Update textarea characters remaining
+  function updateCharsRemaining(el) {
+    let charLimit = el.getAttribute("limit");
+    let charCount = el.value.trim().length;
+    let charRemaining = charLimit - charCount;
+    document.querySelector(`#${el.id}Remaining`).innerText = `${charRemaining} remaining`;
+    if (charRemaining < 0) {
+      document.querySelector(`#${el.id}Remaining`).classList.add("text-danger");
+      return true;
+    } else {
+      document.querySelector(`#${el.id}Remaining`).classList.remove("text-danger");
+      return false;
+    }
+  }
+</script>

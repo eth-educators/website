@@ -1,0 +1,225 @@
+{%- comment -%}
+<!-- 
+This data is pulled from https://raw.githubusercontent.com/eth-educators/github-actions/main/_data/job-listings.json
+-->
+{%- endcomment -%}
+
+<style type="text/css">
+  @media screen and (min-width: 992px) {
+    .job-link {
+      opacity: 0;
+      max-width: 1px;
+      overflow: hidden;
+    }
+  }
+  #jobs .write-icon svg {
+    margin-bottom: 2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    /*color: var(--bs-body-color);*/
+  }
+  #jobs hr {
+    margin: 0 0 1rem 0;
+  }
+  #jobs p {
+    font-size: 1rem;
+  }
+  #jobs details summary:after,
+  #jobs details[open] summary:after,
+  #jobs details summary::marker {
+    content: none;
+  }
+  #jobs details:hover {
+    box-shadow: 0 0.25rem 1rem rgba(0,0,0,.25)!important;
+  }
+  .dark-mode #jobs details:hover {
+    box-shadow: 0 0.25rem 1rem rgba(0,0,0,.75)!important;
+  }
+  #jobListings .location {
+    text-transform: capitalize;
+  }
+</style>
+
+<div id="jobs" class="row row-cols-1">
+  <div class="d-flex justify-content-end">
+    <a class="ttext-body ms-1 mb-3" href="/forms/job-listing-form">
+      <span class="write-icon">{{site.data.icons.write}}</span>
+      Create a job listing
+    </a>
+  </div>
+  <div id="jobListings">
+  </div>
+  <p id="noListings" class="text-center">There are currently no listings</p>
+
+  {%- comment -%}
+    {%- assign all_listings =  site.data.job-listings -%}
+    {%- assign listing_count =  all_listings | size -%}
+    {%- assign visibility =  "" -%}
+    {%- if listing_count > 0 -%}
+      {%- assign visibility =  "d-none" -%}
+    {%- endif -%}
+    <div id="jobListings">
+      {%- for listing in all_listings -%}
+        {%- if listing.title and listing.application -%}
+          {%- assign company = "" -%}
+          {%- if listing.company -%}
+            {%- assign company = listing.company -%}
+          {%- endif -%}
+          <details class="mt-0 mb-3">
+            <summary>                  
+              <div class="w-100">
+                <div class="d-flex justify-content-between text-muted">
+                  <small>{{company}}</small>
+                  <small>2h</small>
+                </div>
+                <h5 class="card-title">{{listing.title}}</h5>
+                <small class="text-muted">
+                  {{listing.type}}
+                  <span class="mx-2">|</span>
+                  {{listing.location | strip}}
+
+                  {% comment %}
+                  {%- if listing.category -%}
+                    <span class="mx-2">|</span>
+                    {{listing.category}}
+                  {%- endif -%}
+                  {% endcomment %}
+                  
+                </small>
+              </div>
+            </summary>
+            <div class="my-3">
+              {%- if listing.location != "Remote" -%}
+                <p>Location: {{listing.location_details}}</p>
+              {%- endif -%}
+              {%- if listing.description -%}
+                <p>{{listing.description}}</p>
+              {%- endif -%}
+
+              <p><a href="{{listing.description_link}}" target="_blank">Full listing description</a></p>
+
+              {%- if listing.application contains "://" -%}
+                <a class="btn btn-outline-dark d-block mt-3" href="{{listing.application}}">Apply</a>
+              {%- elsif listing.application contains "@" -%}
+                <p><strong>Email to apply:</strong> {{listing.application}}</p>
+              {%- endif -%}
+            </div>
+          </details>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <p class="text-center {{visibility}}">There are currently no job listings</p>
+  {%- endcomment -%}
+</div>
+
+
+<script type="text/javascript">
+  window.onload = getListings().then(loadListings);
+
+  async function getListings() {
+    const url = "https://raw.githubusercontent.com/eth-educators/github-actions/main/_data/job-listings.json";
+    return await fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        data.sort(function(a, b) {
+          var dateA = new Date(a.epoch);
+          var dateB = new Date(b.epoch);
+
+          if (dateA > dateB ) {
+            return -1;
+          }
+          if (dateA < dateB ) {
+            return 1;
+          }
+          return 0;
+        });
+        return data;
+      });
+  }
+
+  // Build the post html and replace the current feed
+  function loadListings(listings) {
+    // format:
+    //   [
+    //     {
+    //       "epoch":1716502391.505,
+    //       "name":"name",
+    //       "position":"title",
+    //       "description":"description",
+    //       "location":"location",
+    //       "location_details":"new york city, new york",
+    //       "type":"Full-Time",
+    //       "github":"https://github.com/xyz",
+    //       "description_link":"https://description.link",
+    //       "apply":"application link/email"
+    //     },
+    //     ...
+    //   ]
+    let listingsHTML = "";
+    if (listings.length > 0) {
+      document.querySelector("#jobs #noListings").classList.add("d-none");
+    }
+    let now = Math.round(new Date() / 1000);
+    log(listings);
+    listings.forEach(listing => {
+      let listingAgeSeconds = now - listing.epoch;
+      if (listingAgeSeconds < 0) {
+        listingAgeSeconds = 0;
+      }
+      // let listingAgeMinutes = Math.round(listingAgeSeconds / 60);
+      let listingAgeHours = Math.round(listingAgeSeconds / 3600);
+      let listingAgeDays = Math.round(listingAgeSeconds / 86400);
+      let listingAge = "now";
+      if (listingAgeHours > 0) {
+        listingAge = listingAgeHours + "h";
+      }
+      if (listingAgeDays > 0) {
+        listingAge = listingAgeDays + "d";
+      }
+      let listingHTML = `<details class="mt-0 mb-3">
+                        <summary>                  
+                          <div class="w-100">
+                            <div class="d-flex justify-content-between text-muted">
+                              <small>${listing.name.trim()}</small>
+                              <small>${listingAge}</small>
+                            </div>
+                            <h5 class="card-title">${listing.position.trim()}</h5>
+                            <small class="text-muted">
+                              ${listing.type.trim()}
+                              <span class="mx-2">|</span>
+                              ${listing.location.trim()}
+                              ${listing.comp ?
+                                `<span class="mx-2">|</span>${listing.comp.trim()}` :
+                                ``
+                              }
+                            </small>
+                          </div>
+                        </summary>
+                        <div class="my-3">
+                          ${listing.location != "Remote" ?
+                            `<p class="location">Location: ${listing.location_details.trim().toLowerCase()}</p>` :
+                            ``
+                          }
+
+                          ${listing.description ?
+                            `<p>${listing.description.trim()}</p>` :
+                            ``
+                          }
+
+                          <p><a href="${listing.description_link.trim()}" target="_blank">Full listing description</a></p>
+
+                          ${listing.apply.includes("@") ?
+                            `<p><strong>Email to apply:</strong> ${listing.apply}</p>` :
+                            `${listing.apply.includes("://") ?
+                              `<a class="btn btn-outline-dark d-block mt-3" href="${listing.apply}">Apply</a>` :
+                              ``
+                            }`
+                          }
+                        </div>
+                      </details>`;
+      listingsHTML += listingHTML;
+    });
+    document.getElementById("jobListings").innerHTML = listingsHTML;
+  }
+</script>
+

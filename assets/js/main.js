@@ -9,4 +9,5 @@
 {% include js/tooltips.js %}
 {% include js/scrollTo.js %}
 {% include js/base.js %}
+{% include js/md5hash.js %}
 {% include js/updateLinkTargets.js %}

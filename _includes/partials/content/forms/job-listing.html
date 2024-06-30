@@ -1,0 +1,382 @@
+{%- assign context = "jobListing" -%}
+
+<style type="text/css">
+  #listingForm {
+    margin-top: -2rem;
+  }
+</style>
+
+<section id="listingForm">
+  <div class="container">
+    <div class="row aos-up">
+      <p class="mb-4">
+        <strong class="text-warning">Listing Fee:</strong> 
+        The listing fee is $300 USDC for 30 days, paid to <a href="https://etherscan.io/address/0xa83a92297B3d80A70cC396bf74424971A9890704" target="_blank">0xa83a92297B3d80A70cC396bf74424971A9890704</a> (any L2 or mainnet). A link to the transaction is required to complete this application. Your submission will be reviewed prior to publishing. Listings will be published on <a href="https://ethstaker.cc/jobs/job-listings" target="_blank">the website</a> and on Discord, visible to more than 25,000 in the community.
+      </p>
+
+      <div id="{{context}}Form" class="border-top pt-4">
+        <div class="w-100 mb-4">
+          <div class="text-danger">* Required fields</div>
+        </div>
+
+        <!-- Company Name -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Name" class="form-label">
+            <span class="text-danger">*</span>
+            Company/Project Name
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Name" required onchange="validate(this)">
+        </div>
+
+        <!-- Title -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Title" class="form-label">
+            <span class="text-danger">*</span>
+            Position Title
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Title" required onchange="validate(this)">
+        </div>
+
+        <!-- Description -->
+        <div class="w-100 mb-4">
+          <label for="{{context}}Description" class="form-label">
+            Role Description (300 characters max)
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Description" rows="5" limit="300" onkeyup="validate(this)"></textarea>
+          <small id="{{context}}DescriptionRemaining" class="float-end">300 remaining</small>
+        </div>
+
+        <!-- Full Description -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}FullDescription" class="form-label">
+            <span class="text-danger">*</span>
+            Full Job Description Link
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}FullDescription" required onchange="validate(this)">
+        </div>
+
+        <!-- Location -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Location" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Role Location
+          </label>
+          <div id="{{context}}Location" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Location" type="radio" name="{{context}}Location" value="Remote" id="{{context}}Location1">
+              <label class="form-check-label" for="{{context}}Location1">
+                Remote
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Location" type="radio" name="{{context}}Location" value="__other_option__" id="{{context}}Location2">
+              <label class="form-check-label" for="{{context}}Location2">
+                Onsite
+              </label>
+              <input type="text" class="d-none form-control form-field d-inline" id="{{context}}Location2Other" placeholder="City, Country" for="Onsite">
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Location" type="radio" name="{{context}}Location" value="__other_option__" id="{{context}}Location3">
+              <label class="form-check-label" for="{{context}}Location3">
+                Hybrid
+              </label>
+              <input type="text" class="d-none form-control form-field d-inline" id="{{context}}Location3Other" placeholder="City, Country" for="Hybrid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Type -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Type" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Role Type
+          </label>
+          <div id="{{context}}Type" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Full-Time" id="{{context}}Collateral1">
+              <label class="form-check-label" for="{{context}}Collateral1">
+                Full-Time
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Part-Time" id="{{context}}Collateral2">
+              <label class="form-check-label" for="{{context}}Collateral2">
+                Part-Time
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Contract" id="{{context}}Collateral3">
+              <label class="form-check-label" for="{{context}}Collateral3">
+                Contract
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Freelance" id="{{context}}Collateral4">
+              <label class="form-check-label" for="{{context}}Collateral4">
+                Freelance
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Internship" id="{{context}}Collateral5">
+              <label class="form-check-label" for="{{context}}Collateral5">
+                Internship
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compensation -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Compensation" class="form-label">
+            <span class="text-danger">*</span>
+            Job Compensation (please specify currency denomination)
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Compensation" placeholder="$100k-$140k CAD" required onchange="validate(this)">
+        </div>
+
+        <!-- Application Link/Email -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}ApplicationLink" class="form-label">
+            <span class="text-danger">*</span>
+            Application Link/Email
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}ApplicationLink" required onchange="validate(this)">
+        </div>
+
+        <!-- Payment Link -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}PaymentLink" class="form-label">
+            <span class="text-danger">*</span>
+            Proof of Payment Transaction Link
+          </label>
+          <input type="url" class="form-control form-field" id="{{context}}PaymentLink" placeholder="https://etherscan.io/tx/0x..." required onchange="validate(this)">
+        </div>
+
+        <!-- Contact -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Contact" class="form-label">
+            <span class="text-danger">*</span>
+            Job Listing Contact (internal use only)
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Contact" required onchange="validate(this)">
+        </div>
+
+
+        <div class="d-none">
+          <label for="{{context}}Captcha" class="form-label">
+            <span class="text-danger">*</span>
+            What is 3 + 3?
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Captcha" required onchange="validate(this)">
+        </div>
+
+        <!-- Error Message -->
+        <div class="w-100 mb-3">
+          <p id="{{context}}ErrorMessage" class="text-danger invisible fs-6">* Please fill out all required fields</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+          <button id="{{context}}SubmitButton" class="btn btn-dark" type="button" onclick="{{context}}Submit()">Submit</button>
+        </div>
+
+      </div>
+
+      <div id="{{context}}FormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
+        <div>✅ Thank you for submitting your listing! Your listing will be reviewed before appearing on the site. The review process may take 1-2 business days.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  function {{context}}Submit() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.add("invisible");
+      // Submit data to google forms
+      sendData();
+      // Display submission success message
+      document.getElementById("{{context}}Form").classList.add("d-none");
+      document.getElementById("{{context}}FormSubmitted").classList.remove("d-none");
+      // Scroll up to submission success message
+      // document.getElementById("{{context}}FormSubmitted").scrollIntoView();
+      scrollToElement("{{context}}FormSubmitted", -200);
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.remove("invisible");
+    }
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('.form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      // Update textarea characters remaining
+      let textareaOverLimit = false;
+      if (type == "textarea" && el.getAttribute("limit")) {
+        textareaOverLimit = updateCharsRemaining(el);
+      }
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Captcha
+        if (el.id == "{{context}}Captcha") {
+          el.value = el.value.trim();
+          if (el.value != "") {
+            formValid = false;
+            inputValid = false;
+          } else {
+            inputValid = true;
+          }
+        }
+        // Inputs
+        else if (type == "text") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Textareas
+        } else if (type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "" || textareaOverLimit) {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // URL
+        } else if (type == "url") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          if (checked.length == 0) {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+          el.classList.add("form-control");
+        // Radio Group
+        } else if (type == "radios") {
+          let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
+          let otherOptionSelected = checked.value == "__other_option__";
+          let otherOptionValue = false;
+          document.querySelectorAll(`.${el.id}`).forEach(radio => {
+            if (radio.value == "__other_option__") {
+              document.querySelector(`#${radio.id}Other`).classList.add("d-none");
+            }
+          })
+          if (otherOptionSelected) {
+            let otherInput = document.querySelector(`#${checked.id}Other`);
+            otherInput.classList.remove("d-none");
+            otherOptionValue = otherInput.value.trim();
+          }
+          if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected)) {
+            inputValid = true;
+          } else {
+            formValid = false;
+          }
+          el.classList.add("form-control");
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLScep0jxZzbgD0DUV2mKZfyaJ-UodhOtAxEo_w7MUAQ_qkAc1A/formResponse";
+    let dataToPost = new FormData();
+
+    dataToPost.append("entry.197333915", document.getElementById("{{context}}Name").value);
+    dataToPost.append("entry.782943907", document.getElementById("{{context}}Title").value);
+    dataToPost.append("entry.1046559788", document.getElementById("{{context}}Description").value);
+    dataToPost.append("entry.389176943", document.getElementById("{{context}}FullDescription").value);
+    dataToPost.append("entry.1019431438", document.querySelector('#{{context}}Location input[type=radio]:checked').value);
+
+    if (document.querySelector('#{{context}}Location input[type=radio]:checked').value == "__other_option__") {
+      let otherId = document.querySelector('#{{context}}Location input[type=radio]:checked').id;
+      let otherInput = document.querySelector(`#${otherId}Other`);
+      dataToPost.append("entry.1019431438.other_option_response", otherInput.getAttribute('for'));
+      dataToPost.append("entry.251106678", otherInput.value);
+    } else {
+      dataToPost.append("entry.251106678", "");
+    }
+
+    dataToPost.append("entry.1934196116", document.querySelector('#{{context}}Type input[type=radio]:checked').value);
+    dataToPost.append("entry.475980362", document.querySelector('#{{context}}Compensation').value);
+
+    let application = document.getElementById("{{context}}ApplicationLink").value;
+    if (application.includes("@")) {
+      application = application.replaceAll("@", "[at]").replaceAll(".", "[dot]");
+    }
+    dataToPost.append("entry.1311058856", application);
+
+    dataToPost.append("entry.1890204600", document.getElementById("{{context}}PaymentLink").value);
+    dataToPost.append("entry.437560064", document.getElementById("{{context}}Contact").value);
+    dataToPost.append("entry.1379727291", MD5Hash(dataToPost));
+
+    
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+
+  // Update textarea characters remaining
+  function updateCharsRemaining(el) {
+    let charLimit = el.getAttribute("limit");
+    let charCount = el.value.trim().length;
+    let charRemaining = charLimit - charCount;
+    document.querySelector(`#${el.id}Remaining`).innerText = `${charRemaining} remaining`;
+    if (charRemaining < 0) {
+      document.querySelector(`#${el.id}Remaining`).classList.add("text-danger");
+      return true;
+    } else {
+      document.querySelector(`#${el.id}Remaining`).classList.remove("text-danger");
+      return false;
+    }
+  }
+</script>
