@@ -37,19 +37,8 @@
   usage: required
   min_specs: 
   guide:
-- name: Smart Plug
-  index: 2
-  products: 
-    - id: B091699Z3W
-      name: Kasa Smart Plug Ultra Mini
-      details: 
-      link: https://www.amazon.com/dp/B091699Z3W
-      price: 10
-  usage: optional
-  min_specs: 
-  guide: https://www.wintips.org/setup-computer-to-auto-power-on-after-power-outage/
 - name: Computer
-  index: 3
+  index: 2
   products: 
     - id: B09KNK27M2
       name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
@@ -64,19 +53,8 @@
   usage: required
   min_specs: 
   guide:
-- name: UPS
-  index: 4
-  products: 
-    - id: B0030SL08A
-      name: CyberPower CP425SLG Standby UPS System
-      details: 
-      link: https://www.amazon.com/dp/B0030SL08A/
-      price: 60
-  usage: recommended
-  min_specs: 
-  guide: https://github.com/trevhub/guides/blob/main/CheapUPS.md
 - name: SSD
-  index: 5
+  index: 3
   products: 
     - id: B08RK2SR23
       name: Samsung 980 PRO
@@ -92,7 +70,7 @@
   min_specs: ">=2TB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
 - name: RAM
-  index: 6
+  index: 4
   products: 
     - id: B07ZLC7VNH
       name: Crucial RAM CT32G4SFD832A
@@ -102,5 +80,27 @@
   usage: required
   min_specs: ">=32GB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
+- name: UPS
+  index: 5
+  products: 
+    - id: B0030SL08A
+      name: CyberPower CP425SLG Standby UPS System
+      details: 
+      link: https://www.amazon.com/dp/B0030SL08A/
+      price: 60
+  usage: recommended
+  min_specs: 
+  guide: https://github.com/trevhub/guides/blob/main/CheapUPS.md
+- name: Smart Plug
+  index: 6
+  products: 
+    - id: B091699Z3W
+      name: Kasa Smart Plug Ultra Mini
+      details: 
+      link: https://www.amazon.com/dp/B091699Z3W
+      price: 10
+  usage: optional
+  min_specs: 
+  guide: https://www.wintips.org/setup-computer-to-auto-power-on-after-power-outage/
 
 

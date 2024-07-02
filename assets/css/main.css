@@ -175,6 +175,27 @@ section li:not(:last-child) {
 .form-control:focus {
   
 }
+.toggle-switch .toggle-switch-outline {
+  border: 1px solid rgba(var(--bs-body-color-rgb),0.4);
+}
+.toggle-switch :not(.btn-check:checked)+.btn-outline-primary {
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: var(--bs-body-color);
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: var(--bs-light);
+  --bs-btn-disabled-border-color: transparent;
+  opacity: 60%;
+}
+.toggle-switch .btn-check:checked+.btn:focus,
+.toggle-switch .btn-check:checked+.btn:active,
+.toggle-switch .btn-check:focus+.btn {
+  box-shadow: none !important;
+}
 
 
 

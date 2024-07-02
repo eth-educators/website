@@ -9,6 +9,8 @@ Usage:
   type="warning"
   title="Warning Callout"
   content="This is a callout element."
+  btn_text="Button text"
+  btn_link="https://button.link"
 %}
 -->
 {%- endcomment -%}
@@ -60,4 +62,7 @@ Usage:
 <div class="card bd-callout bd-callout-{{type}} shadow">
   <h5 class="mb-1 fw-semibold">{{include.title | markdownify}}</h5>
   {{include.content | markdownify}}
+  {%- if include.btn_link and include.btn_text -%}
+    <a href="{{include.btn_link}}" class="btn btn-primary">{{include.btn_text}}</a>
+  {%- endif -%}
 </div>
