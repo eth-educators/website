@@ -1,8 +1,8 @@
 ---
 layout: markdown
-title: Staking Organizations
-permalink: /organizations
-subheader: 'A list Ethereum staking-related organizations and their functions'
+title: Staking Communities
+permalink: /staking-communities
+subheader: 'A list Ethereum staking-related communities and their functions'
 ---
 
 ## Stakers Union
