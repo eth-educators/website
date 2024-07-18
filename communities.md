@@ -2,7 +2,7 @@
 layout: markdown
 title: Staking Communities
 permalink: /staking-communities
-subheader: 'A list Ethereum staking-related communities and their functions'
+subheader: 'A list of Ethereum staking-related communities and their functions'
 ---
 
 ## Stakers Union
