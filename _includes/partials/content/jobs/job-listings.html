@@ -206,7 +206,10 @@ This data is pulled from https://raw.githubusercontent.com/eth-educators/github-
                             ``
                           }
 
-                          <p><a href="${listing.description_link.trim()}" target="_blank">Full listing description</a></p>
+                          ${listing.description_link ?
+                            `<p><a href="${listing.description_link.trim()}" target="_blank">Full listing description</a></p>` :
+                            ``
+                          }
 
                           ${listing.apply.includes("@") ?
                             `<p><strong>Email to apply:</strong> ${listing.apply}</p>` :
