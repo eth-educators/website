@@ -8,7 +8,7 @@ subheader: A collection of active areas of research related to staking
 
 
 ### Staking Issuance
-Adjusting the issuance curve has been a topic of discussion primarily aimed at addressing increasing validator set centralization. A comprehensive resource maintained by [Caspar](https://hackmd.io/@ttsao/epbs-faq0) can be found at (issuance.wtf)[https://issuance.wtf/]
+Adjusting the issuance curve has been a topic of discussion primarily aimed at addressing increasing validator set centralization. A comprehensive resource maintained by [Caspar](https://hackmd.io/@ttsao/epbs-faq0) can be found at [issuance.wtf](https://issuance.wtf/).
 - [Properties of issuance level: consensus incentives and variability across potential reward curves
 ](https://ethresear.ch/t/properties-of-issuance-level-consensus-incentives-and-variability-across-potential-reward-curves/18448#h-55-potential-candidate-for-a-new-reward-curve-23)
 - [Endgame Staking Economics: A Case for Targeting](https://ethresear.ch/t/endgame-staking-economics-a-case-for-targeting/18751)
@@ -25,12 +25,12 @@ Inclusion lists are a set of proposals aimed at increasing censorship resistance
 - [Unconditional inclusion lists](https://ethresear.ch/t/unconditional-inclusion-lists/18500)
 
 ### MEV Burn
-mevburn aims to address centralization caused by the volatility in MEV rewards and increase the cost of censorship at the builder level
+mevburn aims to address centralization caused by the volatility in MEV rewards and increase the cost of censorship at the builder level.
 - [MEV burn—a simple design](https://ethresear.ch/t/mev-burn-a-simple-design/15590)
 - [Dr. changestuff or: How I learned to stop worrying and love mev-burn](https://ethresear.ch/t/dr-changestuff-or-how-i-learned-to-stop-worrying-and-love-mev-burn/17384)
 
 ### ePBS
-Enshrined Proposal Builder Separation removes the necessity for relays by allowing validators and builders to interact trustlessly
+Enshrined Proposal Builder Separation removes the necessity for relays by allowing validators and builders to interact trustlessly.
 - [ePBS](https://github.com/ethereum/consensus-specs/pull/3828)
 - [ePBS FAQ](https://hackmd.io/@ttsao/epbs-faq0)
 
