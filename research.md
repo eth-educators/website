@@ -15,11 +15,11 @@ Adjusting the issuance curve has been a topic of discussion primarily aimed at a
 - [Electra: Issuance Curve Adjustment Proposal](https://ethereum-magicians.org/t/electra-issuance-curve-adjustment-proposal/18825)
 
 ### Max Effective Balance (maxEB)
-maxEB raises the amount of ETH that a validator can hold from 32 ETH to 2048 ETH. It is slated to go live with the [Pectra hard fork](https://eips.ethereum.org/EIPS/eip-7600)
+maxEB raises the amount of ETH that a validator can hold from 32 ETH to 2048 ETH. It is slated to go live with the [Pectra hard fork](https://eips.ethereum.org/EIPS/eip-7600).
 - [Increase the MAX_EFFECTIVE_BALANCE](https://gist.github.com/michaelneuder/cafabcfcfcccc45e44ab9d6b1c7b4e1d)
 
 ### Inclusion Lists
-Inclusion lists are a set of proposals aimed at increasing censorship resistance of the network in light of increased censorship caused by external builder centralization
+Inclusion lists are a set of proposals aimed at increasing censorship resistance of the network in light of increased censorship caused by external builder centralization.
 - [Forward inclusion list](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
 - [No free lunch – a new inclusion list design](https://ethresear.ch/t/no-free-lunch-a-new-inclusion-list-design/16389)
 - [Unconditional inclusion lists](https://ethresear.ch/t/unconditional-inclusion-lists/18500)
