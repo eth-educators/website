@@ -31,8 +31,10 @@ mevburn aims to address centralization caused by the volatility in MEV rewards a
 
 ### ePBS
 Enshrined Proposal Builder Separation removes the necessity for relays by allowing validators and builders to interact trustlessly.
-- [ePBS](https://github.com/ethereum/consensus-specs/pull/3828)
-- [ePBS FAQ](https://hackmd.io/@ttsao/epbs-faq0)
+- [The EIP](https://eips.ethereum.org/EIPS/eip-7732)
+- [Reasons why ePBS](https://hackmd.io/@ttsao/bypassing-relayer)
+- [ePBS roadmap](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
+- [ePBS annotated spec](https://hackmd.io/@potuz/rJ9GCnT1C)
 
 ### Changes to block building structure
 There are a number of proposals in flux to adjust the structure of block building on Ethereum. Some of these separate the parties who attest and propose (as proposing and building is mostly separate today). Some break up who has the rights to build pieces of a block. Some change how proposers are chosen. All of these proposals seek to address increasingly unsustainable centralization that has emerged from the current structure. This area of research is the most active and broad on this list.
@@ -40,3 +42,5 @@ There are a number of proposals in flux to adjust the structure of block buildin
 - [Execution Tickets](https://ethresear.ch/t/execution-tickets/17944)
 - [Rainbow Staking](https://ethresear.ch/t/unbundling-staking-towards-rainbow-staking/18683/1)
 - [Execution Auctions](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
+- [Barnabe's overview, April '24](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
+- [Attester Proposer Separation](https://www.youtube.com/watch?v=IrJz4GZW-VM)
