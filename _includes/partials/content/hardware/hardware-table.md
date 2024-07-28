@@ -9,7 +9,7 @@ Item | Component  | Product | Notes | Setup
       {%- for product in component.products -%}
 <a class="d-block product_{{product.id}}" href="{{product.link}}">{{product.name}} (${{product.price}})</a>
       {%- endfor -%}
-<span class="d-none text-danger component_{{component.name | md5}}">No products available — out of stock</span>
+<span class="d-none text-danger component_{{component.name | md5}}">Not available — out of stock</span>
     {%- endif -%}
   {%- endcapture -%}
   {%- capture notes -%}
