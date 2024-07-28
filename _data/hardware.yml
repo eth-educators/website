@@ -14,11 +14,13 @@
 # - name: 
 #   index: 
 #   products:
-#     - name: 
+#     - id:
+#       name: 
 #       details: 
 #       link: 
 #       price: 
-#     - name: 
+#     - id:
+#       name: 
 #       details: 
 #       link: 
 #       price: 
@@ -88,6 +90,16 @@
       details: 
       link: https://www.amazon.com/dp/B0030SL08A/
       price: 60
+    - id: N82E16842102117
+      name: CyberPower CP425SLG Standby UPS System
+      details: 
+      link: https://www.newegg.com/p/N82E16842102117
+      price: 74
+    - id: cp550slg
+      name: CyberPower CP425SLG Standby UPS System
+      details: 
+      link: https://www.cyberpowersystems.com/product/ups/standby/cp550slg/
+      price: 74
   usage: recommended
   min_specs: 
   guide: https://github.com/trevhub/guides/blob/main/CheapUPS.md
