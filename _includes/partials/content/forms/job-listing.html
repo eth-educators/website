@@ -51,7 +51,7 @@
           <label for="{{context}}FullDescription" class="form-label">
             Full Job Description Link
           </label>
-          <input type="url" class="form-control form-field" id="{{context}}FullDescription" onchange="validate(this)">
+          <input type="url" class="form-control form-field" id="{{context}}FullDescription" placeholder="https://coinbase.com/careers/..." onchange="validate(this)">
         </div>
 
         <!-- Location -->
@@ -139,7 +139,7 @@
             <span class="text-danger">*</span>
             Application Link/Email
           </label>
-          <input type="text" class="form-control form-field" id="{{context}}ApplicationLink" required onchange="validate(this)">
+          <input type="text" class="form-control form-field" id="{{context}}ApplicationLink" placeholder="https://glassdoor.com/job/..." required onchange="validate(this)">
         </div>
 
         <!-- Payment Link -->
@@ -202,7 +202,6 @@
       document.getElementById("{{context}}Form").classList.add("d-none");
       document.getElementById("{{context}}FormSubmitted").classList.remove("d-none");
       // Scroll up to submission success message
-      // document.getElementById("{{context}}FormSubmitted").scrollIntoView();
       scrollToElement("{{context}}FormSubmitted", -200);
     } else {
       // Show error message for empty required fields
@@ -221,95 +220,98 @@
       if (type == "textarea" && el.getAttribute("limit")) {
         textareaOverLimit = updateCharsRemaining(el);
       }
-      if (el.hasAttribute('required')) {
-        let inputValid = false;
-        // Captcha
-        if (el.id == "{{context}}Captcha") {
-          el.value = el.value.trim();
-          if (el.value != "") {
-            formValid = false;
-            inputValid = false;
-          } else {
-            inputValid = true;
-          }
-        }
-        // Inputs
-        else if (type == "text") {
-          el.value = el.value.trim();
-          if (el.value == "") {
-            formValid = false;
-          } else {
-            inputValid = true;
-          }
-        // Textareas
-        } else if (type == "textarea") {
-          el.value = el.value.trim();
-          if (el.value == "" || textareaOverLimit) {
-            formValid = false;
-          } else {
-            inputValid = true;
-          }
-        // Email
-        } else if (type == "email") {
-          el.value = el.value.replaceAll(" ", "");
-          if (el.value == "") {
-            formValid = false;
-          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
-            inputValid = true;
-          }
-        // URL
-        } else if (type == "url") {
-          el.value = el.value.replaceAll(" ", "");
-          if (el.value == "") {
-            formValid = false;
-          } else if (/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/.test(el.value)) {
-            inputValid = true;
-          }
-        // Select Dropdown
-        } else if (type == "select") {
-          if (el.value == "") {
-            formValid = false;
-          } else {
-            inputValid = true;
-          }
-        // Checkbox Group
-        } else if (type == "checkboxes") {
-          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
-          if (checked.length == 0) {
-            formValid = false;
-          } else {
-            inputValid = true;
-          }
-          el.classList.add("form-control");
-        // Radio Group
-        } else if (type == "radios") {
-          let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
-          let otherOptionSelected = checked.value == "__other_option__";
-          let otherOptionValue = false;
-          document.querySelectorAll(`.${el.id}`).forEach(radio => {
-            if (radio.value == "__other_option__") {
-              document.querySelector(`#${radio.id}Other`).classList.add("d-none");
-            }
-          })
-          if (otherOptionSelected) {
-            let otherInput = document.querySelector(`#${checked.id}Other`);
-            otherInput.classList.remove("d-none");
-            otherOptionValue = otherInput.value.trim();
-          }
-          if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected)) {
-            inputValid = true;
-          } else {
-            formValid = false;
-          }
-          el.classList.add("form-control");
-        }
-        if (inputValid) {
-          el.classList.remove("is-invalid");
-          el.classList.add("is-valid");
+      let required = el.hasAttribute('required');
+      let inputValid = false;
+      // Captcha
+      if (el.id == "{{context}}Captcha") {
+        el.value = el.value.trim();
+        if (el.value != "") {
+          formValid = false;
+          inputValid = false;
         } else {
-          el.classList.add("is-invalid");
-          el.classList.remove("is-valid");
+          inputValid = true;
         }
+      }
+      // Inputs
+      else if (type == "text") {
+        el.value = el.value.trim();
+        if (el.value == "" && required) {
+          formValid = false;
+        } else {
+          inputValid = true;
+        }
+      // Textareas
+      } else if (type == "textarea") {
+        el.value = el.value.trim();
+        if ((el.value == "" && required) || textareaOverLimit) {
+          formValid = false;
+        } else {
+          inputValid = true;
+        }
+      // Email
+      } else if (type == "email") {
+        el.value = el.value.trim();
+        if (el.value.includes(" ")) {
+          formValid = false;
+        } else if ((el.value == "" && !required) || /^\S+@\S+\.\S+$/.test(el.value)) {
+          inputValid = true;
+        } else {
+          formValid = false;
+        }
+      // URL
+      } else if (type == "url") {
+        el.value = el.value.trim();
+        if (el.value.includes(" ")) {
+          formValid = false;
+        } else if ((el.value == "" && !required) || /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/.test(el.value)) {
+          inputValid = true;
+        } else {
+          formValid = false;
+        }
+      // Select Dropdown
+      } else if (type == "select") {
+        if (el.value != "" || !required) {
+          inputValid = true;
+        } else {
+          formValid = false;
+        }
+      // Checkbox Group
+      } else if (type == "checkboxes") {
+        let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+        if (checked.length == 0) {
+          formValid = false;
+        } else {
+          inputValid = true;
+        }
+        el.classList.add("form-control");
+      // Radio Group
+      } else if (type == "radios") {
+        let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
+        let otherOptionSelected = checked.value == "__other_option__";
+        let otherOptionValue = false;
+        document.querySelectorAll(`.${el.id}`).forEach(radio => {
+          if (radio.value == "__other_option__") {
+            document.querySelector(`#${radio.id}Other`).classList.add("d-none");
+          }
+        })
+        if (otherOptionSelected) {
+          let otherInput = document.querySelector(`#${checked.id}Other`);
+          otherInput.classList.remove("d-none");
+          otherOptionValue = otherInput.value.trim();
+        }
+        if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected) || (checked == null && !otherOptionSelected && !required)) {
+          inputValid = true;
+        } else {
+          formValid = false;
+        }
+        el.classList.add("form-control");
+      }
+      if (inputValid) {
+        el.classList.remove("is-invalid");
+        el.classList.add("is-valid");
+      } else {
+        el.classList.add("is-invalid");
+        el.classList.remove("is-valid");
       }
     });
     return formValid;
@@ -348,20 +350,36 @@
     dataToPost.append("entry.437560064", document.getElementById("{{context}}Contact").value);
     dataToPost.append("entry.1379727291", MD5Hash(dataToPost));
 
-    
     fetch(url,{
       method: "POST",
       mode: "no-cors",
       header:{
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
       body: dataToPost
     })
-    .then(data=>{
-      log(data);
-      log("data submitted");
+    .then(response => {
+      console.log("submitted");
+      saveSubmission(dataToPost);
     })
-    .catch(err=>console.error(err));
+  }
+
+  function saveSubmission(formData) {
+    let submissions = [];
+    if (localStorage.getItem("submissions") === null) {
+      localStorage.setItem("submissions", JSON.stringify(submissions));
+    } else {
+      submissions = JSON.parse(localStorage.getItem("submissions"));
+    }
+
+    let submission = [];
+    for (const pair of formData.entries()) {
+      submission[pair[0]] = pair[1];
+    }
+    submissions.push({"data": submission, "formData": formData});
+    localStorage.setItem("submissions", JSON.stringify(submissions));
+
+    console.log(submissions);
   }
 
   // Update textarea characters remaining

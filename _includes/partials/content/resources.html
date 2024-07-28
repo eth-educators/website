@@ -135,9 +135,11 @@ This data is pulled from _data/resources.yml
               {%- assign primary_category = "featured" -%}
               {%- if resource.featured == true -%}
                 {%- assign resource_date = "" -%}
-                {%- if site.environment == "production" -%}
-                  {%- assign resource_date = resource.link | getdate | date: "%b %d, %Y" -%}
-                {%- endif -%}
+                {%- comment -%}
+                  {%- if site.environment == "production" -%}
+                    {%- assign resource_date = resource.link | getdate | date: "%b %d, %Y" -%}
+                  {%- endif -%}
+                {%- endcomment -%}
                 <div id="r{{resource.link | md5}}" data-cat="{{featured}}" class="resource {{featured}} {{resource_categories | join: ' '}} ms-4 ps-2 mb-3">
                   <span class="star me-2">{{site.data.icons.star_fill}}</span>
                   <h5 class="mb-0 d-inline">
