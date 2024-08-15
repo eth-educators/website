@@ -35,12 +35,12 @@ Enshrined Proposal Builder Separation removes the necessity for relays by allowi
 - [Reasons why ePBS](https://hackmd.io/@ttsao/bypassing-relayer)
 - [ePBS roadmap](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
 - [ePBS annotated spec](https://hackmd.io/@potuz/rJ9GCnT1C)
+- [ePBS breakout playlist](https://www.youtube.com/playlist?list=PLJqWcTqh_zKHoz9dnQFGrWI_s1-8RwMhX) [video]
 
 ### Changes to block building structure
 There are a number of proposals in flux to adjust the structure of block building on Ethereum. Some of these separate the parties who attest and propose (as proposing and building is mostly separate today). Some break up who has the rights to build pieces of a block. Some change how proposers are chosen. All of these proposals seek to address increasingly unsustainable centralization that has emerged from the current structure. This area of research is the most active and broad on this list.
-- [Will MEV go to zero?](https://www.youtube.com/watch?v=IrJz4GZW-VM)
+- [Will MEV go to zero?](https://www.youtube.com/watch?v=IrJz4GZW-VM) [video]
 - [Execution Tickets](https://ethresear.ch/t/execution-tickets/17944)
 - [Rainbow Staking](https://ethresear.ch/t/unbundling-staking-towards-rainbow-staking/18683/1)
-- [Execution Auctions](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
 - [Barnabe's overview, April '24](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ)
 - [Attester Proposer Separation](https://www.youtube.com/watch?v=IrJz4GZW-VM)
