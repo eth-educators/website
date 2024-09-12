@@ -112,7 +112,7 @@
   title: "Project Sunshine"
   description: "A dashboard to measure the health of Ethereum's decentralization. Identifies centralization vectors, determines the metrics to monitor, sets danger/goal/target values for each, and works with the community to meet those targets"
   categories: analytics, tool
-- link: "https://eth-docker.net/"
+- link: "https://ethdocker.com/"
   title: "EthDocker"
   description: "Software to make running an Ethereum staking full node simpler than setting everything up manually, while allowing the user choice when it comes to the exact client mix they wish to run"
   categories: tool, software
