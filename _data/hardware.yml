@@ -42,16 +42,16 @@
 - name: Computer
   index: 2
   products: 
-    - id: B09KNK27M2
+    - id: B09BKRRK8G
       name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
       details: Core i7-1165G7
-      link: https://www.amazon.com/dp/B09KNK27M2/
-      price: 395
+      link: https://www.amazon.com/dp/B09BKRRK8G/
+      price: 420
     - id: N82E16856110250
       name: ASUS ExpertCenter PN64 Barebone Mini-PC
       details: Intel Core i3-1220P
       link: https://www.newegg.com/p/N82E16856110250
-      price: 358
+      price: 367
   usage: required
   min_specs: 
   guide:
@@ -62,12 +62,12 @@
       name: Samsung 980 PRO
       details: 2TB, PCIe 4.0, M2
       link: https://www.amazon.com/dp/B08RK2SR23/
-      price: 167
+      price: 205
     - id: N82E16820147796
       name: Samsung 980 PRO
       details: 2TB, PCIe 4.0, M2
       link: https://www.newegg.com/p/N82E16820147796
-      price: 167
+      price: 203
   usage: required
   min_specs: ">=2TB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
@@ -78,7 +78,7 @@
       name: Crucial RAM CT32G4SFD832A
       details: 32GB DDR4 3200MHz CL22
       link: https://www.amazon.com/dp/B07ZLC7VNH
-      price: 68
+      price: 77
   usage: required
   min_specs: ">=32GB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
@@ -89,12 +89,12 @@
       name: CyberPower CP425SLG Standby UPS System
       details: 
       link: https://www.amazon.com/dp/B0030SL08A/
-      price: 60
+      price: 70
     - id: N82E16842102117
       name: CyberPower CP425SLG Standby UPS System
       details: 
       link: https://www.newegg.com/p/N82E16842102117
-      price: 74
+      price: 70
     - id: cp550slg
       name: CyberPower CP425SLG Standby UPS System
       details: 
