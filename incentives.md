@@ -1,13 +1,9 @@
 ---
 layout: markdown
-title: Incentives
+title: Staking Incentives
 permalink: /incentives
-subheader: "Document incentives that have been made available to stakers"
+subheader: "An overview of the various staker incentives"
 ---
-
-# Staking Incentives
-
-Stakers validating on Ethereum have a range of incentives at play including network health motivations, protocol based rewards, and extra-protocol opportunities. The following list documents known staker incentives and may be updated over time.
 
 ## Health of the Ethereum Network
 
@@ -17,17 +13,14 @@ A primary incentive of stakers to participate is to support the ongoing health o
 
 Stakers receive fincancial rewards from the Ethereum protocol for validating the network. These rewards accrue to validators through activities including [attestations](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/attestations/), [block proposals](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/), [sync committee participation](https://ethereum.org/en/glossary/#sync-committee), [fees](https://ethereum.org/en/developers/docs/gas/), and [MEV](https://ethereum.org/en/developers/docs/mev/). Rewards can also be penalized if the protocol rules are not followed. More details about protocol rewards and penalties can be found [here](https://docs.ethstaker.cc/ethstaker-knowledge-base/rewards/chain-rewards) and [here](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/).
 
-# Additional Incentives
-
-Stakers have been the recipients of a variety of additional recognition, income, and related opportunities. The following list documents known historical instances of such incentives and may be updated over time.
-
 ## Airdrops
 
-Stakers have periodically received airdrops as recognition for their contributions to securing the Ethereum network. Learn more about past [Airdrops](/airdrops) page.
+Stakers have periodically received airdrops as recognition for their contributions to securing the Ethereum network. Learn more about past [Airdrops](/airdrops).
 
 ## NFT Projects
 
-Some projects have launched NFTs specifically targeted at stakers to reward them for their commitment to securing the network. Examples:
+Some projects have launched NFTs specifically targeted at stakers to reward them for their commitment to securing the network.
+Examples:
 
 - [Guardians of the Ether](https://www.etherguardians.xyz/)
 
