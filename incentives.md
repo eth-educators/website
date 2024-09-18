@@ -26,4 +26,4 @@ Examples:
 
 ## Communities
 
-Several communities have formed to support and recognize the efforts of stakers. These communities provide resources, opportunities, and support networks to enhance the staking experience. Learn more about [Allied Communities](/communities).
+Several communities have formed to support and recognize the efforts of stakers. These communities provide resources, opportunities, and support networks to enhance the staking experience. Learn more about [Allied Communities](/staking-communities).
