@@ -58,16 +58,16 @@
 - name: SSD
   index: 3
   products: 
-    - id: B08RK2SR23
-      name: Samsung 980 PRO
-      details: 2TB, PCIe 4.0, M2
-      link: https://www.amazon.com/dp/B08RK2SR23/
-      price: 205
-    - id: N82E16820147796
-      name: Samsung 980 PRO
-      details: 2TB, PCIe 4.0, M2
-      link: https://www.newegg.com/p/N82E16820147796
-      price: 203
+    - id: B0CHGT1KFJ
+      name: Samsung 990 PRO
+      details: 4TB, PCIe 4.0, M2
+      link: https://www.amazon.com/dp/B0CHGT1KFJ/
+      price: 290
+    - id: N82E16820147879
+      name: Samsung 990 PRO
+      details: 4TB, PCIe 4.0, M2
+      link: https://www.newegg.com/p/N82E16820147879
+      price: 290
   usage: required
   min_specs: ">=2TB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
