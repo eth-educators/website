@@ -47,11 +47,16 @@
       details: Core i7-1165G7
       link: https://www.amazon.com/dp/B09BKRRK8G/
       price: 420
-    - id: N82E16856110250
-      name: ASUS ExpertCenter PN64 Barebone Mini-PC
-      details: Intel Core i3-1220P
-      link: https://www.newegg.com/p/N82E16856110250
-      price: 367
+    - id: B0BY46GX9L
+      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
+      details: Core i7-1165G7
+      link: https://www.amazon.com/dp/B0BY46GX9L/
+      price: 545
+    - id: 2SW000B003F6
+      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
+      details: Core i7-1165G7
+      link: https://www.newegg.com/p/2SW-000B-003F6
+      price: 560
   usage: required
   min_specs: 
   guide:
