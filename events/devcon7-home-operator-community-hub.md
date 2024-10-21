@@ -85,13 +85,12 @@ Get ready: [https://x.com/ethStaker/status/1844398134954508794](https://x.com/et
 
 ------>
 
-<h2 style="text-align:left;">Home Operator Hub Schedule</h2>
-
 &nbsp;
 
-<!-- Day 1 - Tuesday 2024-11-12 -->
-<h3>Day 1 - Tuesday 2024-11-12</h3>
 <table border="1" style="width:100%; border-collapse:collapse;">
+  <tr>
+    <td colspan="4"><h3>Day 1 - Tuesday 2024-11-12</h3></td>
+  </tr>
   <tr>
     <th>Time</th>
     <th>Item</th>
@@ -144,9 +143,10 @@ Get ready: [https://x.com/ethStaker/status/1844398134954508794](https://x.com/et
 
 &nbsp;
 
-<!-- Day 2 - Wednesday 2024-11-13 -->
-<h3>Day 2 - Wednesday 2024-11-13</h3>
 <table border="1" style="width:100%; border-collapse:collapse;">
+  <tr>
+    <td colspan="4"><h3>Day 2 - Wednesday 2024-11-13</h3></td>
+  </tr>
   <tr>
     <th>Time</th>
     <th>Item</th>
@@ -199,9 +199,10 @@ Get ready: [https://x.com/ethStaker/status/1844398134954508794](https://x.com/et
 
 &nbsp;
 
-<!-- Day 3 - Thursday 2024-11-14 -->
-<h3>Day 3 - Thursday 2024-11-14</h3>
 <table border="1" style="width:100%; border-collapse:collapse;">
+  <tr>
+    <td colspan="4"><h3>Day 3 - Thursday 2024-11-14</h3></td>
+  </tr>
   <tr>
     <th>Time</th>
     <th>Item</th>
@@ -248,9 +249,10 @@ Get ready: [https://x.com/ethStaker/status/1844398134954508794](https://x.com/et
 
 &nbsp;
 
-<!-- Day 4 - Friday 2024-11-15 -->
-<h3>Day 4 - Friday 2024-11-15</h3>
 <table border="1" style="width:100%; border-collapse:collapse;">
+  <tr>
+    <td colspan="4"><h3>Day 4 - Friday 2024-11-15</h3></td>
+  </tr>
   <tr>
     <th>Time</th>
     <th>Item</th>
@@ -291,9 +293,10 @@ Get ready: [https://x.com/ethStaker/status/1844398134954508794](https://x.com/et
 
 &nbsp;
 
-<!-- TBD -->
-<h3>TBD</h3>
 <table border="1" style="width:100%; border-collapse:collapse;">
+  <tr>
+    <td colspan="4"><h3>TBD</h3></td>
+  </tr>
   <tr>
     <th>Time</th>
     <th>Item</th>
