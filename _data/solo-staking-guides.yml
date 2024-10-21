@@ -44,7 +44,7 @@
   img: "/assets/img/solo-staking-guides/coincashew.png"
   description: Build your own hardware and copy/paste CLI commands.
   # link: "/solo-staking-guides/coincashew"
-  link: "https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet"
+  link: "http://eth.coincashew.com"
 - title: Stakesaurus Guides
   img: "/assets/img/solo-staking-guides/stakesaurus.png"
   description: Build your own hardware and copy/paste CLI commands.
