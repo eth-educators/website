@@ -240,7 +240,7 @@ Large button:
 
 ## Rhino Review Redirect
 
-Since Twitter is banning substack links, [ethstaker.cc/rhino-review](https://ethstaker.cc/rhino-review) can be used as a redirect using the `url=` parameter. For security, this only works for `rhinoreview.substack.com` links.
+Since X (formerly Twitter) is banning substack links, [ethstaker.cc/rhino-review](https://ethstaker.cc/rhino-review) can be used as a redirect using the `url=` parameter. For security, this only works for `rhinoreview.substack.com` links.
 
 1. Encode the substack post URL: <https://www.urlencoder.org/>
     - Example: `https://rhinoreview.substack.com/p/rhino-review-ethereum-staking-journal` becomes `https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal`
