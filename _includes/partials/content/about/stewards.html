@@ -56,8 +56,8 @@ This data is pulled from _data/about/stewards.yml
             <img src="{{steward.img}}" class="card-img-top m-0 rounded-circle shadow" alt="...">
           </div>
           <div class="card-body d-flex align-items-start flex-column">
-            <h5 class="card-title text-center mx-auto mb-0">{{steward.name}}</h5>
-            <p class="card-text text-center mx-auto fs-6 fst-italic mb-auto pb-2">{{steward.role}}</p>
+            <h5 class="card-title text-center mx-auto mb-auto">{{steward.name}}</h5>
+            <!-- <p class="card-text text-center mx-auto fs-6 fst-italic mb-auto pb-2">{{steward.role}}</p> -->
             <div class="row text-center mx-auto">
               {%- if steward.discord -%}
                 {%- assign discord_id = steward.discord | replace: "@", "" -%}

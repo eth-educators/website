@@ -25,6 +25,11 @@
   # link: "/solo-staking-guides/eth-docker"
   link: "https://ethdocker.com/"
   creator: Thorsten Behrens
+- title: EthPillar
+  img: "/assets/img/staking-software/ethpillar.png"
+  description: one-liner setup tool and node management TUI. Free. Open source. Public goods for Ethereum. ARM64 and AMD64 support.
+  link: "http://ethpillar.coincashew.com"
+  creator: coincashew
 - title: Wagyu Key Gen
   img: "/assets/img/staking-software/wagyu.png"
   description: A GUI app to securely generate keys for staking deposits.

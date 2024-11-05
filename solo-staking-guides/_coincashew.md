@@ -19,4 +19,4 @@ permalink: /solo-staking-guides/coincashew
 
 ## Step 2: Follow CoinCashew staking guide
 
-Once you have your hardware, follow the [CoinCashew staking guide](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) for the entire validator setup process.
+Once you have your hardware, follow the [CoinCashew staking guide](http://eth.coincashew.com) for the entire validator setup process.

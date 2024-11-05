@@ -180,6 +180,6 @@
 .markdown .table th:first-child,
 .markdown .table td:first-child {
   position: sticky;
-  left: 0;
+  left: -1px;
   background-color: var(--bs-tertiary-bg);
 }

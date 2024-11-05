@@ -11,12 +11,9 @@ buttons:
     text: View full schedule on Luma
 ---
 
+
 <!-- Day 1 Header -->
-<table style="width:100%; border-collapse:collapse; text-align:left;">
-  <tr>
-    <td><h3>Day 1 - Tuesday 2024-11-12</h3></td>
-  </tr>
-</table>
+<table class="fs-4"><thead><tr><th>Day 1 - Tuesday 2024-11-12</th></tr></thead></table>
 
 <!-- Day 1 Schedule -->
 
@@ -35,11 +32,7 @@ buttons:
 &nbsp;
 
 <!-- Day 2 Header -->
-<table style="width:100%; border-collapse:collapse; text-align:left;">
-  <tr>
-    <td><h3>Day 2 - Wednesday 2024-11-13</h3></td>
-  </tr>
-</table>
+<table class="fs-4 mt-5"><thead><tr><th>Day 2 - Wednesday 2024-11-13</th></tr></thead></table>
 
 <!-- Day 2 Schedule -->
 
@@ -58,11 +51,7 @@ buttons:
 &nbsp;
 
 <!-- Day 3 Header -->
-<table style="width:100%; border-collapse:collapse; text-align:left;">
-  <tr>
-    <td><h3>Day 3 - Thursday 2024-11-14</h3></td>
-  </tr>
-</table>
+<table class="fs-4 mt-5"><thead><tr><th>Day 3 - Thursday 2024-11-14</th></tr></thead></table>
 
 <!-- Day 3 Schedule -->
 
@@ -78,11 +67,7 @@ buttons:
 &nbsp;
 
 <!-- Day 4 Header -->
-<table style="width:100%; border-collapse:collapse; text-align:left;">
-  <tr>
-    <td><h3>Day 4 - Friday 2024-11-15</h3></td>
-  </tr>
-</table>
+<table class="fs-4 mt-5"><thead><tr><th>Day 4 - Friday 2024-11-15</th></tr></thead></table>
 
 <!-- Day 4 Schedule -->
 
@@ -94,3 +79,4 @@ buttons:
 | 2pm-3pm    | Mini workshop: miniDapps: other uses for dAppNode                                                                                                                   | TJ Rush           | [lu.ma/3wjg6f0e](https://lu.ma/3wjg6f0e) | Mini workshop                    |
 | 3pm-3:10pm | Raffle!                                                                                                                                                             | EthStaker         |                                          |                                  |
 | 3pm-5pm    | Support: One-on-one node operator troubleshooting with an expert                                                                                                    | Available Experts |                                          | Node Troubleshoot with an Expert |
+
