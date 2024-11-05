@@ -11,8 +11,6 @@ buttons:
     text: View full schedule on Luma
 ---
 
-<div style="overflow-x: auto; max-width: 100%;">
-
 <!-- Day 1 Header -->
 <table style="width:100%; border-collapse:collapse; text-align:left;">
   <tr>
@@ -96,5 +94,3 @@ buttons:
 | 2pm-3pm    | Mini workshop: miniDapps: other uses for dAppNode                                                                                                                   | TJ Rush           | [lu.ma/3wjg6f0e](https://lu.ma/3wjg6f0e) | Mini workshop                    |
 | 3pm-3:10pm | Raffle!                                                                                                                                                             | EthStaker         |                                          |                                  |
 | 3pm-5pm    | Support: One-on-one node operator troubleshooting with an expert                                                                                                    | Available Experts |                                          | Node Troubleshoot with an Expert |
-
-</div>
