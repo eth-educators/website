@@ -11,6 +11,9 @@ buttons:
     text: View full schedule on Luma
 ---
 
+**Optional but highly encouraged**: setup a test SSH connection ([like this](https://dvt-homestaker.stakesaurus.com/hardware-and-systems-setup/assemble-your-hardware/practicing-on-cloud-vms#here-are-some-logistics-you-will-need-to-prepare-before-hand)) or bring a NUC device or similar to workshop on and you'll get [a special POAP that will enter you into the daily raffle](https://x.com/ethStaker/status/1846305813998326126)!
+
+**Important note**: an RSVP to any of these events on Luma is not required for participation and does not guarantee participation if the space is full. It's solely to help remind for interested participants and block calendar times. Already having a ticket to Devcon is all that's required for someone to attend this event.
 
 <!-- Day 1 Header -->
 <table class="fs-4"><thead><tr><th>Day 1 - Tuesday 2024-11-12</th></tr></thead></table>
@@ -79,4 +82,3 @@ buttons:
 | 2pm-3pm    | Mini workshop: miniDapps: other uses for dAppNode                                                                                                                   | TJ Rush           | [lu.ma/3wjg6f0e](https://lu.ma/3wjg6f0e) | Mini workshop                    |
 | 3pm-3:10pm | Raffle!                                                                                                                                                             | EthStaker         |                                          |                                  |
 | 3pm-5pm    | Support: One-on-one node operator troubleshooting with an expert                                                                                                    | Available Experts |                                          | Node Troubleshoot with an Expert |
-
