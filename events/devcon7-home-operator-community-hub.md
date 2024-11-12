@@ -9,11 +9,15 @@ buttons:
     text: View announcement
   - link: "https://lu.ma/devcon-home-operator-hub"
     text: View full schedule on Luma
+  - link: "https://app.devcon.org/event"
+    text: View venue map
 ---
 
 **Optional but highly encouraged**: setup a test SSH connection ([like this](https://dvt-homestaker.stakesaurus.com/hardware-and-systems-setup/assemble-your-hardware/practicing-on-cloud-vms#here-are-some-logistics-you-will-need-to-prepare-before-hand)) or bring a NUC device or similar to workshop on and you'll get [a special POAP that will enter you into the daily raffle](https://x.com/ethStaker/status/1846305813998326126)!
 
 **Important note**: an RSVP to any of these events on Luma is not required for participation and does not guarantee participation if the space is full. It's solely to help remind for interested participants and block calendar times. Already having a ticket to Devcon is all that's required for someone to attend this event.
+
+We are located on L1, in the community hub 2 section, pin #5 on [the map](https://app.devcon.org/event).
 
 <!-- Day 1 Header -->
 <table class="fs-4"><thead><tr><th>Day 1 - Tuesday 2024-11-12</th></tr></thead></table>
