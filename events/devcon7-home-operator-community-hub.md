@@ -68,7 +68,7 @@ We are located on L1, in the community hub 2 section, pin #5 on [the map](https:
 | 12pm-2pm  | Support: One-on-one node operator troubleshooting with an expert                                                                                                    | Available Experts |                                          | Node Troubleshoot with an Expert |
 | 2pm-3pm   | Mini workshop: Node operator workshop with Puffer                                                                                                                   | Puffer            | [lu.ma/cr202xdo](https://lu.ma/cr202xdo) | Mini workshop                    |
 | 3pm-4pm  | Mini workshop: Node operator workshop with Stakewise                                                                                                                | Stakewise             | [lu.ma/wbcqepfj](https://lu.ma/wbcqepfj) | Mini workshop                    |
-| 4pm-5pm   | Support: One-on-one node operator troubleshooting with an expert                                                                                                    | Available Experts |                                          | Node Troubleshoot with an Expert |
+| 4pm-5pm   | Mini workshop: Node operator workshop with Dappnode                                                                                                    | Lanski | [lu.ma/6i2jfp00](https://lu.ma/6i2jfp00)  | Mini workshop |
 
 &nbsp;
 
