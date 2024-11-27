@@ -348,7 +348,14 @@
 
     dataToPost.append("entry.1890204600", document.getElementById("{{context}}PaymentLink").value);
     dataToPost.append("entry.437560064", document.getElementById("{{context}}Contact").value);
-    dataToPost.append("entry.1379727291", MD5Hash(dataToPost));
+    
+    // create post id
+    let dataString = "";
+    for (const pair of dataToPost.entries()) {
+      dataString += pair[1];
+    }
+    dataToPost.append("entry.1379727291", MD5Hash(dataString));
+    console.log(MD5Hash(dataString));
 
     fetch(url,{
       method: "POST",

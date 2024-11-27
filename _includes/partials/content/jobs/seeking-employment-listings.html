@@ -38,6 +38,9 @@ This data is pulled from https://raw.githubusercontent.com/eth-educators/github-
   #forHires .location {
     text-transform: capitalize;
   }
+  #forHires .overview {
+    text-transform: capitalize;
+  }
 </style>
 
 
@@ -174,7 +177,7 @@ This data is pulled from https://raw.githubusercontent.com/eth-educators/github-
                               <small>${listingAge}</small>
                             </div>
                             <h5 class="card-title">${listing.position.trim()}</h5>
-                            <small class="text-muted">
+                            <small class="overview text-muted">
                               ${listing.type.trim()}
                               <span class="mx-2">|</span>
                               ${listing.work_location.trim()}
