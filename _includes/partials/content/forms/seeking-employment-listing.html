@@ -353,8 +353,14 @@
 
     let email = document.getElementById("{{context}}Email").value.replaceAll("@", "[at]").replaceAll(".", "[dot]");
     dataToPost.append("entry.1798662318", email);
-    let entryId = MD5Hash(dataToPost);
-    dataToPost.append("entry.2139827320", entryId);
+
+    // create post id
+    let dataString = "";
+    for (const pair of dataToPost.entries()) {
+      dataString += pair[1];
+    }
+    dataToPost.append("entry.2139827320", MD5Hash(dataString));
+    console.log(MD5Hash(dataString));
 
     
     fetch(url,{
