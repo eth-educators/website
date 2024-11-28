@@ -214,7 +214,7 @@ This data is pulled from https://raw.githubusercontent.com/eth-educators/github-
                             ``
                           }
 
-                          ${listing.apply.includes("@") ?
+                          ${(listing.apply.includes("@") || listing.apply.includes("[at]")) ?
                             `<p><strong>Email to apply:</strong> ${listing.apply}</p>` :
                             `${listing.apply.includes("://") ?
                               `<a class="btn btn-outline-dark d-block mt-3" href="${listing.apply}">Apply</a>` :
