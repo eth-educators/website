@@ -49,7 +49,7 @@ Resources:
 - `_includes` - This folder is [designated by Jekyll](https://jekyllrb.com/docs/includes/) for files that can be "included" into other files
     - `js` - Contains javascript files, most of which are compiled in `assets/js/main.js`
     - `partials`
-        - `components` - Contains reusable non-content components, including the thml head, nav, and footer
+        - `components` - Contains reusable non-content components, including the html head, nav, and footer
         - `content` - Contains sections of html content
         - `embeds` - Contains embed content
     - `tools` - Contains include-based tools
