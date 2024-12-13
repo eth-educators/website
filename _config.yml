@@ -18,7 +18,15 @@ redirect_from: # jekyll-redirect-from
   json: false
 
 # Global variables
-analytics_tag: 
+analytics_tag: |
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0187JBYWC8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0187JBYWC8');
+  </script>
 youtube_id: UCeHmYPRYZddrM1tfJLfLVDA
 calendar_id: 77f777766b648a71ad61e7e37bdf9f67d028b5a1b09ef61f2772cc1809f3a25a
 calendar_link: https://calendar.google.com/calendar/embed?src=77f777766b648a71ad61e7e37bdf9f67d028b5a1b09ef61f2772cc1809f3a25a%40group.calendar.google.com&ctz=America%2FNew_York
