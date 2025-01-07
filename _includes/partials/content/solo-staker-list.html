@@ -1,0 +1,57 @@
+{%- comment -%}
+<!-- 
+  To update data in _data/solo-staker-addresses use _includes/tools/solo-staker-addresses.py
+ -->
+{%- endcomment -%}
+
+
+{% assign context = "soloStakerListSearch" %}
+
+<div id="{{context}}Form" class="pt-4">
+  <div class="w-100 mb-3">
+    <label for="{{context}}Address" class="form-label fw-bold">
+      Search validator deposit or withdrawal address
+    </label>
+    <input type="text" class="form-control form-field" id="{{context}}Address" placeholder="0x...">
+    <div class="valid-feedback">
+      Address included!
+    </div>
+    <div id="searchInvalid" class="invalid-feedback">
+      Address not included
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+    <button id="{{context}}SubmitButton" class="btn btn-dark" type="button" onclick="checkInclusion()">Check inclusion</button>
+  </div>
+</div>
+
+<script>
+  // let address = "0xe25119634d9dfc38ae935269ca4cfe54b4bd6a15";
+  function checkInclusion() {
+    let addressInput = document.getElementById("{{context}}Address");
+    let address = addressInput.value;
+    addressInput.classList.remove("is-invalid");
+    addressInput.classList.remove("is-valid");
+    if (address == "") {
+      console.log("no address input")
+      document.getElementById("searchInvalid").innerText="No input detected, please enter an address";
+      addressInput.classList.add("is-invalid");
+    } else if (address.length != 42) {
+      console.log("invalid address")
+      document.getElementById("searchInvalid").innerText="Invalid address";
+      addressInput.classList.add("is-invalid");
+    } else {
+      let addresses = {{site.data.solo-staker-addresses | jsonify}};
+      if (addresses.includes(address)) {
+        console.log("address included");
+        addressInput.classList.add("is-valid");
+      } else {
+        console.log("address not included");
+        document.getElementById("searchInvalid").innerText="Address not included";
+        addressInput.classList.add("is-invalid");
+      }
+    }
+  }
+</script>
