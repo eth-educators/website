@@ -29,6 +29,14 @@
   options: 
     - option: Start quiz!
       go_to_id: wallet-1 
+- id: begin
+  # title: Take our self-assessment quiz!
+  title: Staking method self-assessment quiz!
+  body: Ideally new stakers are as independent and decentralized as possible. Strive for [solo staking](https://paragraph.xyz/@ethstaker/define-solo-staker) as the gold standard and to enjoy the widest set of [known incentives](https://ethstaker.cc/incentives)
+  style: cta
+  options: 
+    - option: Let’s Begin!
+      go_to_id: wallet-1 
 - id: wallet-1
   title: Do you have your own self-custody wallet?
   body: Some examples of a [self-custody wallet](https://www.ledger.com/academy/tips-to-trust-yourself-in-becoming-your-own-bank) (also referred to as a non-custodial wallet) are Metamask, Ledger, Argent, Trezor, Tally, Rainbow, Lattice, and Coinbase Wallet (different than the exchange).
