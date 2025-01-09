@@ -251,6 +251,11 @@ Use start_prompt for which prompt to initialize at.
   }
 
   function goToPrompt(currentId, nextId) {
+    if (nextId.includes("https://")) {
+      console.log("redirect to " + nextId);
+      window.location.href = nextId;
+      return;
+    }
     const currentPrompt = document.getElementById("prompt-" + currentId);
     const nextPrompt = document.getElementById("prompt-" + nextId);
     const buttons = document.getElementById("promptButtons");
