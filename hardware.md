@@ -2,7 +2,7 @@
 layout: markdown
 title: Staking Hardware
 permalink: /staking-hardware
-subheader: 
+subheader: More info available on [docs.ethstaker.cc](https://docs.ethstaker.cc/ethstaker-knowledge-base/hardware/hardware-requirements)
 ---
 
 

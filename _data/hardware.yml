@@ -42,21 +42,21 @@
 - name: Computer
   index: 2
   products: 
-    - id: B09BKRRK8G
-      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
-      details: Core i7-1165G7
-      link: https://www.amazon.com/dp/B09BKRRK8G/
-      price: 420
-    - id: B0BY46GX9L
-      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
-      details: Core i7-1165G7
-      link: https://www.amazon.com/dp/B0BY46GX9L/
-      price: 545
-    - id: 2SW000B003F6
-      name: Intel NUC 11 NUC11PAHi7 Barebone Mini-PC
-      details: Core i7-1165G7
-      link: https://www.newegg.com/p/2SW-000B-003F6
-      price: 560
+    - id: B0CXMZ8LVT
+      name: NUC 14 Pro NUC14RVKi3 Slim Barebone Mini-PC
+      details: Core i3 100U, DDR5
+      link: https://www.amazon.com/dp/B0CXMZ8LVT
+      price: 349
+    - id: 2SW-000B-00694
+      name: NUC 14 Pro NUC14RVKi3 Slim Barebone Mini-PC
+      details: Core i3 100U, DDR5
+      link: https://www.newegg.com/p/2SW-000B-00694
+      price: 525
+    - id: 2SW-000B-00683
+      name: NUC 14 Pro NUC14RVKi3 Slim Barebone Mini-PC
+      details: Core i3 100U, DDR5
+      link: https://www.newegg.com/p/2SW-000B-00683
+      price: 529
   usage: required
   min_specs: 
   guide:
@@ -64,26 +64,26 @@
   index: 3
   products: 
     - id: B0CHGT1KFJ
-      name: Samsung 990 PRO
+      name: Samsung 4TB 990 PRO
       details: 4TB, PCIe 4.0, M2
       link: https://www.amazon.com/dp/B0CHGT1KFJ/
-      price: 290
+      price: 326
     - id: N82E16820147879
-      name: Samsung 990 PRO
+      name: Samsung 4TB 990 PRO
       details: 4TB, PCIe 4.0, M2
       link: https://www.newegg.com/p/N82E16820147879
-      price: 290
+      price: 325
   usage: required
   min_specs: ">=2TB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
 - name: RAM
   index: 4
   products: 
-    - id: B07ZLC7VNH
-      name: Crucial RAM CT32G4SFD832A
-      details: 32GB DDR4 3200MHz CL22
-      link: https://www.amazon.com/dp/B07ZLC7VNH
-      price: 77
+    - id: B0BLTDRRLF
+      name: Crucial 32GB RAM CT2K16G56C46S5
+      details: 32GB DDR5 5600MHz
+      link: https://www.amazon.com/dp/B0BLTDRRLF
+      price: 82
   usage: required
   min_specs: ">=32GB"
   guide: https://www.youtube.com/watch?v=04K8OUOMHGM
