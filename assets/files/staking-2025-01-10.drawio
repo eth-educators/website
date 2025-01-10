@@ -1,0 +1,795 @@
+<mxfile host="app.diagrams.net" modified="2025-01-10T17:29:10.825Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" etag="ZDuO3Xj_L56YHcalbevc" version="21.1.8" type="device" pages="4">
+  <diagram id="zngo-VSpG_acJQQSFRv2" name="v3?-hanni">
+    <mxGraphModel dx="3392" dy="2794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TACk32oFRqwNkz21QU5p-1" value="&lt;div&gt;Do you have your own self-custody wallet?&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;br&gt;Some examples of a [self-custody wallet](https://www.ledger.com/academy/tips-to-trust-yourself-in-becoming-your-own-bank) (also referred to as a non-custodial wallet) are Metamask, Ledger, Argent, Trezor, Tally, Rainbow, Lattice, and Coinbase Wallet (different than the exchange).&lt;/div&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: wallet-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="50" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-1" value="Are you willing to create and learn to use a non-custodial wallet? (highly recommended)&lt;br&gt;&lt;br&gt;id: wallet-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="300" y="90" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-2" value="&lt;font style=&quot;&quot;&gt;Are you comfortable following a guide that may require some simple copy-paste in command line?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Don&#39;t be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: command-line-1&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="810" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-3" value="Do you have 8 ETH or more?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: eth-amount-1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="300" y="410" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-4" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;endFill=0;startArrow=classic;startFill=1;" parent="1" source="I13kywNQLHENPPzqToaS-1" target="TACk32oFRqwNkz21QU5p-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-7" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="I13kywNQLHENPPzqToaS-4" connectable="0" vertex="1">
+          <mxGeometry x="-0.1833" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endFill=1;" parent="1" source="TACk32oFRqwNkz21QU5p-1" target="I13kywNQLHENPPzqToaS-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="210" as="sourcePoint" />
+            <mxPoint x="240" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="130" />
+              <mxPoint x="140" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I13kywNQLHENPPzqToaS-9" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="I13kywNQLHENPPzqToaS-6" connectable="0" vertex="1">
+          <mxGeometry x="0.8082" y="-4" relative="1" as="geometry">
+            <mxPoint x="-17" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-1" value="show staking pool options&lt;br&gt;&lt;br&gt;id: end-staking-pool" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="590" y="430" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-4" value="Do you have internet with at least 1 TB bandwidth per month? It&#39;s okay if the service is spotty, 100% uptime is not needed.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: internet" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="600" y="540" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="1" source="I13kywNQLHENPPzqToaS-3" target="6pw9NzP1Xm-b0SNprD7F-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="380" as="sourcePoint" />
+            <mxPoint x="680" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-7" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-5" connectable="0" vertex="1">
+          <mxGeometry x="0.1231" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-9" value="Do you have 32 ETH or more?&lt;br&gt;&lt;br&gt;id: eth-amount-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="950" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-4" target="6pw9NzP1Xm-b0SNprD7F-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1430" y="660" as="sourcePoint" />
+            <mxPoint x="1480" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-13" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-10" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-16" value="show cex options&lt;br&gt;&lt;br&gt;id: end-cex" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="600" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;" parent="1" source="I13kywNQLHENPPzqToaS-1" target="6pw9NzP1Xm-b0SNprD7F-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="120" as="sourcePoint" />
+            <mxPoint x="780" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-18" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-17" connectable="0" vertex="1">
+          <mxGeometry x="-0.2667" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-19" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I13kywNQLHENPPzqToaS-1" target="qUaZXzvw1YXDb_sVafYE-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="120" as="sourcePoint" />
+            <mxPoint x="780" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-22" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I13kywNQLHENPPzqToaS-3" target="6pw9NzP1Xm-b0SNprD7F-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="410" as="sourcePoint" />
+            <mxPoint x="790" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-23" value="show hosted rp option, link out to allnodes&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-9" target="6pw9NzP1Xm-b0SNprD7F-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="620" as="sourcePoint" />
+            <mxPoint x="1320" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-25" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-24" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-26" value="show hosted node options&lt;br&gt;&lt;br&gt;id: end-hosted-staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="720" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-9" target="6pw9NzP1Xm-b0SNprD7F-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="600" as="sourcePoint" />
+            <mxPoint x="1320" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-29" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-27" connectable="0" vertex="1">
+          <mxGeometry x="0.3121" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-30" value="Do you have 32 ETH or more?&lt;br&gt;&lt;br&gt;id: eth-amount-3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="950" y="860" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-4" target="6pw9NzP1Xm-b0SNprD7F-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="740" as="sourcePoint" />
+            <mxPoint x="890" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-32" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6pw9NzP1Xm-b0SNprD7F-31" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint x="96" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-35" value="&lt;font style=&quot;&quot;&gt;Are you comfortable following a guide that may require some simple copy-paste in command line?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Don&#39;t be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: command-line-2&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="1130" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-36" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-30" target="I13kywNQLHENPPzqToaS-2" edge="1">
+          <mxGeometry x="0.2308" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1100" y="820" as="sourcePoint" />
+            <mxPoint x="1150" y="770" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-37" value="show hosted rp option, link out to allnodes&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="860" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-38" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I13kywNQLHENPPzqToaS-2" target="6pw9NzP1Xm-b0SNprD7F-37" edge="1">
+          <mxGeometry x="0.1429" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1454" y="950" as="sourcePoint" />
+            <mxPoint x="1654" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1590" y="890" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-39" value="show pool node operator rp option&lt;br&gt;&lt;br&gt;id: end-pool-node-ops-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="1020" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-40" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I13kywNQLHENPPzqToaS-2" target="6pw9NzP1Xm-b0SNprD7F-39" edge="1">
+          <mxGeometry x="0.4375" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1480" y="900" as="sourcePoint" />
+            <mxPoint x="1690" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1500" y="890" />
+              <mxPoint x="1500" y="1050" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-41" value="yes" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6pw9NzP1Xm-b0SNprD7F-35" edge="1">
+          <mxGeometry x="0.7778" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1110" y="890" as="sourcePoint" />
+            <mxPoint x="1320" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1140" y="890" />
+              <mxPoint x="1140" y="1210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-42" value="show gui solo staker options&lt;br&gt;&lt;br&gt;id: end-solo-gui" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="1340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-43" value="show manual solo staker options&lt;br&gt;&lt;br&gt;id: end-solo-manual" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="1180" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-44" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-35" target="6pw9NzP1Xm-b0SNprD7F-42" edge="1">
+          <mxGeometry x="0.4312" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1480" y="1210" as="sourcePoint" />
+            <mxPoint x="1640" y="1320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1510" y="1210" />
+              <mxPoint x="1510" y="1370" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6pw9NzP1Xm-b0SNprD7F-45" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-35" target="6pw9NzP1Xm-b0SNprD7F-43" edge="1">
+          <mxGeometry x="0.1429" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1490" y="1180" as="sourcePoint" />
+            <mxPoint x="1700" y="1180" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qUaZXzvw1YXDb_sVafYE-1" value="Awesome!&lt;br&gt;&lt;br&gt;You can learn about wallets, how to use them, and different options here: &amp;lt;https://ethereum.org/en/wallets/&amp;gt;&lt;br&gt;&lt;br&gt;id: wallet-3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="280" y="220" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qUaZXzvw1YXDb_sVafYE-2" value="continue" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qUaZXzvw1YXDb_sVafYE-1" target="I13kywNQLHENPPzqToaS-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="260" as="sourcePoint" />
+            <mxPoint x="390" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-1" value="&lt;div&gt;Staking on a centralized exchange 😔&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Looks like staking on a CEX is the only option for you at the moment. Check out the linked options and make sure you understand the risks (potential loss of funds). &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you change your mind about creating a wallet we recommend leveling up with a [decentralized staking pool](#decentralized-staking-pool).&lt;/div&gt;&lt;br&gt;id: end-cex" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="760" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-3" value="Staking with a decentralized protocol 🙂&lt;br&gt;&lt;br&gt;Looks like using a decentralized staking pool is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you acquire 8 ETH or more we recommend leveling up to a [pool node operator](#pool-node-operator).&lt;br&gt;&lt;br&gt;id: end-staking-pool" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="750" y="350" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-5" value="&lt;div&gt;&lt;div&gt;Staking as a pool node operator, hosted on Allnodes 🙂&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;br&gt;Looks like staking as a Rocket Pool node operator using Allnodes hosting is best for you. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you gain internet, we recommend leveling up to operating your own node as a [staking pool node operator](#pool-node-operator).&lt;/div&gt;&lt;/div&gt;&lt;br&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="480" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-6" value="&lt;div&gt;Hosted solo staking 🙂&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Looks like hosted solo staking is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you gain internet, we recommend leveling up to operating your own node as a [solo staker](#solo-staking).&lt;/div&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: end-hosted-staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="640" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-7" value="Staking as a pool node operator 😃&lt;br&gt;&lt;br&gt;Looks like being a staking pool node operator is best for you. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you acquire 32 ETH or more we recommend leveling up to [solo staking](#solo-staking).&lt;br&gt;&lt;br&gt;id: end-pool-node-ops-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="940" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-8" value="Solo staking 😎&lt;br&gt;&lt;br&gt;Looks like solo staking via manual setup is best for you. Thank you for helping secure the network in the best way possible!&lt;br&gt;&lt;br&gt;id: end-solo-manual" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="1100" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15XEEbiEufHv5r1H-tuE-9" value="Solo staking 😎&lt;br&gt;&lt;br&gt;Looks like solo staking via the plug &amp;amp; play setup or manually using a GUI is best for you. Thank you for helping secure the network in the best way possible!&lt;br&gt;&lt;br&gt;id: end-solo-gui" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="1260" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hariaMC7fSC4ariykrxP-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6pw9NzP1Xm-b0SNprD7F-37" target="15XEEbiEufHv5r1H-tuE-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="830" as="sourcePoint" />
+            <mxPoint x="1760" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1860" y="890" />
+              <mxPoint x="1860" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hariaMC7fSC4ariykrxP-6" value="Rework entire flow to start from the following path?&lt;br&gt;- how much eth do you have? (0, 1-8, 8-32, 32+)&lt;br&gt;- 0 eth -&amp;gt; stakewise node operator (contingent on final decisions for no collateral reqs)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="-460" width="970" height="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="v2-hanni" id="K_TlFxhsMX99NVXX03cM">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-0" />
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-1" parent="bqb4LbpJnA1JNbB-h4e3-0" />
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-2" value="&lt;div&gt;Do you have your own self-custody wallet?&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;br&gt;Some examples of a [self-custody wallet](https://www.ledger.com/academy/tips-to-trust-yourself-in-becoming-your-own-bank) (also referred to as a non-custodial wallet) are Metamask, Ledger, Argent, Trezor, Tally, Rainbow, Lattice, and Coinbase Wallet (different than the exchange).&lt;/div&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: wallet-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="-160" y="50" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-3" value="Are you willing to create and learn to use a non-custodial wallet? (highly recommended)&lt;br&gt;&lt;br&gt;id: wallet-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="300" y="90" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-4" value="&lt;font style=&quot;&quot;&gt;Are you comfortable following a guide that may require some simple copy-paste in command line?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Don&#39;t be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: command-line-1&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1240" y="810" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-5" value="Do you have 10.4 ETH or more?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: eth-amount-1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="300" y="410" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-6" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;endFill=0;startArrow=classic;startFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-3" target="bqb4LbpJnA1JNbB-h4e3-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-7" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-6" connectable="0" vertex="1">
+          <mxGeometry x="-0.1833" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-2" target="bqb4LbpJnA1JNbB-h4e3-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="210" as="sourcePoint" />
+            <mxPoint x="240" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="130" />
+              <mxPoint x="140" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-9" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-8" connectable="0" vertex="1">
+          <mxGeometry x="0.8082" y="-4" relative="1" as="geometry">
+            <mxPoint x="-17" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-10" value="show staking pool options&lt;br&gt;&lt;br&gt;id: end-staking-pool" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="590" y="430" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-11" value="Do you have internet with at least 1 TB bandwidth per month? It&#39;s okay if the service is spotty, 100% uptime is not needed.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: internet" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="600" y="540" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-5" target="bqb4LbpJnA1JNbB-h4e3-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="380" as="sourcePoint" />
+            <mxPoint x="680" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-13" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-12" connectable="0" vertex="1">
+          <mxGeometry x="0.1231" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-14" value="Do you have 32 ETH or more?&lt;br&gt;&lt;br&gt;id: eth-amount-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="950" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-11" target="bqb4LbpJnA1JNbB-h4e3-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1430" y="660" as="sourcePoint" />
+            <mxPoint x="1480" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-16" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-15" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-17" value="show cex options&lt;br&gt;&lt;br&gt;id: end-cex" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="600" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-3" target="bqb4LbpJnA1JNbB-h4e3-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="120" as="sourcePoint" />
+            <mxPoint x="780" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-19" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-18" connectable="0" vertex="1">
+          <mxGeometry x="-0.2667" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-20" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-3" target="bqb4LbpJnA1JNbB-h4e3-42" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="120" as="sourcePoint" />
+            <mxPoint x="780" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-21" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-5" target="bqb4LbpJnA1JNbB-h4e3-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="410" as="sourcePoint" />
+            <mxPoint x="790" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-22" value="show hosted rp option, link out to allnodes&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1310" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-14" target="bqb4LbpJnA1JNbB-h4e3-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="620" as="sourcePoint" />
+            <mxPoint x="1320" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-24" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-23" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-25" value="show hosted node options&lt;br&gt;&lt;br&gt;id: end-hosted-staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1310" y="720" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-14" target="bqb4LbpJnA1JNbB-h4e3-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="600" as="sourcePoint" />
+            <mxPoint x="1320" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-27" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-26" connectable="0" vertex="1">
+          <mxGeometry x="0.3121" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-28" value="Do you have 32 ETH or more?&lt;br&gt;&lt;br&gt;id: eth-amount-3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="950" y="860" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-11" target="bqb4LbpJnA1JNbB-h4e3-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="740" as="sourcePoint" />
+            <mxPoint x="890" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-30" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bqb4LbpJnA1JNbB-h4e3-29" connectable="0" vertex="1">
+          <mxGeometry x="0.0267" relative="1" as="geometry">
+            <mxPoint x="96" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-31" value="&lt;font style=&quot;&quot;&gt;Are you comfortable following a guide that may require some simple copy-paste in command line?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Don&#39;t be afraid of the command line, the guides take you step-by-step and show you each command to copy and paste.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;id: command-line-2&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1240" y="1130" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-32" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-28" target="bqb4LbpJnA1JNbB-h4e3-4" edge="1">
+          <mxGeometry x="0.2308" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1100" y="820" as="sourcePoint" />
+            <mxPoint x="1150" y="770" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-33" value="show hosted rp option, link out to allnodes&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1680" y="860" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-34" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-4" target="bqb4LbpJnA1JNbB-h4e3-33" edge="1">
+          <mxGeometry x="0.1429" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1454" y="950" as="sourcePoint" />
+            <mxPoint x="1654" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1590" y="890" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-35" value="show pool node operator rp option&lt;br&gt;&lt;br&gt;id: end-pool-node-ops-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1680" y="1020" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-36" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-4" target="bqb4LbpJnA1JNbB-h4e3-35" edge="1">
+          <mxGeometry x="0.4375" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1480" y="900" as="sourcePoint" />
+            <mxPoint x="1690" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1500" y="890" />
+              <mxPoint x="1500" y="1050" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-37" value="yes" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" target="bqb4LbpJnA1JNbB-h4e3-31" edge="1">
+          <mxGeometry x="0.7778" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1110" y="890" as="sourcePoint" />
+            <mxPoint x="1320" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1140" y="890" />
+              <mxPoint x="1140" y="1210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-38" value="show gui solo staker options&lt;br&gt;&lt;br&gt;id: end-solo-gui" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1680" y="1340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-39" value="show manual solo staker options&lt;br&gt;&lt;br&gt;id: end-solo-manual" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1680" y="1180" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-40" value="no" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-31" target="bqb4LbpJnA1JNbB-h4e3-38" edge="1">
+          <mxGeometry x="0.4312" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1480" y="1210" as="sourcePoint" />
+            <mxPoint x="1640" y="1320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1510" y="1210" />
+              <mxPoint x="1510" y="1370" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-41" value="yes" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-31" target="bqb4LbpJnA1JNbB-h4e3-39" edge="1">
+          <mxGeometry x="0.1429" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1490" y="1180" as="sourcePoint" />
+            <mxPoint x="1700" y="1180" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-42" value="Awesome!&lt;br&gt;&lt;br&gt;You can learn about wallets, how to use them, and different options here: &amp;lt;https://ethereum.org/en/wallets/&amp;gt;&lt;br&gt;&lt;br&gt;id: wallet-3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="280" y="220" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-43" value="continue" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-42" target="bqb4LbpJnA1JNbB-h4e3-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="260" as="sourcePoint" />
+            <mxPoint x="390" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-44" value="&lt;div&gt;Staking on a centralized exchange 😔&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Looks like staking on a CEX is the only option for you at the moment. Check out the linked options and make sure you understand the risks (potential loss of funds). &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you change your mind about creating a wallet we recommend leveling up with a [decentralized staking pool](#decentralized-staking-pool).&lt;/div&gt;&lt;br&gt;id: end-cex" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="760" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-45" value="Staking with a decentralized protocol 🙂&lt;br&gt;&lt;br&gt;Looks like using a decentralized staking pool is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you acquire 17.6 ETH or more we recommend leveling up to a [pool node operator](#pool-node-operator).&lt;br&gt;&lt;br&gt;id: end-staking-pool" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="750" y="350" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-46" value="&lt;div&gt;&lt;div&gt;Staking as a pool node operator, hosted on Allnodes 🙂&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;br&gt;Looks like staking as a Rocket Pool node operator using Allnodes hosting is best for you. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you gain internet, we recommend leveling up to operating your own node as a [staking pool node operator](#pool-node-operator).&lt;/div&gt;&lt;/div&gt;&lt;br&gt;id: end-hosted-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1470" y="480" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-47" value="&lt;div&gt;Hosted solo staking 🙂&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Looks like hosted solo staking is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you gain internet, we recommend leveling up to operating your own node as a [solo staker](#solo-staking).&lt;/div&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;id: end-hosted-staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1470" y="640" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-48" value="Staking as a pool node operator 😃&lt;br&gt;&lt;br&gt;Looks like being a staking pool node operator is best for you. &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;If you acquire 32 ETH or more we recommend leveling up to [solo staking](#solo-staking).&lt;br&gt;&lt;br&gt;id: end-pool-node-ops-rp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1840" y="940" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-49" value="Solo staking 😎&lt;br&gt;&lt;br&gt;Looks like solo staking via manual setup is best for you. Thank you for helping secure the network in the best way possible!&lt;br&gt;&lt;br&gt;id: end-solo-manual" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1840" y="1100" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-50" value="Solo staking 😎&lt;br&gt;&lt;br&gt;Looks like solo staking via the plug &amp;amp; play setup or manually using a GUI is best for you. Thank you for helping secure the network in the best way possible!&lt;br&gt;&lt;br&gt;id: end-solo-gui" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" parent="bqb4LbpJnA1JNbB-h4e3-1" vertex="1">
+          <mxGeometry x="1840" y="1260" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bqb4LbpJnA1JNbB-h4e3-51" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="bqb4LbpJnA1JNbB-h4e3-1" source="bqb4LbpJnA1JNbB-h4e3-33" target="bqb4LbpJnA1JNbB-h4e3-46" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="830" as="sourcePoint" />
+            <mxPoint x="1760" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1860" y="890" />
+              <mxPoint x="1860" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="v1-nixo" id="s-yIgvAj4HFvVxmEMmCT">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="03IceP9QWt509vtV1aRe-0" />
+        <mxCell id="03IceP9QWt509vtV1aRe-1" parent="03IceP9QWt509vtV1aRe-0" />
+        <mxCell id="03IceP9QWt509vtV1aRe-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-3" target="03IceP9QWt509vtV1aRe-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-3" value="Staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="133" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-4" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-27" target="03IceP9QWt509vtV1aRe-26">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-5" value="&lt;div&gt;Yes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-4">
+          <mxGeometry x="-0.2264" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-27" target="03IceP9QWt509vtV1aRe-9">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="243" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-7" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-6">
+          <mxGeometry x="-0.5643" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-9" target="03IceP9QWt509vtV1aRe-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-9" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. Stake using a decentralized protocol&lt;/div&gt;&lt;div&gt;2. Stake using a CEX&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="293" y="160" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-10" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-26" target="03IceP9QWt509vtV1aRe-25">
+          <mxGeometry x="0.0566" y="60" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="193" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-11" value="&lt;div&gt;Yes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-10">
+          <mxGeometry x="-0.0958" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-26" target="03IceP9QWt509vtV1aRe-16">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="243" y="600" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-13" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-12">
+          <mxGeometry x="-0.0405" y="-2" relative="1" as="geometry">
+            <mxPoint x="-9" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-16" target="03IceP9QWt509vtV1aRe-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-16" target="03IceP9QWt509vtV1aRe-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-16" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. Solo stake using a VPS&lt;/div&gt;&lt;div&gt;2. Stake with a SaaS provider (Allnodes, Blox)&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;4. Stake with a CEX &lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="293" y="385" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-25" target="03IceP9QWt509vtV1aRe-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="243" y="735" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-18" value="&lt;div&gt;No&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-17">
+          <mxGeometry x="-0.1752" y="-3" relative="1" as="geometry">
+            <mxPoint x="-6" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-25" target="03IceP9QWt509vtV1aRe-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="1047.5" as="sourcePoint" />
+            <mxPoint x="193" y="897.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-20" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="03IceP9QWt509vtV1aRe-19">
+          <mxGeometry x="0.2469" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-22" target="03IceP9QWt509vtV1aRe-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-22" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. DAppNode&lt;/div&gt;&lt;div&gt;2. Avado&lt;/div&gt;&lt;div&gt;3. Stake with a SaaS provider&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;5. Stake with a CEX&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="293" y="727.5" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="03IceP9QWt509vtV1aRe-1" source="03IceP9QWt509vtV1aRe-24" target="03IceP9QWt509vtV1aRe-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-24" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. (If 32 ETH) Solo stake with the CoinCashew or Someresat Guides&lt;/div&gt;&lt;div&gt;2. (If 17.6 ETH) Run a Rocket Pool validator&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. DAppNode&lt;/div&gt;&lt;div&gt;4. Avado&lt;/div&gt;&lt;div&gt;5. Stake with a SaaS provider&lt;/div&gt;&lt;div&gt;6. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;7. Stake with a CEX&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="43" y="1115" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-25" value="Are you comfortable following a guide that may require some simple copy-paste in command line?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="133" y="740" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-26" value="Do you have stable internet with at least 1 TB bandwidth per month?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="133" y="410" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-27" value="Do you have at least 17.6 ETH?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="133" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-28" value="Needs: &lt;br&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;List of VPS providers (include info about not using Hetzner), guides to VPS staking guides&lt;/li&gt;&lt;li&gt;SaaS providers &amp;amp; guides&lt;/li&gt;&lt;li&gt;Info about decentralized liquid staking providers AND the fact that this is a no-hardware requirement, but that this adds a layer of risk to staking and lowers rewards, but is a very acceptable solution for someone incapable of running their own validator&lt;/li&gt;&lt;li&gt;List of CEXs available, with a disclaimer that this is a &lt;b&gt;custodial&lt;/b&gt; solution and is not recommended by EthStaker. &lt;b&gt;Nix needs to write out a blurb on custodied staking vs. cold storage&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="563" y="290" width="220" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-29" value="Needs: &lt;br&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;List of recommended decentralized protocols available&lt;/li&gt;&lt;li&gt;List of CEXs available, with a disclaimer that this is a &lt;b&gt;custodial&lt;/b&gt; solution and is not recommended by EthStaker. &lt;b&gt;Nix needs to write out a blurb on custodied staking vs. cold storage&lt;/b&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="563" y="107.5" width="220" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-30" value="Needs: &lt;br&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;Explanation of DAppNode&lt;/li&gt;&lt;li&gt;Explanation of Avado&lt;br&gt;&lt;/li&gt;&lt;li&gt;SaaS providers &amp;amp; guides, with special emphasis on choosing a non-custodial, trustless solution&lt;br&gt;&lt;/li&gt;&lt;li&gt;Info about decentralized liquid staking providers AND the fact that this is a no-hardware requirement, but that this adds a layer of risk to staking and lowers rewards, but is a very acceptable solution for someone incapable of running their own validator&lt;/li&gt;&lt;li&gt;List of CEXs available, with a disclaimer that this is a &lt;b&gt;custodial&lt;/b&gt; solution and is not recommended by EthStaker. &lt;b&gt;Nix needs to write out a blurb on custodied staking vs. cold storage&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="563" y="620" width="220" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="03IceP9QWt509vtV1aRe-31" value="Needs: &lt;br&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;Latest Hardware Guide&lt;/li&gt;&lt;li&gt;Links to CoinCashew &amp;amp; Someresat&lt;/li&gt;&lt;li&gt;Links to EthStaker subreddit &amp;amp; discord&lt;br&gt;&lt;/li&gt;&lt;li&gt;Links to Rocket Pool Guides &amp;amp; Resources&lt;br&gt;&lt;/li&gt;&lt;li&gt;Explanation of DAppNode&lt;/li&gt;&lt;li&gt;Explanation of Avado&lt;br&gt;&lt;/li&gt;&lt;li&gt;SaaS providers &amp;amp; guides, with special emphasis on choosing a non-custodial, trustless solution&lt;br&gt;&lt;/li&gt;&lt;li&gt;Info about decentralized liquid staking providers AND the fact that this is a no-hardware requirement, but that this adds a layer of risk to staking and lowers rewards, but is a very acceptable solution for someone incapable of running their own validator&lt;/li&gt;&lt;li&gt;List of CEXs available, with a disclaimer that this is a &lt;b&gt;custodial&lt;/b&gt; solution and is not recommended by EthStaker. &lt;b&gt;Nix needs to write out a blurb on custodied staking vs. cold storage&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="03IceP9QWt509vtV1aRe-1">
+          <mxGeometry x="563" y="970" width="220" height="440" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="_HVL850KsA5P7aJjg8p7-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Staking" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="133" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-28" target="_HVL850KsA5P7aJjg8p7-27">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-42" value="&lt;div&gt;Yes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-4">
+          <mxGeometry x="-0.2264" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-28" target="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="243" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-44" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-5">
+          <mxGeometry x="-0.5643" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. Stake using a decentralized protocol&lt;/div&gt;&lt;div&gt;2. Stake using a CEX&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="293" y="160" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-27" target="_HVL850KsA5P7aJjg8p7-20">
+          <mxGeometry x="0.0566" y="60" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="193" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-41" value="&lt;div&gt;Yes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-8">
+          <mxGeometry x="-0.0958" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-27" target="WIyWlLk6GJQsqaUBKTNV-12">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="243" y="600" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-43" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-9">
+          <mxGeometry x="-0.0405" y="-2" relative="1" as="geometry">
+            <mxPoint x="-9" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. Solo stake using a VPS&lt;/div&gt;&lt;div&gt;2. Stake with a SaaS provider (Allnodes, Blox)&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;4. Stake with a CEX &lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="293" y="385" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-20" target="_HVL850KsA5P7aJjg8p7-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="243" y="735" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-13" value="&lt;div&gt;No&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="_HVL850KsA5P7aJjg8p7-10">
+          <mxGeometry x="-0.1752" y="-3" relative="1" as="geometry">
+            <mxPoint x="-6" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-20" target="_HVL850KsA5P7aJjg8p7-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="1047.5" as="sourcePoint" />
+            <mxPoint x="193" y="897.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-45" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="_HVL850KsA5P7aJjg8p7-22">
+          <mxGeometry x="0.2469" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-9" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. DAppNode&lt;/div&gt;&lt;div&gt;2. Avado&lt;/div&gt;&lt;div&gt;3. Stake with a SaaS provider&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;5. Stake with a CEX&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="293" y="727.5" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_HVL850KsA5P7aJjg8p7-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-16" value="&lt;div&gt;Options from best to worst:&lt;/div&gt;&lt;div&gt;1. (If 32 ETH) Solo stake with the CoinCashew or Someresat Guides&lt;/div&gt;&lt;div&gt;2. (If 17.6 ETH) Run a Rocket Pool validator&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. DAppNode&lt;/div&gt;&lt;div&gt;4. Avado&lt;/div&gt;&lt;div&gt;5. Stake with a SaaS provider&lt;/div&gt;&lt;div&gt;6. Stake with a decentralized liquid staking provider&lt;/div&gt;&lt;div&gt;7. Stake with a CEX&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="43" y="1115" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-20" value="Are you comfortable following a guide that may require some simple copy-paste in command line?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="133" y="740" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-27" value="Do you have stable internet with at least 1 TB bandwidth per month?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="133" y="410" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_HVL850KsA5P7aJjg8p7-28" value="Do you have at least 17.6 ETH?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="133" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_BhO6-spe9wT2hIPq_HW-1" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&quot;do you have your own wallet?&quot;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;yes -&amp;gt; decentralized options&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;no -&amp;gt; suggest setting it up (link) and explain dangers custodial solutions&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;I will setup my own wallet (link) -&amp;gt; decentralized options&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;Risk using the custodial options -&amp;gt; centralized options&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="-10" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hBsrJRZEhT-abkYiu4FU-0" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="294" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
