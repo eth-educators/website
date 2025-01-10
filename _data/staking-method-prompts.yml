@@ -1,3 +1,7 @@
+# PATH DIAGRAM IN ASSETS/FILES/STAKING-YYYY-MM-DD.DRAWIO
+# UPDATE DIAGRAME WITH ANY CHANGES
+
+
 ## - id:             = permanent (no spaces), unique identifier that will be used to reference this entry
 ##   title:          = the question or the answer header
 ##   body:           = (optional) question details or an answer's solution
@@ -68,7 +72,7 @@
     - option: Continue {{site.data.icons.right_arrow}}
       go_to_id: eth-amount-1
 - id: eth-amount-1
-  title: Do you have 10.4 ETH or more?
+  title: Do you have 8 ETH or more?
   body: 
   options: 
     - option: "Yes"
@@ -77,7 +81,7 @@
       go_to_id: end-staking-pool
 - id: end-staking-pool
   title: Staking with a decentralized protocol 🙂
-  body: Looks like using a decentralized staking pool is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. <br><br>If you acquire 17.6 ETH or more we recommend leveling up to a [pool node operator](#pool-node-operator).
+  body: Looks like using a decentralized staking pool is best for you. Check out the linked options and make sure you understand the benefits and drawbacks of each before making a decision. <br><br>If you acquire 8 ETH or more we recommend leveling up to a [pool node operator](#pool-node-operator).
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
