@@ -29,6 +29,14 @@
   options: 
     - option: Start quiz!
       go_to_id: wallet-1 
+- id: begin
+  # title: Take our self-assessment quiz!
+  title: Staking method self-assessment quiz!
+  body: Ideally new stakers are as independent and decentralized as possible. Strive for [solo staking](https://paragraph.xyz/@ethstaker/define-solo-staker) as the gold standard and to enjoy the widest set of [known incentives](https://ethstaker.cc/incentives).
+  style: cta
+  options: 
+    - option: Let’s Begin!
+      go_to_id: wallet-1 
 - id: wallet-1
   title: Do you have your own self-custody wallet?
   body: Some examples of a [self-custody wallet](https://www.ledger.com/academy/tips-to-trust-yourself-in-becoming-your-own-bank) (also referred to as a non-custodial wallet) are Metamask, Ledger, Argent, Trezor, Tally, Rainbow, Lattice, and Coinbase Wallet (different than the exchange).
@@ -51,7 +59,7 @@
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#centralized-exchange-staking"
+      go_to_id: "https://ethstaker.cc/staking#centralized-exchange-staking"
 - id: wallet-3
   title: Awesome!
   body: "You can learn about wallets, how to use them, and different options here: <https://ethereum.org/en/wallets/>"
@@ -73,7 +81,7 @@
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#decentralized-staking-pool"
+      go_to_id: "https://ethstaker.cc/staking#decentralized-staking-pool"
 - id: internet
   title: Do you have internet with at least 1 TB bandwidth per month?
   body: It's okay if the service is spotty, 100% uptime is not needed.
@@ -103,7 +111,7 @@
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#hosted-staking"
+      go_to_id: "https://ethstaker.cc/staking#hosted-staking"
 - id: eth-amount-3
   title: Do you have 32 ETH or more?
   body: 
@@ -134,18 +142,18 @@
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#pool-node-operator"
+      go_to_id: "https://ethstaker.cc/staking#pool-node-operator"
 - id: end-solo-manual
   title: Solo staking 😎
   body: Looks like solo staking via manual setup is best for you. Thank you for helping secure the network in the best way possible!
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#solo-staking"
+      go_to_id: "https://ethstaker.cc/staking#solo-staking"
 - id: end-solo-gui
   title: Solo staking 😎
   body: Looks like solo staking via the plug & play setup or manually using a GUI is best for you. Thank you for helping secure the network in the best way possible!
   style: cta
   options: 
     - option: View options {{site.data.icons.right_arrow}}
-      go_to_id: "#solo-staking"
+      go_to_id: "https://ethstaker.cc/staking#solo-staking"
