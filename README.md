@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eff4589c-f0ec-46d3-8f5e-14d5e6e0fee1/deploy-status)](https://app.netlify.com/sites/ethstaker/deploys)
 
-This is the source code for EthStaker's website, <https://ethstaker.cc>.
+This is the source code for EthStaker's website, <https://ethstaker.org>.
 
 **Table of Contents**
 
@@ -240,11 +240,11 @@ Large button:
 
 ## Rhino Review Redirect
 
-Since X (formerly Twitter) is banning substack links, [ethstaker.cc/rhino-review](https://ethstaker.cc/rhino-review) can be used as a redirect using the `url=` parameter. For security, this only works for `rhinoreview.substack.com` links.
+Since X (formerly Twitter) is banning substack links, [ethstaker.org/rhino-review](https://ethstaker.org/rhino-review) can be used as a redirect using the `url=` parameter. For security, this only works for `rhinoreview.substack.com` links.
 
 1. Encode the substack post URL: <https://www.urlencoder.org/>
     - Example: `https://rhinoreview.substack.com/p/rhino-review-ethereum-staking-journal` becomes `https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal`
-1. Append that URL to the end of: `https://ethstaker.cc/rhino-review/?url=`
-    - Example: `https://ethstaker.cc/rhino-review/?url=https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal`
+1. Append that URL to the end of: `https://ethstaker.org/rhino-review/?url=`
+    - Example: `https://ethstaker.org/rhino-review/?url=https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal`
 
-In this example, `https://ethstaker.cc/rhino-review/?url=https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal` will be forwarded to `https://rhinoreview.substack.com/p/rhino-review-ethereum-staking-journal`
+In this example, `https://ethstaker.org/rhino-review/?url=https%3A%2F%2Frhinoreview.substack.com%2Fp%2Frhino-review-ethereum-staking-journal` will be forwarded to `https://rhinoreview.substack.com/p/rhino-review-ethereum-staking-journal`
