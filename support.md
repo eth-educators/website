@@ -12,7 +12,7 @@ EthStaker’s motto is “welcoming first, knowledgeable second”. Everybody ha
 
 You can join the EthStaker Discord and discuss any questions there, or you can visit a client-specific Discord.
 
-Also be sure to checkout the [FAQ](https://docs.ethstaker.org/ethstaker-knowledge-base/faq)
+Also be sure to checkout the [FAQ](https://docs.ethstaker.org/faq)
 
 
 {% include partials/components/callout.html 
