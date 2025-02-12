@@ -2,7 +2,7 @@
 
 You need a USB stick for this.
 
-1. Using your primary computer again, download [Wagyu Key Gen](https://ethstaker.cc/wagyu) **for Linux** and put the installation file on a USB
+1. Using your primary computer again, download [Wagyu Key Gen](https://ethstaker.org/wagyu) **for Linux** and put the installation file on a USB
 1. Using the USB, install Wagyu Key Gen on the node computer
 1. Run the Wagyu Key Gen app and follow the tutorial
 

@@ -1,4 +1,4 @@
-The EthStaker knowledge base has [a good overview of hardware requirements](https://docs.ethstaker.cc/ethstaker-knowledge-base/hardware/hardware-requirements) summarized below, but please follow the link for more in-depth information.
+The EthStaker knowledge base has [a good overview of hardware requirements](https://docs.ethstaker.org/ethstaker-knowledge-base/hardware/hardware-requirements) summarized below, but please follow the link for more in-depth information.
 
 #### Hardware requirements
 
