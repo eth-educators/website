@@ -25,12 +25,11 @@ While EthStaker is a community organization, it's stewarded by the active member
 {% include partials/content/about/stewards.html %}
 
 
+{%- comment -%}
 ## Documentation
 
 EthStaker's documentation plays a crucial part in educating the staking community, made possible largely thanks to the contributors below.
 
 {% include partials/content/about/documentation.html %}
+{%- endcomment -%}
 
-
-{:class="etheralpha"}
-This site was developed by [Ether Alpha](https://etheralpha.org/)
