@@ -67,19 +67,27 @@
   # discord: Yorick | cryptomanufaktur.io#0990
   discord: 219015859182632960
   twitter: yorickdowne
-  reddit: 
+  reddit: yorickdowne
   github: yorickdowne
   ens: yorickdowne.eth
-- name: nixo
-  role: Nixecutive Director
-  img: '/assets/img/about/stewards/nixo.png'
-  img_url: https://assets.poap.xyz/you-met-nixorokish!-2023-2023-logo-1674752026979.png
-  # discord: nixorokish#3333
-  discord: 731289513942450317
-  twitter: nixorokish
-  reddit: nixorokish
-  github: nixorokish
-  ens: nixorokish.eth
+# - name: nixo
+#   role: Nixecutive Director
+#   img: '/assets/img/about/stewards/nixo.png'
+#   img_url: https://assets.poap.xyz/you-met-nixorokish!-2023-2023-logo-1674752026979.png
+#   # discord: nixorokish#3333
+#   discord: 731289513942450317
+#   twitter: nixorokish
+#   reddit: nixorokish
+#   github: nixorokish
+#   ens: nixorokish.eth
+- name: Jonathan Meyer 
+  role: 
+  img: '/assets/img/about/stewards/jonathan.png'
+  discord: 832290424953634896
+  twitter: jwmeyer
+  reddit: 
+  github: jwmeyert7
+  ens: jonathanmeyer.eth
 - name: hanniabu
   role: Chief Humble Helping Hands Officer
   img: '/assets/img/about/stewards/hanniabu.png'
@@ -90,3 +98,11 @@
   reddit: hanniabu
   github: hanniabu
   ens: hanniabu.eth
+- name: Pillow
+  role: 
+  img: '/assets/img/about/stewards/pillow.jpg'
+  discord: 751480048955031732
+  twitter: electropillow
+  reddit: 
+  github: 
+  ens: electropillow.eth
