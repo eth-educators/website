@@ -31,7 +31,7 @@
   // let address = "0xe25119634d9dfc38ae935269ca4cfe54b4bd6a15";
   function checkInclusion() {
     let addressInput = document.getElementById("{{context}}Address");
-    let address = addressInput.value;
+    let address = addressInput.value.toLowerCase();
     addressInput.classList.remove("is-invalid");
     addressInput.classList.remove("is-valid");
     if (address == "") {
