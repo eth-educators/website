@@ -25,7 +25,7 @@ function updateLinkTargets() {
       links[link].target = "_self";
       links[link].classList.remove("new-tab");
     }
-    // The above condition should catch this, but leaving it here in case it needs to be stated explicitely
+    // The above condition should catch this, but leaving it here in case it needs to be stated explicitly
     // if ( (href != undefined && href[0] == "#") || (href != undefined && href[0] == "/") ) {
     //   links[link].target = "_self";
     //   links[link].classList.remove("new-tab");
