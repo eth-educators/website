@@ -150,6 +150,8 @@
   /*widens table*/
   margin-left: -250px !important;
   margin-right: -250px !important;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 @media only screen and (max-width: 1199px) {
   .markdown .table-responsive {
