@@ -1,0 +1,42 @@
+<style type="text/css">
+  #diagram {
+    position: relative;
+    width: 100%;
+  }
+  @media only screen and (min-width: 776px) {
+    #diagram {
+      width: 150%;
+      margin-left: -25%;
+    }
+  }
+  @media only screen and (min-width: 1399px) {
+    #diagram {
+      width: 135%;
+      margin-left: -20%;
+    }
+  }
+  .diagramLight {
+    display: block;
+  }
+  .diagramDark {
+    display: none;
+  }
+  .dark-mode .diagramLight {
+    display: none;
+  }
+  .dark-mode .diagramDark {
+    display: block;
+  }
+
+</style>
+
+
+<div id="diagram">
+  <div class="diagramLight">
+    <img src="/assets/img/penalties/penalties-light.png" style="max-height:100%;">
+  </div>
+  <div class="diagramDark">
+    <img src="/assets/img/penalties/penalties-dark.png" style="max-height:100%;">
+  </div>
+</div>
+
