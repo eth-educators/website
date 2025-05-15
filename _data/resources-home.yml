@@ -21,6 +21,9 @@
 - title: Software
   link: /staking-software
   icon: code
+- title: Penalties
+  link: /staking-penalties
+  icon: activity
 - title: MEV Relays
   link: /mev-relay-list
   icon: boxes
