@@ -28,7 +28,7 @@
 - title: EthPillar
   img: "/assets/img/staking-software/ethpillar.png"
   description: one-liner setup tool and node management TUI. Free. Open source. Public goods for Ethereum. ARM64 and AMD64 support.
-  link: "http://ethpillar.coincashew.com"
+  link: "https://docs.coincashew.com/ethpillar"
   creator: coincashew
 - title: Wagyu Key Gen
   img: "/assets/img/staking-software/wagyu.png"
