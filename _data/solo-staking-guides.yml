@@ -43,8 +43,7 @@
 - title: CoinCashew Guides
   img: "/assets/img/solo-staking-guides/coincashew.png"
   description: Build your own hardware and copy/paste CLI commands.
-  # link: "/solo-staking-guides/coincashew"
-  link: "http://eth.coincashew.com"
+  link: "https://docs.coincashew.com"
 - title: Stakesaurus Guides
   img: "/assets/img/solo-staking-guides/stakesaurus.png"
   description: Build your own hardware and copy/paste CLI commands.
