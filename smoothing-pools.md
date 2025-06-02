@@ -2,7 +2,6 @@
 layout: markdown
 title: Smoothing Pools
 permalink: /smoothing-pools
-subheader: Smooth vs Smoothly
 ---
 
 
@@ -19,9 +18,9 @@ Analysis has shown that, **over a 5 year time span, validators in a smoothing po
 
 When there are more active validators in the pool than you’ll be adding. For example if you have 2 validators, it only makes sense to join a smoothing pool if it already has 3 active validators in it before you join. Validators move from pending to active after a block proposal.
 
-#### How many solo staker smoothing pool options are there?
+#### Which smoothing pool should I join?
 
-As of Feb 2024, there are two options: Smooth & Smoothly. EthStaker supports both of these pools as options for solo stakers.
+As of June 2025, EthStaker supports Smooth as the primary option.
 
 
 
@@ -38,26 +37,26 @@ As of Feb 2024, there are two options: Smooth & Smoothly. EthStaker supports bot
 {%- endcapture -%}
 
 {:class="table" id="smoothingPoolsComparison"}
-|                      | Smooth                       | Smoothly 
-|----------------------|------------------------------|--------------------
-| Website              | <{{smooth.link}}>            | <{{smoothly.link}}>
-| Address              | {{smooth.address}}           | {{smoothly.address}}
-| Fee                  | {{smooth.fee}}               | {{smoothly.fee}}
-| Oracles              | {{smooth.oracles}}           | {{smoothly.oracles}}
-| Validators in pool   | {{smooth_validators}}        | {{smoothly_validators}}
-| Extra incentives     | {{smooth.incentives}}        | {{smoothly.incentives}}
-| Team                 | {{smooth.team}}              | {{smoothly.team}}
-| MEV theft protection | {{smooth.bond}}              | {{smoothly.bond}}
-| Claim period         | {{smooth.claim_period}}      | {{smoothly.claim_period}}
-| Audit                | {{smooth.audit}}             | {{smoothly.audit}}
-| Launch date          | {{smooth.launch_date}}       | {{smoothly.launch_date}}
-| Discord              | [Invite]({{smooth.discord}}) | [Invite]({{smoothly.discord}})
+|                      | Smooth                       | 
+|----------------------|------------------------------|
+| Website              | <{{smooth.link}}>            |
+| Address              | {{smooth.address}}           |
+| Fee                  | {{smooth.fee}}               |
+| Oracles              | {{smooth.oracles}}           |
+| Validators in pool   | {{smooth_validators}}        |
+| Extra incentives     | {{smooth.incentives}}        |
+| Team                 | {{smooth.team}}              |
+| MEV theft protection | {{smooth.bond}}              |
+| Claim period         | {{smooth.claim_period}}      |
+| Audit                | {{smooth.audit}}             |
+| Launch date          | {{smooth.launch_date}}       |
+| Discord              | [Invite]({{smooth.discord}}) |
 
 
 
 ### More Info
 
-EthStaker hosted a community call with Smooth & Smoothly in Dec 2023:
+EthStaker hosted a community call with Smooth in Dec 2023:
 
 <div class="videowrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dB5csfO8I0E?si=8sYpI5A2DHhN2QRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
