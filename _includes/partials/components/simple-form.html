@@ -1,0 +1,172 @@
+{%- comment -%}
+  <!-- 
+  {% include partials/components/simple-form.html
+    context="newsletter"
+    form_id="1FApQLSsdgMyugJlrt_KpAg4izLsdlrIbiIkD8Xy1YaLdpr7Kr9Q"
+    title="Subscribe!"
+    input_text="Email"
+    type="email"
+    placeholder="name@example.com"
+    entry_id="entry.867548303"
+  %}
+   -->
+{%- endcomment -%}
+
+{%- assign context = include.context -%}
+{%- assign placeholder = "" -%}
+{%- if include.placeholder -%}
+  {%- capture placeholder -%}
+    placeholder="{{include.placeholder}}"
+  {%- endcapture -%}
+{%- endif -%}
+
+
+<div class="card shadow border-light w-100">
+  <div class="card-body">
+    <h5 class="card-title">{{include.title}}</h5>
+    <div id="{{context}}Form" class="card-text mt-3">
+
+      <!-- Inputs -->
+      <div class="w-100">
+        <label for="{{context}}Input" class="form-label">
+          {{include.input_text}}
+        </label>
+        {%- if include.type == "text" -%}
+          <input type="text" class="form-control form-field" id="{{context}}Input" {{placeholder}} required onchange="validate(this)">
+        {%- elsif include.type == "email" -%}
+          <input type="email" class="form-control form-field" id="{{context}}Input" {{placeholder}} required onchange="validate(this)">
+        {%- elsif include.type == "textarea" -%}
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Input" rows="5" {{placeholder}} required onchange="validate(this)"></textarea>
+        {%- endif -%}
+      </div>
+
+      <!-- Error Message -->
+      <div id="{{context}}ErrorMessage" class="invisible text-danger fs-6 w-100 mb-1">
+        <small>* Invalid input</small>
+      </div>
+
+      <!-- Submit -->
+      <button id="{{context}}SubmitButton" class="btn btn-dark btn-sm shadow-sm w-100" type="button" onclick="submitApplication()">Submit</button>
+      <div id="{{context}}FormSubmitted" class="d-none w-100 text-center mt-2 mb-1">✅ Submitted</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  function submitApplication() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.add("invisible");
+      // Submit data to google forms
+      sendData();
+      // Display submission success message
+      document.getElementById("{{context}}SubmitButton").classList.add("d-none");
+      document.getElementById("{{context}}FormSubmitted").classList.remove("d-none");
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.remove("invisible");
+    }
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('#{{context}}Form .form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Inputs/Textareas
+        if (type == "text" || type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          if (checked.length == 0) {
+            formValid = false;
+            el.classList.add("form-control");
+          } else {
+            inputValid = true;
+            el.classList.remove("form-control");
+          }
+        // Radio Group
+        } else if (type == "radios") {
+          let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
+          let otherOptionSelected = checked.value == "__other_option__";
+          let otherOptionValue = false;
+          document.querySelectorAll(`.${el.id}`).forEach(radio => {
+            if (radio.value == "__other_option__") {
+              document.querySelector(`#${radio.id}Other`).classList.add("d-none");
+            }
+          })
+          if (otherOptionSelected) {
+            let otherInput = document.querySelector(`#${checked.id}Other`);
+            otherInput.classList.remove("d-none");
+            otherOptionValue = otherInput.value.trim();
+          }
+          if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected) || (checked == null && !otherOptionSelected && !required)) {
+            inputValid = true;
+          } else {
+            formValid = false;
+          }
+          el.classList.add("form-control");
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/{{include.form_id}}/formResponse";
+    let dataToPost = new FormData();
+
+    dataToPost.append("{{include.entry_id}}", document.getElementById("{{context}}Input").value);
+
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+</script>
+

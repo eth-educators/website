@@ -1,0 +1,470 @@
+{%- assign context = "speaker" -%}
+
+<section>
+  <div class="container">
+    <div class="row mt-4 aos-up">
+      <div id="{{context}}Form" class="border-top mt-2 pt-4">
+        <div class="w-100 mb-4">
+          <div class="text-danger">* Required fields</div>
+        </div>
+
+        <!-- Name -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Name" class="form-label">
+            <span class="text-danger">*</span>
+            Name (or pseudonym)
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Name" required onchange="validate(this)">
+        </div>
+
+        <!-- Email -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Email" class="form-label">
+            <span class="text-danger">*</span>
+            Email
+          </label>
+          <input type="email" class="form-control form-field" id="{{context}}Email" placeholder="name@example.com" required onchange="validate(this)">
+        </div>
+
+        <!-- Organization -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Org" class="form-label">
+            Organization / Company / Project
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Org" onchange="validate(this)">
+        </div>
+
+        <!-- Telegram -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Telegram" class="form-label">
+            Telegram Handle
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Telegram" onchange="validate(this)">
+        </div>
+
+        <!-- Discord -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Discord" class="form-label">
+            Discord Handle
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Discord" onchange="validate(this)">
+        </div>
+
+        <!-- Twitter -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Twitter" class="form-label">
+            Twitter Handle
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Twitter" onchange="validate(this)">
+        </div>
+
+        <!-- Title -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Title" class="form-label">
+            Proposed Title of Talk or Panel
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}Title" onchange="validate(this)">
+        </div>
+
+        <!-- Proposal -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Proposal" class="form-label">
+            <span class="text-danger">*</span>
+            Proposed Description of Talk or Panel
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Proposal" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Topics -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Topics" class="form-label mb-1">
+            Topic Category
+          </label>
+          <div id="{{context}}Topics" class="form-field p-2" type="radios" onclick="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Solo Staking & Home Staking" id="{{context}}Topic1">
+              <label class="form-check-label" for="{{context}}Topic1">
+                Solo Staking & Home Staking
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Validator Infrastructure" id="{{context}}Topic2">
+              <label class="form-check-label" for="{{context}}Topic2">
+                Validator Infrastructure
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Liquid Staking / Restaking" id="{{context}}Topic3">
+              <label class="form-check-label" for="{{context}}Topic3">
+                Liquid Staking / Restaking
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="MEV and PBS (Proposer-Builder Separation)" id="{{context}}Topic4">
+              <label class="form-check-label" for="{{context}}Topic4">
+                MEV and PBS (Proposer-Builder Separation)
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Staking Economics / Risk Management" id="{{context}}Topic5">
+              <label class="form-check-label" for="{{context}}Topic5">
+                Staking Economics / Risk Management
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Community Initiatives / Research" id="{{context}}Topic6">
+              <label class="form-check-label" for="{{context}}Topic6">
+                Community Initiatives / Research
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="Ethereum Roadmap and Protocol Topics" id="{{context}}Topic7">
+              <label class="form-check-label" for="{{context}}Topic7">
+                Ethereum Roadmap and Protocol Topics
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Topic" type="radio" name="{{context}}Topic" value="__other_option__" id="{{context}}Topic8">
+              <label class="form-check-label" for="{{context}}Topic8">
+                Other (please specify)
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic Other -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}TopicOther" class="form-label">
+            If "Other" Category, please specify here
+          </label>
+          <input type="text" class="form-control form-field" id="{{context}}TopicOther" onchange="validate(this)">
+        </div>
+
+        <!-- Type -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Type" class="form-label mb-1">
+            Type of Presentation
+          </label>
+          <div id="{{context}}Type" class="form-field p-2" type="radios" onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Individual Talk" id="{{context}}Type1">
+              <label class="form-check-label" for="{{context}}Type1">
+                Individual Talk
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Type" type="radio" name="{{context}}Type" value="Panel" id="{{context}}Type2">
+              <label class="form-check-label" for="{{context}}Type2">
+                Panel
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Open to Panel -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Panel" class="form-label mb-1">
+            <span class="text-danger">*</span>
+            Are you open to being on a panel if we cannot accommodate your individual talk?
+          </label>
+          <div id="{{context}}Panel" class="form-field p-2" type="radios" required onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Panel" type="radio" name="{{context}}Panel" value="Yes" id="{{context}}Panel1">
+              <label class="form-check-label" for="{{context}}Panel1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Panel" type="radio" name="{{context}}Panel" value="No" id="{{context}}Panel2">
+              <label class="form-check-label" for="{{context}}Panel2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Participants -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}PanelParticipants" class="form-label">
+            If creating a panel, please list proposed participants and their contact info. Maximum 3 speakers + 1 moderator (optional, we can help provide one)
+          </label>
+          <input type="textarea" class="form-control form-field" id="{{context}}PanelParticipants" rows="5" onchange="validate(this)">
+        </div>
+
+        <!-- Bio -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Bio" class="form-label">
+            Brief Bio / Relevant Experience of Speaker(s)  
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Bio" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Technical Level -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Level" class="form-label mb-1">
+            Intended Audience & Technical Level  
+          </label>
+          <div id="{{context}}Level" class="form-field p-2" type="radios" onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Level" type="radio" name="{{context}}Level" value="Beginner" id="{{context}}Level1">
+              <label class="form-check-label" for="{{context}}Level1">
+                Beginner
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Level" type="radio" name="{{context}}Level" value="Intermediate" id="{{context}}Level2">
+              <label class="form-check-label" for="{{context}}Level2">
+                Intermediate
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Level" type="radio" name="{{context}}Level" value="Advanced" id="{{context}}Level3">
+              <label class="form-check-label" for="{{context}}Level3">
+                Advanced
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Level" type="radio" name="{{context}}Level" value="All Levels" id="{{context}}Level4">
+              <label class="form-check-label" for="{{context}}Level4">
+                All Levels
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Talk Length -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Length" class="form-label mb-1">
+            Preferred Talk Length
+          </label>
+          <div id="{{context}}Length" class="form-field p-2" type="radios" onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Length" type="radio" name="{{context}}Length" value="15 minutes" id="{{context}}Length1">
+              <label class="form-check-label" for="{{context}}Length1">
+                15 minutes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Length" type="radio" name="{{context}}Length" value="30 minutes" id="{{context}}Length2">
+              <label class="form-check-label" for="{{context}}Length2">
+                30 minutes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Length" type="radio" name="{{context}}Length" value="45 minutes" id="{{context}}Length3">
+              <label class="form-check-label" for="{{context}}Length3">
+                45 minutes
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Support -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Travel" class="form-label mb-1">
+            Do you require travel support?
+          </label>
+          <div id="{{context}}Travel" class="form-field p-2" type="radios" onchange="validate(this)">
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Travel" type="radio" name="{{context}}Travel" value="Yes" id="{{context}}Travel1">
+              <label class="form-check-label" for="{{context}}Travel1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check ms-1">
+              <input class="form-check-input {{context}}Travel" type="radio" name="{{context}}Travel" value="No" id="{{context}}Travel2">
+              <label class="form-check-label" for="{{context}}Travel2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scheduling Constraints -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Constraints" class="form-label">
+            Scheduling Constraints
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Constraints" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Supporting Materials -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Materials" class="form-label">
+            Supporting Materials (link to past slides, past talks, articles, research papers, etc on your subject area)
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Materials" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Comments -->
+        <div class="w-100 mb-3">
+          <label for="{{context}}Comments" class="form-label">
+            Any Additional Comments
+          </label>
+          <textarea type="textarea" class="form-control form-field" id="{{context}}Comments" rows="5" onchange="validate(this)"></textarea>
+        </div>
+
+        <!-- Error Message -->
+        <div class="w-100 mb-3">
+          <p id="{{context}}ErrorMessage" class="text-danger invisible fs-6">* Please fill out all required fields</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+          <button id="{{context}}SubmitButton" class="btn btn-dark" type="button" onclick="submitApplication()">Submit</button>
+        </div>
+      </div>
+
+      <div id="{{context}}FormSubmitted" class="d-none w-100 text-center border-top mb-3 pt-3">
+        <div>✅ Thank you for your submission and interest in becoming a speaker! You will receive a response by September 27, 2025 on your acceptance status.</div>
+        <a class="btn btn-sm btn-outline-dark mt-3" onclick="showForm()">View Submissiom</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  function submitApplication() {
+    let formValid = validate();
+    if (formValid) {
+      // Hide error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.add("invisible");
+      // Submit data to google forms
+      sendData();
+      // Display submission success message
+      document.getElementById("{{context}}Form").classList.add("d-none");
+      document.getElementById("{{context}}FormSubmitted").classList.remove("d-none");
+      // Scroll up to submission success message
+      // document.getElementById("speakerFormSubmitted").scrollIntoView();
+      scrollToElement("{{context}}FormSubmitted", -200);
+    } else {
+      // Show error message for empty required fields
+      document.getElementById("{{context}}ErrorMessage").classList.remove("invisible");
+    }
+  }
+
+  function showForm() {
+    document.getElementById("{{context}}Form").classList.remove("d-none");
+    document.getElementById("{{context}}FormSubmitted").classList.add("d-none");
+  }
+
+  // Validate form and inputs
+  function validate(input=false) {
+    const inputs = input ? [input] : document.querySelectorAll('.form-field');
+    let formValid = true;
+    inputs.forEach(el => {
+      let type = el.getAttribute('type');
+      if (el.hasAttribute('required')) {
+        let inputValid = false;
+        // Inputs/Textareas
+        if (type == "text" || type == "textarea") {
+          el.value = el.value.trim();
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Email
+        } else if (type == "email") {
+          el.value = el.value.replaceAll(" ", "");
+          if (el.value == "") {
+            formValid = false;
+          } else if (/^\S+@\S+\.\S+$/.test(el.value)) {
+            inputValid = true;
+          }
+        // Select Dropdown
+        } else if (type == "select") {
+          if (el.value == "") {
+            formValid = false;
+          } else {
+            inputValid = true;
+          }
+        // Checkbox Group
+        } else if (type == "checkboxes") {
+          let checked = document.querySelectorAll(`#${el.id} input[type=checkbox]:checked`);
+          if (checked.length == 0) {
+            formValid = false;
+            el.classList.add("form-control");
+          } else {
+            inputValid = true;
+            el.classList.remove("form-control");
+          }
+        // Radio Group
+        } else if (type == "radios") {
+          let checked = document.querySelector(`#${el.id} input[type=radio]:checked`);
+          let otherOptionSelected = checked.value == "__other_option__";
+          let otherOptionValue = false;
+          document.querySelectorAll(`.${el.id}`).forEach(radio => {
+            if (radio.value == "__other_option__") {
+              document.querySelector(`#${radio.id}Other`).classList.add("d-none");
+            }
+          })
+          if (otherOptionSelected) {
+            let otherInput = document.querySelector(`#${checked.id}Other`);
+            otherInput.classList.remove("d-none");
+            otherOptionValue = otherInput.value.trim();
+          }
+          if ((otherOptionSelected && otherOptionValue != "") || (checked != null && !otherOptionSelected) || (checked == null && !otherOptionSelected && !required)) {
+            inputValid = true;
+          } else {
+            formValid = false;
+          }
+          el.classList.add("form-control");
+        }
+        if (inputValid) {
+          el.classList.remove("is-invalid");
+          el.classList.add("is-valid");
+        } else {
+          el.classList.add("is-invalid");
+          el.classList.remove("is-valid");
+        }
+      }
+    });
+    return formValid;
+  }
+
+  // Submit data to google forms
+  function sendData() {
+    let url = "https://docs.google.com/forms/d/e/1FAIpQLSekgw0ez5vKV_ksBHX9J1pfpjvyVXbu1T3uOsh-QOT90O-yqQ/formResponse";
+    let dataToPost = new FormData();
+
+
+    dataToPost.append("entry.1012480726", document.getElementById("{{context}}Name").value);
+    dataToPost.append("entry.1060993488", document.getElementById("{{context}}Email").value);
+    dataToPost.append("entry.2136040802", document.getElementById("{{context}}Org").value);
+    dataToPost.append("entry.1350660212", document.getElementById("{{context}}Telegram").value);
+    dataToPost.append("entry.1017539196", document.getElementById("{{context}}Discord").value);
+    dataToPost.append("entry.546165792", document.getElementById("{{context}}Twitter").value);
+    dataToPost.append("entry.786917407", document.getElementById("{{context}}Title").value);
+    dataToPost.append("entry.1962021388", document.getElementById("{{context}}Proposal").value);
+    dataToPost.append("entry.2088900519", document.querySelector('#{{context}}Topics input[type=radio]:checked').value);
+    dataToPost.append("entry.229216221", document.getElementById("{{context}}TopicOther").value);
+    dataToPost.append("entry.1403622629", document.querySelector('#{{context}}Type input[type=radio]:checked').value);
+    dataToPost.append("entry.1360921207", document.querySelector('#{{context}}Panel input[type=radio]:checked').value);
+    dataToPost.append("entry.1114133796", document.getElementById("{{context}}PanelParticipants").value);
+    dataToPost.append("entry.1384318146", document.getElementById("{{context}}Bio").value);
+    dataToPost.append("entry.1394391938", document.querySelector('#{{context}}Level input[type=radio]:checked').value);
+    dataToPost.append("entry.256025568", document.querySelector('#{{context}}Length input[type=radio]:checked').value);
+    dataToPost.append("entry.1602646554", document.querySelector('#{{context}}Travel input[type=radio]:checked').value);
+    dataToPost.append("entry.550424289", document.getElementById("{{context}}Constraints").value);
+    dataToPost.append("entry.895116007", document.getElementById("{{context}}Materials").value);
+    dataToPost.append("entry.1707434907", document.getElementById("{{context}}Comments").value);
+
+
+    fetch(url,{
+      method: "POST",
+      mode: "no-cors",
+      header:{
+        'Content-Type': 'application/json'
+      },
+      body: dataToPost
+    })
+    .then(data=>{
+      log(data);
+      log("data submitted");
+    })
+    .catch(err=>console.error(err));
+  }
+</script>
