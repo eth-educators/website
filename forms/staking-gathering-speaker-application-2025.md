@@ -9,7 +9,7 @@ Submit your proposal to speak at EthStaker's Staking Gathering 2025 during the w
 
 **Event**: EthStaker's Staking Gathering
 
-**Date**: November 17th - 22nd, 2025
+**Date**: November 18, 2025
 
 **Location**: [Malba \| Museo de Arte Latinoamericano de Buenos Aires](https://maps.app.goo.gl/KaUgKTKGdR1tdgMA8)
 

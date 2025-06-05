@@ -15,7 +15,7 @@ subheader: An event for the Ethereum staking community
 
 ![](/assets/img/devconnect-2025/banner.webp)
 
-**Date**: November 17th - 22nd, 2025
+**Date**: November 18, 2025
 
 **Location**: [Malba \| Museo de Arte Latinoamericano de Buenos Aires](https://maps.app.goo.gl/KaUgKTKGdR1tdgMA8)
 
@@ -25,7 +25,18 @@ The day will feature talks, panels, workshops, and networking covering everythin
 
 Whether you're operating one validator at home or coordinating thousands across data centers, this event is for you.
 
-**Tickets: Coming soon, [sign up to be notified]()**
+**Tickets: Coming soon**
+
+
+{% include partials/components/simple-form.html
+  context="ticketSub"
+  form_id="1FAIpQLSesMyuJlrt_KpAg4izbazmlfD8XlrIbyCiIky1YaLdpr7KA9Q"
+  title="Get notified when tickets are available!"
+  input_text="Email"
+  type="email"
+  placeholder="name@example.com"
+  entry_id="entry.867548303"
+%}
 
 
 ---
@@ -99,7 +110,7 @@ Devconnect is where Ethereum’s brightest minds, builders, and researchers conv
 
 - [Website](https://devconnect.org/)
 <!-- - [Full Schedule](https://devconnect.org/schedule) -->
-- [City Guide](https://devconnect.org/city-guide)
+<!-- - [City Guide](https://devconnect.org/city-guide) -->
 
 
 
