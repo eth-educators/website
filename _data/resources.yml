@@ -148,7 +148,7 @@
   title: "Nethermind Sedge"
   description: "Set up an Ethereum / Gnosischain validator in under 30mins. A one-click setup tool for PoS network/chain validators for Ethereum and Gnosischain, Sedge takes care of the entire on-premise full node setup based on the chosen client, using generated docker-compose scripts based on the desired configuration."
   categories: tool, software
-- link: "https://github.com/eth-educators/ethstaker-guides"
+- link: "https://github.com/ethstaker/ethstaker-guides"
   title: "EthStaker's guides"
   description: "Guides related to staking. Monitoring, alerting, joining testnets"
   categories: ethstaker, guide
@@ -156,23 +156,23 @@
   title: "EthStaker's MEV relay list"
   description: "An EthStaker-maintained list of available MEV relays"
   categories: ethstaker, mev
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/monitoring.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/monitoring.md"
   title: "How to: Monitor your validator"
   description: "Remy Roy's guide on how to monitor your Ethereum validator. Uses Prometheus / Node Exporter / Grafana"
   categories: ethstaker, guide, tool
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/alerting.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/alerting.md"
   title: "How to: Validator alerting"
   description: "Remy Roy's guide on how to do alerting for an Ethereum validator. Uses Prometheus / Node Exporter / Alertmanager"
   categories: ethstaker, guide, tool
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/prepare-for-the-merge.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/prepare-for-the-merge.md"
   title: "How to: Prepare a validator for the Merge"
   description: "This guide is meant for people who are managing and maintaining staking machines. It will explain which steps or actions you should take in order to be ready for the Merge."
   categories: guide, ethstaker
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/merge-goerli-prater.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/merge-goerli-prater.md"
   title: "How to: Join the Goerli/Prater merge testnet (Geth/Lighthouse)"
   description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)"
   categories: guide, ethstaker
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/merge-goerli-prater-alt.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/merge-goerli-prater-alt.md"
   title: "Guide on how to join the Goerli/Prater merge testnet (Besu/Teku)"
   description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)"
   categories: guide, ethstaker
@@ -282,7 +282,7 @@
   title: "Weekinethereum"
   description: "Weekly newsletter for updates in Ethereum. Highly recommended"
   categories: news
-- link: "https://github.com/eth-educators/ethstaker-knowledgebase"
+- link: "https://github.com/ethstaker/ethstaker-knowledgebase"
   title: "EthStaker knowledge base"
   description: "EthStaker's knowledge base on all things staking. How to set up a validator, how to maintain it, how to monitor it. Glossary, FAQ, hardware guide."
   categories: guide, tool, ethstaker
@@ -306,11 +306,11 @@
   title: "How Proof of Stake on Ethereum works"
   description: "Patrick McCorry explains how the PoS consensus mechanism works"
   categories: explainer
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/zhejiang.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/zhejiang.md"
   title: "How to: Join the Zhejiang testnet (Geth/Lighthouse)"
   description: "This guide is meant for people with little or some experience in running Ethereum clients and using the command-line interface (CLI)."
   categories: guide
-- link: "https://github.com/eth-educators/ethstaker-guides/blob/main/MEV-relay-list.md"
+- link: "https://github.com/ethstaker/ethstaker-guides/blob/main/MEV-relay-list.md"
   title: "MEV relay list for Mainnet"
   description: "A list of MEV relays for the Ethereum Mainnet network"
   categories: ethstaker, guide

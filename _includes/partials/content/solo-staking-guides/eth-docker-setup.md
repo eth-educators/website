@@ -13,7 +13,7 @@ See [ethdocker.com](https://ethdocker.com/) for full documentation.
 
 Enter each of the following commands individually into the Terminal app.
 
-1. Download eth-docker:<br> `cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker`
+1. Download eth-docker:<br> `cd ~ && git clone https://github.com/ethstaker/eth-docker.git && cd eth-docker`
 1. Install pre-requisites such as Docker:<br> `./ethd install`
 1. Configure eth-docker (have an Ethereum address handy where you want Execution Layer rewards to go):<br> `./ethd config`
 1. Start eth-docker:<br> `./ethd up`
